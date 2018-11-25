@@ -9,18 +9,7 @@ declare(strict_types=1);
 
 namespace PhpMyAdmin;
 
-use PhpMyAdmin\Config;
-use PhpMyAdmin\Console;
-use PhpMyAdmin\Core;
-use PhpMyAdmin\Menu;
-use PhpMyAdmin\Message;
 use PhpMyAdmin\Navigation\Navigation;
-use PhpMyAdmin\RecentFavoriteTable;
-use PhpMyAdmin\Sanitize;
-use PhpMyAdmin\Scripts;
-use PhpMyAdmin\Url;
-use PhpMyAdmin\UserPreferences;
-use PhpMyAdmin\Util;
 
 /**
  * Class used to output the HTTP and HTML headers
