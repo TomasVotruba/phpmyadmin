@@ -209,7 +209,7 @@ class Util
     public static function escapeMysqlWildcards($name)
     {
         return strtr($name, ['_' => '\\_', '%' => '\\%']);
-    } // end of the 'escapeMysqlWildcards()' function
+    }
 
     /**
      * removes slashes before "_" and "%" characters
@@ -224,7 +224,7 @@ class Util
     public static function unescapeMysqlWildcards($name)
     {
         return strtr($name, ['\\_' => '_', '\\%' => '%']);
-    } // end of the 'unescapeMysqlWildcards()' function
+    }
 
     /**
      * removes quotes (',",`) from a quoted string
@@ -295,7 +295,7 @@ class Util
         return '<code class="sql"><pre>' . "\n"
             . htmlspecialchars($sqlQuery) . "\n"
             . '</pre></code>';
-    } // end of the "formatSql()" function
+    }
 
     /**
      * Displays a button to copy content to clipboard
@@ -309,7 +309,7 @@ class Util
     public static function showCopyToClipboard($text) {
         $open_link = '  <a href="#" class="copyQueryBtn" data-text="' . $text . '">' . __('Copy') . '</a>';
         return $open_link;
-    } // end of the 'showCopyToClipboard()' function
+    }
 
     /**
      * Displays a link to the documentation as an icon
@@ -331,7 +331,7 @@ class Util
         return '<a href="' . $link . '" target="' . $target . '">'
             . self::getImage('b_help', __('Documentation'))
             . '</a>';
-    } // end of the 'showDocLink()' function
+    }
 
     /**
      * Get a URL link to the official MySQL documentation
@@ -442,7 +442,7 @@ class Util
         }
 
         return $html;
-    } // end of the 'showMySQLDocu()' function
+    }
 
     /**
      * Returns link to documentation.
@@ -488,7 +488,7 @@ class Util
     public static function showDocu($page, $anchor = '', $bbcode = false)
     {
         return self::showDocLink(self::getDocuLink($page, $anchor), 'documentation', $bbcode);
-    } // end of the 'showDocu()' function
+    }
 
     /**
      * Displays a link to the PHP documentation
@@ -504,7 +504,7 @@ class Util
         $url = Core::getPHPDocLink($target);
 
         return self::showDocLink($url);
-    } // end of the 'showPHPDocu()' function
+    }
 
     /**
      * Returns HTML code for a tooltip
@@ -906,7 +906,7 @@ class Util
         }
 
         return $a_name;
-    } // end of the 'backquote()' function
+    }
 
     /**
      * Adds backquotes on both sides of a database, table or field name.
@@ -963,7 +963,7 @@ class Util
         }
 
         return $a_name;
-    } // end of the 'backquoteCompat()' function
+    }
 
     /**
      * Prepare the message and the query
@@ -1230,7 +1230,7 @@ class Util
         }
 
         return $retval;
-    } // end of the 'getMessage()' function
+    }
 
     /**
      * Execute an EXPLAIN query and formats results similar to MySQL command line
@@ -1353,7 +1353,7 @@ class Util
         }
 
         return [trim($return_value), $unit];
-    } // end of the 'formatByteDown' function
+    }
 
 
     /**
@@ -1490,7 +1490,7 @@ class Util
         }
 
         return $sign . $formattedValue . ' ' . $unit;
-    } // end of the 'formatNumber' function
+    }
 
     /**
      * Returns the number of bytes when a formatted size is given
@@ -1516,7 +1516,7 @@ class Util
                 * pow(1024, 1);
         }
         return $return_value;
-    }// end of the 'extractValueFromFormattedSize' function
+    }
 
     /**
      * Writes localised date
@@ -1608,7 +1608,7 @@ class Util
         }
 
         return $ret;
-    } // end of the 'localisedDate()' function
+    }
 
     /**
      * returns a tab for tabbed navigation.
@@ -1840,7 +1840,7 @@ class Util
         return '<a href="' . $url . '" '
             . implode(' ', $tag_params_strings) . '>'
             . $message . '</a>';
-    } // end of the 'linkOrButton()' function
+    }
 
     /**
      * Splits a URL string by parameter

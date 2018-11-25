@@ -456,7 +456,7 @@ class Results
         $this->__set('url_query', $url_query);
         $this->__set('editable', $editable);
         $this->__set('is_browse_distinct', $is_browse_dist);
-    } // end of the 'setProperties()' function
+    }
 
 
     /**
@@ -702,7 +702,7 @@ class Results
         } // end if (3)
 
         return [$displayParts, $the_total];
-    } // end of the 'setDisplayPartsAndTotal()' function
+    }
 
 
     /**
@@ -1006,7 +1006,7 @@ class Results
             . '</table>';
 
         return $table_navigation_html;
-    } // end of the '_getTableNavigation()' function
+    }
 
 
     /**
@@ -1039,7 +1039,7 @@ class Results
             $html_sql_query,
             true
         );
-    } // end of the '_getMoveBackwardButtonsForTableNavigation()' function
+    }
 
 
     /**
@@ -1068,7 +1068,7 @@ class Results
             'showing_all' => $showing_all,
             'max_rows' => intval($GLOBALS['cfg']['MaxRows']),
         ]);
-    } // end of the '_getShowAllButtonForTableNavigation()' function
+    }
 
 
     /**
@@ -1136,7 +1136,7 @@ class Results
         );
 
         return $buttons_html;
-    } // end of the '_getMoveForwardButtonsForTableNavigation()' function
+    }
 
 
     /**
@@ -1401,7 +1401,7 @@ class Results
         $table_headers_html .= '</tr>' . '</thead>';
 
         return $table_headers_html;
-    } // end of the '_getTableHeaders()' function
+    }
 
 
     /**
@@ -1448,7 +1448,7 @@ class Results
         }
 
         return [$unsorted_sql_query, $drop_down_html];
-    } // end of the '_getUnsortedSqlAndSortByKeyDropDown()' function
+    }
 
     /**
      * Prepare sort by key dropdown - html code segment
@@ -1540,7 +1540,7 @@ class Results
             . '</form>' . "\n";
 
         return $drop_down_html;
-    } // end of the '_getSortByKeyDropDown()' function
+    }
 
 
     /**
@@ -1614,7 +1614,7 @@ class Results
         $this->__set('display_params', $display_params);
 
         return [$colspan, $button_html];
-    } // end of the '_getFieldVisibilityParams()' function
+    }
 
 
     /**
@@ -1648,7 +1648,7 @@ class Results
         }
 
         return $ret;
-    } // end of the '_getTableCommentsArray()' function
+    }
 
 
     /**
@@ -1675,7 +1675,7 @@ class Results
         }
 
         $this->__set('highlight_columns', $highlight_columns);
-    } // end of the '_setHighlightedColumnGlobalField()' function
+    }
 
 
     /**
@@ -1724,7 +1724,7 @@ class Results
         }
 
         return $data_html;
-    } // end of the '_getDataForResettingColumnOrder()' function
+    }
 
 
     /**
@@ -1798,7 +1798,7 @@ class Results
         $tmp_url = 'sql.php' . Url::getCommon($url_params_full_text);
 
         return Util::linkOrButton($tmp_url, $tmp_image);
-    } // end of the '_getFullOrPartialTextButtonOrLink()' function
+    }
 
 
     /**
@@ -1959,7 +1959,7 @@ class Results
         );
 
         return [$order_link, $sorted_header_html];
-    } // end of the '_getOrderLinkAndSortedHeaderHtml()' function
+    }
 
     /**
      * Prepare parameters and html for sorted table header fields
@@ -2184,7 +2184,7 @@ class Results
         }
 
         return $is_in_sort;
-    } // end of the '_isInSorted()' function
+    }
 
 
     /**
@@ -2228,7 +2228,7 @@ class Results
             );
         }
         return [$sort_order, $order_img];
-    } // end of the '_getSortingUrlParams()' function
+    }
 
 
     /**
@@ -2264,7 +2264,7 @@ class Results
             $inner_link_content,
             $order_link_params
         );
-    } // end of the '_getSortOrderLink()' function
+    }
 
     /**
      * Check if the column contains numeric data. If yes, then set the
@@ -2334,7 +2334,7 @@ class Results
             . '">' . $order_link . $comments . '</th>';
 
         return $draggable_html;
-    } // end of the '_getDraggableClassForSortableColumns()' function
+    }
 
 
     /**
@@ -2383,7 +2383,7 @@ class Results
         $draggable_html .= "\n" . $comments . '</th>';
 
         return $draggable_html;
-    } // end of the '_getDraggableClassForNonSortableColumns()' function
+    }
 
 
     /**
@@ -2444,7 +2444,7 @@ class Results
         $this->__set('display_params', $display_params);
 
         return $right_column_html;
-    } // end of the '_getColumnAtRightSide()' function
+    }
 
 
     /**
@@ -2597,7 +2597,7 @@ class Results
         }
 
         return implode(' ', $classes);
-    } // end of the '_addClass()' function
+    }
 
     /**
      * Prepare the body of the results table
@@ -2852,7 +2852,7 @@ class Results
         } // end while
 
         return $table_body_html;
-    } // end of the '_getTableBody()' function
+    }
 
     /**
      * Sets the MIME details of the columns in the results set
@@ -3222,7 +3222,7 @@ class Results
         } // end for
 
         return $row_values_html;
-    } // end of the '_getRowValues()' function
+    }
 
     /**
      * Get link for display special schema links
@@ -3342,7 +3342,7 @@ class Results
         }
 
         return $query;
-    } // end of the '_getUrlSqlQuery()' function
+    }
 
 
     /**
@@ -3378,7 +3378,7 @@ class Results
         }
 
         return [$col_order, $col_visib];
-    } // end of the '_getColumnParams()' function
+    }
 
 
     /**
@@ -3418,7 +3418,7 @@ class Results
         $header_html .= '</tr>' . "\n";
 
         return $header_html;
-    } // end of the '_getRepeatingHeaders()' function
+    }
 
 
     /**
@@ -3476,7 +3476,7 @@ class Results
         }
 
         return [$edit_url, $copy_url, $edit_str, $copy_str, $edit_anchor_class];
-    } // end of the '_getModifiedLinks()' function
+    }
 
 
     /**
@@ -3564,7 +3564,7 @@ class Results
         }
 
         return [$del_url, $del_str, $js_conf];
-    } // end of the '_getDeleteAndKillLinks()' function
+    }
 
 
     /**
@@ -3669,7 +3669,7 @@ class Results
             $del_str,
             $js_conf
         );
-    } // end of the '_getPlacedLinks()' function
+    }
 
 
     /**
@@ -3696,7 +3696,7 @@ class Results
     ) {
         return 'data ' . $grid_edit_class . ' ' . $not_null_class . ' '
             . $relation_class . ' ' . $hide_class . ' ' . $field_type_class;
-    } // end of the '_getClassesForColumn()' function
+    }
 
 
     /**
@@ -3726,7 +3726,7 @@ class Results
             $field_type_class = '';
         }
         return $field_type_class;
-    } // end of the '_getClassForDateTimeRelatedFields()' function
+    }
 
 
     /**
@@ -3802,7 +3802,7 @@ class Results
         }
 
         return $cell;
-    } // end of the '_getDataCellForNumericColumns()' function
+    }
 
 
     /**
@@ -3948,7 +3948,7 @@ class Results
         );
 
         return $cell;
-    } // end of the '_getDataCellForGeometryColumns()' function
+    }
 
 
     /**
@@ -4133,7 +4133,7 @@ class Results
         );
 
         return $cell;
-    } // end of the '_getDataCellForNonNumericColumns()' function
+    }
 
     /**
      * Checks the posted options for viewing query results
@@ -4557,7 +4557,7 @@ class Results
         }
 
         return $table_html;
-    } // end of the 'getTable()' function
+    }
 
 
     /**
@@ -4588,7 +4588,7 @@ class Results
         }
 
         return [$pos_next, $pos_prev];
-    } // end of the '_getOffsets()' function
+    }
 
 
     /**
@@ -4713,7 +4713,7 @@ class Results
         return ' [' . htmlspecialchars($sort_column)
             . ': <strong>' . htmlspecialchars($column_for_first_row) . ' - '
             . htmlspecialchars($column_for_last_row) . '</strong>]';
-    } // end of the '_getSortedColumnMessage()' function
+    }
 
 
     /**
@@ -4822,7 +4822,7 @@ class Results
         }
 
         return $message;
-    } // end of the '_setMessageInformation()' function
+    }
 
     /**
      * Set the value of $map array for linking foreign key related tables
@@ -4886,7 +4886,7 @@ class Results
                 }
             } // end while
         } // end if
-    } // end of the '_setParamForLinkForeignKeyRelatedTables()' function
+    }
 
 
     /**
@@ -4996,7 +4996,7 @@ class Results
         $links_html .= '</form>' . "\n";
 
         return $links_html;
-    } // end of the '_getMultiRowOperationLinks()' function
+    }
 
 
     /**
@@ -5040,7 +5040,7 @@ class Results
         }
 
         return $navigation_html;
-    } // end of the '_getPlacedTableNavigations()' function
+    }
 
     /**
      * Generates HTML to display the Create view in span tag
@@ -5303,7 +5303,7 @@ class Results
         }
 
         return $results_operations_html;
-    } // end of the '_getResultsOperations()' function
+    }
 
 
     /**
@@ -5421,7 +5421,7 @@ class Results
         }
 
         return $result;
-    } // end of the '_handleNonPrintableContents()' function
+    }
 
 
     /**
@@ -5637,7 +5637,7 @@ class Results
         $result .= '</td>' . "\n";
 
         return $result;
-    } // end of the '_getRowData()' function
+    }
 
 
     /**
@@ -5689,7 +5689,7 @@ class Results
         }
 
         return $ret;
-    } // end of the '_getCheckboxForMultiRowSubmissions()' function
+    }
 
 
     /**
@@ -5732,7 +5732,7 @@ class Results
         }
 
         return $ret;
-    } // end of the '_getEditLink()' function
+    }
 
 
     /**
@@ -5780,7 +5780,7 @@ class Results
         }
 
         return $ret;
-    } // end of the '_getCopyLink()' function
+    }
 
 
     /**
@@ -5820,7 +5820,7 @@ class Results
             . '</td>';
 
         return $ret;
-    } // end of the '_getDeleteLink()' function
+    }
 
 
     /**
@@ -5937,7 +5937,7 @@ class Results
         }
 
         return $ret;
-    } // end of the '_getCheckboxAndLinks()' function
+    }
 
     /**
      * Truncates given string based on LimitChars configuration

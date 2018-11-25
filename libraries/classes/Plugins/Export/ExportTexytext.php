@@ -438,7 +438,7 @@ class ExportTexytext extends ExportPlugin
         } // end foreach
 
         return $text_output;
-    } // end of the '$this->getTableDef()' function
+    }
 
     /**
      * Outputs triggers

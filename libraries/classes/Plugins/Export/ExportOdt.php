@@ -584,7 +584,7 @@ class ExportOdt extends ExportPlugin
         $GLOBALS['odt_buffer'] .= '</table:table>';
 
         return true;
-    } // end of the '$this->getTableDef()' function
+    }
 
     /**
      * Outputs triggers
@@ -756,7 +756,7 @@ class ExportOdt extends ExportPlugin
         } // end switch
 
         return true;
-    } // end of the '$this->exportStructure' function
+    }
 
     /**
      * Formats the definition for one column

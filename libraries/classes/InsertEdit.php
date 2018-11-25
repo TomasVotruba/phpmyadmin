@@ -2523,7 +2523,7 @@ class InsertEdit
                                 ''
                             );
                 }
-            }   // end of loop for each transformation cell
+            }
         }
         return $extra_data;
     }

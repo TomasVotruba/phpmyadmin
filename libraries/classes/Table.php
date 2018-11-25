@@ -756,7 +756,7 @@ class Table
         }
 
         return $row_count;
-    } // end of the 'Table::countRecords()' function
+    }
 
     /**
      * Generates column specification for ALTER syntax
@@ -912,7 +912,7 @@ class Table
         $dbi->freeResult($table_copy_rs);
 
         return $last_id;
-    } // end of 'Table::duplicateInfo()' function
+    }
 
     /**
      * Copies or renames table

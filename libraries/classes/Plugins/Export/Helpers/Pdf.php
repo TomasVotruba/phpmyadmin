@@ -874,5 +874,5 @@ class Pdf extends PdfLib
         $this->SetFont(PdfLib::PMA_PDF_FONT, '', 9);
         $this->morepagestable($this->FontSizePt);
         $GLOBALS['dbi']->freeResult($this->results);
-    } // end of mysqlReport function
-} // end of Pdf class
+    }
+}

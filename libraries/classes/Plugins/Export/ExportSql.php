@@ -1860,7 +1860,7 @@ class ExportSql extends ExportPlugin
         Context::$MODE = $old_mode;
 
         return $warning . $schema_create . ($add_semicolon ? ';' . $crlf : '');
-    } // end of the 'getTableDef()' function
+    }
 
     /**
      * Returns $table's comments, relations etc.
@@ -1994,7 +1994,7 @@ class ExportSql extends ExportPlugin
         }
 
         return $schema_create;
-    } // end of the '_getTableComments()' function
+    }
 
     /**
      * Outputs table's structure
@@ -2571,7 +2571,7 @@ class ExportSql extends ExportPlugin
         $GLOBALS['dbi']->freeResult($result);
 
         return true;
-    } // end of the 'exportData()' function
+    }
 
     /**
      * Make a create table statement compatible with MSSQL

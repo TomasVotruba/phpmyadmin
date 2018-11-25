@@ -235,7 +235,7 @@ class ExportPdf extends ExportPlugin
         $pdf->mysqlReport($sql_query);
 
         return true;
-    } // end of the 'PMA_exportData()' function
+    }
 
     /**
      * Outputs table structure

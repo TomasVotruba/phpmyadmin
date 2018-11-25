@@ -661,7 +661,7 @@ class ExportLatex extends ExportPlugin
         $buffer = ' \\end{longtable}' . $crlf;
 
         return $this->export->outputHandler($buffer);
-    } // end of the 'exportStructure' method
+    }
 
     /**
      * Escapes some special characters for use in TeX/LaTeX

@@ -762,7 +762,7 @@ class Privileges
                 . '</fieldset>' . "\n";
         }
         return $html_output;
-    } // end of the 'PMA_displayPrivTable()' function
+    }
 
     /**
      * Get HTML for "Require"
