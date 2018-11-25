@@ -265,7 +265,7 @@ class CentralColumns
         $attribute = "";
         if (isset($def['Type'])) {
             $extracted_columnspec = Util::extractColumnSpec($def['Type']);
-            $attribute = trim($extracted_columnspec[ 'attribute']);
+            $attribute = trim($extracted_columnspec['attribute']);
             $type = $extracted_columnspec['type'];
             $length = $extracted_columnspec['spec_in_brackets'];
         }
@@ -598,12 +598,12 @@ class CentralColumns
         );
         $cols = '';
         foreach ($fields as $col_select) {
-            $cols .= '\'' . $this->dbi->escapeString((string)$col_select) . '\',';
+            $cols .= '\'' . $this->dbi->escapeString((string) $col_select) . '\',';
         }
         $cols = trim($cols, ',');
         $has_list = $this->findExistingColNames($db, $cols, $allFields);
         if (! empty($has_list)) {
-            return (array)$has_list;
+            return (array) $has_list;
         }
 
         return [];
@@ -903,7 +903,7 @@ class CentralColumns
             $query .= ';';
         }
         $this->dbi->selectDb($cfgCentralColumns['db'], DatabaseInterface::CONNECT_CONTROL);
-        $columns_list = (array)$this->dbi->fetchResult(
+        $columns_list = (array) $this->dbi->fetchResult(
             $query,
             null,
             null,
@@ -1148,7 +1148,7 @@ class CentralColumns
                     $rows_meta[$row_num]['DefaultValue'] = $row['col_default'];
                 }
             }
-            $types_upper[$row_num] = mb_strtoupper((string)$row['col_type']);
+            $types_upper[$row_num] = mb_strtoupper((string) $row['col_type']);
             $row_num++;
         }
 

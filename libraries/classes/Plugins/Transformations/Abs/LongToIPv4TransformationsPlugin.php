@@ -50,7 +50,6 @@ abstract class LongToIPv4TransformationsPlugin extends TransformationsPlugin
         return long2ip($buffer);
     }
 
-
     /* ~~~~~~~~~~~~~~~~~~~~ Getters and Setters ~~~~~~~~~~~~~~~~~~~~ */
 
     /**

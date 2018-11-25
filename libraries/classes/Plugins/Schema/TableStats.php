@@ -27,18 +27,31 @@ use PhpMyAdmin\Util;
 abstract class TableStats
 {
     protected $diagram;
+
     protected $db;
+
     protected $pageNumber;
+
     protected $tableName;
+
     protected $showKeys;
+
     protected $tableDimension;
+
     public $displayfield;
+
     public $fields = [];
+
     public $primary = [];
+
     public $x;
+
     public $y;
+
     public $width = 0;
+
     public $heightCell = 0;
+
     protected $offline;
 
     /**

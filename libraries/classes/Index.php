@@ -18,9 +18,13 @@ namespace PhpMyAdmin;
 class Index
 {
     public const PRIMARY  = 1;
+
     public const UNIQUE   = 2;
+
     public const INDEX    = 4;
+
     public const SPATIAL  = 8;
+
     public const FULLTEXT = 16;
 
     /**

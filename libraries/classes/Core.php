@@ -600,7 +600,6 @@ class Core
         header('Last-Modified: ' . gmdate(DATE_RFC1123));
     }
 
-
     /**
      * Sends header indicating file download.
      *

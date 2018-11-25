@@ -24,6 +24,7 @@ use TCPDF_FONTS;
 class Pdf extends TCPDF
 {
     public $footerset;
+
     public $Alias = [];
 
     /**

@@ -29,6 +29,7 @@ class TableStatsSvg extends TableStats
      * Defines properties
      */
     public $height;
+
     public $currentCell = 0;
 
     /**

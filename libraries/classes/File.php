@@ -604,7 +604,6 @@ class File
         $this->_handle = $handle;
     }
 
-
     /**
      * Sets error message for unsupported compression.
      *

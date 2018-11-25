@@ -24,17 +24,26 @@ namespace PhpMyAdmin\Plugins\Schema\Dia;
 class RelationStatsDia
 {
     protected $diagram;
+
     /**
      * Defines properties
      */
     public $srcConnPointsRight;
+
     public $srcConnPointsLeft;
+
     public $destConnPointsRight;
+
     public $destConnPointsLeft;
+
     public $masterTableId;
+
     public $foreignTableId;
+
     public $masterTablePos;
+
     public $foreignTablePos;
+
     public $referenceColor;
 
     /**

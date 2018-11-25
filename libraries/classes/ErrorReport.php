@@ -108,7 +108,7 @@ class ErrorReport
             }
             $exception = $_REQUEST['exception'];
             $exception["stack"] = $this->translateStacktrace($exception["stack"]);
-            list($uri, $scriptName) = $this->sanitizeUrl((string)$exception["url"]);
+            list($uri, $scriptName) = $this->sanitizeUrl((string) $exception["url"]);
             $exception["uri"] = $uri;
             unset($exception["url"]);
 

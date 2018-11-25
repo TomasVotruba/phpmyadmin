@@ -26,24 +26,28 @@ class Bookmark
      * @var int
      */
     private $_id;
+
     /**
      * Database the bookmark belongs to
      *
      * @var string
      */
     private $_database;
+
     /**
      * The user to whom the bookmark belongs, empty for public bookmarks
      *
      * @var string
      */
     private $_user;
+
     /**
      * Label of the bookmark
      *
      * @var string
      */
     private $_label;
+
     /**
      * SQL query that is bookmarked
      *
@@ -82,7 +86,7 @@ class Bookmark
      */
     public function getId(): int
     {
-        return (int)$this->_id;
+        return (int) $this->_id;
     }
 
     /**

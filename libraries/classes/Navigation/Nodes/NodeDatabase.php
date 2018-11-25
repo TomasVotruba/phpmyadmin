@@ -131,7 +131,7 @@ class NodeDatabase extends Node
                     'TABLE_NAME'
                 );
             }
-            $retval = (int)$GLOBALS['dbi']->fetchValue($query);
+            $retval = (int) $GLOBALS['dbi']->fetchValue($query);
         } else {
             $query = "SHOW FULL TABLES FROM ";
             $query .= Util::backquote($db);
@@ -216,7 +216,7 @@ class NodeDatabase extends Node
                     'ROUTINE_NAME'
                 );
             }
-            $retval = (int)$GLOBALS['dbi']->fetchValue($query);
+            $retval = (int) $GLOBALS['dbi']->fetchValue($query);
         } else {
             $db = $GLOBALS['dbi']->escapeString($db);
             $query = "SHOW PROCEDURE STATUS WHERE `Db`='$db' ";
@@ -262,7 +262,7 @@ class NodeDatabase extends Node
                     'ROUTINE_NAME'
                 );
             }
-            $retval = (int)$GLOBALS['dbi']->fetchValue($query);
+            $retval = (int) $GLOBALS['dbi']->fetchValue($query);
         } else {
             $db = $GLOBALS['dbi']->escapeString($db);
             $query = "SHOW FUNCTION STATUS WHERE `Db`='$db' ";
@@ -307,7 +307,7 @@ class NodeDatabase extends Node
                     'EVENT_NAME'
                 );
             }
-            $retval = (int)$GLOBALS['dbi']->fetchValue($query);
+            $retval = (int) $GLOBALS['dbi']->fetchValue($query);
         } else {
             $db = Util::backquote($db);
             $query = "SHOW EVENTS FROM $db ";

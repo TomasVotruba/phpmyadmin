@@ -30,6 +30,7 @@ class Response
      * @var Response
      */
     private static $_instance;
+
     /**
      * Header instance
      *
@@ -37,6 +38,7 @@ class Response
      * @var Header
      */
     private $_header;
+
     /**
      * HTML data to be used in the response
      *
@@ -44,6 +46,7 @@ class Response
      * @var string
      */
     private $_HTML;
+
     /**
      * An array of JSON key-value pairs
      * to be sent back for ajax requests
@@ -52,6 +55,7 @@ class Response
      * @var array
      */
     private $_JSON;
+
     /**
      * PhpMyAdmin\Footer instance
      *
@@ -59,6 +63,7 @@ class Response
      * @var Footer
      */
     private $_footer;
+
     /**
      * Whether we are servicing an ajax request.
      *
@@ -66,6 +71,7 @@ class Response
      * @var bool
      */
     private $_isAjax;
+
     /**
      * Whether response object is disabled
      *
@@ -73,6 +79,7 @@ class Response
      * @var bool
      */
     private $_isDisabled;
+
     /**
      * Whether there were any errors during the processing of the request
      * Only used for ajax responses
@@ -81,6 +88,7 @@ class Response
      * @var bool
      */
     private $_isSuccess;
+
     /**
      * Workaround for PHP bug
      *

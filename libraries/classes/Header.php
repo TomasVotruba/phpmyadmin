@@ -25,6 +25,7 @@ class Header
      * @var Scripts
      */
     private $_scripts;
+
     /**
      * PhpMyAdmin\Console instance
      *
@@ -32,6 +33,7 @@ class Header
      * @var Console
      */
     private $_console;
+
     /**
      * Menu instance
      *
@@ -39,6 +41,7 @@ class Header
      * @var Menu
      */
     private $_menu;
+
     /**
      * Whether to offer the option of importing user settings
      *
@@ -46,6 +49,7 @@ class Header
      * @var bool
      */
     private $_userprefsOfferImport;
+
     /**
      * The page title
      *
@@ -53,6 +57,7 @@ class Header
      * @var string
      */
     private $_title;
+
     /**
      * The value for the id attribute for the body tag
      *
@@ -60,6 +65,7 @@ class Header
      * @var string
      */
     private $_bodyId;
+
     /**
      * Whether to show the top menu
      *
@@ -67,6 +73,7 @@ class Header
      * @var bool
      */
     private $_menuEnabled;
+
     /**
      * Whether to show the warnings
      *
@@ -74,6 +81,7 @@ class Header
      * @var bool
      */
     private $_warningsEnabled;
+
     /**
      * Whether the page is in 'print view' mode
      *
@@ -81,6 +89,7 @@ class Header
      * @var bool
      */
     private $_isPrintView;
+
     /**
      * Whether we are servicing an ajax request.
      *
@@ -88,6 +97,7 @@ class Header
      * @var bool
      */
     private $_isAjax;
+
     /**
      * Whether to display anything
      *
@@ -95,6 +105,7 @@ class Header
      * @var bool
      */
     private $_isEnabled;
+
     /**
      * Whether the HTTP headers (and possibly some HTML)
      * have already been sent to the browser
@@ -254,7 +265,7 @@ class Header
             'pftext' => $pftext,
             'confirm' => $GLOBALS['cfg']['Confirm'],
             'LoginCookieValidity' => $GLOBALS['cfg']['LoginCookieValidity'],
-            'session_gc_maxlifetime' => (int)ini_get('session.gc_maxlifetime'),
+            'session_gc_maxlifetime' => (int) ini_get('session.gc_maxlifetime'),
             'logged_in' => (isset($GLOBALS['dbi']) ? $GLOBALS['dbi']->isUserType('logged') : false),
             'is_https' => $GLOBALS['PMA_Config']->isHttps(),
             'rootPath' => $GLOBALS['PMA_Config']->getRootPath(),

@@ -32,6 +32,7 @@ class Qbe
      * @var string
      */
     private $_db;
+
     /**
      * Table Names (selected/non-selected)
      *
@@ -39,6 +40,7 @@ class Qbe
      * @var array
      */
     private $_criteriaTables;
+
     /**
      * Column Names
      *
@@ -46,6 +48,7 @@ class Qbe
      * @var array
      */
     private $_columnNames;
+
     /**
      * Number of columns
      *
@@ -53,6 +56,7 @@ class Qbe
      * @var integer
      */
     private $_criteria_column_count;
+
     /**
      * Number of Rows
      *
@@ -60,6 +64,7 @@ class Qbe
      * @var integer
      */
     private $_criteria_row_count;
+
     /**
      * Whether to insert a new column
      *
@@ -67,6 +72,7 @@ class Qbe
      * @var array
      */
     private $_criteriaColumnInsert;
+
     /**
      * Whether to delete a column
      *
@@ -74,6 +80,7 @@ class Qbe
      * @var array
      */
     private $_criteriaColumnDelete;
+
     /**
      * Whether to insert a new row
      *
@@ -81,6 +88,7 @@ class Qbe
      * @var array
      */
     private $_criteriaRowInsert;
+
     /**
      * Whether to delete a row
      *
@@ -88,6 +96,7 @@ class Qbe
      * @var array
      */
     private $_criteriaRowDelete;
+
     /**
      * Already set criteria values
      *
@@ -95,6 +104,7 @@ class Qbe
      * @var array
      */
     private $_criteria;
+
     /**
      * Previously set criteria values
      *
@@ -102,6 +112,7 @@ class Qbe
      * @var array
      */
     private $_prev_criteria;
+
     /**
      * AND/OR relation b/w criteria columns
      *
@@ -109,6 +120,7 @@ class Qbe
      * @var array
      */
     private $_criteriaAndOrColumn;
+
     /**
      * AND/OR relation b/w criteria rows
      *
@@ -116,6 +128,7 @@ class Qbe
      * @var array
      */
     private $_criteriaAndOrRow;
+
     /**
      * Large width of a column
      *
@@ -123,6 +136,7 @@ class Qbe
      * @var string
      */
     private $_realwidth;
+
     /**
      * Minimum width of a column
      *
@@ -130,6 +144,7 @@ class Qbe
      * @var int
      */
     private $_form_column_width;
+
     /**
      * Selected columns in the form
      *
@@ -137,6 +152,7 @@ class Qbe
      * @var array
      */
     private $_formColumns;
+
     /**
      * Entered aliases in the form
      *
@@ -144,6 +160,7 @@ class Qbe
      * @var array
      */
     private $_formAliases;
+
     /**
      * Chosen sort options in the form
      *
@@ -151,6 +168,7 @@ class Qbe
      * @var array
      */
     private $_formSorts;
+
     /**
      * Chosen sort orders in the form
      *
@@ -158,6 +176,7 @@ class Qbe
      * @var array
      */
     private $_formSortOrders;
+
     /**
      * Show checkboxes in the form
      *
@@ -165,6 +184,7 @@ class Qbe
      * @var array
      */
     private $_formShows;
+
     /**
      * Entered criteria values in the form
      *
@@ -172,6 +192,7 @@ class Qbe
      * @var array
      */
     private $_formCriterions;
+
     /**
      * AND/OR column radio buttons in the form
      *
@@ -179,6 +200,7 @@ class Qbe
      * @var array
      */
     private $_formAndOrCols;
+
     /**
      * AND/OR row radio buttons in the form
      *
@@ -186,6 +208,7 @@ class Qbe
      * @var array
      */
     private $_formAndOrRows;
+
     /**
      * New column count in case of add/delete
      *
@@ -193,6 +216,7 @@ class Qbe
      * @var integer
      */
     private $_new_column_count;
+
     /**
      * New row count in case of add/delete
      *
@@ -200,6 +224,7 @@ class Qbe
      * @var integer
      */
     private $_new_row_count;
+
     /**
      * List of saved searches
      *
@@ -207,6 +232,7 @@ class Qbe
      * @var array
      */
     private $_savedSearchList = null;
+
     /**
      * Current search
      *
@@ -391,6 +417,7 @@ class Qbe
         // sets the largest width found
         $this->_realwidth = $this->_form_column_width . 'ex';
     }
+
     /**
      * Provides select options list containing column names
      *
@@ -1890,7 +1917,7 @@ class Qbe
         }
         $html_output .= '</select>';
         $html_output .= '<input type="text" name="searchName" id="searchName" '
-            . 'value="' . htmlspecialchars((string)$currentSearchName) . '" />';
+            . 'value="' . htmlspecialchars((string) $currentSearchName) . '" />';
         $html_output .= '<input type="hidden" name="action" id="action" value="" />';
         $html_output .= '<input type="submit" name="saveSearch" id="saveSearch" '
             . 'value="' . __('Create bookmark') . '" />';

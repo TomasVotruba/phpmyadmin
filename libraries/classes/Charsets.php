@@ -51,8 +51,11 @@ class Charsets
     ];
 
     private static $_charsets = [];
+
     private static $_charsets_descriptions = [];
+
     private static $_collations = [];
+
     private static $_default_collations = [];
 
     /**

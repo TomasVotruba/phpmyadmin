@@ -220,7 +220,6 @@ class Sanitize
         return $message;
     }
 
-
     /**
      * Sanitize a filename by removing anything besides legit characters
      *
@@ -324,7 +323,7 @@ class Sanitize
         }
 
         if (is_int($value)) {
-            return (int)$value;
+            return (int) $value;
         }
 
         return '"' . self::escapeJsString($value) . '"';
@@ -441,7 +440,7 @@ class Sanitize
             $_COOKIE = [];
         }
         $keys = array_keys(
-            array_merge((array)$_REQUEST, (array)$_GET, (array)$_POST, (array)$_COOKIE)
+            array_merge((array) $_REQUEST, (array) $_GET, (array) $_POST, (array) $_COOKIE)
         );
 
         foreach ($keys as $key) {

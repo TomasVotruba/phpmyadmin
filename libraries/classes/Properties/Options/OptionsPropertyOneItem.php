@@ -23,30 +23,35 @@ abstract class OptionsPropertyOneItem extends OptionsPropertyItem
      * @var bool
      */
     private $_force_one;
+
     /**
      * Values
      *
      * @var array
      */
     private $_values;
+
     /**
      * Doc
      *
      * @var string
      */
     private $_doc;
+
     /**
      * Length
      *
      * @var int
      */
     private $_len;
+
     /**
      * Size
      *
      * @var int
      */
     private $_size;
+
     /* ~~~~~~~~~~~~~~~~~~~~ Getters and Setters ~~~~~~~~~~~~~~~~~~~~ */
 
     /**

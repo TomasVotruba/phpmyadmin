@@ -195,7 +195,7 @@ class Tracking
         }
 
         $type = $GLOBALS['dbi']->getTable($GLOBALS['db'], $GLOBALS['table'])
-           ->isView() ? 'view' : 'table';
+            ->isView() ? 'view' : 'table';
 
         return $this->template->render('table/tracking/main', [
             'url_query' => $urlQuery,
@@ -557,7 +557,7 @@ class Tracking
         $drop_image_or_text
     ) {
         // no need for the secondth returned parameter
-        list($html,) = $this->getHtmlForDataStatements(
+        list($html, ) = $this->getHtmlForDataStatements(
             $data,
             $filter_users,
             $filter_ts_from,
@@ -797,7 +797,7 @@ class Tracking
         $delete_id = $_REQUEST['delete_' . $which_log];
 
         // Only in case of valid id
-        if ($delete_id == (int)$delete_id) {
+        if ($delete_id == (int) $delete_id) {
             unset($data[$which_log][$delete_id]);
 
             $successfullyDeleted = Tracker::changeTrackingData(
@@ -1266,7 +1266,6 @@ class Tracking
         }
         return $untracked_tables;
     }
-
 
     /**
      * Get untracked tables

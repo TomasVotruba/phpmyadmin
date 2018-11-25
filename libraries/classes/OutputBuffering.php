@@ -16,8 +16,11 @@ namespace PhpMyAdmin;
 class OutputBuffering
 {
     private static $_instance;
+
     private $_mode;
+
     private $_content;
+
     private $_on;
 
     /**

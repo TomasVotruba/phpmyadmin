@@ -1414,7 +1414,7 @@ class ExportSql extends ExportPlugin
         // with $GLOBALS['dbi']->numRows() in mysqli
         $result = $GLOBALS['dbi']->tryQuery(
             'SHOW TABLE STATUS FROM ' . Util::backquote($db)
-            . ' WHERE Name = \'' . $GLOBALS['dbi']->escapeString((string)$table) . '\'',
+            . ' WHERE Name = \'' . $GLOBALS['dbi']->escapeString((string) $table) . '\'',
             DatabaseInterface::CONNECT_USER,
             DatabaseInterface::QUERY_STORE
         );
@@ -2767,8 +2767,7 @@ class ExportSql extends ExportPlugin
                 // Column name.
                 if (!empty($field->type)) {
                     if (!empty($aliases[$old_database]['tables'][$old_table]['columns'][$field->name])) {
-                        $field->name = $aliases[$old_database]['tables']
-                        [$old_table]['columns'][$field->name];
+                        $field->name = $aliases[$old_database]['tables'][$old_table]['columns'][$field->name];
                         $flag = true;
                     }
                 }
@@ -2777,8 +2776,7 @@ class ExportSql extends ExportPlugin
                 if (!empty($field->key)) {
                     foreach ($field->key->columns as $key => $column) {
                         if (!empty($aliases[$old_database]['tables'][$old_table]['columns'][$column['name']])) {
-                            $field->key->columns[$key]['name'] = $aliases[$old_database]
-                                ['tables'][$old_table]['columns'][$column['name']];
+                            $field->key->columns[$key]['name'] = $aliases[$old_database]['tables'][$old_table]['columns'][$column['name']];
                             $flag = true;
                         }
                     }

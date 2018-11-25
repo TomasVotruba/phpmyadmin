@@ -24,80 +24,97 @@ class Node
      * @var int Defines a possible node type
      */
     public const CONTAINER = 0;
+
     /**
      * @var int Defines a possible node type
      */
     public const OBJECT = 1;
+
     /**
      * @var string A non-unique identifier for the node
      *             This may be trimmed when grouping nodes
      */
     public $name = "";
+
     /**
      * @var string A non-unique identifier for the node
      *             This will never change after being assigned
      */
     public $real_name = "";
+
     /**
      * @var int May be one of CONTAINER or OBJECT
      */
     public $type = Node::OBJECT;
+
     /**
      * @var bool Whether this object has been created while grouping nodes
      *           Only relevant if the node is of type CONTAINER
      */
     public $is_group;
+
     /**
      * @var bool Whether to add a "display: none;" CSS
      *           rule to the node when rendering it
      */
     public $visible = false;
+
     /**
      * @var Node A reference to the parent object of
      *           this node, NULL for the root node.
      */
     public $parent;
+
     /**
      * @var Node[] An array of Node objects that are
      *             direct children of this node
      */
     public $children = [];
+
     /**
      * @var Mixed A string used to group nodes, or an array of strings
      *            Only relevant if the node is of type CONTAINER
      */
     public $separator = '';
+
     /**
      * @var int How many time to recursively apply the grouping function
      *          Only relevant if the node is of type CONTAINER
      */
     public $separator_depth = 1;
+
     /**
      * @var string An IMG tag, used when rendering the node
      */
     public $icon;
+
     /**
      * @var array An array of A tags, used when rendering the node
      *            The indexes in the array may be 'icon' and 'text'
      */
     public $links;
+
     /**
      * @var string HTML title
      */
     public $title;
+
     /**
      * @var string Extra CSS classes for the node
      */
     public $classes = '';
+
     /**
      * @var bool Whether this node is a link for creating new objects
      */
     public $isNew = false;
+
     /**
      * @var int The position for the pagination of
      *          the branch at the second level of the tree
      */
     public $pos2 = 0;
+
     /**
      * @var int The position for the pagination of
      *          the branch at the third level of the tree
@@ -119,14 +136,14 @@ class Node
      */
     public function __construct($name, $type = Node::OBJECT, $is_group = false)
     {
-        if (strlen((string)$name)) {
+        if (strlen((string) $name)) {
             $this->name = $name;
             $this->real_name = $name;
         }
         if ($type === Node::CONTAINER) {
             $this->type = Node::CONTAINER;
         }
-        $this->is_group = (bool)$is_group;
+        $this->is_group = (bool) $is_group;
         $this->relation = new Relation($GLOBALS['dbi']);
     }
 
@@ -333,7 +350,7 @@ class Node
         $vPath = [];
         $vPath_clean = [];
         foreach ($this->parents(true, true, true) as $parent) {
-            $vPath[] = base64_encode((string)$parent->name);
+            $vPath[] = base64_encode((string) $parent->name);
             $vPath_clean[] = $parent->name;
         }
         $vPath = implode('.', array_reverse($vPath));
@@ -577,7 +594,7 @@ class Node
                 $query = "SELECT COUNT(*) ";
                 $query .= "FROM INFORMATION_SCHEMA.SCHEMATA ";
                 $query .= $this->_getWhereClause('SCHEMA_NAME', $searchClause);
-                $retval = (int)$GLOBALS['dbi']->fetchValue($query);
+                $retval = (int) $GLOBALS['dbi']->fetchValue($query);
 
                 return $retval;
             }
@@ -613,7 +630,7 @@ class Node
             $query .= "FROM INFORMATION_SCHEMA.SCHEMATA ";
             $query .= $this->_getWhereClause('SCHEMA_NAME', $searchClause);
             $query .= ") t ";
-            $retval = (int)$GLOBALS['dbi']->fetchValue($query);
+            $retval = (int) $GLOBALS['dbi']->fetchValue($query);
 
             return $retval;
         }

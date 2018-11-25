@@ -56,7 +56,7 @@ class Validator
         // better idea than hacking into its code
         $uvs = $cf->getDbEntry('_userValidators', []);
         foreach ($uvs as $field => $uvList) {
-            $uvList = (array)$uvList;
+            $uvList = (array) $uvList;
             foreach ($uvList as &$uv) {
                 if (!is_array($uv)) {
                     continue;
@@ -71,7 +71,7 @@ class Validator
                 }
             }
             $validators[$field] = isset($validators[$field])
-                ? array_merge((array)$validators[$field], $uvList)
+                ? array_merge((array) $validators[$field], $uvList)
                 : $uvList;
         }
         return $validators;
@@ -130,7 +130,7 @@ class Validator
         $result = [];
         foreach ($vids as $vid) {
             // call appropriate validation functions
-            foreach ((array)$validators[$vid] as $validator) {
+            foreach ((array) $validators[$vid] as $validator) {
                 $vdef = (array) $validator;
                 $vname = array_shift($vdef);
                 $vname = 'PhpMyAdmin\Config\Validator::' . $vname;
@@ -152,7 +152,7 @@ class Validator
                     }
                     $result[$key] = array_merge(
                         $result[$key],
-                        (array)$errorList
+                        (array) $errorList
                     );
                 }
             }
@@ -356,7 +356,6 @@ class Validator
         }
         return $result;
     }
-
 
     /**
      * Validates regular expression

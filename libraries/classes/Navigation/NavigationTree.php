@@ -32,57 +32,67 @@ class NavigationTree
      * @var Node Reference to the root node of the tree
      */
     private $_tree;
+
     /**
      * @var array The actual paths to all expanded nodes in the tree
      *            This does not include nodes created after the grouping
      *            of nodes has been performed
      */
     private $_aPath = [];
+
     /**
      * @var array The virtual paths to all expanded nodes in the tree
      *            This includes nodes created after the grouping of
      *            nodes has been performed
      */
     private $_vPath = [];
+
     /**
      * @var int Position in the list of databases,
      *          used for pagination
      */
     private $_pos;
+
     /**
      * @var array The names of the type of items that are being paginated on
      *            the second level of the navigation tree. These may be
      *            tables, views, functions, procedures or events.
      */
     private $_pos2_name = [];
+
     /**
      * @var array The positions of nodes in the lists of tables, views,
      *            routines or events used for pagination
      */
     private $_pos2_value = [];
+
     /**
      * @var array The names of the type of items that are being paginated
      *            on the second level of the navigation tree.
      *            These may be columns or indexes
      */
     private $_pos3_name = [];
+
     /**
      * @var array The positions of nodes in the lists of columns or indexes
      *            used for pagination
      */
     private $_pos3_value = [];
+
     /**
      * @var string The search clause to use in SQL queries for
      *             fetching databases
      *             Used by the asynchronous fast filter
      */
     private $_searchClause = '';
+
     /**
      * @var string The search clause to use in SQL queries for
      *             fetching nodes
      *             Used by the asynchronous fast filter
      */
     private $_searchClause2 = '';
+
     /**
      * @var bool Whether a warning was raised for large item groups
      *           which can affect performance.
@@ -96,7 +106,7 @@ class NavigationTree
     {
         // Save the position at which we are in the database list
         if (isset($_REQUEST['pos'])) {
-            $this->_pos = (int)$_REQUEST['pos'];
+            $this->_pos = (int) $_REQUEST['pos'];
         }
         if (!isset($this->_pos)) {
             $this->_pos = $this->_getNavigationDbPos();
@@ -191,8 +201,8 @@ class NavigationTree
             $retval = $GLOBALS['dbi']->fetchValue(
                 sprintf(
                     $query,
-                    (int)$GLOBALS['cfg']['FirstLevelNavigationItems'],
-                    (int)$GLOBALS['cfg']['FirstLevelNavigationItems'],
+                    (int) $GLOBALS['cfg']['FirstLevelNavigationItems'],
+                    (int) $GLOBALS['cfg']['FirstLevelNavigationItems'],
                     $dbSeparator,
                     $GLOBALS['dbi']->escapeString($GLOBALS['db'])
                 )
@@ -251,7 +261,7 @@ class NavigationTree
             }
         }
 
-        $navItems = (int)$GLOBALS['cfg']['FirstLevelNavigationItems'];
+        $navItems = (int) $GLOBALS['cfg']['FirstLevelNavigationItems'];
         $retval = floor((count($prefixMap) / $navItems)) * $navItems;
 
         return $retval;
@@ -700,7 +710,7 @@ class NavigationTree
             foreach ($node->children as $child) {
                 $prefix_pos = false;
                 foreach ($separators as $separator) {
-                    $sep_pos = mb_strpos((string)$child->name, $separator);
+                    $sep_pos = mb_strpos((string) $child->name, $separator);
                     if ($sep_pos != false
                         && $sep_pos != mb_strlen($child->name)
                         && $sep_pos != 0
@@ -788,9 +798,9 @@ class NavigationTree
                     $separatorLength = strlen($separator);
                     // FIXME: this could be more efficient
                     foreach ($node->children as $child) {
-                        $keySeparatorLength = mb_strlen((string)$key) + $separatorLength;
+                        $keySeparatorLength = mb_strlen((string) $key) + $separatorLength;
                         $name_substring = mb_substr(
-                            (string)$child->name,
+                            (string) $child->name,
                             0,
                             $keySeparatorLength
                         );
@@ -1349,9 +1359,9 @@ class NavigationTree
     {
         $retval = '';
         $filter_db_min
-            = (int)$GLOBALS['cfg']['NavigationTreeDisplayDbFilterMinimum'];
+            = (int) $GLOBALS['cfg']['NavigationTreeDisplayDbFilterMinimum'];
         $filter_item_min
-            = (int)$GLOBALS['cfg']['NavigationTreeDisplayItemFilterMinimum'];
+            = (int) $GLOBALS['cfg']['NavigationTreeDisplayItemFilterMinimum'];
         if ($node === $this->_tree
             && $this->_tree->getPresence() >= $filter_db_min
         ) {

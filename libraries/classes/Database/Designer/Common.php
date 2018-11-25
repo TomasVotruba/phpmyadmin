@@ -52,7 +52,7 @@ class Common
     {
         $retval = [];
 
-        $GLOBALS['designer']['TABLE_NAME'] = [];// that foreach no error
+        $GLOBALS['designer']['TABLE_NAME'] = []; // that foreach no error
         $GLOBALS['designer']['OWNER'] = [];
         $GLOBALS['designer']['TABLE_NAME_SMALL'] = [];
         $GLOBALS['designer']['TABLE_TYPE'] = [];
@@ -102,7 +102,7 @@ class Common
 
             $DF = $this->relation->getDisplayField($GLOBALS['db'], $one_table['TABLE_NAME']);
             if ($DF != '') {
-                $DF = rawurlencode((string)$DF);
+                $DF = rawurlencode((string) $DF);
                 $retval[rawurlencode($GLOBALS['designer_url']["TABLE_NAME_SMALL"][$i])] = $DF;
             }
 
@@ -502,7 +502,7 @@ class Common
         );
 
         if (!$res) {
-            return (bool)$res;
+            return (bool) $res;
         }
 
         foreach ($_REQUEST['t_h'] as $key => $value) {

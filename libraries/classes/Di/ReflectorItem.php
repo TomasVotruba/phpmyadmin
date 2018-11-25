@@ -16,7 +16,6 @@ namespace PhpMyAdmin\Di;
  */
 abstract class ReflectorItem implements Item
 {
-
     /** @var Container */
     private $_container;
 

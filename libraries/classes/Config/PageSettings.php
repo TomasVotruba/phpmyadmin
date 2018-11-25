@@ -24,7 +24,6 @@ use PhpMyAdmin\UserPreferences;
  */
 class PageSettings
 {
-
     /**
      * Contains id of the form element
      * @var string

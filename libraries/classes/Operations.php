@@ -439,7 +439,7 @@ class Operations
             // to be able to rename a db containing views,
             // first all the views are collected and a stand-in is created
             // the real views are created after the tables
-            if ($this->dbi->getTable($db, (string)$each_table)->isView()) {
+            if ($this->dbi->getTable($db, (string) $each_table)->isView()) {
                 // If view exists, and 'add drop view' is selected: Drop it!
                 if ($_REQUEST['what'] != 'nocopy'
                     && isset($_REQUEST['drop_if_exists'])
@@ -482,7 +482,7 @@ class Operations
         $sqlContraints = [];
         foreach ($tables_full as $each_table => $tmp) {
             // skip the views; we have created stand-in definitions
-            if ($this->dbi->getTable($db, (string)$each_table)->isView()) {
+            if ($this->dbi->getTable($db, (string) $each_table)->isView()) {
                 continue;
             }
 
@@ -491,7 +491,7 @@ class Operations
 
             // do not copy the data from a Merge table
             // note: on the calling FORM, 'data' means 'structure and data'
-            if ($this->dbi->getTable($db, (string)$each_table)->isMerge()) {
+            if ($this->dbi->getTable($db, (string) $each_table)->isMerge()) {
                 if ($this_what == 'data') {
                     $this_what = 'structure';
                 }
@@ -504,7 +504,7 @@ class Operations
                 // keep the triggers from the original db+table
                 // (third param is empty because delimiters are only intended
                 //  for importing via the mysql client or our Import feature)
-                $triggers = $this->dbi->getTriggers($db, (string)$each_table, '');
+                $triggers = $this->dbi->getTriggers($db, (string) $each_table, '');
 
                 if (! Table::moveCopy(
                     $db,
@@ -1858,7 +1858,7 @@ class Operations
 
         if ($pma_table->isEngine(['MYISAM', 'ARIA', 'ISAM'])
             && isset($_REQUEST['new_pack_keys'])
-            && $_REQUEST['new_pack_keys'] != (string)$pack_keys
+            && $_REQUEST['new_pack_keys'] != (string) $pack_keys
         ) {
             $table_alters[] = 'pack_keys = ' . $_REQUEST['new_pack_keys'];
         }

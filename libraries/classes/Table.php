@@ -35,7 +35,9 @@ class Table
      * UI preferences properties
      */
     public const PROP_SORTED_COLUMN = 'sorted_col';
+
     public const PROP_COLUMN_ORDER = 'col_order';
+
     public const PROP_COLUMN_VISIB = 'col_visib';
 
     /**
@@ -189,7 +191,6 @@ class Table
         . $this->getName($backquoted);
     }
 
-
     /**
      * Checks the storage engine used to create table
      *
@@ -245,8 +246,8 @@ class Table
         $result = $this->_dbi->fetchResult(
             "SELECT TABLE_NAME
             FROM information_schema.VIEWS
-            WHERE TABLE_SCHEMA = '" . $this->_dbi->escapeString((string)$db) . "'
-                AND TABLE_NAME = '" . $this->_dbi->escapeString((string)$table) . "'"
+            WHERE TABLE_SCHEMA = '" . $this->_dbi->escapeString((string) $db) . "'
+                AND TABLE_NAME = '" . $this->_dbi->escapeString((string) $table) . "'"
         );
         return $result ? true : false;
     }
@@ -401,9 +402,9 @@ class Table
         $table_num_row_info = $this->getStatusInfo('TABLE_ROWS', false, true);
         if (false === $table_num_row_info) {
             $table_num_row_info = $this->_dbi->getTable($this->_db_name, $GLOBALS['showtable']['Name'])
-            ->countRecords(true);
+                ->countRecords(true);
         }
-        return $table_num_row_info ? $table_num_row_info : 0 ;
+        return $table_num_row_info ? $table_num_row_info : 0;
     }
 
     /**
@@ -865,14 +866,14 @@ class Table
         $where_parts = [];
         foreach ($where_fields as $_where => $_value) {
             $where_parts[] = Util::backquote($_where) . ' = \''
-                . $dbi->escapeString((string)$_value) . '\'';
+                . $dbi->escapeString((string) $_value) . '\'';
         }
 
         $new_parts = [];
         $new_value_parts = [];
         foreach ($new_fields as $_where => $_value) {
             $new_parts[] = Util::backquote($_where);
-            $new_value_parts[] = $dbi->escapeString((string)$_value);
+            $new_value_parts[] = $dbi->escapeString((string) $_value);
         }
 
         $table_copy_query = '
@@ -1307,7 +1308,7 @@ class Table
                 . $dbi->escapeString($source_db) . '\''
                 . ' AND '
                 . ' table_name = \''
-                . $dbi->escapeString((string)$source_table) . '\''
+                . $dbi->escapeString((string) $source_table) . '\''
             );
 
             // Write every comment as new copied entry. [MIME]
@@ -1470,7 +1471,7 @@ class Table
      */
     public static function isValidName($table_name, $is_backquoted = false)
     {
-        if ($table_name !== rtrim((string)$table_name)) {
+        if ($table_name !== rtrim((string) $table_name)) {
             // trailing spaces not allowed even in backquotes
             return false;
         }
@@ -1886,13 +1887,11 @@ class Table
         // set session variable if it's still undefined
         if (!isset($_SESSION['tmpval']['table_uiprefs'][$server_id][$this->_db_name][$this->_name])) {
             // check whether we can get from pmadb
-            $_SESSION['tmpval']['table_uiprefs'][$server_id][$this->_db_name]
-            [$this->_name] = $cfgRelation['uiprefswork']
-                ?  $this->getUiPrefsFromDb()
+            $_SESSION['tmpval']['table_uiprefs'][$server_id][$this->_db_name][$this->_name] = $cfgRelation['uiprefswork']
+                ? $this->getUiPrefsFromDb()
                 : [];
         }
-        $this->uiprefs =& $_SESSION['tmpval']['table_uiprefs'][$server_id]
-        [$this->_db_name][$this->_name];
+        $this->uiprefs =& $_SESSION['tmpval']['table_uiprefs'][$server_id][$this->_db_name][$this->_name];
     }
 
     /**

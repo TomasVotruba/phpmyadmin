@@ -61,8 +61,6 @@ abstract class InlineTransformationsPlugin extends TransformationsPlugin
         }
     }
 
-
-
     /* ~~~~~~~~~~~~~~~~~~~~ Getters and Setters ~~~~~~~~~~~~~~~~~~~~ */
 
     /**

@@ -230,7 +230,7 @@ abstract class AuthenticationPlugin
     public function setSessionAccessTime()
     {
         if (isset($_REQUEST['guid'])) {
-            $guid = (string)$_REQUEST['guid'];
+            $guid = (string) $_REQUEST['guid'];
         } else {
             $guid = 'default';
         }

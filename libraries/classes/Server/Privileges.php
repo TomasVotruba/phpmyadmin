@@ -202,7 +202,6 @@ class Privileges
         unset($row['Table_priv']);
     }
 
-
     /**
      * Extracts the privilege information of a priv table row
      *
@@ -2205,19 +2204,19 @@ class Privileges
         }
         if (isset($_POST['max_questions']) || isset($GLOBALS['max_questions'])) {
             $max_questions = isset($_POST['max_questions'])
-                ? (int)$_POST['max_questions'] : (int)$GLOBALS['max_questions'];
+                ? (int) $_POST['max_questions'] : (int) $GLOBALS['max_questions'];
             $max_questions = max(0, $max_questions);
             $sql_query .= ' MAX_QUERIES_PER_HOUR ' . $max_questions;
         }
         if (isset($_POST['max_connections']) || isset($GLOBALS['max_connections'])) {
             $max_connections = isset($_POST['max_connections'])
-                ? (int)$_POST['max_connections'] : (int)$GLOBALS['max_connections'];
+                ? (int) $_POST['max_connections'] : (int) $GLOBALS['max_connections'];
             $max_connections = max(0, $max_connections);
             $sql_query .= ' MAX_CONNECTIONS_PER_HOUR ' . $max_connections;
         }
         if (isset($_POST['max_updates']) || isset($GLOBALS['max_updates'])) {
             $max_updates = isset($_POST['max_updates'])
-                ? (int)$_POST['max_updates'] : (int)$GLOBALS['max_updates'];
+                ? (int) $_POST['max_updates'] : (int) $GLOBALS['max_updates'];
             $max_updates = max(0, $max_updates);
             $sql_query .= ' MAX_UPDATES_PER_HOUR ' . $max_updates;
         }
@@ -2225,8 +2224,8 @@ class Privileges
             || isset($GLOBALS['max_user_connections'])
         ) {
             $max_user_connections = isset($_POST['max_user_connections'])
-                ? (int)$_POST['max_user_connections']
-                : (int)$GLOBALS['max_user_connections'];
+                ? (int) $_POST['max_user_connections']
+                : (int) $GLOBALS['max_user_connections'];
             $max_user_connections = max(0, $max_user_connections);
             $sql_query .= ' MAX_USER_CONNECTIONS ' . $max_user_connections;
         }
@@ -5262,7 +5261,6 @@ class Privileges
 
         return false;
     }
-
 
     /**
      * Get SQL queries for Display and Add user

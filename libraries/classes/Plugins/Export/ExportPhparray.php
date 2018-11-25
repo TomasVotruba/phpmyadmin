@@ -81,7 +81,6 @@ class ExportPhparray extends ExportPlugin
         return strtr($string, '*/', '-');
     }
 
-
     /**
      * Outputs export header
      *

@@ -27,12 +27,14 @@ abstract class OptionsPropertyItem extends PropertyItem
      * @var string
      */
     private $_name;
+
     /**
      * Text
      *
      * @var string
      */
     private $_text;
+
     /**
      * What to force
      *

@@ -24,6 +24,7 @@ class Menu
      * @var int
      */
     private $_server;
+
     /**
      * Database name
      *
@@ -31,6 +32,7 @@ class Menu
      * @var string
      */
     private $_db;
+
     /**
      * Table name
      *

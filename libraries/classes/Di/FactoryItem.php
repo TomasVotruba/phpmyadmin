@@ -16,7 +16,6 @@ namespace PhpMyAdmin\Di;
  */
 class FactoryItem extends ReflectorItem
 {
-
     /**
      * Construct an instance
      *

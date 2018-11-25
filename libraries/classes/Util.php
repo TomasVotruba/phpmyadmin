@@ -399,7 +399,7 @@ class Util
                 $text
             );
         } catch (KBException $e) {
-            unset($e);// phpstan workaround
+            unset($e); // phpstan workaround
         }
         return $html;
     }
@@ -958,7 +958,7 @@ class Util
         }
 
         // '0' is also empty for php :-(
-        if (strlen((string)$a_name) > 0 && $a_name !== '*') {
+        if (strlen((string) $a_name) > 0 && $a_name !== '*') {
             return $quote . $a_name . $quote;
         }
 
@@ -1355,7 +1355,6 @@ class Util
         return [trim($return_value), $unit];
     }
 
-
     /**
      * Formats $value to the given length and appends SI prefixes
      * with a $length of 0 no truncation occurs, number is only formatted
@@ -1582,7 +1581,7 @@ class Util
 
         $date = preg_replace(
             '@%[aA]@',
-            $day_of_week[(int)strftime('%w', (int) $timestamp)],
+            $day_of_week[(int) strftime('%w', (int) $timestamp)],
             $format
         );
         $date = preg_replace(
@@ -1898,10 +1897,10 @@ class Util
 
         return sprintf(
             __('%s days, %s hours, %s minutes and %s seconds'),
-            (string)$days,
-            (string)$hours,
-            (string)$minutes,
-            (string)$seconds
+            (string) $days,
+            (string) $hours,
+            (string) $minutes,
+            (string) $seconds
         );
     }
 
@@ -2971,7 +2970,7 @@ class Util
      */
     public static function isForeignKeySupported($engine)
     {
-        $engine = strtoupper((string)$engine);
+        $engine = strtoupper((string) $engine);
         if (($engine == 'INNODB') || ($engine == 'PBXT')) {
             return true;
         } elseif ($engine == 'NDBCLUSTER' || $engine == 'NDB') {
@@ -3936,7 +3935,6 @@ class Util
         return '<span class="' . $class . '">' . $message . '</span> ' . self::showDocu('setup', 'ssl');
     }
 
-
     /**
      * Prepare HTML code for display button.
      *
@@ -4655,7 +4653,7 @@ class Util
         while (is_array($value) || is_object($value)) {
             $value = reset($value);
         }
-        return trim((string)$value);
+        return trim((string) $value);
     }
 
     /**

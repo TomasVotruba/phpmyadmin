@@ -23,6 +23,7 @@ class ExportPluginProperties extends PluginPropertyItem
      * @var bool
      */
     private $_forceFile;
+
     /* ~~~~~~~~~~~~~~~~~~~~ Getters and Setters ~~~~~~~~~~~~~~~~~~~~ */
 
     /**

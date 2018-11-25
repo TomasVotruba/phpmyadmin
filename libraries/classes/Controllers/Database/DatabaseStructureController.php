@@ -37,22 +37,27 @@ class DatabaseStructureController extends DatabaseController
      * @var int Number of tables
      */
     protected $_num_tables;
+
     /**
      * @var int Current position in the list
      */
     protected $_pos;
+
     /**
      * @var bool DB is information_schema
      */
     protected $_db_is_system_schema;
+
     /**
      * @var int Number of tables
      */
     protected $_total_num_tables;
+
     /**
      * @var array Tables in the database
      */
     protected $_tables;
+
     /**
      * @var bool whether stats show or not
      */

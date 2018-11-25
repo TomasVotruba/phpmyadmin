@@ -112,7 +112,7 @@ class Font
                 ) * $charList["modifier"]);
         }
 
-        $text  = str_replace(" ", "", $text);//remove the " "'s
+        $text  = str_replace(" ", "", $text); //remove the " "'s
         //all other chars
         $count = $count
             + (mb_strlen(preg_replace("/[a-z0-9]/i", "", $text)) * 0.3);

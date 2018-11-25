@@ -768,7 +768,6 @@ class FormDisplay
         return count($this->_errors) > 0;
     }
 
-
     /**
      * Returns link to documentation
      *

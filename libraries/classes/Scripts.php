@@ -29,6 +29,7 @@ class Scripts
      * @var array of strings
      */
     private $_files;
+
     /**
      * An array of discrete javascript code snippets
      *

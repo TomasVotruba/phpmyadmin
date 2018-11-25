@@ -20,38 +20,47 @@ class SubPartition
      * @var string the database
      */
     protected $db;
+
     /**
      * @var string the table
      */
     protected $table;
+
     /**
      * @var string partition name
      */
     protected $name;
+
     /**
      * @var integer ordinal
      */
     protected $ordinal;
+
     /**
      * @var string partition method
      */
     protected $method;
+
     /**
      * @var string partition expression
      */
     protected $expression;
+
     /**
      * @var integer no of table rows in the partition
      */
     protected $rows;
+
     /**
      * @var integer data length
      */
     protected $dataLength;
+
     /**
      * @var integer index length
      */
     protected $indexLength;
+
     /**
      * @var string partition comment
      */

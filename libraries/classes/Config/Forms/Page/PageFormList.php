@@ -30,6 +30,7 @@ class PageFormList extends BaseFormList
         'Sql',
         'TableStructure',
     ];
+
     /**
      * @var string
      */

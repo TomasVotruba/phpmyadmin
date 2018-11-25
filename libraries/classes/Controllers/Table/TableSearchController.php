@@ -29,6 +29,7 @@ class TableSearchController extends TableController
      * @var string
      */
     private $_searchType;
+
     /**
      * Names of columns
      *
@@ -36,6 +37,7 @@ class TableSearchController extends TableController
      * @var array
      */
     private $_columnNames;
+
     /**
      * Types of columns
      *
@@ -43,6 +45,7 @@ class TableSearchController extends TableController
      * @var array
      */
     private $_columnTypes;
+
     /**
      * Collations of columns
      *
@@ -50,6 +53,7 @@ class TableSearchController extends TableController
      * @var array
      */
     private $_columnCollations;
+
     /**
      * Null Flags of columns
      *
@@ -57,6 +61,7 @@ class TableSearchController extends TableController
      * @var array
      */
     private $_columnNullFlags;
+
     /**
      * Whether a geometry column is present
      *
@@ -64,6 +69,7 @@ class TableSearchController extends TableController
      * @var boolean
      */
     private $_geomColumnFlag;
+
     /**
      * Foreign Keys
      *
@@ -71,6 +77,7 @@ class TableSearchController extends TableController
      * @var array
      */
     private $_foreigners;
+
     /**
      * Connection charset
      *
@@ -195,9 +202,9 @@ class TableSearchController extends TableController
                     return;
                 }
                 $this->response
-                ->getHeader()
-                ->getScripts()
-                ->addFile('tbl_find_replace.js');
+                    ->getHeader()
+                    ->getScripts()
+                    ->addFile('tbl_find_replace.js');
 
                 if (isset($_POST['replace'])) {
                     $this->replaceAction();
@@ -209,8 +216,8 @@ class TableSearchController extends TableController
 
             case 'normal':
                 $this->response->getHeader()
-                ->getScripts()
-                ->addFiles(
+                    ->getScripts()
+                    ->addFiles(
                     [
                         'makegrid.js',
                         'sql.js',
@@ -241,8 +248,8 @@ class TableSearchController extends TableController
 
             case 'zoom':
                 $this->response->getHeader()
-                ->getScripts()
-                ->addFiles(
+                    ->getScripts()
+                    ->addFiles(
                     [
                         'makegrid.js',
                         'sql.js',

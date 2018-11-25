@@ -100,12 +100,12 @@ class NodeTable extends NodeDatabaseChild
                     $query .= "FROM `INFORMATION_SCHEMA`.`COLUMNS` ";
                     $query .= "WHERE `TABLE_NAME`='$table' ";
                     $query .= "AND `TABLE_SCHEMA`='$db'";
-                    $retval = (int)$GLOBALS['dbi']->fetchValue($query);
+                    $retval = (int) $GLOBALS['dbi']->fetchValue($query);
                 } else {
                     $db = Util::backquote($db);
                     $table = Util::backquote($table);
                     $query = "SHOW COLUMNS FROM $table FROM $db";
-                    $retval = (int)$GLOBALS['dbi']->numRows(
+                    $retval = (int) $GLOBALS['dbi']->numRows(
                         $GLOBALS['dbi']->tryQuery($query)
                     );
                 }
@@ -114,7 +114,7 @@ class NodeTable extends NodeDatabaseChild
                 $db = Util::backquote($db);
                 $table = Util::backquote($table);
                 $query = "SHOW INDEXES FROM $table FROM $db";
-                $retval = (int)$GLOBALS['dbi']->numRows(
+                $retval = (int) $GLOBALS['dbi']->numRows(
                     $GLOBALS['dbi']->tryQuery($query)
                 );
                 break;
@@ -128,12 +128,12 @@ class NodeTable extends NodeDatabaseChild
                     . Util::getCollateForIS() . "='$db' ";
                     $query .= "AND `EVENT_OBJECT_TABLE` "
                     . Util::getCollateForIS() . "='$table'";
-                    $retval = (int)$GLOBALS['dbi']->fetchValue($query);
+                    $retval = (int) $GLOBALS['dbi']->fetchValue($query);
                 } else {
                     $db = Util::backquote($db);
                     $table = $GLOBALS['dbi']->escapeString($table);
                     $query = "SHOW TRIGGERS FROM $db WHERE `Table` = '$table'";
-                    $retval = (int)$GLOBALS['dbi']->numRows(
+                    $retval = (int) $GLOBALS['dbi']->numRows(
                         $GLOBALS['dbi']->tryQuery($query)
                     );
                 }

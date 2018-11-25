@@ -24,6 +24,7 @@ class OptionsPropertySubgroup extends OptionsPropertyGroup
      * @var string
      */
     private $_subgroupHeader;
+
     /* ~~~~~~~~~~~~~~~~~~~~ Getters and Setters ~~~~~~~~~~~~~~~~~~~~ */
 
     /**

@@ -20,6 +20,7 @@ use PhpMyAdmin\SysInfoBase;
 class SysInfoWINNT extends SysInfoBase
 {
     private $_wmi;
+
     public $os = 'WINNT';
 
     /**

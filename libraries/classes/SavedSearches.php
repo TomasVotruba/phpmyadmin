@@ -77,7 +77,7 @@ class SavedSearches
      */
     public function setId($searchId)
     {
-        $searchId = (int)$searchId;
+        $searchId = (int) $searchId;
         if (empty($searchId)) {
             $searchId = null;
         }

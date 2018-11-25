@@ -24,8 +24,11 @@ use XMLWriter;
 class Svg extends XMLWriter
 {
     public $title;
+
     public $author;
+
     public $font;
+
     public $fontSize;
 
     /**

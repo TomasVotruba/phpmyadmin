@@ -508,7 +508,7 @@ class Normalization
             __('The second step of normalization is complete for table \'%1$s\'.'),
             htmlspecialchars($table)
         ) . '</h3>';
-        if (count((array)$partialDependencies) == 1) {
+        if (count((array) $partialDependencies) == 1) {
             return [
                 'legendText' => __('End of step'), 'headText' => $headText,
                 'queryError' => $error,
@@ -641,7 +641,7 @@ class Normalization
         $headText = '<h3>' .
             __('The third step of normalization is complete.')
             . '</h3>';
-        if (count((array)$newTables) == 0) {
+        if (count((array) $newTables) == 0) {
             return [
                 'legendText' => __('End of step'), 'headText' => $headText,
                 'queryError' => $error,
@@ -735,7 +735,7 @@ class Normalization
         $table,
         $db
     ) {
-        $repeatingColumnsArr = (array)Util::backquote(
+        $repeatingColumnsArr = (array) Util::backquote(
             explode(', ', $repeatingColumns)
         );
         $primaryColumns = implode(
@@ -921,7 +921,7 @@ class Normalization
             $db,
             $table
         );
-        $columns = (array)Util::backquote($columns);
+        $columns = (array) Util::backquote($columns);
         $totalRowsRes = $this->dbi->fetchResult(
             'SELECT COUNT(*) FROM (SELECT * FROM '
             . Util::backquote($table) . ' LIMIT 500) as dt;'

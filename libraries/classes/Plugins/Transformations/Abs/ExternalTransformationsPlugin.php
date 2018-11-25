@@ -138,7 +138,6 @@ abstract class ExternalTransformationsPlugin extends TransformationsPlugin
         return $retstring;
     }
 
-
     /* ~~~~~~~~~~~~~~~~~~~~ Getters and Setters ~~~~~~~~~~~~~~~~~~~~ */
 
     /**

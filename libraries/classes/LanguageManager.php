@@ -647,9 +647,13 @@ class LanguageManager
     ];
 
     private $_available_locales;
+
     private $_available_languages;
+
     private $_lang_failed_cfg;
+
     private $_lang_failed_cookie;
+
     private $_lang_failed_request;
 
     /**
@@ -926,7 +930,6 @@ class LanguageManager
             );
         }
     }
-
 
     /**
      * Returns HTML code for the language selector

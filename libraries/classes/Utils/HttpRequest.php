@@ -17,7 +17,9 @@ namespace PhpMyAdmin\Utils;
 class HttpRequest
 {
     private $proxyUrl;
+
     private $proxyUser;
+
     private $proxyPass;
 
     /**

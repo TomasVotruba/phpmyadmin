@@ -30,6 +30,7 @@ class SetupFormList extends BaseFormList
         'Servers',
         'Sql',
     ];
+
     /**
      * @var string
      */

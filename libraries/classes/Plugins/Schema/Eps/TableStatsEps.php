@@ -29,6 +29,7 @@ class TableStatsEps extends TableStats
      * Defines properties
      */
     public $height;
+
     public $currentCell = 0;
 
     /**

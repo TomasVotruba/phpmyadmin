@@ -60,7 +60,9 @@ class Config
      * @var int     source modification time
      */
     public $source_mtime = 0;
+
     public $default_source_mtime = 0;
+
     public $set_mtime = 0;
 
     /**
@@ -1495,7 +1497,6 @@ class Config
         // cookie has already $value as value
         return true;
     }
-
 
     /**
      * Error handler to catch fatal errors when loading configuration

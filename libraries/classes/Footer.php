@@ -25,6 +25,7 @@ class Footer
      * @var Scripts
      */
     private $_scripts;
+
     /**
      * Whether we are servicing an ajax request.
      *
@@ -32,6 +33,7 @@ class Footer
      * @var bool
      */
     private $_isAjax;
+
     /**
      * Whether to only close the BODY and HTML tags
      * or also include scripts, errors and links
@@ -40,6 +42,7 @@ class Footer
      * @var bool
      */
     private $_isMinimal;
+
     /**
      * Whether to display anything
      *

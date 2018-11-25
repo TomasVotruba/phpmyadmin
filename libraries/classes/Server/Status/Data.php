@@ -26,15 +26,25 @@ use PhpMyAdmin\Url;
 class Data
 {
     public $status;
+
     public $sections;
+
     public $variables;
+
     public $used_queries;
+
     public $allocationMap;
+
     public $links;
+
     public $db_isLocal;
+
     public $section;
+
     public $sectionUsed;
+
     public $selfUrl;
+
     public $dataLoaded;
 
     /**

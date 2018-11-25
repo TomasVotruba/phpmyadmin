@@ -19,9 +19,13 @@ use PhpMyAdmin\LanguageManager;
 class Language
 {
     protected $code;
+
     protected $name;
+
     protected $native;
+
     protected $regex;
+
     protected $mysql;
 
     /**

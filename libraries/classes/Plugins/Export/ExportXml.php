@@ -40,6 +40,7 @@ class ExportXml extends ExportPlugin
      * @var string
      */
     private $_table;
+
     /**
      * Table names
      *
@@ -525,7 +526,7 @@ class ExportXml extends ExportPlugin
                     }
                     $buffer .= '            <column name="'
                         . htmlspecialchars($col_as) . '">'
-                        . htmlspecialchars((string)$record[$i])
+                        . htmlspecialchars((string) $record[$i])
                         . '</column>' . $crlf;
                 }
                 $buffer .= '        </table>' . $crlf;
@@ -539,7 +540,6 @@ class ExportXml extends ExportPlugin
 
         return true;
     }
-
 
     /* ~~~~~~~~~~~~~~~~~~~~ Getters and Setters ~~~~~~~~~~~~~~~~~~~~ */
 

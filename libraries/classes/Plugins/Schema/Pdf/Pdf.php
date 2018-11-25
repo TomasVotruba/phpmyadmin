@@ -42,19 +42,33 @@ class Pdf extends PdfLib
      * Defines properties
      */
     public $_xMin;
+
     public $_yMin;
+
     public $leftMargin = 10;
+
     public $topMargin = 10;
+
     public $scale;
+
     public $PMA_links;
+
     public $Outlines = [];
+
     public $def_outlines;
+
     public $widths;
+
     public $cMargin;
+
     private $_ff = PdfLib::PMA_PDF_FONT;
+
     private $_offline;
+
     private $_pageNumber;
+
     private $_withDoc;
+
     private $_db;
 
     /**
@@ -386,7 +400,7 @@ class Pdf extends PdfLib
             if ($c == ' ') {
                 $sep = $i;
             }
-            $l += isset($cw[mb_ord($c)]) ? $cw[mb_ord($c)] : 0 ;
+            $l += isset($cw[mb_ord($c)]) ? $cw[mb_ord($c)] : 0;
             if ($l > $wmax) {
                 if ($sep == -1) {
                     if ($i == $j) {

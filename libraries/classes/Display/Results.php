@@ -36,55 +36,80 @@ class Results
 {
     // Define constants
     public const NO_EDIT_OR_DELETE = 'nn';
+
     public const UPDATE_ROW = 'ur';
+
     public const DELETE_ROW = 'dr';
+
     public const KILL_PROCESS = 'kp';
 
     public const POSITION_LEFT = 'left';
+
     public const POSITION_RIGHT = 'right';
+
     public const POSITION_BOTH = 'both';
+
     public const POSITION_NONE = 'none';
 
     public const PLACE_TOP_DIRECTION_DROPDOWN = 'top_direction_dropdown';
+
     public const PLACE_BOTTOM_DIRECTION_DROPDOWN = 'bottom_direction_dropdown';
 
     public const DISPLAY_FULL_TEXT = 'F';
+
     public const DISPLAY_PARTIAL_TEXT = 'P';
 
     public const HEADER_FLIP_TYPE_AUTO = 'auto';
+
     public const HEADER_FLIP_TYPE_CSS = 'css';
+
     public const HEADER_FLIP_TYPE_FAKE = 'fake';
 
     public const DATE_FIELD = 'date';
+
     public const DATETIME_FIELD = 'datetime';
+
     public const TIMESTAMP_FIELD = 'timestamp';
+
     public const TIME_FIELD = 'time';
+
     public const STRING_FIELD = 'string';
+
     public const GEOMETRY_FIELD = 'geometry';
+
     public const BLOB_FIELD = 'BLOB';
+
     public const BINARY_FIELD = 'BINARY';
 
     public const RELATIONAL_KEY = 'K';
+
     public const RELATIONAL_DISPLAY_COLUMN = 'D';
 
     public const GEOMETRY_DISP_GEOM = 'GEOM';
+
     public const GEOMETRY_DISP_WKT = 'WKT';
+
     public const GEOMETRY_DISP_WKB = 'WKB';
 
     public const SMART_SORT_ORDER = 'SMART';
+
     public const ASCENDING_SORT_DIR = 'ASC';
+
     public const DESCENDING_SORT_DIR = 'DESC';
 
     public const TABLE_TYPE_INNO_DB = 'InnoDB';
+
     public const ALL_ROWS = 'all';
+
     public const QUERY_TYPE_SELECT = 'SELECT';
 
     public const ROUTINE_PROCEDURE = 'procedure';
+
     public const ROUTINE_FUNCTION = 'function';
 
     public const ACTION_LINK_CONTENT_ICONS = 'icons';
-    public const ACTION_LINK_CONTENT_TEXT = 'text';
 
+    public const ACTION_LINK_CONTENT_TEXT = 'text';
 
     // Declare global fields
 
@@ -458,7 +483,6 @@ class Results
         $this->__set('is_browse_distinct', $is_browse_dist);
     }
 
-
     /**
      * Defines the parts to display for a print view
      *
@@ -704,7 +728,6 @@ class Results
         return [$displayParts, $the_total];
     }
 
-
     /**
      * Return true if we are executing a query in the form of
      * "SELECT * FROM <a table> ..."
@@ -728,7 +751,6 @@ class Results
             && (count($analyzed_sql_results['statement']->from) == 1)
             && !empty($analyzed_sql_results['statement']->from[0]->table);
     }
-
 
     /**
      * Get a navigation button
@@ -1008,7 +1030,6 @@ class Results
         return $table_navigation_html;
     }
 
-
     /**
      * Prepare move backward buttons - previous and first
      *
@@ -1041,7 +1062,6 @@ class Results
         );
     }
 
-
     /**
      * Prepare Show All checkbox for table navigation
      *
@@ -1069,7 +1089,6 @@ class Results
             'max_rows' => intval($GLOBALS['cfg']['MaxRows']),
         ]);
     }
-
 
     /**
      * Prepare move forward buttons - next and last
@@ -1137,7 +1156,6 @@ class Results
 
         return $buttons_html;
     }
-
 
     /**
      * Prepare fields for table navigation
@@ -1403,7 +1421,6 @@ class Results
         return $table_headers_html;
     }
 
-
     /**
      * Prepare unsorted sql query and sort by key drop down
      *
@@ -1542,7 +1559,6 @@ class Results
         return $drop_down_html;
     }
 
-
     /**
      * Set column span, row span and prepare html with full/partial
      * text button or link
@@ -1616,7 +1632,6 @@ class Results
         return [$colspan, $button_html];
     }
 
-
     /**
      * Get table comments as array
      *
@@ -1650,7 +1665,6 @@ class Results
         return $ret;
     }
 
-
     /**
      * Set global array for store highlighted header fields
      *
@@ -1676,7 +1690,6 @@ class Results
 
         $this->__set('highlight_columns', $highlight_columns);
     }
-
 
     /**
      * Prepare data for column restoring and show/hide
@@ -1725,7 +1738,6 @@ class Results
 
         return $data_html;
     }
-
 
     /**
      * Prepare option fields block
@@ -1799,7 +1811,6 @@ class Results
 
         return Util::linkOrButton($tmp_url, $tmp_image);
     }
-
 
     /**
      * Prepare html form for multi row operations
@@ -2042,7 +2053,7 @@ class Results
             $query_head = $is_first_clause ? "\nORDER BY " : "";
             // Again a check to see if the given column is a aggregate column
             if (mb_strpos($name_to_use_in_sort, '(') !== false) {
-                $sort_order .=  $query_head . $name_to_use_in_sort . ' ' ;
+                $sort_order .=  $query_head . $name_to_use_in_sort . ' ';
             } else {
                 if (strlen($sort_tbl_new) > 0) {
                     $sort_tbl_new .= ".";
@@ -2050,7 +2061,7 @@ class Results
                 $sort_order .=  $query_head . $sort_tbl_new
                   . Util::backquote(
                       $name_to_use_in_sort
-                  ) . ' ' ;
+                  ) . ' ';
             }
 
             // For a special case where the code generates two dots between
@@ -2186,7 +2197,6 @@ class Results
         return $is_in_sort;
     }
 
-
     /**
      * Get sort url parameters - sort order and order image
      *
@@ -2229,7 +2239,6 @@ class Results
         }
         return [$sort_order, $order_img];
     }
-
 
     /**
      * Get sort order link
@@ -2336,7 +2345,6 @@ class Results
         return $draggable_html;
     }
 
-
     /**
      * Prepare columns to draggable effect for non sortable columns
      *
@@ -2384,7 +2392,6 @@ class Results
 
         return $draggable_html;
     }
-
 
     /**
      * Prepare column to show at right side - check boxes or empty column
@@ -2445,7 +2452,6 @@ class Results
 
         return $right_column_html;
     }
-
 
     /**
      * Prepares the display for a value
@@ -3040,11 +3046,9 @@ class Results
 
                         $transform_options = $this->transformations->getOptions(
                             isset(
-                                $mime_map[$orgFullColName]
-                                ['transformation_options']
+                                $mime_map[$orgFullColName]['transformation_options']
                             )
-                            ? $mime_map[$orgFullColName]
-                            ['transformation_options']
+                            ? $mime_map[$orgFullColName]['transformation_options']
                             : ''
                         );
 
@@ -3066,10 +3070,8 @@ class Results
                 && (trim($row[$i]) != '')
                 && ! $_SESSION['tmpval']['hide_transformation']
             ) {
-                include_once $this->transformation_info
-                    [$dbLower][$tblLower][$nameLower][0];
-                $transformation_plugin = new $this->transformation_info
-                    [$dbLower][$tblLower][$nameLower][1](null);
+                include_once $this->transformation_info[$dbLower][$tblLower][$nameLower][0];
+                $transformation_plugin = new $this->transformation_info[$dbLower][$tblLower][$nameLower][1](null);
 
                 $transform_options = $this->transformations->getOptions(
                     isset($mime_map[$orgFullColName]['transformation_options'])
@@ -3080,9 +3082,7 @@ class Results
                 $meta->mimetype = str_replace(
                     '_',
                     '/',
-                    $this->transformation_info[$dbLower]
-                    [mb_strtolower($meta->orgtable)]
-                    [mb_strtolower($meta->orgname)][2]
+                    $this->transformation_info[$dbLower][mb_strtolower($meta->orgtable)][mb_strtolower($meta->orgname)][2]
                 );
             }
 
@@ -3237,10 +3237,7 @@ class Results
     {
 
         $linking_url_params = [];
-        $link_relations = $GLOBALS['special_schema_links']
-            [mb_strtolower($this->__get('db'))]
-            [mb_strtolower($this->__get('table'))]
-            [$field_name];
+        $link_relations = $GLOBALS['special_schema_links'][mb_strtolower($this->__get('db'))][mb_strtolower($this->__get('table'))][$field_name];
 
         if (! is_array($link_relations['link_param'])) {
             $linking_url_params[$link_relations['link_param']] = $column_value;
@@ -3281,7 +3278,6 @@ class Results
         return $link_relations['default_page']
             . Url::getCommonRaw($linking_url_params, $divider);
     }
-
 
     /**
      * Prepare row information for display special links
@@ -3344,7 +3340,6 @@ class Results
         return $query;
     }
 
-
     /**
      * Get column order and column visibility
      *
@@ -3379,7 +3374,6 @@ class Results
 
         return [$col_order, $col_visib];
     }
-
 
     /**
      * Get HTML for repeating headers
@@ -3419,7 +3413,6 @@ class Results
 
         return $header_html;
     }
-
 
     /**
      * Get modified links
@@ -3477,7 +3470,6 @@ class Results
 
         return [$edit_url, $copy_url, $edit_str, $copy_str, $edit_anchor_class];
     }
-
 
     /**
      * Get delete and kill links
@@ -3566,7 +3558,6 @@ class Results
         return [$del_url, $del_str, $js_conf];
     }
 
-
     /**
      * Get content inside the table row action links (Edit/Copy/Delete)
      *
@@ -3606,7 +3597,6 @@ class Results
 
         return $linkContent;
     }
-
 
     /**
      * Prepare placed links
@@ -3671,7 +3661,6 @@ class Results
         );
     }
 
-
     /**
      * Get the combined classes for a column
      *
@@ -3697,7 +3686,6 @@ class Results
         return 'data ' . $grid_edit_class . ' ' . $not_null_class . ' '
             . $relation_class . ' ' . $hide_class . ' ' . $field_type_class;
     }
-
 
     /**
      * Get class for datetime related fields
@@ -3727,7 +3715,6 @@ class Results
         }
         return $field_type_class;
     }
-
 
     /**
      * Prepare data cell for numeric type fields
@@ -3803,7 +3790,6 @@ class Results
 
         return $cell;
     }
-
 
     /**
      * Get data cell for geometry type fields
@@ -3949,7 +3935,6 @@ class Results
 
         return $cell;
     }
-
 
     /**
      * Get data cell for non numeric type fields
@@ -4168,7 +4153,7 @@ class Results
         // as this is a form value, the type is always string so we cannot
         // use Core::isValid($_REQUEST['session_max_rows'], 'integer')
         if (Core::isValid($_REQUEST['session_max_rows'], 'numeric')) {
-            $query['max_rows'] = (int)$_REQUEST['session_max_rows'];
+            $query['max_rows'] = (int) $_REQUEST['session_max_rows'];
             unset($_REQUEST['session_max_rows']);
         } elseif ($_REQUEST['session_max_rows'] == self::ALL_ROWS) {
             $query['max_rows'] = self::ALL_ROWS;
@@ -4492,7 +4477,7 @@ class Results
                 ];
             }
         }
-        // end 2b
+        
 
         // 3. ----- Prepare the results table -----
         if ($is_limited_display) {
@@ -4559,7 +4544,6 @@ class Results
         return $table_html;
     }
 
-
     /**
      * Get offsets for next page and previous page
      *
@@ -4589,7 +4573,6 @@ class Results
 
         return [$pos_next, $pos_prev];
     }
-
 
     /**
      * Prepare sorted column message
@@ -4714,7 +4697,6 @@ class Results
             . ': <strong>' . htmlspecialchars($column_for_first_row) . ' - '
             . htmlspecialchars($column_for_last_row) . '</strong>]';
     }
-
 
     /**
      * Set the content that needs to be shown in message
@@ -4888,7 +4870,6 @@ class Results
         }
     }
 
-
     /**
      * Prepare multi field edit/delete links
      *
@@ -4997,7 +4978,6 @@ class Results
 
         return $links_html;
     }
-
 
     /**
      * Prepare table navigation bar at the top or bottom
@@ -5305,7 +5285,6 @@ class Results
         return $results_operations_html;
     }
 
-
     /**
      * Verifies what to do with non-printable contents (binary or BLOB)
      * in Browse mode.
@@ -5422,7 +5401,6 @@ class Results
 
         return $result;
     }
-
 
     /**
      * Retrieves the associated foreign key info for a data cell
@@ -5639,7 +5617,6 @@ class Results
         return $result;
     }
 
-
     /**
      * Prepares a checkbox for multi-row submits
      *
@@ -5691,7 +5668,6 @@ class Results
         return $ret;
     }
 
-
     /**
      * Prepares an Edit link
      *
@@ -5733,7 +5709,6 @@ class Results
 
         return $ret;
     }
-
 
     /**
      * Prepares an Copy link
@@ -5782,7 +5757,6 @@ class Results
         return $ret;
     }
 
-
     /**
      * Prepares a Delete link
      *
@@ -5821,7 +5795,6 @@ class Results
 
         return $ret;
     }
-
 
     /**
      * Prepare checkbox and links at some position (left or right)

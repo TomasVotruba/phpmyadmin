@@ -80,7 +80,7 @@ class Sql
         if (is_null($db) && isset($GLOBALS['db']) && strlen($GLOBALS['db'])) {
             $db = $GLOBALS['db'];
         }
-        list($analyzed_sql_results,,) = ParseAnalyze::sqlQuery($sql_query, $db);
+        list($analyzed_sql_results, , ) = ParseAnalyze::sqlQuery($sql_query, $db);
         return $analyzed_sql_results;
     }
 
@@ -1394,6 +1394,7 @@ EOT;
             isset($profiling_results) ? $profiling_results : null, $extra_data,
         ];
     }
+
     /**
      * Delete related transformation information
      *

@@ -23,7 +23,9 @@ use PhpMyAdmin\Response;
 class Eps
 {
     public $font;
+
     public $fontSize;
+
     public $stringCommands;
 
     /**

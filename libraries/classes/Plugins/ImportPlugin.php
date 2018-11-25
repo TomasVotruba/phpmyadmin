@@ -47,7 +47,6 @@ abstract class ImportPlugin
      */
     abstract public function doImport();
 
-
     /* ~~~~~~~~~~~~~~~~~~~~ Getters and Setters ~~~~~~~~~~~~~~~~~~~~ */
 
     /**

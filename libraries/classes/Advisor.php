@@ -26,10 +26,15 @@ use Symfony\Component\ExpressionLanguage\ExpressionLanguage;
 class Advisor
 {
     protected $dbi;
+
     protected $variables;
+
     protected $globals;
+
     protected $parseResult;
+
     protected $runResult;
+
     protected $expression;
 
     /**

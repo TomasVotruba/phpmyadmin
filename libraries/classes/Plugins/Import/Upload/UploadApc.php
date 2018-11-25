@@ -63,7 +63,7 @@ class UploadApc implements UploadInterface
         $status = apc_fetch('upload_' . $id);
 
         if ($status) {
-            $ret['finished'] = (bool)$status['done'];
+            $ret['finished'] = (bool) $status['done'];
             $ret['total'] = $status['total'];
             $ret['complete'] = $status['current'];
 
@@ -72,7 +72,7 @@ class UploadApc implements UploadInterface
             }
 
             if ($ret['percent'] == 100) {
-                $ret['finished'] = (bool)true;
+                $ret['finished'] = (bool) true;
             }
 
             $_SESSION[$SESSION_KEY][$id] = $ret;

@@ -27,7 +27,6 @@ use Williamdes\MariaDBMySQLKBS\KBException;
  */
 class ServerVariablesController extends Controller
 {
-
     /**
      * Constructs ServerVariablesController
      *
@@ -321,7 +320,6 @@ class ServerVariablesController extends Controller
         return $output;
     }
 
-
     /**
      * Prints Html for Server Variables Items
      *
@@ -368,8 +366,8 @@ class ServerVariablesController extends Controller
                 'is_superuser' => $this->dbi->isSuperuser(),
                 'is_html_formatted' => $isHtmlFormatted,
                 'has_session_value' => $has_session_value,
-                'session_value' => isset($sessionFormattedValue)?$sessionFormattedValue:null,
-                'session_is_html_formated' => isset($sessionIsHtmlFormatted)?$sessionIsHtmlFormatted:null,
+                'session_value' => isset($sessionFormattedValue) ? $sessionFormattedValue : null,
+                'session_is_html_formated' => isset($sessionIsHtmlFormatted) ? $sessionIsHtmlFormatted : null,
             ]);
         }
 

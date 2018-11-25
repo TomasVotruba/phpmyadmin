@@ -16,7 +16,6 @@ namespace PhpMyAdmin\Di;
  */
 class ServiceItem extends ReflectorItem
 {
-
     /** @var mixed */
     protected $instance;
 

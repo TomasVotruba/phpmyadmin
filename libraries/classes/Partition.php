@@ -22,6 +22,7 @@ class Partition extends SubPartition
      * @var string partition description
      */
     protected $description;
+
     /**
      * @var SubPartition[] sub partitions
      */

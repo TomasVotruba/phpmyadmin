@@ -59,7 +59,6 @@ abstract class TextImageLinkTransformationsPlugin extends TransformationsPlugin
             . htmlspecialchars($buffer) . '</a>';
     }
 
-
     /* ~~~~~~~~~~~~~~~~~~~~ Getters and Setters ~~~~~~~~~~~~~~~~~~~~ */
 
     /**

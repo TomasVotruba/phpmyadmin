@@ -17,9 +17,13 @@ namespace PhpMyAdmin;
 class BrowseForeigners
 {
     private $limitChars;
+
     private $maxRows;
+
     private $repeatCells;
+
     private $showAll;
+
     private $themeImage;
 
     /**

@@ -874,8 +874,8 @@ class Relation
                 SELECT `display_field`
                 FROM ' . Util::backquote($cfgRelation['db'])
                     . '.' . Util::backquote($cfgRelation['table_info']) . '
-                WHERE `db_name`    = \'' . $this->dbi->escapeString((string)$db) . '\'
-                    AND `table_name` = \'' . $this->dbi->escapeString((string)$table)
+                WHERE `db_name`    = \'' . $this->dbi->escapeString((string) $db) . '\'
+                    AND `table_name` = \'' . $this->dbi->escapeString((string) $table)
                 . '\'';
 
             $row = $this->dbi->fetchSingleRow(
@@ -1606,7 +1606,6 @@ class Relation
         }
     }
 
-
     /**
      * Performs SQL query used for renaming table.
      *
@@ -1644,7 +1643,6 @@ class Relation
             . '\'';
         $this->queryAsControlUser($query);
     }
-
 
     /**
      * Rename a table in relation tables

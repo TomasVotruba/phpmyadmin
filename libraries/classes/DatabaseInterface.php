@@ -26,14 +26,17 @@ class DatabaseInterface
      * Force STORE_RESULT method, ignored by classic MySQL.
      */
     public const QUERY_STORE = 1;
+
     /**
      * Do not read whole query.
      */
     public const QUERY_UNBUFFERED = 2;
+
     /**
      * Get session variable.
      */
     public const GETVAR_SESSION = 1;
+
     /**
      * Get global variable.
      */
@@ -43,10 +46,12 @@ class DatabaseInterface
      * User connection.
      */
     public const CONNECT_USER = 0x100;
+
     /**
      * Control user connection.
      */
     public const CONNECT_CONTROL = 0x101;
+
     /**
      * Auxiliary connection.
      *
@@ -85,18 +90,22 @@ class DatabaseInterface
      * @var boolean Whether connection is MariaDB
      */
     private $_is_mariadb = false;
+
     /**
      * @var boolean Whether connection is Percona
      */
     private $_is_percona = false;
+
     /**
      * @var integer Server version as number
      */
     private $_version_int = 55000;
+
     /**
      * @var string Server version
      */
     private $_version_str = '5.50.0';
+
     /**
      * @var string Server version comment
      */
@@ -802,7 +811,7 @@ class DatabaseInterface
         $views = [];
 
         foreach ($tables_full as $table => $tmp) {
-            $_table = $this->getTable($db, (string)$table);
+            $_table = $this->getTable($db, (string) $table);
             if ($_table->isView()) {
                 $views[] = $table;
             }
@@ -810,7 +819,6 @@ class DatabaseInterface
 
         return $views;
     }
-
 
     /**
      * returns array with databases containing extended infos about them

@@ -388,9 +388,9 @@ class ServerConfigChecks
                     );
                 }
                 // check used characters
-                $hasDigits = (bool)preg_match('/\d/', $blowfishSecret);
-                $hasChars = (bool)preg_match('/\S/', $blowfishSecret);
-                $hasNonword = (bool)preg_match('/\W/', $blowfishSecret);
+                $hasDigits = (bool) preg_match('/\d/', $blowfishSecret);
+                $hasChars = (bool) preg_match('/\S/', $blowfishSecret);
+                $hasNonword = (bool) preg_match('/\W/', $blowfishSecret);
                 if (!$hasDigits || !$hasChars || !$hasNonword) {
                     $blowfishWarnings[] = Sanitize::sanitize(
                         __(

@@ -28,6 +28,7 @@ class UserFormList extends BaseFormList
         'Import',
         'Export',
     ];
+
     /**
      * @var string
      */

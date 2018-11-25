@@ -29,30 +29,35 @@ abstract class PluginPropertyItem extends PropertyItem
      * @var string
      */
     private $_text;
+
     /**
      * Extension
      *
      * @var string
      */
     private $_extension;
+
     /**
      * Options
      *
      * @var OptionsPropertyRootGroup
      */
     private $_options;
+
     /**
      * Options text
      *
      * @var string
      */
     private $_optionsText;
+
     /**
      * MIME Type
      *
      * @var string
      */
     private $_mimeType;
+
     /* ~~~~~~~~~~~~~~~~~~~~ Getters and Setters ~~~~~~~~~~~~~~~~~~~~ */
 
     /**

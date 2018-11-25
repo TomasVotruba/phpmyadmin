@@ -205,7 +205,7 @@ class ImportOds extends ImportPlugin
 
                     if (count($text) != 0) {
                         $attr = $cell->attributes('table', true);
-                        $num_repeat = (int)$attr['number-columns-repeated'];
+                        $num_repeat = (int) $attr['number-columns-repeated'];
                         $num_iterations = $num_repeat ? $num_repeat : 1;
 
                         for ($k = 0; $k < $num_iterations; $k++) {
@@ -229,7 +229,7 @@ class ImportOds extends ImportPlugin
                     }
 
                     $attr = $cell->attributes('table', true);
-                    $num_null = (int)$attr['number-columns-repeated'];
+                    $num_null = (int) $attr['number-columns-repeated'];
 
                     if ($num_null) {
                         if (!$col_names_in_first_row) {
@@ -311,10 +311,10 @@ class ImportOds extends ImportPlugin
 
             /* Store the table name so we know where to place the row set */
             $tbl_attr = $sheet->attributes('table', true);
-            $tables[] = [(string)$tbl_attr['name']];
+            $tables[] = [(string) $tbl_attr['name']];
 
             /* Store the current sheet in the accumulator */
-            $rows[] = [(string)$tbl_attr['name'], $col_names, $tempRows];
+            $rows[] = [(string) $tbl_attr['name'], $col_names, $tempRows];
             $tempRows = [];
             $col_names = [];
             $max_cols = 0;

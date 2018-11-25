@@ -58,7 +58,6 @@ class Text_Plain_Binarytoip extends TransformationsPlugin
         return $buffer;
     }
 
-
     /* ~~~~~~~~~~~~~~~~~~~~ Getters and Setters ~~~~~~~~~~~~~~~~~~~~ */
 
     /**

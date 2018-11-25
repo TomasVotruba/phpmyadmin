@@ -16,7 +16,6 @@ namespace PhpMyAdmin\Di;
  */
 interface Item
 {
-
     /**
      * Get a value from the item
      *

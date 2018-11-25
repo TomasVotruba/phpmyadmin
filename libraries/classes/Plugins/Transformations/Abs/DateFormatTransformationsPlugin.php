@@ -116,7 +116,7 @@ abstract class DateFormatTransformationsPlugin extends TransformationsPlugin
                 // (https://www.gnu.org/manual/tar-1.12/html_chapter/tar_7.html)
             } else {
                 if (preg_match('/^[0-9]\d{1,9}$/', $buffer)) {
-                    $timestamp = (int)$buffer;
+                    $timestamp = (int) $buffer;
                 } else {
                     $timestamp = strtotime($buffer);
                 }

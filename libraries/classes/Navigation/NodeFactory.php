@@ -19,6 +19,7 @@ use PhpMyAdmin\Navigation\Nodes\Node;
 class NodeFactory
 {
     protected static $_namespace = 'PhpMyAdmin\\Navigation\\Nodes\\%s';
+
     /**
      * Sanitizes the name of a Node class
      *

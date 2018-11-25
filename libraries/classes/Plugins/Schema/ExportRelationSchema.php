@@ -24,14 +24,23 @@ use PhpMyAdmin\Util;
 class ExportRelationSchema
 {
     protected $db;
+
     protected $diagram;
+
     protected $showColor;
+
     protected $tableDimension;
+
     protected $sameWide;
+
     protected $showKeys;
+
     protected $orientation;
+
     protected $paper;
+
     protected $pageNumber;
+
     protected $offline;
 
     /**

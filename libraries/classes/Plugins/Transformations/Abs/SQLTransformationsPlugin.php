@@ -49,7 +49,6 @@ abstract class SQLTransformationsPlugin extends TransformationsPlugin
         return $result;
     }
 
-
     /* ~~~~~~~~~~~~~~~~~~~~ Getters and Setters ~~~~~~~~~~~~~~~~~~~~ */
 
     /**

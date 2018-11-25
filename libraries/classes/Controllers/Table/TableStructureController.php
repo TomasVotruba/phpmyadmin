@@ -40,30 +40,37 @@ class TableStructureController extends TableController
      * @var Table  The table object
      */
     protected $table_obj;
+
     /**
      * @var string  The URL query string
      */
     protected $_url_query;
+
     /**
      * @var bool DB is information_schema
      */
     protected $_db_is_system_schema;
+
     /**
      * @var bool Table is a view
      */
     protected $_tbl_is_view;
+
     /**
      * @var string Table storage engine
      */
     protected $_tbl_storage_engine;
+
     /**
      * @var int Number of rows
      */
     protected $_table_info_num_rows;
+
     /**
      * @var string Table collation
      */
     protected $_tbl_collation;
+
     /**
      * @var array Show table info
      */
@@ -364,7 +371,7 @@ class TableStructureController extends TableController
             ->getColumnsWithIndex(Index::UNIQUE);
 
         // 3. Get fields
-        $fields = (array)$this->dbi->getColumns(
+        $fields = (array) $this->dbi->getColumns(
             $this->db,
             $this->table,
             null,

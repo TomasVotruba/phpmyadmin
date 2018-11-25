@@ -339,7 +339,6 @@ class Monitor
         return $retval;
     }
 
-
     /**
      * Define some data and links needed on the client side
      *

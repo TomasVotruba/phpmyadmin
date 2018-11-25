@@ -81,7 +81,7 @@ class FormDisplayTemplate
                 . ' id="check_page_refresh" value="" />' . "\n";
         }
         $htmlOutput .= Url::getHiddenInputs('', '', 0, 'server') . "\n";
-        $htmlOutput .= Url::getHiddenFields((array)$hiddenFields, '', true);
+        $htmlOutput .= Url::getHiddenFields((array) $hiddenFields, '', true);
         return $htmlOutput;
     }
 
@@ -474,8 +474,8 @@ class FormDisplayTemplate
      */
     public function addJsValidate($fieldId, $validators, array &$jsArray): void
     {
-        foreach ((array)$validators as $validator) {
-            $validator = (array)$validator;
+        foreach ((array) $validators as $validator) {
+            $validator = (array) $validator;
             $vName = array_shift($validator);
             $vName = "PMA_" . $vName;
             $vArgs = [];

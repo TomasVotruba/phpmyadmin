@@ -768,6 +768,7 @@ class ImportCsv extends AbstractImportCsv
 
         return $ch;
     }
+
     /* ~~~~~~~~~~~~~~~~~~~~ Getters and Setters ~~~~~~~~~~~~~~~~~~~~ */
 
     /**

@@ -221,7 +221,7 @@ class ImportMediawiki extends ImportPlugin
                             $cur_temp_table_headers = $cur_temp_line;
                         } else {
                             // Normal line, add it to the table
-                            $cur_temp_table [] = $cur_temp_line;
+                            $cur_temp_table[] = $cur_temp_line;
                         }
                     }
 
@@ -269,7 +269,7 @@ class ImportMediawiki extends ImportPlugin
                         }
 
                         // Add the cell to the row
-                        $cur_temp_line [] = $cell;
+                        $cur_temp_line[] = $cell;
                     } // foreach $cells
                 } else {
                     // If it's none of the above, then the current line has a bad
@@ -312,11 +312,11 @@ class ImportMediawiki extends ImportPlugin
 
             // Create the tables array to be used in Import::buildSql()
             $tables = [];
-            $tables [] = [$table[0], $table[1], $table[2]];
+            $tables[] = [$table[0], $table[1], $table[2]];
 
             // Obtain the best-fit MySQL types for each column
             $analyses = [];
-            $analyses [] = $this->import->analyzeTable($tables[0]);
+            $analyses[] = $this->import->analyzeTable($tables[0]);
 
             $this->_executeImportTables($tables, $analyses, $sql_data);
         }
@@ -357,7 +357,7 @@ class ImportMediawiki extends ImportPlugin
             // If they are not set, generic names will be given (COL 1, COL 2, etc)
             $num_cols = count($table_row);
             for ($i = 0; $i < $num_cols; ++$i) {
-                $table_headers [$i] = 'COL ' . ($i + 1);
+                $table_headers[$i] = 'COL ' . ($i + 1);
             }
         }
     }
@@ -514,7 +514,6 @@ class ImportMediawiki extends ImportPlugin
 
         return $items;
     }
-
 
     /* ~~~~~~~~~~~~~~~~~~~~ Getters and Setters ~~~~~~~~~~~~~~~~~~~~ */
 

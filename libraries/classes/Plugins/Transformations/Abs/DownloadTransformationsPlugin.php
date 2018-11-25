@@ -77,7 +77,6 @@ abstract class DownloadTransformationsPlugin extends TransformationsPlugin
         );
     }
 
-
     /* ~~~~~~~~~~~~~~~~~~~~ Getters and Setters ~~~~~~~~~~~~~~~~~~~~ */
 
     /**

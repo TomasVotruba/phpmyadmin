@@ -406,7 +406,7 @@ class Types
      */
     public function getTypeClass($type)
     {
-        $type = mb_strtoupper((string)$type);
+        $type = mb_strtoupper((string) $type);
         switch ($type) {
             case 'TINYINT':
             case 'SMALLINT':

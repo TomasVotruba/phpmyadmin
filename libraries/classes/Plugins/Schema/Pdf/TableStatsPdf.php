@@ -29,7 +29,9 @@ class TableStatsPdf extends TableStats
      * Defines properties
      */
     public $nb_fiels;
+
     public $height;
+
     private $_ff = PdfLib::PMA_PDF_FONT;
 
     /**

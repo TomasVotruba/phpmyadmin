@@ -46,12 +46,17 @@ use PhpMyAdmin\Util;
 class Message
 {
     public const SUCCESS = 1; // 0001
+
     public const NOTICE  = 2; // 0010
+
     public const ERROR   = 8; // 1000
 
     public const SANITIZE_NONE   = 0;  // 0000 0000
+
     public const SANITIZE_STRING = 16; // 0001 0000
+
     public const SANITIZE_PARAMS = 32; // 0010 0000
+
     public const SANITIZE_BOOTH  = 48; // 0011 0000
 
     /**
@@ -720,7 +725,6 @@ class Message
     {
         return $this->message;
     }
-
 
     /**
      * returns Message::$string

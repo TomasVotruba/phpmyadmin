@@ -29,22 +29,27 @@ class ServerDatabasesController extends Controller
      * @var array array of database details
      */
     private $_databases;
+
     /**
      * @var int number of databases
      */
     private $_database_count;
+
     /**
      * @var string sort by column
      */
     private $_sort_by;
+
     /**
      * @var string sort order of databases
      */
     private $_sort_order;
+
     /**
      * @var boolean whether to show database statistics
      */
     private $_dbstats;
+
     /**
      * @var int position in list navigation
      */

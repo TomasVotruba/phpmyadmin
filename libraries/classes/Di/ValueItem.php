@@ -16,7 +16,6 @@ namespace PhpMyAdmin\Di;
  */
 class ValueItem implements Item
 {
-
     /** @var mixed */
     protected $value;
 

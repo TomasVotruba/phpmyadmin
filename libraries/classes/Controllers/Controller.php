@@ -20,7 +20,6 @@ use PhpMyAdmin\Template;
  */
 abstract class Controller
 {
-
     /**
      * @var Response
      */

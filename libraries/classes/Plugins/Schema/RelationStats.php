@@ -22,15 +22,22 @@ namespace PhpMyAdmin\Plugins\Schema;
 abstract class RelationStats
 {
     protected $diagram;
+
     /**
      * Defines properties
      */
     public $xSrc;
+
     public $ySrc;
+
     public $srcDir;
+
     public $destDir;
+
     public $xDest;
+
     public $yDest;
+
     public $wTick;
 
     /**

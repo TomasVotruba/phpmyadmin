@@ -16,7 +16,6 @@ namespace PhpMyAdmin\Di;
  */
 class AliasItem implements Item
 {
-
     /** @var Container */
     protected $container;
 

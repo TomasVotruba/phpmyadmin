@@ -31,22 +31,36 @@ class Import
 {
     /* MySQL type defs */
     public const NONE = 0;
+
     public const VARCHAR = 1;
+
     public const INT = 2;
+
     public const DECIMAL = 3;
+
     public const BIGINT = 4;
+
     public const GEOMETRY = 5;
+
     /* Decimal size defs */
     public const M = 0;
+
     public const D = 1;
+
     public const FULL = 2;
+
     /* Table array defs */
     public const TBL_NAME = 0;
+
     public const COL_NAMES = 1;
+
     public const ROWS = 2;
+
     /* Analysis array defs */
     public const TYPES = 0;
+
     public const SIZES = 1;
+
     public const FORMATTEDSQL = 2;
 
     /**
@@ -121,8 +135,8 @@ class Import
                 return;
             }
         } else {
-            $a_num_rows = (int)@$GLOBALS['dbi']->numRows($result);
-            $a_aff_rows = (int)@$GLOBALS['dbi']->affectedRows();
+            $a_num_rows = (int) @$GLOBALS['dbi']->numRows($result);
+            $a_aff_rows = (int) @$GLOBALS['dbi']->affectedRows();
             if ($a_num_rows > 0) {
                 $msg .= __('Rows') . ': ' . $a_num_rows;
             } elseif ($a_aff_rows > 0) {
@@ -267,7 +281,7 @@ class Import
                     $sql_data
                 );
             }
-            // end non empty query
+            
         } elseif (! empty($import_run_buffer['full'])) {
             if ($go_sql) {
                 $complete_query .= $import_run_buffer['full'];
@@ -350,7 +364,6 @@ class Import
         }
         return [$db, $reload];
     }
-
 
     /**
      * Returns next part of imported file/buffer
@@ -460,8 +473,8 @@ class Import
         $col_name = "";
 
         if ($num > 26) {
-            $div = (int)($num / 26);
-            $remain = (int)($num % 26);
+            $div = (int) ($num / 26);
+            $remain = (int) ($num % 26);
 
             // subtract 1 of divided value in case the modulus is 0,
             // this is necessary because A-Z has no 'zero'
@@ -518,7 +531,7 @@ class Import
             // and subtract 64 to get corresponding decimal value
             // ASCII value of "A" is 65, "B" is 66, etc.
             // Decimal equivalent of "A" is 1, "B" is 2, etc.
-            $number = (int)(mb_ord($name[$char_pos]) - 64);
+            $number = (int) (mb_ord($name[$char_pos]) - 64);
 
             // base26 to base10 conversion : multiply each number
             // with corresponding value of the position, in this case
@@ -743,7 +756,7 @@ class Import
                 $oldM = $this->getDecimalPrecision($last_cumulative_size);
                 $oldD = $this->getDecimalScale($last_cumulative_size);
                 $oldInt = $oldM - $oldD;
-                $newInt = mb_strlen((string)$cell);
+                $newInt = mb_strlen((string) $cell);
 
                 /* See which has the larger integer length */
                 if ($oldInt >= $newInt) {
@@ -820,7 +833,7 @@ class Import
             return self::VARCHAR;
         }
 
-        if ($cell == (string)(float)$cell
+        if ($cell == (string) (float) $cell
             && mb_strpos($cell, ".") !== false
             && mb_substr_count($cell, ".") == 1
         ) {
@@ -1060,7 +1073,7 @@ class Import
                 . '.' . Util::backquote($tables[$i][self::TBL_NAME]) . " (";
                 for ($j = 0; $j < $num_cols; ++$j) {
                     $size = $analyses[$i][self::SIZES][$j];
-                    if ((int)$size == 0) {
+                    if ((int) $size == 0) {
                         $size = 10;
                     }
 
@@ -1222,7 +1235,7 @@ class Import
             $inTables = false;
         }
 
-        $params = ['db' => (string)$db_name];
+        $params = ['db' => (string) $db_name];
         $db_url = 'db_structure.php' . Url::getCommon($params);
         $db_ops_url = 'db_operations.php' . Url::getCommon($params);
 
@@ -1321,7 +1334,6 @@ class Import
 
         unset($tables);
     }
-
 
     /**
      * Stops the import on (mostly upload/file related) error

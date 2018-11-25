@@ -48,23 +48,36 @@ class PdfRelationSchema extends ExportRelationSchema
      * Defines properties
      */
     private $_showGrid;
+
     private $_withDoc;
+
     private $_tableOrder;
 
     /**
      * @var TableStatsPdf[]
      */
     private $_tables = [];
+
     private $_ff = PdfLib::PMA_PDF_FONT;
+
     private $_xMax = 0;
+
     private $_yMax = 0;
+
     private $_scale;
+
     private $_xMin = 100000;
+
     private $_yMin = 100000;
+
     private $_topMargin = 10;
+
     private $_bottomMargin = 10;
+
     private $_leftMargin = 10;
+
     private $_rightMargin = 10;
+
     private $_tablewidth;
 
     /**
@@ -776,8 +789,7 @@ class PdfRelationSchema extends ExportRelationSchema
                 if ($foreigner
                     && isset($this->diagram->PMA_links['doc'][$foreigner['foreign_table']][$foreigner['foreign_field']])
                 ) {
-                    $links[6] = $this->diagram->PMA_links['doc']
-                        [$foreigner['foreign_table']][$foreigner['foreign_field']];
+                    $links[6] = $this->diagram->PMA_links['doc'][$foreigner['foreign_table']][$foreigner['foreign_field']];
                 } else {
                     unset($links[6]);
                 }

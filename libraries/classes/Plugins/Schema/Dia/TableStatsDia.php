@@ -25,6 +25,7 @@ use PhpMyAdmin\Plugins\Schema\TableStats;
 class TableStatsDia extends TableStats
 {
     public $tableId;
+
     public $tableColor;
 
     /**

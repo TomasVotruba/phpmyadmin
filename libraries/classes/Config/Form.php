@@ -129,7 +129,7 @@ class Form
                 $hasStringKeys = true;
                 break;
             }
-            $keys[] = is_bool($value[$i]) ? (int)$value[$i] : $value[$i];
+            $keys[] = is_bool($value[$i]) ? (int) $value[$i] : $value[$i];
         }
         if (! $hasStringKeys) {
             $value = array_combine($keys, $value);
