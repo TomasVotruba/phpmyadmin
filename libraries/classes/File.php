@@ -323,7 +323,7 @@ class File
                 break;
             default:
                 $this->_error_message = Message::error(__('Unknown error in file upload.'));
-        } // end switch
+        }
 
         return false;
     }

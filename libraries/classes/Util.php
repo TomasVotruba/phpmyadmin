@@ -1339,8 +1339,8 @@ class Util
                 $value = round($value / (pow(1024, $d) / $dh)) / $dh;
                 $unit = $byteUnits[$d];
                 break 1;
-            } // end if
-        } // end for
+            }
+        }
 
         if ($unit != $byteUnits[0]) {
             // if the unit is not bytes (as represented in current language)
@@ -1942,7 +1942,7 @@ class Util
         if ($found_error) {
             Core::fatalError($error_message);
         }
-    } // end function
+    }
 
     /**
      * Function to generate unique condition for specified row.
@@ -2037,7 +2037,7 @@ class Util
             } else {
                 $con_key = self::backquote($meta->table) . '.'
                     . self::backquote($meta->orgname);
-            } // end if... else...
+            }
             $condition = ' ' . $con_key . ' ';
 
             if (! isset($row[$i]) || is_null($row[$i])) {
@@ -2102,7 +2102,7 @@ class Util
                 $nonprimary_condition .= $condition;
                 $nonprimary_condition_array[$con_key] = $con_val;
             }
-        } // end for
+        }
 
         // Correction University of Virginia 19991216:
         // prefer primary or unique keys for condition,
@@ -2123,7 +2123,7 @@ class Util
 
         $where_clause = trim(preg_replace('|\s?AND$|', '', $preferred_condition));
         return([$where_clause, $clause_is_unique, $condition_array]);
-    } // end function
+    }
 
     /**
      * Generate the charset query part
@@ -2178,7 +2178,7 @@ class Util
             . '" title="' . htmlspecialchars($text) . '">' . "\n"
             . self::getIcon($image, $text)
             . '</button>' . "\n";
-    } // end function
+    }
 
     /**
      * Generate a pagination selector for browsing resultsets
@@ -2321,7 +2321,7 @@ class Util
         $gotopage .= ' </select>';
 
         return $gotopage;
-    } // end function
+    }
 
     /**
      * Prepare navigation for a list
@@ -3505,7 +3505,7 @@ class Util
         }
 
         return $retval;
-    } // end getSupportedDatatypes()
+    }
 
     /**
      * Returns a list of datatypes that are not (yet) handled by PMA.
@@ -3789,10 +3789,10 @@ class Util
                 $retval .= ' selected="selected"';
             }
             $retval .= '>' . $function . '</option>' . "\n";
-        } // end for
+        }
 
         return $retval;
-    } // end getFunctionsForField()
+    }
 
     /**
      * Checks if the current user has a specific privilege and returns true if the
@@ -4272,7 +4272,7 @@ class Util
                 $indexes_data[$row['Key_name']][$row['Seq_in_index']]['Sub_part']
                     = $row['Sub_part'];
             }
-        } // end while
+        }
 
         return [$primary, $pk_array, $indexes_info, $indexes_data];
     }
@@ -4600,7 +4600,7 @@ class Util
                             'TABLE_COMMENT' => '',
                         ];
                     }
-                } // end while
+                }
                 if (count($names) > 0) {
                     $tables = array_merge(
                         $tables,

@@ -219,12 +219,12 @@ class ExportTexytext extends ExportPlugin
                 }
                 $text_output .= '|'
                     . htmlspecialchars(stripslashes($col_as));
-            } // end for
+            }
             $text_output .= "\n|------\n";
             if (!$this->export->outputHandler($text_output)) {
                 return false;
             }
-        } // end if
+        }
 
         // Format the data
         while ($row = $GLOBALS['dbi']->fetchRow($result)) {
@@ -243,12 +243,12 @@ class ExportTexytext extends ExportPlugin
                         '&#124;',
                         htmlspecialchars($value)
                     );
-            } // end for
+            }
             $text_output .= "\n";
             if (!$this->export->outputHandler($text_output)) {
                 return false;
             }
-        } // end while
+        }
         $GLOBALS['dbi']->freeResult($result);
 
         return true;
@@ -307,7 +307,7 @@ class ExportTexytext extends ExportPlugin
                 $col_as
             );
             $text_output .= "\n";
-        } // end foreach
+        }
 
         return $text_output;
     }
@@ -435,7 +435,7 @@ class ExportTexytext extends ExportPlugin
             }
 
             $text_output .= "\n";
-        } // end foreach
+        }
 
         return $text_output;
     }
@@ -563,7 +563,7 @@ class ExportTexytext extends ExportPlugin
                 . ' ' . $table . "\n\n";
                 // export a stand-in definition to resolve view dependencies
                 $dump .= $this->getTableDefStandIn($db, $table, $crlf, $aliases);
-        } // end switch
+        }
 
         return $this->export->outputHandler($dump);
     }

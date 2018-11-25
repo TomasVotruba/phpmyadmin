@@ -305,7 +305,7 @@ class ThemeManager
                 $new_theme->setId($PMA_Theme);
                 $this->themes[$PMA_Theme] = $new_theme;
             }
-        } // end get themes
+        }
         closedir($handleThemes);
 
         ksort($this->themes);
@@ -378,7 +378,7 @@ class ThemeManager
         $retval = '';
         foreach ($this->themes as $each_theme) {
             $retval .= $each_theme->getPrintPreview();
-        } // end 'open themes'
+        }
         return $retval;
     }
 

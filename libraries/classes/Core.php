@@ -246,7 +246,7 @@ class Core
     {
         // change .. to .
         return preg_replace('@\.\.*@', '.', $path);
-    } // end function
+    }
 
     /**
      * displays the given error message on phpMyAdmin error page in foreign language,
@@ -426,7 +426,7 @@ class Core
         }
 
         return (int) $size;
-    } // end getRealSize()
+    }
 
     /**
      * Checks given $page against given $whitelist and returns true if valid

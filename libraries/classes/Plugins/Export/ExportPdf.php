@@ -291,7 +291,7 @@ class ExportPdf extends ExportPlugin
                 break;
             case 'stand_in':
                 $purpose = __('Stand in');
-        } // end switch
+        }
 
         $attr = [
             'currentDb'    => $db,
@@ -338,7 +338,7 @@ class ExportPdf extends ExportPlugin
                  * Yet to develop this function
                  * $pdf->getTableDefStandIn($db, $table, $crlf);
                  */
-        } // end switch
+        }
 
         return true;
     }

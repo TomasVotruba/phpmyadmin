@@ -2177,7 +2177,7 @@ class ExportSql extends ExportPlugin
                     . $this->_exportComment();
                 // export a stand-in definition to resolve view dependencies
                 $dump .= $this->getTableDefStandIn($db, $table, $crlf, $aliases);
-        } // end switch
+        }
 
         // this one is built by getTableDef() to use in table copy/move
         // but not in the case of export
@@ -2470,8 +2470,8 @@ class ExportSql extends ExportPlugin
                     $values[] = '\''
                         . $GLOBALS['dbi']->escapeString($row[$j])
                         . '\'';
-                } // end if
-            } // end for
+                }
+            }
 
             // should we make update?
             if (isset($GLOBALS['sql_type'])
@@ -2541,7 +2541,7 @@ class ExportSql extends ExportPlugin
             ) {
                 return false;
             }
-        } // end while
+        }
 
         if ($current_row > 0) {
             if (!$this->export->outputHandler(';' . $crlf)) {

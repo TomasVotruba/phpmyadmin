@@ -297,7 +297,7 @@ class Encoding
             $line = fgets($fps, 4096);
             $dist = self::kanjiStrConv($line, $enc, $kana);
             fputs($fpd, $dist);
-        } // end while
+        }
         self::kanjiChangeOrder();
         fclose($fps);
         fclose($fpd);

@@ -480,7 +480,7 @@ class ImportMediawiki extends ImportPlugin
                     }
                 }
             }
-        } // end for each character in $subject
+        }
 
         return $cleaned;
     }

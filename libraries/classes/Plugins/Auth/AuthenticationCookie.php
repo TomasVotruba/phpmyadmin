@@ -231,7 +231,7 @@ class AuthenticationCookie extends AuthenticationPlugin
         } else {
             echo '    <input type="hidden" name="server" value="'
                 , $GLOBALS['server'] , '" />';
-        } // end if (server choice)
+        }
 
         echo '</fieldset><fieldset class="tblFooters">';
 
@@ -587,7 +587,7 @@ class AuthenticationCookie extends AuthenticationPlugin
             } else {
                 return false;
             }
-        } // end if
+        }
 
         return true;
     }

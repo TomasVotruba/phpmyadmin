@@ -818,9 +818,9 @@ class Index
                         . htmlspecialchars($index->getComments()) . '</td>';
                 }
                 $r .= '</tr>';
-            } // end foreach $index['Sequences']
+            }
             $r .= '</tbody>';
-        } // end while
+        }
         $r .= '</table>';
         $r .= '</div>';
         if (! $print_mode) {

@@ -74,7 +74,7 @@ class Relation
                 $options,
                 $cache_affected_rows
             );
-        } // end if... else...
+        }
 
         if ($result) {
             return $result;
@@ -591,7 +591,7 @@ class Relation
             } elseif ($curr_table[0] == $GLOBALS['cfg']['Server']['export_templates']) {
                 $cfgRelation['export_templates']    = $curr_table[0];
             }
-        } // end while
+        }
         $this->dbi->freeResult($tab_rs);
 
         if (isset($cfgRelation['relation'])) {
@@ -1317,7 +1317,7 @@ class Relation
                 $reloptions[] = $reloption . '>'
                     . $key . '</option>';
             }
-        } // end foreach
+        }
 
         return $reloptions;
     }
@@ -1357,10 +1357,10 @@ class Relation
                 $value  = $relrow[$foreign_display];
             } else {
                 $value = '';
-            } // end if ($foreign_display)
+            }
 
             $foreign[$key] = $value;
-        } // end foreach
+        }
 
         // put the dropdown sections in correct order
         $top = [];
@@ -2152,7 +2152,7 @@ class Relation
         } else {
             $have_rel = false;
             $res_rel = [];
-        } // end if
+        }
         return [$res_rel, $have_rel];
     }
 

@@ -532,7 +532,7 @@ class Pdf extends PdfLib
             $have_rel = !empty($res_rel);
         } else {
             $have_rel = false;
-        } // end if
+        }
 
         //column count and table heading
 

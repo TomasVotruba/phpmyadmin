@@ -145,7 +145,7 @@ class Privileges
             . $this->dbi->escapeString(mb_strtolower($initial))
             . "%'";
         return $ret;
-    } // end function
+    }
 
     /**
      * Formats privilege name for a display
@@ -1214,7 +1214,7 @@ class Privileges
                 )
                 . '</dfn></code></label>' . "\n"
                 . '</div>' . "\n";
-        } // end foreach ()
+        }
         return $html_output;
     }
 
@@ -3758,7 +3758,7 @@ class Privileges
                     default:
                         $html_output .= '--'; // in future version, replace by "not present"
                         break;
-                } // end switch
+                }
 
                 if (! isset($host['Select_priv'])) {
                     $html_output .= Util::showHint(
@@ -4820,7 +4820,7 @@ class Privileges
                 );
             } else {
                 $html_output .= $this->getAddUserHtmlFieldset();
-            } // end if (display overview)
+            }
 
             $response = Response::getInstance();
             if (! $response->isAjax()

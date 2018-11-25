@@ -266,7 +266,7 @@ class Import
                     $import_run_buffer['full'],
                     $sql_data
                 );
-            } // end run query
+            }
             // end non empty query
         } elseif (! empty($import_run_buffer['full'])) {
             if ($go_sql) {

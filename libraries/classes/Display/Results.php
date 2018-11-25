@@ -606,14 +606,14 @@ class Results
                 if ($displayParts['text_btn'] == '1') {
                     break;
                 }
-            } // end if
+            }
 
             // Always display print view link
             $displayParts['pview_lnk'] = (string) '1';
             if ($fields_meta[$i]->table != '') {
                 $prev_table = $fields_meta[$i]->table;
             }
-        } // end for
+        }
 
         if ($prev_table == '') { // no table for any of the columns
             // don't display links
@@ -666,7 +666,7 @@ class Results
             $displayParts = $this->_setDisplayPartsForShow($displayParts);
         } else {
             $displayParts = $this->_setDisplayPartsForSelect($displayParts);
-        } // end if..elseif...else
+        }
 
         // 3. Gets the total number of rows if it is unknown
         if (isset($unlim_num_rows) && $unlim_num_rows != '') {
@@ -699,7 +699,7 @@ class Results
             ) {
                 $displayParts['sort_lnk'] = (string) '0';
             }
-        } // end if (3)
+        }
 
         return [$displayParts, $the_total];
     }
@@ -888,7 +888,7 @@ class Results
                     $html_sql_query,
                     $pos_prev
                 );
-        } // end move back
+        }
 
         $nbTotalPage = 1;
         //page redirection
@@ -917,7 +917,7 @@ class Results
                     $pos_next,
                     $is_innodb
                 );
-        } // end move toward
+        }
 
         // show separator if pagination happen
         if ($nbTotalPage > 1) {
@@ -934,7 +934,7 @@ class Results
 
             $table_navigation_html
                 .= '<td><div class="navigation_separator">|</div></td>';
-        } // end show all
+        }
 
         $table_navigation_html .= '<td>'
             . '<div class="save_edited hide">'
@@ -1286,10 +1286,10 @@ class Results
                     . '">' . '        '
                     . htmlspecialchars((string) $fields_meta[$i]->name)
                     . $comments . '    </th>';
-            } // end else
+            }
 
             $this->__set('display_params', $display_params);
-        } // end for
+        }
         return $html;
     }
 
@@ -2752,7 +2752,7 @@ class Results
                                 $clause_is_unique,
                                 $url_sql_query
                             );
-                } // end if (1.2.1)
+                }
 
                 // 1.2.2 Delete/Kill link(s)
                 list($del_url, $del_str, $js_conf)
@@ -2801,8 +2801,8 @@ class Results
                         $del_str,
                         $js_conf
                     );
-                } // end if (1.3)
-            } // end if (1)
+                }
+            }
 
             // 2. Displays the rows' values
             if (is_null($this->__get('mime_map'))) {
@@ -2844,12 +2844,12 @@ class Results
                         $js_conf
                     );
                 }
-            } // end if (3)
+            }
 
             $table_body_html .= '</tr>';
             $table_body_html .= "\n";
             $row_no++;
-        } // end while
+        }
 
         return $table_body_html;
     }
@@ -3053,9 +3053,9 @@ class Results
                             '/',
                             $mime_map[$orgFullColName]['mimetype']
                         );
-                    } // end if file_exists
-                } // end if transformation is set
-            } // end if mime/transformation works.
+                    }
+                }
+            }
 
             // Check whether the field needs to display with syntax highlighting
 
@@ -3219,7 +3219,7 @@ class Results
             }
 
             $this->__set('display_params', $display_params);
-        } // end for
+        }
 
         return $row_values_html;
     }
@@ -4367,7 +4367,7 @@ class Results
         // 1.2 Defines offsets for the next and previous pages
         if ($displayParts['nav_bar'] == '1') {
             list($pos_next, $pos_prev) = $this->_getOffsets();
-        } // end if
+        }
 
         // 1.3 Extract sorting expressions.
         //     we need $sort_expression and $sort_expression_nodirection
@@ -4491,7 +4491,7 @@ class Results
                     $this->__get('db'),
                 ];
             }
-        } // end if
+        }
         // end 2b
 
         // 3. ----- Prepare the results table -----
@@ -4884,8 +4884,8 @@ class Results
                         }
                     }
                 }
-            } // end while
-        } // end if
+            }
+        }
     }
 
 
@@ -5194,7 +5194,7 @@ class Results
         if ($displayParts['pview_lnk'] == '1') {
             $results_operations_html .= $this->_getPrintviewLinks();
             $results_operations_html .= $this->_getCopytoclipboardLinks();
-        } // end displays "printable view"
+        }
 
         // Export link
         // (the url_query has extra parameters that won't be used to export)
@@ -5557,7 +5557,7 @@ class Results
                 );
             } else {
                 $dispval = '';
-            } // end if... else...
+            }
 
             if (isset($printview) && ($printview == '1')) {
                 $result .= ($transformation_plugin != $default_function

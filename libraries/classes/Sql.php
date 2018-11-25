@@ -1270,7 +1270,7 @@ EOT;
                 $GLOBALS['dbi']->tryQuery($count_query);
 
                 $unlim_num_rows = $GLOBALS['dbi']->fetchValue('SELECT FOUND_ROWS()');
-            } // end else "just browsing"
+            }
         } else {// not $is_select
             $unlim_num_rows = 0;
         }
@@ -1341,7 +1341,7 @@ EOT;
                     $_POST['bkm_label'],
                     isset($_POST['bkm_replace']) ? $_POST['bkm_replace'] : null
                 );
-            } // end store bookmarks
+            }
 
             // Gets the number of rows affected/returned
             // (This must be done immediately after the query because

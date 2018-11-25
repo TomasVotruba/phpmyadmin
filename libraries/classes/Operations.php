@@ -1145,7 +1145,7 @@ class Operations
 
         if ($pma_table->isEngine(['MYISAM', 'ARIA', 'ISAM'])) {
             $html_output .= $this->getHtmlForPackKeys($pack_keys);
-        } // end if (MYISAM|ISAM)
+        }
 
         if ($pma_table->isEngine(['MYISAM', 'ARIA'])) {
             $html_output .= $this->getHtmlForTableRow(
@@ -1159,7 +1159,7 @@ class Operations
                 'DELAY_KEY_WRITE',
                 $delay_key_write
             );
-        } // end if (MYISAM)
+        }
 
         if ($pma_table->isEngine('ARIA')) {
             $html_output .= $this->getHtmlForTableRow(
@@ -1173,7 +1173,7 @@ class Operations
                 'PAGE_CHECKSUM',
                 $page_checksum
             );
-        } // end if (ARIA)
+        }
 
         if (strlen($auto_increment) > 0
             && $pma_table->isEngine(['MYISAM', 'ARIA', 'INNODB', 'PBXT'])
@@ -1184,7 +1184,7 @@ class Operations
                 . 'id="auto_increment_opt"'
                 . 'value="' . $auto_increment . '" /></td>'
                 . '</tr> ';
-        } // end if (MYISAM|INNODB)
+        }
 
         $possible_row_formats = $this->getPossibleRowFormat();
 

@@ -216,5 +216,5 @@ class ExportYaml extends ExportPlugin
         $GLOBALS['dbi']->freeResult($result);
 
         return true;
-    } // end getTableYAML
+    }
 }

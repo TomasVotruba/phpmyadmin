@@ -236,8 +236,8 @@ class PdfRelationSchema extends ExportRelationSchema
                         );
                     }
                 }
-            } // end while
-        } // end while
+            }
+        }
 
         if ($seen_a_relation) {
             $this->_drawRelations();
@@ -431,8 +431,8 @@ class PdfRelationSchema extends ExportRelationSchema
                     * $this->_scale + $this->_yMin
                 );
                 $this->diagram->Cell($labelWidth, $labelHeight, ' ' . $label);
-            } // end if
-        } // end for
+            }
+        }
         // Draws vertical lines
         for ($j = 0, $size = intval($this->diagram->getPageWidth() / $gridSize); $j <= $size; $j++) {
             $this->diagram->line(
@@ -782,7 +782,7 @@ class PdfRelationSchema extends ExportRelationSchema
                     unset($links[6]);
                 }
                 $this->diagram->row($diagram_row, $links);
-            } // end foreach
+            }
             $this->diagram->SetFont($this->_ff, '', 14);
         } //end each
     }

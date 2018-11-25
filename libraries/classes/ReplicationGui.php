@@ -400,7 +400,7 @@ class ReplicationGui
             $multi_values .= '                <option value="' . $current_db . '" ';
             $multi_values .= '>';
             $multi_values .= $current_db . '</option>';
-        } // end while
+        }
 
         $multi_values .= '</select><br />';
         $multi_values .= '<a href="#" id="db_select_href">' . __('Select all') . '</a>';

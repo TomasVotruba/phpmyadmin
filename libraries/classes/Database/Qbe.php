@@ -347,7 +347,7 @@ class Qbe
             foreach ($_REQUEST['TableList'] as $each_table) {
                 $this->_criteriaTables[$each_table] = ' selected="selected"';
             }
-        } // end if
+        }
         $all_tables = $this->dbi->query(
             'SHOW TABLES FROM ' . Util::backquote($this->_db) . ';',
             DatabaseInterface::CONNECT_USER,
@@ -383,9 +383,9 @@ class Qbe
                         mb_strlen($each_column),
                         $this->_form_column_width
                     );
-                } // end foreach
-            } // end if
-        } // end while
+                }
+            }
+        }
         $this->dbi->freeResult($all_tables);
 
         // sets the largest width found
@@ -500,7 +500,7 @@ class Qbe
                 $selected
             );
             $new_column_count++;
-        } // end for
+        }
         $this->_new_column_count = $new_column_count;
         $html_output .= '</tr>';
         return $html_output;
@@ -529,7 +529,7 @@ class Qbe
                     . ' name="criteriaAlias[' . $new_column_count . ']" />';
                 $html_output .= '</td>';
                 $new_column_count++;
-            } // end if
+            }
 
             if (! empty($this->_criteriaColumnDelete)
                 && isset($this->_criteriaColumnDelete[$colInd])
@@ -543,7 +543,7 @@ class Qbe
                 $tmp_alias
                     = $this->_formAliases[$new_column_count]
                         = $_REQUEST['criteriaAlias'][$colInd];
-            }// end if
+            }
 
             $html_output .= '<td class="center">';
             $html_output .= '<input type="text"'
@@ -551,7 +551,7 @@ class Qbe
                 . ' value="' . htmlspecialchars($tmp_alias) . '" />';
             $html_output .= '</td>';
             $new_column_count++;
-        } // end for
+        }
         $html_output .= '</tr>';
         return $html_output;
     }
@@ -576,7 +576,7 @@ class Qbe
             ) {
                 $html_output .= $this->_getSortSelectCell($new_column_count);
                 $new_column_count++;
-            } // end if
+            }
 
             if (! empty($this->_criteriaColumnDelete)
                 && isset($this->_criteriaColumnDelete[$colInd])
@@ -612,7 +612,7 @@ class Qbe
                 $selected
             );
             $new_column_count++;
-        } // end for
+        }
         $html_output .= '</tr>';
         return $html_output;
     }
@@ -640,7 +640,7 @@ class Qbe
                     null
                 );
                 $new_column_count++;
-            } // end if
+            }
 
             if (! empty($this->_criteriaColumnDelete)
                 && isset($this->_criteriaColumnDelete[$colInd])
@@ -661,7 +661,7 @@ class Qbe
                 $sortOrder
             );
             $new_column_count++;
-        } // end for
+        }
         $html_output .= '</tr>';
         return $html_output;
     }
@@ -688,7 +688,7 @@ class Qbe
                     . ' name="criteriaShow[' . $new_column_count . ']" />';
                 $html_output .= '</td>';
                 $new_column_count++;
-            } // end if
+            }
             if (! empty($this->_criteriaColumnDelete)
                 && isset($this->_criteriaColumnDelete[$column_index])
                 && $this->_criteriaColumnDelete[$column_index] == 'on'
@@ -708,7 +708,7 @@ class Qbe
                 . $checked_options . ' />';
             $html_output .= '</td>';
             $new_column_count++;
-        } // end for
+        }
         $html_output .= '</tr>';
         return $html_output;
     }
@@ -738,7 +738,7 @@ class Qbe
                     . ' size="20" />';
                 $html_output .= '</td>';
                 $new_column_count++;
-            } // end if
+            }
             if (! empty($this->_criteriaColumnDelete)
                 && isset($this->_criteriaColumnDelete[$column_index])
                 && $this->_criteriaColumnDelete[$column_index] == 'on'
@@ -772,7 +772,7 @@ class Qbe
                 . ' size="20" />';
             $html_output .= '</td>';
             $new_column_count++;
-        } // end for
+        }
         $html_output .= '</tr>';
         return $html_output;
     }
@@ -897,7 +897,7 @@ class Qbe
             ) {
                 $html_output .= $this->_getAndOrColCell($new_column_count);
                 $new_column_count++;
-            } // end if
+            }
 
             if (! empty($this->_criteriaColumnDelete)
                 && isset($this->_criteriaColumnDelete[$column_index])
@@ -926,7 +926,7 @@ class Qbe
                 ($column_index + 1 == $this->_criteria_column_count)
             );
             $new_column_count++;
-        } // end for
+        }
         $html_output .= '</tr>';
         return $html_output;
     }
@@ -1006,7 +1006,7 @@ class Qbe
                     . ' style="width: ' . $this->_realwidth . '" size="20" />';
                 $html_output .= '</td>';
                 $new_column_count++;
-            } // end if
+            }
             if (!empty($this->_criteriaColumnDelete)
                 && isset($this->_criteriaColumnDelete[$column_index])
                 && $this->_criteriaColumnDelete[$column_index] == 'on'
@@ -1030,7 +1030,7 @@ class Qbe
                     = ${$or}[$column_index];
             }
             $new_column_count++;
-        } // end for
+        }
         return $html_output;
     }
 
@@ -1063,7 +1063,7 @@ class Qbe
                 );
                 $new_row_count++;
                 $html_output .= '</tr>';
-            } // end if
+            }
             if (isset($this->_criteriaRowDelete[$row_index])
                 && $this->_criteriaRowDelete[$row_index] == 'on'
             ) {
@@ -1092,7 +1092,7 @@ class Qbe
             );
             $new_row_count++;
             $html_output .= '</tr>';
-        } // end for
+        }
         $this->_new_row_count = $new_row_count;
         return $html_output;
     }
@@ -1120,7 +1120,7 @@ class Qbe
                 }
                 $select_clauses[] = $select;
             }
-        } // end for
+        }
         if (!empty($select_clauses)) {
             $select_clause = 'SELECT '
                 . htmlspecialchars(implode(", ", $select_clauses)) . "\n";
@@ -1158,7 +1158,7 @@ class Qbe
                 $last_where = $column_index;
                 $criteria_cnt++;
             }
-        } // end for
+        }
         if ($criteria_cnt > 1) {
             $where_clause = '(' . $where_clause . ')';
         }
@@ -1195,7 +1195,7 @@ class Qbe
                     $last_orwhere = $column_index;
                     $criteria_cnt++;
                 }
-            } // end for
+            }
             if ($criteria_cnt > 1) {
                 $qry_orwhere      = '(' . $qry_orwhere . ')';
             }
@@ -1207,12 +1207,12 @@ class Qbe
                         : ''
                     )
                     . $qry_orwhere;
-            } // end if
-        } // end for
+            }
+        }
 
         if (! empty($where_clause) && $where_clause != '()') {
             $where_clause = 'WHERE ' . htmlspecialchars($where_clause) . "\n";
-        } // end if
+        }
         return $where_clause;
     }
 
@@ -1258,7 +1258,7 @@ class Qbe
                 $orderby_clauses[] = $columns[$column_index] . ' '
                     . $sort[$column_index];
             }
-        } // end for
+        }
         if (!empty($orderby_clauses)) {
             $orderby_clause = 'ORDER BY '
                 . htmlspecialchars(implode(", ", $orderby_clauses)) . "\n";
@@ -1302,8 +1302,8 @@ class Qbe
                         }
                     }
                 }
-            } // end while (each index of a table)
-        } // end while (each table)
+            }
+        }
 
         return [
             'unique' => $unique_columns,
@@ -1479,7 +1479,7 @@ class Qbe
             $current_table = explode('.', $_POST['criteriaColumn'][$column_index]);
             if (empty($current_table[0]) || empty($current_table[1])) {
                 continue;
-            } // end if
+            }
             $table = str_replace('`', '', $current_table[0]);
             $column = str_replace('`', '', $current_table[1]);
             $column = $table . '.' . $column;
@@ -1492,8 +1492,8 @@ class Qbe
                     $where_clause_columns[$column] = $column;
                     $where_clause_tables[$table]  = $table;
                 }
-            } // end if
-        } // end for
+            }
+        }
         return [
             'where_clause_tables' => $where_clause_tables,
             'where_clause_columns' => $where_clause_columns,
@@ -1529,7 +1529,7 @@ class Qbe
                     $parts[1]
                 );
             }
-        } // end while
+        }
 
         // Create LEFT JOINS out of Relations
         $from_clause = $this->_getJoinForFromClause(

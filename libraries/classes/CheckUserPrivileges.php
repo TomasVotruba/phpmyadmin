@@ -316,10 +316,10 @@ class CheckUserPrivileges
                          */
                          // we don't break, we want all possible databases
                          //break;
-                    } // end if
-                } // end elseif
-            } // end if
-        } // end while
+                    }
+                }
+            }
+        }
 
         $this->dbi->freeResult($rs_usr);
 
@@ -338,5 +338,5 @@ class CheckUserPrivileges
         Util::cacheSet('table_priv', $GLOBALS['table_priv']);
         Util::cacheSet('col_priv', $GLOBALS['col_priv']);
         Util::cacheSet('db_priv', $GLOBALS['db_priv']);
-    } // end function
+    }
 }

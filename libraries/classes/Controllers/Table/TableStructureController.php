@@ -927,7 +927,7 @@ class TableStructureController extends TableController
                 $adjust_privileges[$_REQUEST['field_orig'][$i]]
                     = $_REQUEST['field_name'][$i];
             }
-        } // end for
+        }
 
         if (count($changes) > 0 || isset($_REQUEST['preview_sql'])) {
             // Builds the primary keys statements and updates the table
@@ -1528,7 +1528,7 @@ class TableStructureController extends TableController
             if ($row['Key_name'] == 'PRIMARY') {
                 $primary .= $row['Column_name'] . ', ';
             }
-        } // end while
+        }
         $this->dbi->freeResult($result);
 
         return $primary;

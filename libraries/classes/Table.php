@@ -626,7 +626,7 @@ class Table
         }
 
         return $query;
-    } // end function
+    }
 
     /**
      * Checks if the number of records in a table is at least equal to
@@ -817,7 +817,7 @@ class Table
             $move_to,
             $columns_with_index
         );
-    } // end function
+    }
 
     /**
      * Inserts existing entries in a PMA_* table by reading a value from an old
@@ -907,7 +907,7 @@ class Table
 
             $relation->queryAsControlUser($new_table_query);
             $last_id = $dbi->insertId();
-        } // end while
+        }
 
         $dbi->freeResult($table_copy_rs);
 
@@ -1342,7 +1342,7 @@ class Table
                         : '')
                     . ')';
                 $relation->queryAsControlUser($new_comment_query);
-            } // end while
+            }
             $dbi->freeResult($comments_copy_rs);
             unset($comments_copy_rs);
         }
@@ -2134,7 +2134,7 @@ class Table
                     Util::backquote($_REQUEST['old_index'])
                 );
             }
-        } // end if
+        }
 
         // Builds the new one
         switch ($index->getChoice()) {
@@ -2165,7 +2165,7 @@ class Table
                     $sql_query .= Util::backquote($index->getName());
                 }
                 break;
-        } // end switch
+        }
 
         $index_fields = [];
         foreach ($index->getColumns() as $key => $column) {
@@ -2173,7 +2173,7 @@ class Table
             if ($column->getSubPart()) {
                 $index_fields[$key] .= '(' . $column->getSubPart() . ')';
             }
-        } // end while
+        }
 
         if (empty($index_fields)) {
             $error = Message::error(__('No index parts defined!'));
@@ -2323,7 +2323,7 @@ class Table
                         . $this->_dbi->escapeString($this->_name) . '\''
                         . ' AND master_field = \''
                         . $this->_dbi->escapeString($master_field) . '\'';
-                } // end if... else....
+                }
             } elseif (isset($existrel[$master_field])) {
                 $upd_query = 'DELETE FROM '
                     . Util::backquote($GLOBALS['cfgRelation']['db'])
@@ -2334,7 +2334,7 @@ class Table
                     . $this->_dbi->escapeString($this->_name) . '\''
                     . ' AND master_field = \''
                     . $this->_dbi->escapeString($master_field) . '\'';
-            } // end if... else....
+            }
 
             if (isset($upd_query)) {
                 $this->_dbi->query(
@@ -2436,14 +2436,14 @@ class Table
                         // or an option has been changed for ON DELETE or ON UPDATE
                         $drop = true;
                         $create = true;
-                    } // end if... else....
+                    }
                 } else {
                     // no key defined for this field(s)
                     $create = true;
                 }
             } elseif (isset($existrel_foreign[$master_field_md5])) {
                 $drop = true;
-            } // end if... else....
+            }
 
             $tmp_error_drop = false;
             if ($drop) {
@@ -2547,7 +2547,7 @@ class Table
                     $preview_sql_data .= $sql_query_recreate;
                 }
             }
-        } // end foreach
+        }
 
         return [
             $html_output,

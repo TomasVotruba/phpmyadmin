@@ -201,7 +201,7 @@ class ServerBinlogController extends Controller
                 $html .= ' title="' . _pgettext('Previous page', 'Previous') . '">';
             } else {
                 $html .= '>' . _pgettext('Previous page', 'Previous');
-            } // end if... else...
+            }
             $html .= ' &lt; </a> - ';
         }
 
@@ -235,7 +235,7 @@ class ServerBinlogController extends Controller
                 $html .= ' title="' . _pgettext('Next page', 'Next') . '">';
             } else {
                 $html .= '>' . _pgettext('Next page', 'Next');
-            } // end if... else...
+            }
             $html .= ' &gt; </a>';
         }
 

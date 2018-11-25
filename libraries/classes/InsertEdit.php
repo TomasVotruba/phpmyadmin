@@ -2024,7 +2024,7 @@ class InsertEdit
                     : bin2hex(
                         $current_row[$column['Field']]
                     );
-            } // end if
+            }
             $special_chars = htmlspecialchars($current_row[$column['Field']]);
 
             //We need to duplicate the first \n or otherwise we will lose
@@ -2033,7 +2033,7 @@ class InsertEdit
                 = Util::duplicateFirstNewline($special_chars);
 
             $data = $current_row[$column['Field']];
-        } // end if... else...
+        }
 
         //when copying row, it is useful to empty auto-increment column
         // to prevent duplicate key error
@@ -2794,7 +2794,7 @@ class InsertEdit
             ) {
                 $current_value = "''";
             }
-        }  // end else (column value in the form)
+        }
         return $current_value;
     }
 
@@ -3463,7 +3463,7 @@ class InsertEdit
                 $column_mime,
                 $where_clause
             );
-        } // end for
+        }
         $o_rows++;
         $html_output .= '  </tbody>'
             . '</table></div><br />'

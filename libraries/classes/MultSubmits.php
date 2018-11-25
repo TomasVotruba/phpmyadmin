@@ -347,7 +347,7 @@ class MultSubmits
                         );
                     }
                     break;
-            } // end switch
+            }
 
             // All "DROP TABLE", "DROP FIELD", "OPTIMIZE TABLE" and "REPAIR TABLE"
             // statements will be run at once below
@@ -365,8 +365,8 @@ class MultSubmits
                 } elseif ($queryType == 'drop_fld') {
                     $this->transformations->clear($db, $table, $selected[$i]);
                 }
-            } // end if
-        } // end for
+            }
+        }
 
         if ($deletes && ! empty($_REQUEST['pos'])) {
             $sql = new Sql();
@@ -626,7 +626,7 @@ class MultSubmits
                         $fullQuery = preg_replace('@,$@', ';<br />', $fullQuery);
                     }
                     break;
-            } // end switch
+            }
             $i++;
         }
 

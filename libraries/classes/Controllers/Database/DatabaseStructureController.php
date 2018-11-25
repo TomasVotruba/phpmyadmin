@@ -477,7 +477,7 @@ class DatabaseStructureController extends DatabaseController
                 } else {
                     $overhead = '-';
                 }
-            } // end if
+            }
 
             if ($GLOBALS['cfg']['ShowDbStructureCharset']) {
                 if (isset($current_table['Collation'])) {
@@ -667,7 +667,7 @@ class DatabaseStructureController extends DatabaseController
             );
 
             $overall_approx_rows = $overall_approx_rows || $approx_rows;
-        } // end foreach
+        }
 
         $this->response->addHTML('</tbody>');
 
@@ -1004,7 +1004,7 @@ class DatabaseStructureController extends DatabaseController
                     $formatted_size =  __('unknown');
                     $unit          =  '';
                 }
-        } // end switch
+        }
 
         if ($current_table['TABLE_TYPE'] == 'VIEW'
             || $current_table['TABLE_TYPE'] == 'SYSTEM VIEW'

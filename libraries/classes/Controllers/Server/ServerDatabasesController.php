@@ -424,7 +424,7 @@ class ServerDatabasesController extends Controller
                 $tr_class
             );
             $html .= $generated_html;
-        } // end foreach ($this->_databases as $key => $current)
+        }
         $html .= '</tbody>';
 
         return $html;

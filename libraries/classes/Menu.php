@@ -297,7 +297,7 @@ class Menu
                         htmlspecialchars($show_comment)
                     );
                     $retval .= '</span>';
-                } // end if
+                }
             } else {
                 // no table selected, display database comment if present
                 $cfgRelation = $this->relation->getRelationsParam();
@@ -317,7 +317,7 @@ class Menu
                                 htmlspecialchars($comment)
                             )
                             . '</span>';
-                    } // end if
+                    }
                 }
             }
         }

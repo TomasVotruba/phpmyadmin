@@ -58,7 +58,7 @@ class TableIndexesController extends TableController
         if (isset($_REQUEST['do_save_data'])) {
             $this->doSaveDataAction();
             return;
-        } // end builds the new index
+        }
 
         $this->displayFormAction();
     }
@@ -83,7 +83,7 @@ class TableIndexesController extends TableController
             }
         } elseif (isset($_REQUEST['create_index'])) {
             $add_fields = $_REQUEST['added_fields'];
-        } // end preparing form values
+        }
 
         // Get fields and stores their name/type
         if (isset($_REQUEST['create_edit_table'])) {

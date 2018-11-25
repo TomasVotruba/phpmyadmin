@@ -297,9 +297,9 @@ class ExportOdt extends ExportPlugin
                     )
                     . '</text:p>'
                     . '</table:table-cell>';
-            } // end for
+            }
             $GLOBALS['odt_buffer'] .= '</table:table-row>';
-        } // end if
+        }
 
         // Format the data
         while ($row = $GLOBALS['dbi']->fetchRow($result)) {
@@ -339,9 +339,9 @@ class ExportOdt extends ExportPlugin
                         . '</text:p>'
                         . '</table:table-cell>';
                 }
-            } // end for
+            }
             $GLOBALS['odt_buffer'] .= '</table:table-row>';
-        } // end while
+        }
         $GLOBALS['dbi']->freeResult($result);
 
         $GLOBALS['odt_buffer'] .= '</table:table>';
@@ -406,7 +406,7 @@ class ExportOdt extends ExportPlugin
                 $col_as
             );
             $GLOBALS['odt_buffer'] .= '</table:table-row>';
-        } // end foreach
+        }
 
         $GLOBALS['odt_buffer'] .= '</table:table>';
 
@@ -579,7 +579,7 @@ class ExportOdt extends ExportPlugin
                 }
             }
             $GLOBALS['odt_buffer'] .= '</table:table-row>';
-        } // end foreach
+        }
 
         $GLOBALS['odt_buffer'] .= '</table:table>';
 
@@ -753,7 +753,7 @@ class ExportOdt extends ExportPlugin
                 . '</text:h>';
                 // export a stand-in definition to resolve view dependencies
                 $this->getTableDefStandIn($db, $table, $crlf, $aliases);
-        } // end switch
+        }
 
         return true;
     }

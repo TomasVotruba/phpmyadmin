@@ -595,7 +595,7 @@ class DatabaseInterface
                     $tables[$one_database_name] = $one_database_tables;
                 }
             }
-        } // end (get information from table schema)
+        }
 
         // If permissions are wrong on even one database directory,
         // information_schema does not return any table info for any database

@@ -435,7 +435,7 @@ class ExportLatex extends ExportPlugin
         $GLOBALS['dbi']->freeResult($result);
 
         return true;
-    } // end getTableLaTeX
+    }
 
     /**
      * Outputs table's structure
@@ -656,7 +656,7 @@ class ExportLatex extends ExportPlugin
             if (!$this->export->outputHandler($buffer)) {
                 return false;
             }
-        } // end while
+        }
 
         $buffer = ' \\end{longtable}' . $crlf;
 

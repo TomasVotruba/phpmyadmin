@@ -173,7 +173,7 @@ class TableSearchController extends TableController
                 = ! empty($row['Collation']) && $row['Collation'] != 'NULL'
                 ? $row['Collation']
                 : '';
-        } // end for
+        }
 
         // Retrieve foreign keys
         $this->_foreigners = $this->relation->getForeigners($this->db, $this->table);
@@ -881,7 +881,7 @@ class TableSearchController extends TableController
                 ', ',
                 Util::backquote($_POST['columnsToDisplay'])
             );
-        } // end if
+        }
 
         $sql_query .= ' FROM '
             . Util::backquote($_POST['table']);
@@ -893,7 +893,7 @@ class TableSearchController extends TableController
             $sql_query .= ' ORDER BY '
                 . Util::backquote($_POST['orderByColumn'])
                 . ' ' . $_POST['order'];
-        } // end if
+        }
         return $sql_query;
     }
 
@@ -1005,7 +1005,7 @@ class TableSearchController extends TableController
             if ($whereClause) {
                 $fullWhereClause[] = $whereClause;
             }
-        } // end foreach
+        }
 
         if (!empty($fullWhereClause)) {
             return ' WHERE ' . implode(' AND ', $fullWhereClause);
@@ -1223,7 +1223,7 @@ class TableSearchController extends TableController
                     $where = '(' . $where . ')';
                 }
             }
-        } // end if
+        }
 
         return $where;
     }
