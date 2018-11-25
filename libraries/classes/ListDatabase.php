@@ -132,7 +132,7 @@ class ListDatabase extends ListAbstract
             && strlen($GLOBALS['cfg']['Server']['only_db']) > 0
         ) {
             $GLOBALS['cfg']['Server']['only_db'] = [
-                $GLOBALS['cfg']['Server']['only_db']
+                $GLOBALS['cfg']['Server']['only_db'],
             ];
         }
 

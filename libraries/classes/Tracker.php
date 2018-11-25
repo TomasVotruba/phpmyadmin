@@ -589,9 +589,9 @@ class Tracker
                 }
                 $statement = rtrim(mb_strstr($log_entry, "\n"));
 
-                $ddlog[] = [ 'date' => $date,
-                                  'username' => $username,
-                                  'statement' => $statement ];
+                $ddlog[] = ['date' => $date,
+                    'username' => $username,
+                    'statement' => $statement, ];
             }
         }
 
@@ -619,9 +619,9 @@ class Tracker
                 }
                 $statement = rtrim(mb_strstr($log_entry, "\n"));
 
-                $dmlog[] = [ 'date' => $date,
-                                  'username' => $username,
-                                  'statement' => $statement ];
+                $dmlog[] = ['date' => $date,
+                    'username' => $username,
+                    'statement' => $statement, ];
             }
         }
 

@@ -75,7 +75,7 @@ class Tracking
                     'id'        => $id,
                     'timestamp' => $timestamp,
                     'username'  => $entry['username'],
-                    'statement' => $entry['statement']
+                    'statement' => $entry['statement'],
                 ];
             }
             $id++;
@@ -174,7 +174,7 @@ class Tracking
         $lastVersion = null
     ) {
         $selectableTablesSqlResult = $this->getSqlResultForSelectableTables();
-        $selectableTablesEntries = array();
+        $selectableTablesEntries = [];
         while (($entry = $GLOBALS['dbi']->fetchArray($selectableTablesSqlResult))) {
             $entry['is_tracked'] = Tracker::isTracked(
                 $entry['db_name'],
@@ -189,7 +189,7 @@ class Tracking
             $lastVersion = $this->getTableLastVersionNumber($versionSqlResult);
         }
         $GLOBALS['dbi']->dataSeek($versionSqlResult, 0);
-        $versions = array();
+        $versions = [];
         while ($version = $GLOBALS['dbi']->fetchArray($versionSqlResult)) {
             $versions[] = $version;
         }
@@ -210,7 +210,7 @@ class Tracking
             'type' => $type,
             'default_statements' => $GLOBALS['cfg']['Server']['tracking_default_statements'],
             'pmaThemeImage' => $pmaThemeImage,
-            'text_dir' => $textDir
+            'text_dir' => $textDir,
         ]);
     }
 
@@ -415,7 +415,7 @@ class Tracking
         $html = '<form method="post" action="tbl_tracking.php'
             . Url::getCommon(
                 $url_params + [
-                    'report' => 'true', 'version' => $_REQUEST['version']
+                    'report' => 'true', 'version' => $_REQUEST['version'],
                 ]
             )
             . '">';
@@ -484,7 +484,7 @@ class Tracking
         $html = '<form method="post" action="tbl_tracking.php'
             . Url::getCommon(
                 $url_params + [
-                    'report' => 'true', 'version' => $_REQUEST['version']
+                    'report' => 'true', 'version' => $_REQUEST['version'],
                 ]
             )
             . '">';
@@ -1297,13 +1297,13 @@ class Tracking
             0 => [
                 'label' => __('not active'),
                 'value' => 'deactivate_now',
-                'selected' => ($state != 'active')
+                'selected' => ($state != 'active'),
             ],
             1 => [
                 'label' => __('active'),
                 'value' => 'activate_now',
-                'selected' => ($state == 'active')
-            ]
+                'selected' => ($state == 'active'),
+            ],
         ];
         $link = 'tbl_tracking.php' . $urlQuery . '&amp;table='
             . htmlspecialchars($versionData['table_name'])

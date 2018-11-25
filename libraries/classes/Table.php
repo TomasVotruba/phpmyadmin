@@ -1353,11 +1353,11 @@ class Table
         $get_fields = ['display_field'];
         $where_fields = [
             'db_name' => $source_db,
-            'table_name' => $source_table
+            'table_name' => $source_table,
         ];
         $new_fields = [
             'db_name' => $target_db,
-            'table_name' => $target_table
+            'table_name' => $target_table,
         ];
         self::duplicateInfo(
             'displaywork',
@@ -1373,16 +1373,16 @@ class Table
         $get_fields = [
             'master_field',
             'foreign_table',
-            'foreign_field'
+            'foreign_field',
         ];
         $where_fields = [
             'master_db' => $source_db,
-            'master_table' => $source_table
+            'master_table' => $source_table,
         ];
         $new_fields = [
             'master_db' => $target_db,
             'foreign_db' => $target_db,
-            'master_table' => $target_table
+            'master_table' => $target_table,
         ];
         self::duplicateInfo(
             'relwork',
@@ -1395,16 +1395,16 @@ class Table
         $get_fields = [
             'foreign_field',
             'master_table',
-            'master_field'
+            'master_field',
         ];
         $where_fields = [
             'foreign_db' => $source_db,
-            'foreign_table' => $source_table
+            'foreign_table' => $source_table,
         ];
         $new_fields = [
             'master_db' => $target_db,
             'foreign_db' => $target_db,
-            'foreign_table' => $target_table
+            'foreign_table' => $target_table,
         ];
         self::duplicateInfo(
             'relwork',
@@ -2553,7 +2553,7 @@ class Table
             $html_output,
             $preview_sql_data,
             $display_query,
-            $seen_error
+            $seen_error,
         ];
     }
 

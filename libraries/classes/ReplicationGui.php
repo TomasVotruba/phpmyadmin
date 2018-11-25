@@ -443,7 +443,7 @@ class ReplicationGui
                 'id' => 'text_username',
                 'maxlength' => $username_length,
                 'title' => __('User name'),
-                'required' => 'required'
+                'required' => 'required',
             ]
         );
 
@@ -454,7 +454,7 @@ class ReplicationGui
                 'name' => 'pma_pw',
                 'id' => 'text_pma_pw',
                 'title' => __('Password'),
-                'required' => 'required'
+                'required' => 'required',
             ]
         );
 
@@ -466,7 +466,7 @@ class ReplicationGui
                 'id' => 'text_hostname',
                 'maxlength' => $hostname_length,
                 'value' => '',
-                'required' => 'required'
+                'required' => 'required',
             ]
         );
 
@@ -478,8 +478,8 @@ class ReplicationGui
                 'id' => 'text_port',
                 'maxlength' => 6,
                 'value' => '3306',
-                'required' => 'required'
-             ]
+                'required' => 'required',
+            ]
         );
 
         $html .= ' </fieldset>';
@@ -596,7 +596,7 @@ class ReplicationGui
             $variables_wrap = [
                 'Replicate_Do_DB', 'Replicate_Ignore_DB',
                 'Replicate_Do_Table', 'Replicate_Ignore_Table',
-                'Replicate_Wild_Do_Table', 'Replicate_Wild_Ignore_Table'];
+                'Replicate_Wild_Do_Table', 'Replicate_Wild_Ignore_Table', ];
             if (in_array($variable, $variables_wrap)) {
                 $html .= htmlspecialchars(str_replace(
                     ',',

@@ -247,7 +247,7 @@ class Validator
             'Server' => '',
             'Servers/1/user' => '',
             'Servers/1/SignonSession' => '',
-            'Servers/1/SignonURL' => ''
+            'Servers/1/SignonURL' => '',
         ];
         $error = false;
         if (empty($values['Servers/1/auth_type'])) {
@@ -318,7 +318,7 @@ class Validator
         $result = [
             'Server_pmadb' => '',
             'Servers/1/controluser' => '',
-            'Servers/1/controlpass' => ''
+            'Servers/1/controlpass' => '',
         ];
         $error = false;
 
@@ -506,7 +506,7 @@ class Validator
                 false,
                 65535,
                 __('Not a valid port number!')
-            )
+            ),
         ];
     }
 
@@ -528,7 +528,7 @@ class Validator
                 false,
                 PHP_INT_MAX,
                 __('Not a positive number!')
-            )
+            ),
         ];
     }
 
@@ -550,7 +550,7 @@ class Validator
                 true,
                 PHP_INT_MAX,
                 __('Not a non-negative number!')
-            )
+            ),
         ];
     }
 

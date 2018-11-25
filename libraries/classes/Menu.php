@@ -270,7 +270,7 @@ class Menu
                     ),
                     Url::getCommon(
                         [
-                            'db' => $this->_db, 'table' => $this->_table
+                            'db' => $this->_db, 'table' => $this->_table,
                         ]
                     ),
                     str_replace(' ', '&nbsp;', htmlspecialchars($this->_table)),
@@ -480,10 +480,10 @@ class Menu
         $tabs['query']['link'] = 'db_multi_table_query.php';
         $tabs['query']['active'] = in_array(
             basename($GLOBALS['PMA_PHP_SELF']),
-            array(
+            [
                 'db_multi_table_query.php',
                 'db_qbe.php',
-            )
+            ]
         );
         if ($num_tables == 0) {
             $tabs['query']['warning'] = __('Database seems to be empty!');
@@ -598,7 +598,7 @@ class Menu
                 'server_status_monitor.php',
                 'server_status_queries.php',
                 'server_status_variables.php',
-                'server_status_processes.php'
+                'server_status_processes.php',
             ]
         );
 

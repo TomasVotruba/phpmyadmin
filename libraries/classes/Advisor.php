@@ -237,7 +237,7 @@ class Advisor
 
         return [
             'parse' => ['errors' => $this->parseResult['errors']],
-            'run'   => $this->runResult
+            'run'   => $this->runResult,
         ];
     }
 
@@ -508,7 +508,7 @@ class Advisor
         }
 
         $ruleSyntax = [
-            'name', 'formula', 'test', 'issue', 'recommendation', 'justification'
+            'name', 'formula', 'test', 'issue', 'recommendation', 'justification',
         ];
         $numRules = count($ruleSyntax);
         $numLines = count($file);

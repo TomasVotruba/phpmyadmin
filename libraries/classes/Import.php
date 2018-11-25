@@ -111,7 +111,7 @@ class Import
             }
             $my_die[] = [
                 'sql' => $full,
-                'error' => $GLOBALS['dbi']->getError()
+                'error' => $GLOBALS['dbi']->getError(),
             ];
 
             $msg .= __('Error');
@@ -1043,7 +1043,7 @@ class Import
                 self::INT => "int",
                 self::DECIMAL => "decimal",
                 self::BIGINT => "bigint",
-                self::GEOMETRY => 'geometry'
+                self::GEOMETRY => 'geometry',
             ];
 
             /* TODO: Do more checking here to make sure they really are matched */
@@ -1261,8 +1261,8 @@ class Import
         $num_tables = count($tables);
         for ($i = 0; $i < $num_tables; ++$i) {
             $params = [
-                 'db' => (string) $db_name,
-                 'table' => (string) $tables[$i][self::TBL_NAME]
+                'db' => (string) $db_name,
+                'table' => (string) $tables[$i][self::TBL_NAME],
             ];
             $tbl_url = 'sql.php' . Url::getCommon($params);
             $tbl_struct_url = 'tbl_structure.php' . Url::getCommon($params);
@@ -1444,14 +1444,14 @@ class Import
         // URL to matched rows.
         $_url_params = [
             'db'        => $GLOBALS['db'],
-            'sql_query' => $matched_row_query
+            'sql_query' => $matched_row_query,
         ];
         $matched_rows_url  = 'sql.php' . Url::getCommon($_url_params);
 
         return [
             'sql_query' => Util::formatSql($analyzed_sql_results['query']),
             'matched_rows' => $matched_rows,
-            'matched_rows_url' => $matched_rows_url
+            'matched_rows_url' => $matched_rows_url,
         ];
     }
 
@@ -1700,7 +1700,7 @@ class Import
             'TOKUDB',
             'XTRADB',
             'SEQUENCE',
-            'BDB'
+            'BDB',
         ];
 
         // Query to check if table is 'Transactional'.
