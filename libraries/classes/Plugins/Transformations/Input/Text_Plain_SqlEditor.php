@@ -18,7 +18,6 @@ use PhpMyAdmin\Plugins\Transformations\Abs\CodeMirrorEditorTransformationPlugin;
  * @package    PhpMyAdmin-Transformations
  * @subpackage SQL
  */
-// @codingStandardsIgnoreLine
 class Text_Plain_SqlEditor extends CodeMirrorEditorTransformationPlugin
 {
     /**

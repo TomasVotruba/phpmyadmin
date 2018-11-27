@@ -18,7 +18,6 @@ use PhpMyAdmin\Plugins\Transformations\Abs\TextFileUploadTransformationsPlugin;
  * @package    PhpMyAdmin-Transformations
  * @subpackage TextFileUpload
  */
-// @codingStandardsIgnoreLine
 class Text_Plain_FileUpload extends TextFileUploadTransformationsPlugin
 {
     /**

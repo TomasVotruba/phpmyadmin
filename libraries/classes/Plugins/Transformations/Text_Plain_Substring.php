@@ -18,7 +18,6 @@ use PhpMyAdmin\Plugins\Transformations\Abs\SubstringTransformationsPlugin;
  * @package    PhpMyAdmin-Transformations
  * @subpackage Substring
  */
-// @codingStandardsIgnoreLine
 class Text_Plain_Substring extends SubstringTransformationsPlugin
 {
     /**

@@ -18,7 +18,6 @@ use PhpMyAdmin\Plugins\Transformations\Abs\InlineTransformationsPlugin;
  * @package    PhpMyAdmin-Transformations
  * @subpackage Inline
  */
-// @codingStandardsIgnoreLine
 class Image_JPEG_Inline extends InlineTransformationsPlugin
 {
     /**

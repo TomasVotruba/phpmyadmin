@@ -19,7 +19,6 @@ use stdClass;
  * @package    PhpMyAdmin-Transformations
  * @subpackage BinaryToIP
  */
-// @codingStandardsIgnoreLine
 class Text_Plain_Binarytoip extends TransformationsPlugin
 {
     /**

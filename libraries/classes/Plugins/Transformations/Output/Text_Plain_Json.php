@@ -20,7 +20,6 @@ use stdClass;
  * @package    PhpMyAdmin-Transformations
  * @subpackage JSON
  */
-// @codingStandardsIgnoreLine
 class Text_Plain_Json extends TransformationsPlugin
 {
     /**

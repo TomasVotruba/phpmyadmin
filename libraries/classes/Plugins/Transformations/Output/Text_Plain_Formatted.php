@@ -18,7 +18,6 @@ use PhpMyAdmin\Plugins\Transformations\Abs\FormattedTransformationsPlugin;
  * @package    PhpMyAdmin-Transformations
  * @subpackage Formatted
  */
-// @codingStandardsIgnoreLine
 class Text_Plain_Formatted extends FormattedTransformationsPlugin
 {
     /**

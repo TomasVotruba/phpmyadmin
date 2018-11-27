@@ -18,7 +18,6 @@ use PhpMyAdmin\Plugins\Transformations\Abs\TextImageLinkTransformationsPlugin;
  * @package    PhpMyAdmin-Transformations
  * @subpackage ImageLink
  */
-// @codingStandardsIgnoreLine
 class Text_Plain_Imagelink extends TextImageLinkTransformationsPlugin
 {
     /**

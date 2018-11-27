@@ -18,7 +18,6 @@ use PhpMyAdmin\Plugins\Transformations\Abs\LongToIPv4TransformationsPlugin;
  * @package    PhpMyAdmin-Transformations
  * @subpackage LongToIPv4
  */
-// @codingStandardsIgnoreLine
 class Text_Plain_Longtoipv4 extends LongToIPv4TransformationsPlugin
 {
     /**

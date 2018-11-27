@@ -19,7 +19,6 @@ use stdClass;
  * @package    PhpMyAdmin-Transformations
  * @subpackage IPToBinary
  */
-// @codingStandardsIgnoreLine
 class Text_Plain_Iptobinary extends IOTransformationsPlugin
 {
     /**

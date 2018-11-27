@@ -19,7 +19,6 @@ use PhpMyAdmin\Plugins\Transformations\Abs\RegexValidationTransformationsPlugin;
  * @package    PhpMyAdmin-Transformations
  * @subpackage RegexValidation
  */
-// @codingStandardsIgnoreLine
 class Text_Plain_RegexValidation extends RegexValidationTransformationsPlugin
 {
     /**

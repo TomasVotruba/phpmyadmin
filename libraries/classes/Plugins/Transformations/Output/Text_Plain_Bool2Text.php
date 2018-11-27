@@ -20,7 +20,6 @@ use PhpMyAdmin\Plugins\Transformations\Abs\Bool2TextTransformationsPlugin;
  * @package    PhpMyAdmin-Transformations
  * @subpackage Bool2Text
  */
-// @codingStandardsIgnoreLine
 class Text_Plain_Bool2Text extends Bool2TextTransformationsPlugin
 {
     /**

@@ -20,7 +20,6 @@ use stdClass;
  * @package    PhpMyAdmin-Transformations
  * @subpackage XML
  */
-// @codingStandardsIgnoreLine
 class Text_Plain_Xml extends TransformationsPlugin
 {
     /**

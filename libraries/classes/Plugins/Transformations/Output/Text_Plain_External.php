@@ -18,7 +18,6 @@ use PhpMyAdmin\Plugins\Transformations\Abs\ExternalTransformationsPlugin;
  * @package    PhpMyAdmin-Transformations
  * @subpackage External
  */
-// @codingStandardsIgnoreLine
 class Text_Plain_External extends ExternalTransformationsPlugin
 {
     /**

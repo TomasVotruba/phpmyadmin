@@ -18,7 +18,6 @@ use PhpMyAdmin\Plugins\Transformations\Abs\DateFormatTransformationsPlugin;
  * @package    PhpMyAdmin-Transformations
  * @subpackage DateFormat
  */
-// @codingStandardsIgnoreLine
 class Text_Plain_Dateformat extends DateFormatTransformationsPlugin
 {
     /**

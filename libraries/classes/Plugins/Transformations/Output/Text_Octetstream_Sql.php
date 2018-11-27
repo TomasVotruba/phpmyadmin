@@ -18,7 +18,6 @@ use PhpMyAdmin\Plugins\Transformations\Abs\SQLTransformationsPlugin;
  * @package    PhpMyAdmin-Transformations
  * @subpackage SQL
  */
-// @codingStandardsIgnoreLine
 class Text_Octetstream_Sql extends SQLTransformationsPlugin
 {
     /**

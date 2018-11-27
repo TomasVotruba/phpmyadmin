@@ -18,7 +18,6 @@ use PhpMyAdmin\Plugins\Transformations\Abs\DownloadTransformationsPlugin;
  * @package    PhpMyAdmin-Transformations
  * @subpackage Download
  */
-// @codingStandardsIgnoreLine
 class Application_Octetstream_Download extends DownloadTransformationsPlugin
 {
     /**

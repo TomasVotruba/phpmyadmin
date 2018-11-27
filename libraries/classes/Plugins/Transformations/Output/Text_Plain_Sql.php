@@ -19,7 +19,6 @@ use PhpMyAdmin\Plugins\Transformations\Abs\SQLTransformationsPlugin;
  * @package    PhpMyAdmin-Transformations
  * @subpackage SQL
  */
-// @codingStandardsIgnoreLine
 class Text_Plain_Sql extends SQLTransformationsPlugin
 {
     /**

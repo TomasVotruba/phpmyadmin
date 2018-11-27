@@ -153,7 +153,6 @@ class Pdf extends PdfLib
      *
      * @return void
      */
-    // @codingStandardsIgnoreLine
     public function Header()
     {
         global $maxY;
