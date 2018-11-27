@@ -306,7 +306,8 @@ class Util
      *
      * @access  public
      */
-    public static function showCopyToClipboard($text) {
+    public static function showCopyToClipboard($text)
+    {
         $open_link = '  <a href="#" class="copyQueryBtn" data-text="' . $text . '">' . __('Copy') . '</a>';
         return $open_link;
     } // end of the 'showCopyToClipboard()' function
@@ -3627,7 +3628,7 @@ class Util
         } elseif ($geom_type == 'multipolygon') {
             $funcs['Area']     = ['params' => 1, 'type' => 'float'];
             $funcs['Centroid'] = ['params' => 1, 'type' => 'point'];
-            // Not yet implemented in MySQL
+        // Not yet implemented in MySQL
             //$funcs['PointOnSurface'] = array('params' => 1, 'type' => 'point');
         } elseif ($geom_type == 'geometrycollection') {
             $funcs['NumGeometries'] = ['params' => 1, 'type' => 'int'];
@@ -3733,7 +3734,7 @@ class Util
             && $field['Key'] == 'PRI'
             && ($field['Type'] == 'char(36)' || $field['Type'] == 'varchar(36)')
         ) {
-             $default_function = $cfg['DefaultFunctions']['FUNC_UUID'];
+            $default_function = $cfg['DefaultFunctions']['FUNC_UUID'];
         }
 
         return $default_function;
@@ -3992,7 +3993,7 @@ class Util
                 $values[] = $buffer;
                 $buffer = '';
             } elseif ($in_string) {
-                 $buffer .= $curr;
+                $buffer .= $curr;
             }
         }
 
@@ -4290,7 +4291,7 @@ class Util
 
         if (isset($_REQUEST['session_max_rows'])) {
             $rows = $_REQUEST['session_max_rows'];
-        } else if (isset($_SESSION['tmpval']['max_rows'])
+        } elseif (isset($_SESSION['tmpval']['max_rows'])
                     && $_SESSION['tmpval']['max_rows'] != 'all'
         ) {
             $rows = $_SESSION['tmpval']['max_rows'];
@@ -4299,9 +4300,9 @@ class Util
             $_SESSION['tmpval']['max_rows'] = $rows;
         }
 
-        if(isset($_REQUEST['pos'])) {
+        if (isset($_REQUEST['pos'])) {
             $pos = $_REQUEST['pos'];
-        } else if(isset($_SESSION['tmpval']['pos'])) {
+        } elseif (isset($_SESSION['tmpval']['pos'])) {
             $pos = $_SESSION['tmpval']['pos'];
         } else {
             $number_of_line = intval($_REQUEST['unlim_num_rows']);
