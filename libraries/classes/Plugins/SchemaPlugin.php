@@ -44,8 +44,6 @@ abstract class SchemaPlugin
     /**
      * Sets the export plugins properties and is implemented by
      * each schema export plugin
-     *
-     * @return void
      */
     abstract protected function setProperties();
 
@@ -60,10 +58,6 @@ abstract class SchemaPlugin
 
     /**
      * Adds export options common to all plugins.
-     *
-     * @param \PhpMyAdmin\Properties\Options\Groups\OptionsPropertyMainGroup $propertyGroup property group
-     *
-     * @return void
      */
     protected function addCommonOptions(OptionsPropertyMainGroup $propertyGroup)
     {

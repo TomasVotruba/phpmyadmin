@@ -35,7 +35,6 @@ class ImportLdiTest extends PmaTestCase
      * This method is called before a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function setUp()
     {
@@ -79,7 +78,6 @@ class ImportLdiTest extends PmaTestCase
      * This method is called after a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function tearDown()
     {
@@ -88,8 +86,6 @@ class ImportLdiTest extends PmaTestCase
 
     /**
      * Test for getProperties
-     *
-     * @return void
      *
      * @group medium
      */
@@ -109,15 +105,13 @@ class ImportLdiTest extends PmaTestCase
     /**
      * Test for getProperties for ldi_local_option = auto
      *
-     * @return void
-     *
      * @group medium
      */
     public function testGetPropertiesAutoLdi()
     {
         /**
          * The \PhpMyAdmin\DatabaseInterface mocked object
-         * @var \PHPUnit\Framework\MockObject\MockObject $dbi
+         * @var \PHPUnit\Framework\MockObject\MockObject
          */
         $dbi = $this->dbi;
         $dbi->expects($this->any())->method('tryQuery')
@@ -151,8 +145,6 @@ class ImportLdiTest extends PmaTestCase
     /**
      * Test for doImport
      *
-     * @return void
-     *
      * @group medium
      */
     public function testDoImport()
@@ -162,7 +154,7 @@ class ImportLdiTest extends PmaTestCase
         $sql_query_disabled = false;
         /**
          * The \PhpMyAdmin\DatabaseInterface mocked object
-         * @var \PHPUnit\Framework\MockObject\MockObject $dbi
+         * @var \PHPUnit\Framework\MockObject\MockObject
          */
         $dbi = $this->dbi;
         $dbi->expects($this->any())->method('escapeString')
@@ -187,8 +179,6 @@ class ImportLdiTest extends PmaTestCase
 
     /**
      * Test for doImport : invalid import file
-     *
-     * @return void
      *
      * @group medium
      */
@@ -215,8 +205,6 @@ class ImportLdiTest extends PmaTestCase
     /**
      * Test for doImport with LDI setting
      *
-     * @return void
-     *
      * @group medium
      */
     public function testDoImportLDISetting()
@@ -229,7 +217,7 @@ class ImportLdiTest extends PmaTestCase
         $sql_query_disabled = false;
         /**
          * The \PhpMyAdmin\DatabaseInterface mocked object
-         * @var \PHPUnit\Framework\MockObject\MockObject $dbi
+         * @var \PHPUnit\Framework\MockObject\MockObject
          */
         $dbi = $this->dbi;
         $dbi->expects($this->any())->method('escapeString')

@@ -77,8 +77,6 @@ class Sql
      * @param string $table                 table name
      * @param array  &$analyzed_sql_results the analyzed query results
      * @param string &$full_sql_query       SQL query
-     *
-     * @return void
      */
     private function handleSortOrder(
         $db,
@@ -702,8 +700,6 @@ EOT;
      * @param array        $analyzed_sql_results the analyzed query and other variables set
      *                                           after analyzing the query
      * @param boolean|null $find_real_end        whether the real end should be found
-     *
-     * @return boolean
      */
     public function isJustBrowsing(array $analyzed_sql_results, ?bool $find_real_end): bool
     {
@@ -800,8 +796,6 @@ EOT;
      *
      * @param string $table the current table
      * @param string $db    the current database
-     *
-     * @return void
      */
     public function setColumnOrderOrVisibility($table, $db)
     {
@@ -827,8 +821,6 @@ EOT;
      * Function to add a bookmark
      *
      * @param string $goto goto page URL
-     *
-     * @return void
      */
     public function addBookmark($goto)
     {
@@ -887,8 +879,6 @@ EOT;
      *
      * @param string $db    the current database
      * @param string $table the current table
-     *
-     * @return void
      */
     public function getRelationalValues($db, $table)
     {
@@ -918,8 +908,6 @@ EOT;
      * @param string $db         the current database
      * @param string $table      the current table
      * @param string $columnType whether enum or set
-     *
-     * @return void
      */
     public function getEnumOrSetValues($db, $table, $columnType)
     {
@@ -1014,8 +1002,6 @@ EOT;
      * @param boolean $is_gotofile    whether goto file or not
      * @param string  $error          error after executing the query
      * @param string  $full_sql_query full sql query
-     *
-     * @return void
      */
     private function handleQueryExecuteError($is_gotofile, $error, $full_sql_query)
     {
@@ -1038,8 +1024,6 @@ EOT;
      * @param string       $sql_query_for_bookmark the query to be stored in bookmark
      * @param string       $bkm_label              bookmark label
      * @param boolean|null $bkm_replace            whether to replace existing bookmarks
-     *
-     * @return void
      */
     public function storeTheQueryAsBookmark(
         $db,
@@ -1387,8 +1371,6 @@ EOT;
      * @param string $db                   current database
      * @param string $table                current table
      * @param array  $analyzed_sql_results analyzed sql results
-     *
-     * @return void
      */
     private function deleteTransformationInfo($db, $table, array $analyzed_sql_results)
     {
@@ -1621,8 +1603,6 @@ EOT;
      * Function to send response for ajax grid edit
      *
      * @param object $result result of the executed query
-     *
-     * @return void
      */
     private function sendResponseForGridEdit($result)
     {
@@ -2223,8 +2203,6 @@ EOT;
      *                                               like check table, optimize table,
      *                                               analyze table or repair table
      * @param string         $complete_query         complete query
-     *
-     * @return void
      */
     public function executeQueryAndSendQueryResponse(
         $analyzed_sql_results,

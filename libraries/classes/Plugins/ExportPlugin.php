@@ -231,8 +231,6 @@ abstract class ExportPlugin
 
     /**
      * Initialize the specific variables for each export plugin
-     *
-     * @return void
      */
     protected function initSpecificVariables()
     {
@@ -253,8 +251,6 @@ abstract class ExportPlugin
     /**
      * Sets the export plugins properties and is implemented by each export
      * plugin
-     *
-     * @return void
      */
     abstract protected function setProperties();
 
@@ -271,8 +267,6 @@ abstract class ExportPlugin
      * @param array  $aliases Alias information for db/table/column
      * @param string &$db     the database
      * @param string &$table  the table
-     *
-     * @return void
      */
     public function initAlias($aliases, &$db, &$table = null)
     {

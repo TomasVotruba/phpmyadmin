@@ -909,8 +909,6 @@ class ReplicationGui
 
     /**
      * handle control requests
-     *
-     * @return void
      */
     public function handleControlRequest()
     {

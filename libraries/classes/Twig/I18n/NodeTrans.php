@@ -65,8 +65,6 @@ class NodeTrans extends TransNode
      * Compiles the node to PHP.
      *
      * @param Compiler $compiler Node compiler
-     *
-     * @return void
      */
     public function compile(Compiler $compiler)
     {

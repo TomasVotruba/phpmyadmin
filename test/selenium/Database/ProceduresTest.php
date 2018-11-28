@@ -30,8 +30,6 @@ class ProceduresTest extends TestBase
 
     /**
      * Setup the browser environment to run the selenium test case
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -65,8 +63,6 @@ class ProceduresTest extends TestBase
 
     /**
      * Restore initial state
-     *
-     * @return void
      */
     public function tearDown()
     {
@@ -79,8 +75,6 @@ class ProceduresTest extends TestBase
 
     /**
      * Creates procedure for tests
-     *
-     * @return void
      */
     private function _procedureSQL()
     {
@@ -93,8 +87,6 @@ class ProceduresTest extends TestBase
 
     /**
      * Create a procedure
-     *
-     * @return void
      *
      * @group large
      */
@@ -152,8 +144,6 @@ class ProceduresTest extends TestBase
     /**
      * Test for editing procedure
      *
-     * @return void
-     *
      * @group large
      */
     public function testEditProcedure()
@@ -185,8 +175,6 @@ class ProceduresTest extends TestBase
 
     /**
      * Test for dropping procedure
-     *
-     * @return void
      *
      * @group large
      */
@@ -220,8 +208,6 @@ class ProceduresTest extends TestBase
      *
      * @param string $text   String to pass as inp param
      * @param int    $length Expected output length
-     *
-     * @return void
      */
     private function _executeProcedure($text, $length)
     {

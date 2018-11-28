@@ -32,8 +32,6 @@ class FormDisplayTemplateTest extends TestCase
 
     /**
      * Setup tests
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -43,8 +41,6 @@ class FormDisplayTemplateTest extends TestCase
 
     /**
      * Test for displayFormTop()
-     *
-     * @return void
      */
     public function testDisplayFormTop()
     {
@@ -81,8 +77,6 @@ class FormDisplayTemplateTest extends TestCase
 
     /**
      * Test for displayTabsTop()
-     *
-     * @return void
      */
     public function testDisplayTabsTop()
     {
@@ -111,8 +105,6 @@ class FormDisplayTemplateTest extends TestCase
 
     /**
      * Test for displayFieldsetTop()
-     *
-     * @return void
      */
     public function testDisplayFieldsetTop()
     {
@@ -154,8 +146,6 @@ class FormDisplayTemplateTest extends TestCase
 
     /**
      * Test for displayInput()
-     *
-     * @return void
      */
     public function testDisplayInput()
     {
@@ -401,8 +391,6 @@ class FormDisplayTemplateTest extends TestCase
 
     /**
      * Test for displayGroupHeader()
-     *
-     * @return void
      */
     public function testDisplayGroupHeader()
     {
@@ -437,8 +425,6 @@ class FormDisplayTemplateTest extends TestCase
 
     /**
      * Test for displayGroupFooter()
-     *
-     * @return void
      */
     public function testDisplayGroupFooter()
     {
@@ -452,8 +438,6 @@ class FormDisplayTemplateTest extends TestCase
 
     /**
      * Test for displayFieldsetBottom()
-     *
-     * @return void
      */
     public function testDisplayFieldsetBottom()
     {
@@ -495,8 +479,6 @@ class FormDisplayTemplateTest extends TestCase
 
     /**
      * Test for displayTabsBottom()
-     *
-     * @return void
      */
     public function testDisplayTabsBottom()
     {
@@ -509,8 +491,6 @@ class FormDisplayTemplateTest extends TestCase
 
     /**
      * Test for displayFormBottom()
-     *
-     * @return void
      */
     public function testDisplayFormBottom()
     {
@@ -523,8 +503,6 @@ class FormDisplayTemplateTest extends TestCase
 
     /**
      * Test for addJsValidate()
-     *
-     * @return void
      */
     public function testAddJsValidate()
     {
@@ -550,8 +528,6 @@ class FormDisplayTemplateTest extends TestCase
 
     /**
      * Test for displayJavascript()
-     *
-     * @return void
      */
     public function testDisplayJavascript()
     {
@@ -580,8 +556,6 @@ class FormDisplayTemplateTest extends TestCase
 
     /**
      * Test for displayErrors()
-     *
-     * @return void
      */
     public function testDisplayErrors()
     {

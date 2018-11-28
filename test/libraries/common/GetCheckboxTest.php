@@ -28,8 +28,6 @@ class GetCheckboxTest extends TestCase
 
     /**
      * Sets up the fixture
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -38,8 +36,6 @@ class GetCheckboxTest extends TestCase
 
     /**
      * Test for checkbox.phtml
-     *
-     * @return void
      */
     public function testGetCheckbox()
     {
@@ -64,8 +60,6 @@ class GetCheckboxTest extends TestCase
 
     /**
      * Test for checkbox.phtml
-     *
-     * @return void
      */
     public function testGetCheckboxChecked()
     {
@@ -88,8 +82,6 @@ class GetCheckboxTest extends TestCase
 
     /**
      * Test for checkbox.phtml
-     *
-     * @return void
      */
     public function testGetCheckboxOnclick()
     {
@@ -112,8 +104,6 @@ class GetCheckboxTest extends TestCase
 
     /**
      * Test for checkbox.phtml
-     *
-     * @return void
      */
     public function testGetCheckboxCheckedOnclick()
     {

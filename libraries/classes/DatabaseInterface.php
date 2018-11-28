@@ -77,7 +77,7 @@ class DatabaseInterface
     private $_current_user;
 
     /**
-     * @var null|string lower_case_table_names value cache
+     * @var string|null lower_case_table_names value cache
      */
     private $_lower_case_table_names = null;
 
@@ -135,8 +135,6 @@ class DatabaseInterface
      * Checks whether database extension is loaded
      *
      * @param string $extension mysql extension to check
-     *
-     * @return bool
      */
     public static function checkDbExtension(string $extension = 'mysqli'): bool
     {
@@ -183,8 +181,6 @@ class DatabaseInterface
      *
      * @param array $contentPath Array with the target path
      * @param mixed $value       Target value
-     *
-     * @return void
      */
     public function cacheTableContent(array $contentPath, $value): void
     {
@@ -213,8 +209,6 @@ class DatabaseInterface
 
     /**
      * Clear the table cache.
-     *
-     * @return void
      */
     public function clearTableCache(): void
     {
@@ -227,8 +221,6 @@ class DatabaseInterface
      *
      * @param array       $tables information for tables of some databases
      * @param string|bool $table  table name
-     *
-     * @return void
      */
     private function _cacheTableData(array $tables, $table): void
     {
@@ -263,8 +255,6 @@ class DatabaseInterface
      * @param mixed          $link   link type
      * @param object|boolean $result Query result
      * @param integer|float  $time   Time to execute query
-     *
-     * @return void
      */
     private function _dbgQuery(string $query, $link, $result, $time): void
     {
@@ -355,7 +345,7 @@ class DatabaseInterface
      * @param string  $multi_query multi query statement to execute
      * @param \mysqli $link        mysqli object
      *
-     * @return \mysqli_result[] | boolean(false)
+     * @return \mysqli_result[]|boolean (false)
      */
     public function tryMultiQuery(
         string $multi_query = '',
@@ -532,7 +522,6 @@ class DatabaseInterface
      * $GLOBALS['dbi']->getTablesFull('my_database', 'my_tables_', true));
      * </code>
      *
-     * @param string          $database     database
      * @param string|array    $table        table name(s)
      * @param boolean         $tbl_is_group $table is a table group
      * @param integer         $limit_offset zero-based offset for the count
@@ -542,8 +531,7 @@ class DatabaseInterface
      * @param string          $table_type   whether table or view
      * @param mixed           $link         link type
      *
-     * @todo    move into Table
-     *
+     * @todo move into Table
      * @return array           list of tables in given db(s)
      */
     public function getTablesFull(
@@ -854,7 +842,6 @@ class DatabaseInterface
     /**
      * returns array with databases containing extended infos about them
      *
-     * @param string   $database     database
      * @param boolean  $force_stats  retrieve stats also for MySQL < 5
      * @param integer  $link         link type
      * @param string   $sort_by      column to order by
@@ -863,9 +850,7 @@ class DatabaseInterface
      * @param bool|int $limit_count  row count for LIMIT or true
      *                               for $GLOBALS['cfg']['MaxDbList']
      *
-     * @todo    move into ListDatabase?
-     *
-     * @return array
+     * @todo move into ListDatabase?
      */
     public function getDatabasesFull(
         ?string $database = null,
@@ -1051,7 +1036,7 @@ class DatabaseInterface
      * @return integer  a value representing whether $a should be before $b in the
      *                   sorted array or not
      *
-     * @access  private
+     * @access private
      */
     private static function _usortComparisonCallback($a, $b): int
     {
@@ -1079,8 +1064,6 @@ class DatabaseInterface
      *
      * @param string $sql_query    target SQL query to get columns
      * @param array  $view_columns alias for columns
-     *
-     * @return array
      */
     public function getColumnMapFromSql(string $sql_query, array $view_columns = []): array
     {
@@ -1125,8 +1108,6 @@ class DatabaseInterface
      * @param string $table    name of table to retrieve columns from
      * @param string $column   name of specific column
      * @param mixed  $link     mysql link resource
-     *
-     * @return array
      */
     public function getColumnsFull(
         ?string $database = null,
@@ -1243,7 +1224,7 @@ class DatabaseInterface
                 );
             /**
              * @todo guess CHARACTER_MAXIMUM_LENGTH from COLUMN_TYPE
-            */
+             */
             $columns[$column_name]['CHARACTER_MAXIMUM_LENGTH'] = null;
             /**
              * @todo guess CHARACTER_OCTET_LENGTH from CHARACTER_MAXIMUM_LENGTH
@@ -1280,8 +1261,6 @@ class DatabaseInterface
      * @param boolean $full     whether to return full info or only column names
      *
      * @see getColumns()
-     *
-     * @return string
      */
     public function getColumnsSql(
         string $database,
@@ -1354,8 +1333,6 @@ class DatabaseInterface
      * @param string $database name of database
      * @param string $table    name of table to retrieve columns from
      * @param mixed  $link     mysql link resource
-     *
-     * @return null|array
      */
     public function getColumnNames(
         string $database,
@@ -1373,14 +1350,14 @@ class DatabaseInterface
     }
 
     /**
-    * Returns SQL for fetching information on table indexes (SHOW INDEXES)
-    *
-    * @param string $database name of database
-    * @param string $table    name of the table whose indexes are to be retrieved
-    * @param string $where    additional conditions for WHERE
-    *
-    * @return string SQL for getting indexes
-    */
+     * Returns SQL for fetching information on table indexes (SHOW INDEXES)
+     *
+     * @param string $database name of database
+     * @param string $table    name of the table whose indexes are to be retrieved
+     * @param string $where    additional conditions for WHERE
+     *
+     * @return string SQL for getting indexes
+     */
     public function getTableIndexesSql(
         string $database,
         string $table,
@@ -1400,8 +1377,6 @@ class DatabaseInterface
      * @param string $database name of database
      * @param string $table    name of the table whose indexes are to be retrieved
      * @param mixed  $link     mysql link resource
-     *
-     * @return array
      */
     public function getTableIndexes(
         string $database,
@@ -1480,8 +1455,6 @@ class DatabaseInterface
      * Convert version string to integer.
      *
      * @param string $version MySQL server version
-     *
-     * @return int
      */
     public static function versionToInt(string $version): int
     {
@@ -1493,8 +1466,6 @@ class DatabaseInterface
      * Function called just after a connection to the MySQL database server has
      * been established. It sets the connection collation, and determines the
      * version of MySQL which is running.
-     *
-     * @return void
      */
     public function postConnect(): void
     {
@@ -1581,8 +1552,6 @@ class DatabaseInterface
      * Sets collation connection for user link
      *
      * @param string $collation collation to set
-     *
-     * @return void
      */
     public function setCollation(string $collation): void
     {
@@ -1612,8 +1581,6 @@ class DatabaseInterface
      * Function called just after a connection to the MySQL database server has
      * been established. It sets the connection collation, and determines the
      * version of MySQL which is running.
-     *
-     * @return void
      */
     public function postConnectControl(): void
     {
@@ -1766,7 +1733,7 @@ class DatabaseInterface
      * Returns row or element of a row
      *
      * @param array           $row   Row to process
-     * @param string|null|int $value Which column to return
+     * @param string|int|null $value Which column to return
      *
      * @return mixed
      */
@@ -2450,8 +2417,6 @@ class DatabaseInterface
      * @param string $schema_name        Name of schema (database) to test
      * @param bool   $testForMysqlSchema Whether 'mysql' schema should
      *                                   be treated the same as IS and DD
-     *
-     * @return bool
      */
     public function isSystemSchema(
         string $schema_name,
@@ -2621,8 +2586,6 @@ class DatabaseInterface
      *
      * @param string  $dbname database name to select
      * @param integer $link   link type
-     *
-     * @return boolean
      */
     public function selectDb(string $dbname, $link = DatabaseInterface::CONNECT_USER): bool
     {
@@ -2685,8 +2648,6 @@ class DatabaseInterface
      * Frees memory associated with the result
      *
      * @param object $result database result
-     *
-     * @return void
      */
     public function freeResult($result): void
     {
@@ -2949,8 +2910,6 @@ class DatabaseInterface
 
     /**
      * Checks if this database server is running on Amazon RDS.
-     *
-     * @return boolean
      */
     public function isAmazonRds(): bool
     {
@@ -2969,8 +2928,6 @@ class DatabaseInterface
      * Gets SQL for killing a process.
      *
      * @param int $process Process ID
-     *
-     * @return string
      */
     public function getKillQuery(int $process): string
     {
@@ -2983,8 +2940,6 @@ class DatabaseInterface
 
     /**
      * Get the phpmyadmin database manager
-     *
-     * @return SystemDatabase
      */
     public function getSystemDatabase(): SystemDatabase
     {
@@ -2996,8 +2951,6 @@ class DatabaseInterface
      *
      * @param string $db_name    DB name
      * @param string $table_name Table name
-     *
-     * @return Table
      */
     public function getTable(string $db_name, string $table_name): Table
     {
@@ -3037,8 +2990,6 @@ class DatabaseInterface
 
     /**
      * returns default server collation from show variables
-     *
-     * @return string
      */
     public function getServerCollation(): string
     {
@@ -3047,8 +2998,6 @@ class DatabaseInterface
 
     /**
      * Server version as number
-     *
-     * @return integer
      */
     public function getVersion(): int
     {
@@ -3057,8 +3006,6 @@ class DatabaseInterface
 
     /**
      * Server version
-     *
-     * @return string
      */
     public function getVersionString(): string
     {
@@ -3067,8 +3014,6 @@ class DatabaseInterface
 
     /**
      * Server version comment
-     *
-     * @return string
      */
     public function getVersionComment(): string
     {
@@ -3077,8 +3022,6 @@ class DatabaseInterface
 
     /**
      * Whether connection is MariaDB
-     *
-     * @return boolean
      */
     public function isMariaDB(): bool
     {
@@ -3087,8 +3030,6 @@ class DatabaseInterface
 
     /**
      * Whether connection is Percona
-     *
-     * @return boolean
      */
     public function isPercona(): bool
     {
@@ -3097,8 +3038,6 @@ class DatabaseInterface
 
     /**
      * Load correct database driver
-     *
-     * @return void
      */
     public static function load(): void
     {

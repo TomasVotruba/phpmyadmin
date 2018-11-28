@@ -24,8 +24,6 @@ class FontTest extends PmaTestCase
 
     /**
      * Sets up the fixture
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -34,8 +32,6 @@ class FontTest extends PmaTestCase
 
     /**
      * Test getStringWidth with different characters.
-     *
-     * @return void
      */
     public function testGetStringWidth()
     {
@@ -156,8 +152,6 @@ class FontTest extends PmaTestCase
 
     /**
      * Test getStringWidth with different fonts.
-     *
-     * @return void
      */
     public function testGetStringWidthFont()
     {
@@ -188,8 +182,6 @@ class FontTest extends PmaTestCase
 
     /**
      * Test getStringWidth with different font sizes.
-     *
-     * @return void
      */
     public function testGetStringWidthSize()
     {
@@ -220,8 +212,6 @@ class FontTest extends PmaTestCase
 
     /**
      * Test getStringWidth with a custom charList.
-     *
-     * @return void
      */
     public function testGetStringWidthCharLists()
     {

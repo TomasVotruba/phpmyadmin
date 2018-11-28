@@ -26,8 +26,6 @@ class CheckUserPrivilegesTest extends TestCase
 
     /**
      * prepares environment for tests
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -44,8 +42,6 @@ class CheckUserPrivilegesTest extends TestCase
 
     /**
      * Test for getItemsFromShowGrantsRow
-     *
-     * @return void
      */
     public function testGetItemsFromShowGrantsRow()
     {
@@ -166,8 +162,6 @@ class CheckUserPrivilegesTest extends TestCase
 
     /**
      * Test for checkRequiredPrivilegesForAdjust
-     *
-     * @return void
      */
     public function testCheckRequiredPrivilegesForAdjust()
     {

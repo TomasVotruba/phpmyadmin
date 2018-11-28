@@ -19,7 +19,7 @@ use Psr\Container\ContainerInterface;
 class Container implements ContainerInterface
 {
     /**
-     * @var Item[] $content
+     * @var Item[]
      */
     protected $content = [];
 
@@ -30,8 +30,6 @@ class Container implements ContainerInterface
 
     /**
      * Create a dependency injection container
-     *
-     * @param Container $base Container
      */
     public function __construct(Container $base = null)
     {
@@ -89,8 +87,6 @@ class Container implements ContainerInterface
      * Remove an object from container
      *
      * @param string $name Name
-     *
-     * @return void
      */
     public function remove($name)
     {
@@ -102,8 +98,6 @@ class Container implements ContainerInterface
      *
      * @param string $name    Name
      * @param string $newName New name
-     *
-     * @return void
      */
     public function rename($name, $newName)
     {
@@ -116,8 +110,6 @@ class Container implements ContainerInterface
      *
      * @param string|array $name  Name
      * @param mixed        $value Value
-     *
-     * @return void
      */
     public function set($name, $value = null)
     {
@@ -135,8 +127,6 @@ class Container implements ContainerInterface
      *
      * @param string $name    Name
      * @param mixed  $service Service
-     *
-     * @return void
      */
     public function service($name, $service = null)
     {
@@ -151,8 +141,6 @@ class Container implements ContainerInterface
      *
      * @param string $name    Name
      * @param mixed  $factory Factory
-     *
-     * @return void
      */
     public function factory($name, $factory = null)
     {
@@ -167,8 +155,6 @@ class Container implements ContainerInterface
      *
      * @param string $name   Name
      * @param string $target Target
-     *
-     * @return void
      */
     public function alias($name, $target)
     {

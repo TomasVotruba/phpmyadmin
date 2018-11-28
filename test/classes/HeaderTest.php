@@ -24,8 +24,6 @@ class HeaderTest extends PmaTestCase
 {
     /**
      * Configures global environment.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -49,8 +47,6 @@ class HeaderTest extends PmaTestCase
 
     /**
      * Test for disable
-     *
-     * @return void
      */
     public function testDisable()
     {
@@ -64,8 +60,6 @@ class HeaderTest extends PmaTestCase
 
     /**
      * Test for Set BodyId
-     *
-     * @return void
      */
     public function testSetBodyId()
     {
@@ -79,8 +73,6 @@ class HeaderTest extends PmaTestCase
 
     /**
      * Test for print view
-     *
-     * @return void
      */
     public function testPrintView()
     {
@@ -94,8 +86,6 @@ class HeaderTest extends PmaTestCase
 
     /**
      * Test for Get JsParams
-     *
-     * @return void
      */
     public function testGetJsParams()
     {
@@ -108,8 +98,6 @@ class HeaderTest extends PmaTestCase
 
     /**
      * Test for Get JsParamsCode
-     *
-     * @return void
      */
     public function testGetJsParamsCode()
     {
@@ -122,8 +110,6 @@ class HeaderTest extends PmaTestCase
 
     /**
      * Test for Get Message
-     *
-     * @return void
      */
     public function testGetMessage()
     {
@@ -137,7 +123,6 @@ class HeaderTest extends PmaTestCase
     /**
      * Test for Disable Warnings
      *
-     * @return void
      * @test
      */
     public function testDisableWarnings()
@@ -154,7 +139,6 @@ class HeaderTest extends PmaTestCase
     /**
      * Tests private method _getWarnings when warnings are disabled
      *
-     * @return void
      * @test
      */
     public function testGetWarningsWithWarningsDisabled()

@@ -25,8 +25,6 @@ class ServerBinlogControllerTest extends PmaTestCase
 {
     /**
      * Prepares environment for the test.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -73,8 +71,6 @@ class ServerBinlogControllerTest extends PmaTestCase
 
     /**
      * Tests for _getLogSelector
-     *
-     * @return void
      */
     public function testGetLogSelector()
     {
@@ -114,7 +110,6 @@ class ServerBinlogControllerTest extends PmaTestCase
     /**
      * Tests for _getLogInfo
      *
-     * @return void
      * @group medium
      */
     public function testGetLogInfo()
@@ -229,8 +224,6 @@ class ServerBinlogControllerTest extends PmaTestCase
 
     /**
      * Tests for _getAllLogItemInfo
-     *
-     * @return void
      */
     public function testGetAllLogItemInfo()
     {

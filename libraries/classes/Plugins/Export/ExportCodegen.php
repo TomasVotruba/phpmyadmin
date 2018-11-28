@@ -54,8 +54,6 @@ class ExportCodegen extends ExportPlugin
 
     /**
      * Initialize the local variables that are used for export CodeGen
-     *
-     * @return void
      */
     protected function initSpecificVariables()
     {
@@ -76,8 +74,6 @@ class ExportCodegen extends ExportPlugin
 
     /**
      * Sets the export CodeGen properties
-     *
-     * @return void
      */
     protected function setProperties()
     {
@@ -415,8 +411,6 @@ class ExportCodegen extends ExportPlugin
      * Setter for CodeGen formats
      *
      * @param array $CG_FORMATS contains CodeGen Formats
-     *
-     * @return void
      */
     private function _setCgFormats(array $CG_FORMATS)
     {
@@ -437,8 +431,6 @@ class ExportCodegen extends ExportPlugin
      * Setter for CodeGen handlers
      *
      * @param array $CG_HANDLERS contains CodeGen handler methods
-     *
-     * @return void
      */
     private function _setCgHandlers(array $CG_HANDLERS)
     {

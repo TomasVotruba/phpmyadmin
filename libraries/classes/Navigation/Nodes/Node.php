@@ -63,7 +63,7 @@ class Node
      */
     public $children = [];
     /**
-     * @var Mixed A string used to group nodes, or an array of strings
+     * @var mixed A string used to group nodes, or an array of strings
      *            Only relevant if the node is of type CONTAINER
      */
     public $separator = '';
@@ -134,8 +134,6 @@ class Node
      * Adds a child node to this node
      *
      * @param Node $child A child node
-     *
-     * @return void
      */
     public function addChild($child)
     {
@@ -176,8 +174,6 @@ class Node
      * Removes a child node from this node
      *
      * @param string $name The name of child to be removed
-     *
-     * @return void
      */
     public function removeChild($name)
     {
@@ -749,7 +745,7 @@ class Node
     /**
      * Returns HTML for control buttons displayed infront of a node
      *
-     * @return String HTML for control buttons
+     * @return string HTML for control buttons
      */
     public function getHtmlForControlButtons()
     {
@@ -761,7 +757,7 @@ class Node
      *
      * @param boolean $match Whether the node matched loaded tree
      *
-     * @return String with html classes.
+     * @return string with html classes.
      */
     public function getCssClasses($match)
     {
@@ -787,7 +783,7 @@ class Node
      *
      * @param boolean $match Whether the node matched loaded tree
      *
-     * @return String with image name
+     * @return string with image name
      */
     public function getIcon($match)
     {

@@ -98,8 +98,6 @@ class TableRelationController extends TableController
 
     /**
      * Index
-     *
-     * @return void
      */
     public function indexAction()
     {
@@ -214,8 +212,6 @@ class TableRelationController extends TableController
 
     /**
      * Update for display field
-     *
-     * @return void
      */
     public function updateForDisplayField()
     {
@@ -236,8 +232,6 @@ class TableRelationController extends TableController
 
     /**
      * Update for FK
-     *
-     * @return void
      */
     public function updateForForeignKeysAction()
     {
@@ -280,8 +274,6 @@ class TableRelationController extends TableController
 
     /**
      * Update for internal relation
-     *
-     * @return void
      */
     public function updateForInternalRelationAction()
     {
@@ -310,9 +302,6 @@ class TableRelationController extends TableController
 
     /**
      * Send table columns for foreign table dropdown
-     *
-     * @return void
-     *
      */
     public function getDropdownValueForTableAction()
     {
@@ -345,9 +334,6 @@ class TableRelationController extends TableController
 
     /**
      * Send database selection values for dropdown
-     *
-     * @return void
-     *
      */
     public function getDropdownValueForDbAction()
     {

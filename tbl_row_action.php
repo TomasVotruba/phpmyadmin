@@ -71,7 +71,7 @@ if (!empty($submit_mult)) {
     }
 
     switch ($submit_mult) {
-    /** @noinspection PhpMissingBreakStatementInspection */
+        /** @noinspection PhpMissingBreakStatementInspection */
         case 'row_copy':
             $_REQUEST['default_action'] = 'insert';
             // no break to allow for fallthough
@@ -130,8 +130,8 @@ if (!empty($submit_mult)) {
 
 
             /**
-         * Show result of multi submit operation
-         */
+             * Show result of multi submit operation
+             */
             // sql_query is not set when user does not confirm multi-delete
             if ((! empty($submit_mult) || isset($_REQUEST['mult_btn']))
             && ! empty($sql_query)

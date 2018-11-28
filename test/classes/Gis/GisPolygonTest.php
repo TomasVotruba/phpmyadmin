@@ -30,7 +30,6 @@ class GisPolygonTest extends GisGeomTestCase
      * This method is called before a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function setUp()
     {
@@ -42,7 +41,6 @@ class GisPolygonTest extends GisGeomTestCase
      * This method is called after a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function tearDown()
     {
@@ -182,7 +180,6 @@ class GisPolygonTest extends GisGeomTestCase
      * @param float $area area of the ring
      *
      * @dataProvider providerForTestArea
-     * @return void
      */
     public function testArea($ring, $area)
     {
@@ -235,7 +232,6 @@ class GisPolygonTest extends GisGeomTestCase
      * @param bool  $isInside output
      *
      * @dataProvider providerForTestIsPointInsidePolygon
-     * @return void
      */
     public function testIsPointInsidePolygon($point, $polygon, $isInside)
     {
@@ -293,7 +289,6 @@ class GisPolygonTest extends GisGeomTestCase
      * @param array $ring array of points forming the ring
      *
      * @dataProvider providerForTestGetPointOnSurface
-     * @return void
      */
     public function testGetPointOnSurface($ring)
     {
@@ -366,7 +361,6 @@ class GisPolygonTest extends GisGeomTestCase
      * @param array    $scale_data array containing data related to scaling
      * @param resource $image      image object
      *
-     * @return void
      * @dataProvider providerForPrepareRowAsPng
      */
     public function testPrepareRowAsPng(
@@ -421,7 +415,6 @@ class GisPolygonTest extends GisGeomTestCase
      * @param array  $scale_data array containing data related to scaling
      * @param TCPDF  $pdf        TCPDF instance
      *
-     * @return void
      * @dataProvider providerForPrepareRowAsPdf
      */
     public function testPrepareRowAsPdf(
@@ -473,7 +466,6 @@ class GisPolygonTest extends GisGeomTestCase
      * @param array  $scale_data array containing data related to scaling
      * @param string $output     expected output
      *
-     * @return void
      * @dataProvider providerForPrepareRowAsSvg
      */
     public function testPrepareRowAsSvg(
@@ -528,7 +520,6 @@ class GisPolygonTest extends GisGeomTestCase
      * @param array  $scale_data array containing data related to scaling
      * @param string $output     expected output
      *
-     * @return void
      * @dataProvider providerForPrepareRowAsOl
      */
     public function testPrepareRowAsOl(
@@ -596,7 +587,6 @@ class GisPolygonTest extends GisGeomTestCase
      *
      * @param array $ring coordinates of the points in a ring
      *
-     * @return void
      * @dataProvider providerForIsOuterRing
      */
     public function testIsOuterRing($ring)

@@ -23,8 +23,6 @@ class ImportPluginPropertiesTest extends TestCase
 
     /**
      * Configures global environment.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -33,8 +31,6 @@ class ImportPluginPropertiesTest extends TestCase
 
     /**
      * tearDown for test cases
-     *
-     * @return void
      */
     protected function tearDown()
     {
@@ -43,8 +39,6 @@ class ImportPluginPropertiesTest extends TestCase
 
     /**
      * Test for PhpMyAdmin\Properties\Plugins\ImportPluginProperties::getItemType
-     *
-     * @return void
      */
     public function testGetItemType()
     {
@@ -58,8 +52,6 @@ class ImportPluginPropertiesTest extends TestCase
      * Test for
      *     - PhpMyAdmin\Properties\Plugins\ImportPluginProperties::getOptionsText
      *     - PhpMyAdmin\Properties\Plugins\ImportPluginProperties::setOptionsText
-     *
-     * @return void
      */
     public function testSetGetOptionsText()
     {
@@ -75,8 +67,6 @@ class ImportPluginPropertiesTest extends TestCase
      * Test for
      *     - PhpMyAdmin\Properties\Plugins\ImportPluginProperties::setMimeType
      *     - PhpMyAdmin\Properties\Plugins\ImportPluginProperties::getMimeType
-     *
-     * @return void
      */
     public function testSetGetMimeType()
     {

@@ -27,8 +27,6 @@ class ExportYamlTest extends PmaTestCase
 
     /**
      * Configures global environment.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -44,8 +42,6 @@ class ExportYamlTest extends PmaTestCase
 
     /**
      * tearDown for test cases
-     *
-     * @return void
      */
     public function tearDown()
     {
@@ -54,8 +50,6 @@ class ExportYamlTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportYaml::setProperties
-     *
-     * @return void
      */
     public function testSetProperties()
     {
@@ -125,8 +119,6 @@ class ExportYamlTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportYaml::exportHeader
-     *
-     * @return void
      */
     public function testExportHeader()
     {
@@ -144,8 +136,6 @@ class ExportYamlTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportYaml::exportFooter
-     *
-     * @return void
      */
     public function testExportFooter()
     {
@@ -159,8 +149,6 @@ class ExportYamlTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportYaml::exportDBHeader
-     *
-     * @return void
      */
     public function testExportDBHeader()
     {
@@ -171,8 +159,6 @@ class ExportYamlTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportYaml::exportDBFooter
-     *
-     * @return void
      */
     public function testExportDBFooter()
     {
@@ -183,8 +169,6 @@ class ExportYamlTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportYaml::exportDBCreate
-     *
-     * @return void
      */
     public function testExportDBCreate()
     {
@@ -195,8 +179,6 @@ class ExportYamlTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportYaml::exportData
-     *
-     * @return void
      */
     public function testExportData()
     {

@@ -26,8 +26,6 @@ class TransformationsTest extends TestCase
 
     /**
      * Set up global environment.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -58,8 +56,6 @@ class TransformationsTest extends TestCase
      * @param string $input    String to parse
      * @param array  $expected Expected result
      *
-     * @return void
-     *
      * @dataProvider getOptionsData
      */
     public function testGetOptions($input, $expected)
@@ -88,8 +84,6 @@ class TransformationsTest extends TestCase
 
     /**
      * Test for getting available types.
-     *
-     * @return void
      */
     public function testGetTypes()
     {
@@ -177,8 +171,6 @@ class TransformationsTest extends TestCase
 
     /**
      * Tests getting mime types for table
-     *
-     * @return void
      */
     public function testGetMime()
     {
@@ -212,8 +204,6 @@ class TransformationsTest extends TestCase
 
     /**
      * Test for clear
-     *
-     * @return void
      */
     public function testClear()
     {
@@ -262,8 +252,6 @@ class TransformationsTest extends TestCase
     /**
      * @param string $value    value
      * @param string $expected expected result
-     *
-     * @return void
      *
      * @dataProvider fixupData
      */

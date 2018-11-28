@@ -21,8 +21,6 @@ class ImportTest extends TestBase
 {
     /**
      * setUp function
-     *
-     * @return void
      */
     public function setUp()
     {
@@ -32,8 +30,6 @@ class ImportTest extends TestBase
 
     /**
      * Test for server level import
-     *
-     * @return void
      *
      * @group large
      */
@@ -51,8 +47,6 @@ class ImportTest extends TestBase
     /**
      * Test for db level import
      *
-     * @return void
-     *
      * @group large
      */
     public function testDbImport()
@@ -69,8 +63,6 @@ class ImportTest extends TestBase
 
     /**
      * Test for table level import
-     *
-     * @return void
      *
      * @group large
      */
@@ -95,8 +87,6 @@ class ImportTest extends TestBase
      * Function that goes to the import page, uploads a file and submit form
      *
      * @param string $type level: server, db or import
-     *
-     * @return void
      */
     private function _doImport($type)
     {

@@ -21,8 +21,6 @@ class IndexTest extends TestCase
 {
     /**
      * SetUp for test cases
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -31,8 +29,6 @@ class IndexTest extends TestCase
 
     /**
      * Test for SetupIndex::messagesBegin()
-     *
-     * @return void
      */
     public function testPMAmessagesBegin()
     {
@@ -78,8 +74,6 @@ class IndexTest extends TestCase
 
     /**
      * Test for SetupIndex::messagesSet
-     *
-     * @return void
      */
     public function testPMAmessagesSet()
     {
@@ -98,8 +92,6 @@ class IndexTest extends TestCase
 
     /**
      * Test for SetupIndex::messagesEnd
-     *
-     * @return void
      */
     public function testPMAmessagesEnd()
     {
@@ -127,8 +119,6 @@ class IndexTest extends TestCase
 
     /**
      * Test for SetupIndex::messagesShowHtml
-     *
-     * @return void
      */
     public function testPMAMessagesShowHTML()
     {

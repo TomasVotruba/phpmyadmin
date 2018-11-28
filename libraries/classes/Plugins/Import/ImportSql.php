@@ -39,8 +39,6 @@ class ImportSql extends ImportPlugin
     /**
      * Sets the import plugin properties.
      * Called in the constructor.
-     *
-     * @return void
      */
     protected function setProperties()
     {
@@ -104,8 +102,6 @@ class ImportSql extends ImportPlugin
      * Handles the whole import logic
      *
      * @param array &$sql_data 2-element array with sql data
-     *
-     * @return void
      */
     public function doImport(array &$sql_data = [])
     {
@@ -175,9 +171,6 @@ class ImportSql extends ImportPlugin
      * Handle compatibility options
      *
      * @param \PhpMyAdmin\DatabaseInterface $dbi     Database interface
-     * @param array                         $request Request array
-     *
-     * @return void
      */
     private function _setSQLMode($dbi, array $request)
     {

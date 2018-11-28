@@ -42,8 +42,6 @@ class ErrorReport
 
     /**
      * Constructor
-     *
-     * @param HttpRequest $httpRequest HttpRequest instance
      */
     public function __construct(HttpRequest $httpRequest)
     {
@@ -54,9 +52,6 @@ class ErrorReport
 
     /**
      * Set the URL where to submit reports to
-     *
-     * @param string $submissionUrl Submission URL
-     * @return void
      */
     public function setSubmissionUrl(string $submissionUrl): void
     {

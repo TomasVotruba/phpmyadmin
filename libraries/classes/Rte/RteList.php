@@ -299,7 +299,7 @@ class RteList
             $parser = new Parser($definition);
 
             /**
-             * @var CreateStatement $stmt
+             * @var CreateStatement
              */
             $stmt = $parser->statements[0];
 

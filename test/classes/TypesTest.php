@@ -25,8 +25,6 @@ class TypesTest extends PmaTestCase
     /**
      * Sets up the fixture, for example, opens a network connection.
      * This method is called before a test is executed.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -35,8 +33,6 @@ class TypesTest extends PmaTestCase
 
     /**
      * Test for isUnaryOperator
-     *
-     * @return void
      */
     public function testUnary()
     {
@@ -46,8 +42,6 @@ class TypesTest extends PmaTestCase
 
     /**
      * Test for getUnaryOperators
-     *
-     * @return void
      */
     public function testGetUnaryOperators()
     {
@@ -64,8 +58,6 @@ class TypesTest extends PmaTestCase
 
     /**
      * Test for getNullOperators
-     *
-     * @return void
      */
     public function testGetNullOperators()
     {
@@ -80,8 +72,6 @@ class TypesTest extends PmaTestCase
 
     /**
      * Test for getEnumOperators
-     *
-     * @return void
      */
     public function testGetEnumOperators()
     {
@@ -96,8 +86,6 @@ class TypesTest extends PmaTestCase
 
     /**
      * Test for getTextOperators
-     *
-     * @return void
      */
     public function testgetTextOperators()
     {
@@ -124,8 +112,6 @@ class TypesTest extends PmaTestCase
 
     /**
      * Test for getNumberOperators
-     *
-     * @return void
      */
     public function testGetNumberOperators()
     {
@@ -155,8 +141,6 @@ class TypesTest extends PmaTestCase
      * @param string  $type   Type of field
      * @param boolean $null   Whether field can be NULL
      * @param string  $output Expected output
-     *
-     * @return void
      *
      * @dataProvider providerForGetTypeOperators
      */
@@ -225,8 +209,6 @@ class TypesTest extends PmaTestCase
      * @param string  $selectedOperator Option to be selected
      * @param string  $output           Expected output
      *
-     * @return void
-     *
      * @dataProvider providerForTestGetTypeOperatorsHtml
      */
     public function testGetTypeOperatorsHtml(
@@ -264,8 +246,6 @@ class TypesTest extends PmaTestCase
      *
      * @param string $type The data type to get a description.
      *
-     * @return void
-     *
      * @dataProvider providerForTestGetTypeDescription
      */
     public function testGetTypeDescription($type)
@@ -278,8 +258,6 @@ class TypesTest extends PmaTestCase
 
     /**
      * Test for getTypeDescription with unknown value
-     *
-     * @return void
      */
     public function testGetUnknownTypeDescription()
     {
@@ -344,8 +322,6 @@ class TypesTest extends PmaTestCase
      *
      * @param string $class  The class to get function list.
      * @param array  $output Expected function list
-     *
-     * @return void
      *
      * @dataProvider providerFortTestGetFunctionsClass
      */
@@ -513,8 +489,6 @@ class TypesTest extends PmaTestCase
 
     /**
      * Test for getFunctions
-     *
-     * @return void
      */
     public function testGetFunctions()
     {
@@ -561,8 +535,6 @@ class TypesTest extends PmaTestCase
 
     /**
      * Test for getAllFunctions
-     *
-     * @return void
      */
     public function testGetAllFunctions()
     {
@@ -676,8 +648,6 @@ class TypesTest extends PmaTestCase
 
     /**
      * Test for getAttributes
-     *
-     * @return void
      */
     public function testGetAttributes()
     {
@@ -695,8 +665,6 @@ class TypesTest extends PmaTestCase
 
     /**
      * Test for getColumns
-     *
-     * @return void
      */
     public function testGetColumns()
     {
@@ -772,8 +740,6 @@ class TypesTest extends PmaTestCase
      *
      * @param string $type   Type to check
      * @param string $output Expected result
-     *
-     * @return void
      *
      * @dataProvider providerFortTestGetTypeClass
      */

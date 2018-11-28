@@ -29,8 +29,6 @@ class IpAllowDenyTest extends TestCase
 
     /**
      * Prepares environment for the test.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -59,8 +57,6 @@ class IpAllowDenyTest extends TestCase
      * @param string $header   header
      * @param string $expected expected result
      * @param string $proxyip  proxyip
-     *
-     * @return void
      *
      * @dataProvider proxyIPs
      */
@@ -117,8 +113,6 @@ class IpAllowDenyTest extends TestCase
 
     /**
      * Test for ipMaskTest
-     *
-     * @return void
      */
     public function testIpMaskTest()
     {
@@ -195,8 +189,6 @@ class IpAllowDenyTest extends TestCase
 
     /**
      * Test for allowDeny
-     *
-     * @return void
      */
     public function testAllowDeny()
     {

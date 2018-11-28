@@ -43,8 +43,6 @@ class ExportLatex extends ExportPlugin
 
     /**
      * Initialize the local variables that are used for export Latex
-     *
-     * @return void
      */
     protected function initSpecificVariables()
     {
@@ -56,8 +54,6 @@ class ExportLatex extends ExportPlugin
 
     /**
      * Sets the export Latex properties
-     *
-     * @return void
      */
     protected function setProperties()
     {

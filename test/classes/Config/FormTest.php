@@ -30,8 +30,6 @@ class FormTest extends PmaTestCase
 
     /**
      * Configures global environment.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -48,8 +46,6 @@ class FormTest extends PmaTestCase
 
     /**
      * tearDown for test cases
-     *
-     * @return void
      */
     protected function tearDown()
     {
@@ -59,7 +55,6 @@ class FormTest extends PmaTestCase
     /**
      * Test for Form::__constructor
      *
-     * @return void
      * @group medium
      */
     public function testContructor()
@@ -80,8 +75,6 @@ class FormTest extends PmaTestCase
 
     /**
      * Test for Form::getOptionType
-     *
-     * @return void
      */
     public function testGetOptionType()
     {
@@ -104,8 +97,6 @@ class FormTest extends PmaTestCase
 
     /**
      * Test for Form::getOptionValueList
-     *
-     * @return void
      */
     public function testGetOptionValueList()
     {
@@ -136,8 +127,6 @@ class FormTest extends PmaTestCase
 
     /**
      * Test for Form::_readFormPathsCallback
-     *
-     * @return void
      */
     public function testReadFormPathsCallBack()
     {
@@ -188,8 +177,6 @@ class FormTest extends PmaTestCase
 
     /**
      * Test for Form::readFormPaths
-     *
-     * @return void
      */
     public function testReadFormPaths()
     {
@@ -243,8 +230,6 @@ class FormTest extends PmaTestCase
 
     /**
      * Test for Form::readTypes
-     *
-     * @return void
      */
     public function testReadTypes()
     {
@@ -277,8 +262,6 @@ class FormTest extends PmaTestCase
 
     /**
      * Test for Form::loadForm
-     *
-     * @return void
      */
     public function testLoadForm()
     {

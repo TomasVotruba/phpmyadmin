@@ -21,8 +21,6 @@ class NodeTableTest extends PmaTestCase
 {
     /**
      * SetUp for test cases
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -40,8 +38,6 @@ class NodeTableTest extends PmaTestCase
 
     /**
      * Test for __construct
-     *
-     * @return void
      */
     public function testConstructor()
     {
@@ -63,7 +59,6 @@ class NodeTableTest extends PmaTestCase
      * @param string $target    target of the icon
      * @param string $imageName name of the image that should be set
      *
-     * @return void
      * @dataProvider providerForTestIcon
      */
     public function testIcon($target, $imageName)

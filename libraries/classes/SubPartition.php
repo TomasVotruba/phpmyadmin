@@ -73,8 +73,6 @@ class SubPartition
      * Loads data from the fetched row from information_schema.PARTITIONS
      *
      * @param array $row fetched row
-     *
-     * @return void
      */
     protected function loadData(array $row)
     {
@@ -89,8 +87,6 @@ class SubPartition
      * Loads some data that is common to both partitions and sub partitions
      *
      * @param array $row fetched row
-     *
-     * @return void
      */
     protected function loadCommonData(array $row)
     {

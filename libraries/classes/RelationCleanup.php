@@ -44,8 +44,6 @@ class RelationCleanup
      * @param string $db     database name
      * @param string $table  table name
      * @param string $column column name
-     *
-     * @return void
      */
     public function column($db, $table, $column)
     {
@@ -105,8 +103,6 @@ class RelationCleanup
      *
      * @param string $db    database name
      * @param string $table table name
-     *
-     * @return void
      */
     public function table($db, $table)
     {
@@ -190,8 +186,6 @@ class RelationCleanup
      * Cleanup database related relation stuff
      *
      * @param string $db database name
-     *
-     * @return void
      */
     public function database($db)
     {
@@ -288,8 +282,6 @@ class RelationCleanup
      * Cleanup user related relation stuff
      *
      * @param string $username username
-     *
-     * @return void
      */
     public function user($username)
     {

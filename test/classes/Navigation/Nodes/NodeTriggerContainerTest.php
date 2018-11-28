@@ -21,8 +21,6 @@ class NodeTriggerContainerTest extends PmaTestCase
 {
     /**
      * SetUp for test cases
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -32,8 +30,6 @@ class NodeTriggerContainerTest extends PmaTestCase
 
     /**
      * Test for __construct
-     *
-     * @return void
      */
     public function testConstructor()
     {

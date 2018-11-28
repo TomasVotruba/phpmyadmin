@@ -119,8 +119,6 @@ abstract class ListAbstract extends ArrayObject
 
     /**
      * builds up the list
-     *
-     * @return void
      */
     abstract public function build();
 }

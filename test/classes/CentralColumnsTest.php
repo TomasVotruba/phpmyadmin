@@ -68,8 +68,6 @@ class CentralColumnsTest extends TestCase
 
     /**
      * prepares environment for tests
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -159,8 +157,6 @@ class CentralColumnsTest extends TestCase
 
     /**
      * Test for getParams
-     *
-     * @return void
      */
     public function testGetParams()
     {
@@ -176,8 +172,6 @@ class CentralColumnsTest extends TestCase
 
     /**
      * Test for getColumnsList
-     *
-     * @return void
      */
     public function testGetColumnsList()
     {
@@ -200,8 +194,6 @@ class CentralColumnsTest extends TestCase
 
     /**
      * Test for getCount
-     *
-     * @return void
      */
     public function testGetCount()
     {
@@ -226,8 +218,6 @@ class CentralColumnsTest extends TestCase
 
     /**
      * Test for syncUniqueColumns
-     *
-     * @return void
      */
     public function testSyncUniqueColumns()
     {
@@ -243,8 +233,6 @@ class CentralColumnsTest extends TestCase
 
     /**
      * Test for deleteColumnsFromList
-     *
-     * @return void
      */
     public function testDeleteColumnsFromList()
     {
@@ -302,8 +290,6 @@ class CentralColumnsTest extends TestCase
 
     /**
      * Test for makeConsistentWithList
-     *
-     * @return void
      */
     public function testMakeConsistentWithList()
     {
@@ -327,8 +313,6 @@ class CentralColumnsTest extends TestCase
 
     /**
      * Test for getFromTable
-     *
-     * @return void
      */
     public function testGetFromTable()
     {
@@ -358,8 +342,6 @@ class CentralColumnsTest extends TestCase
 
     /**
      * Test for getFromTable with $allFields = true
-     *
-     * @return void
      */
     public function testGetFromTableWithAllFields()
     {
@@ -390,8 +372,6 @@ class CentralColumnsTest extends TestCase
 
     /**
      * Test for updateOneColumn
-     *
-     * @return void
      */
     public function testUpdateOneColumn()
     {
@@ -427,8 +407,6 @@ class CentralColumnsTest extends TestCase
 
     /**
      * Test for updateMultipleColumn
-     *
-     * @return void
      */
     public function testUpdateMultipleColumn()
     {
@@ -448,8 +426,6 @@ class CentralColumnsTest extends TestCase
 
     /**
      * Test for getHtmlForEditingPage
-     *
-     * @return void
      */
     public function testGetHtmlForEditingPage()
     {
@@ -510,8 +486,6 @@ class CentralColumnsTest extends TestCase
 
     /**
      * Test for getListRaw
-     *
-     * @return void
      */
     public function testGetListRaw()
     {
@@ -538,8 +512,6 @@ class CentralColumnsTest extends TestCase
 
     /**
      * Test for getListRaw with a table name
-     *
-     * @return void
      */
     public function testGetListRawWithTable()
     {
@@ -567,8 +539,6 @@ class CentralColumnsTest extends TestCase
 
     /**
      * Test for getHtmlForMain
-     *
-     * @return void
      */
     public function testGetHtmlForMain()
     {
@@ -652,8 +622,6 @@ class CentralColumnsTest extends TestCase
 
     /**
      * Test for configErrorMessage
-     *
-     * @return void
      */
     public function testConfigErrorMessage()
     {
@@ -665,8 +633,6 @@ class CentralColumnsTest extends TestCase
 
     /**
      * Test for findExistingColNames
-     *
-     * @return void
      */
     public function testFindExistingColNames()
     {
@@ -697,8 +663,6 @@ class CentralColumnsTest extends TestCase
 
     /**
      * Test for getTableFooter
-     *
-     * @return void
      */
     public function testGetTableFooter()
     {
@@ -718,8 +682,6 @@ class CentralColumnsTest extends TestCase
 
     /**
      * Test for getHtmlForColumnDropdown
-     *
-     * @return void
      */
     public function testGetHtmlForColumnDropdown()
     {

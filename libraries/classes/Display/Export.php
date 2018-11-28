@@ -733,8 +733,6 @@ class Export
      * Handles export template actions
      *
      * @param array $cfgRelation Relation configuration
-     *
-     * @return void
      */
     public function handleTemplateActions(array $cfgRelation)
     {

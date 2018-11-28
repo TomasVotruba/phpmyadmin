@@ -36,7 +36,6 @@ class ConfigFileTest extends PmaTestCase
      * Setup function for test cases
      *
      * @access protected
-     * @return void
      */
     protected function setUp()
     {
@@ -46,8 +45,6 @@ class ConfigFileTest extends PmaTestCase
 
     /**
      * TearDown function for test cases
-     *
-     * @return void
      */
     protected function tearDown()
     {
@@ -58,7 +55,6 @@ class ConfigFileTest extends PmaTestCase
     /**
      * Test for new ConfigFile()
      *
-     * @return void
      * @test
      */
     public function testNewObjectState()
@@ -85,7 +81,6 @@ class ConfigFileTest extends PmaTestCase
     /**
      * Test for ConfigFile::setPersistKeys()
      *
-     * @return void
      * @test
      */
     public function testPersistentKeys()
@@ -136,7 +131,6 @@ class ConfigFileTest extends PmaTestCase
     /**
      * Test for ConfigFile::setAllowedKeys
      *
-     * @return void
      * @test
      */
     public function testAllowedKeys()
@@ -169,7 +163,6 @@ class ConfigFileTest extends PmaTestCase
     /**
      * Test for ConfigFile::setCfgUpdateReadMapping
      *
-     * @return void
      * @test
      */
     public function testConfigReadMapping()
@@ -201,7 +194,6 @@ class ConfigFileTest extends PmaTestCase
     /**
      * Test for ConfigFile::resetConfigData
      *
-     * @return void
      * @test
      */
     public function testResetConfigData()
@@ -217,7 +209,6 @@ class ConfigFileTest extends PmaTestCase
     /**
      * Test for ConfigFile::setConfigData
      *
-     * @return void
      * @test
      */
     public function testSetConfigData()
@@ -238,7 +229,6 @@ class ConfigFileTest extends PmaTestCase
     /**
      * Test for ConfigFile::set and ConfigFile::get
      *
-     * @return void
      * @test
      */
     public function testBasicSetUsage()
@@ -280,7 +270,6 @@ class ConfigFileTest extends PmaTestCase
     /**
      * Test for ConfigFile::set - in PMA Setup
      *
-     * @return void
      * @test
      */
     public function testConfigFileSetInSetup()
@@ -297,7 +286,6 @@ class ConfigFileTest extends PmaTestCase
     /**
      * Test for ConfigFile::set - in user preferences
      *
-     * @return void
      * @test
      */
     public function testConfigFileSetInUserPreferences()
@@ -329,7 +317,6 @@ class ConfigFileTest extends PmaTestCase
     /**
      * Test for ConfigFile::getFlatDefaultConfig
      *
-     * @return void
      * @test
      * @group medium
      */
@@ -361,7 +348,6 @@ class ConfigFileTest extends PmaTestCase
     /**
      * Test for ConfigFile::updateWithGlobalConfig
      *
-     * @return void
      * @test
      */
     public function testUpdateWithGlobalConfig()
@@ -379,7 +365,6 @@ class ConfigFileTest extends PmaTestCase
     /**
      * Test for ConfigFile::getCanonicalPath
      *
-     * @return void
      * @test
      */
     public function testGetCanonicalPath()
@@ -398,7 +383,6 @@ class ConfigFileTest extends PmaTestCase
     /**
      * Test for ConfigFile::getDbEntry
      *
-     * @return void
      * @test
      */
     public function testGetDbEntry()
@@ -421,7 +405,6 @@ class ConfigFileTest extends PmaTestCase
     /**
      * Test for ConfigFile::getServerCount
      *
-     * @return void
      * @test
      */
     public function testGetServerCount()
@@ -462,7 +445,6 @@ class ConfigFileTest extends PmaTestCase
     /**
      * Test for ConfigFile::getServers
      *
-     * @return void
      * @test
      */
     public function testGetServers()
@@ -479,7 +461,6 @@ class ConfigFileTest extends PmaTestCase
     /**
      * Test for ConfigFile::getServerDSN
      *
-     * @return void
      * @test
      */
     public function testGetServerDSN()
@@ -547,7 +528,6 @@ class ConfigFileTest extends PmaTestCase
     /**
      * Test for ConfigFile::getServerName
      *
-     * @return void
      * @test
      */
     public function testGetServerName()
@@ -573,7 +553,6 @@ class ConfigFileTest extends PmaTestCase
     /**
      * Test for ConfigFile::getConfigArray
      *
-     * @return void
      * @test
      */
     public function testGetConfigArray()

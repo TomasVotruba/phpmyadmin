@@ -112,10 +112,10 @@ class TableProperty
     }
 
     /**
-    * Gets the .NET primitive type
-    *
-    * @return string type
-    */
+     * Gets the .NET primitive type
+     *
+     * @return string type
+     */
     public function getDotNetPrimitiveType()
     {
         if (mb_strpos($this->type, "int") === 0) {

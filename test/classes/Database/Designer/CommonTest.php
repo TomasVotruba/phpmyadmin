@@ -26,8 +26,6 @@ class CommonTest extends TestCase
 
     /**
      * Setup for test cases
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -47,8 +45,6 @@ class CommonTest extends TestCase
 
     /**
      * Test for getTablePositions()
-     *
-     * @return void
      */
     public function testGetTablePositions()
     {
@@ -85,8 +81,6 @@ class CommonTest extends TestCase
 
     /**
      * Test for getPageName()
-     *
-     * @return void
      */
     public function testGetPageName()
     {
@@ -121,8 +115,6 @@ class CommonTest extends TestCase
 
     /**
      * Test for deletePage()
-     *
-     * @return void
      */
     public function testDeletePage()
     {
@@ -151,8 +143,6 @@ class CommonTest extends TestCase
     /**
      * Test for testGetDefaultPage() when there is a default page
      * (a page having the same name as database)
-     *
-     * @return void
      */
     public function testGetDefaultPage()
     {
@@ -187,8 +177,6 @@ class CommonTest extends TestCase
 
     /**
      * Test for testGetDefaultPage() when there is no default page
-     *
-     * @return void
      */
     public function testGetDefaultPageWithNoDefaultPage()
     {
@@ -222,8 +210,6 @@ class CommonTest extends TestCase
 
     /**
      * Test for testGetLoadingPage() when there is a default page
-     *
-     * @return void
      */
     public function testGetLoadingPageWithDefaultPage()
     {
@@ -258,8 +244,6 @@ class CommonTest extends TestCase
 
     /**
      * Test for testGetLoadingPage() when there is no default page
-     *
-     * @return void
      */
     public function testGetLoadingPageWithNoDefaultPage()
     {

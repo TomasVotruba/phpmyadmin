@@ -249,8 +249,6 @@ class PdfRelationSchema extends ExportRelationSchema
      * Set Show Grid
      *
      * @param boolean $value show grid of the document or not
-     *
-     * @return void
      */
     public function setShowGrid($value)
     {
@@ -271,8 +269,6 @@ class PdfRelationSchema extends ExportRelationSchema
      * Set Data Dictionary
      *
      * @param boolean $value show selected database data dictionary or not
-     *
-     * @return void
      */
     public function setWithDataDictionary($value)
     {
@@ -293,8 +289,6 @@ class PdfRelationSchema extends ExportRelationSchema
      * Sets the order of the table in data dictionary
      *
      * @param string $value table order
-     *
-     * @return void
      */
     public function setTableOrder($value)
     {
@@ -313,8 +307,6 @@ class PdfRelationSchema extends ExportRelationSchema
 
     /**
      * Output Pdf Document for download
-     *
-     * @return void
      */
     public function showOutput()
     {
@@ -325,8 +317,6 @@ class PdfRelationSchema extends ExportRelationSchema
      * Sets X and Y minimum and maximum for a table cell
      *
      * @param TableStatsPdf $table The table name of which sets XY co-ordinates
-     *
-     * @return void
      */
     private function _setMinMax($table)
     {
@@ -343,8 +333,6 @@ class PdfRelationSchema extends ExportRelationSchema
      * @param string $masterField  The relation field in the master table
      * @param string $foreignTable The foreign table name
      * @param string $foreignField The relation field in the foreign table
-     *
-     * @return void
      *
      * @see _setMinMax
      */
@@ -391,8 +379,6 @@ class PdfRelationSchema extends ExportRelationSchema
 
     /**
      * Draws the grid
-     *
-     * @return void
      *
      * @see PMA_Schema_PDF
      */
@@ -453,8 +439,6 @@ class PdfRelationSchema extends ExportRelationSchema
     /**
      * Draws relation arrows
      *
-     * @return void
-     *
      * @see Relation_Stats_Pdf::relationdraw()
      */
     private function _drawRelations()
@@ -469,8 +453,6 @@ class PdfRelationSchema extends ExportRelationSchema
     /**
      * Draws tables
      *
-     * @return void
-     *
      * @see Table_Stats_Pdf::tableDraw()
      */
     private function _drawTables()
@@ -484,8 +466,6 @@ class PdfRelationSchema extends ExportRelationSchema
      * Generates data dictionary pages.
      *
      * @param array $alltables Tables to document.
-     *
-     * @return void
      */
     public function dataDictionaryDoc(array $alltables)
     {

@@ -73,8 +73,6 @@ class Bookmark
 
     /**
      * Returns the ID of the bookmark
-     *
-     * @return int
      */
     public function getId(): int
     {
@@ -83,8 +81,6 @@ class Bookmark
 
     /**
      * Returns the database of the bookmark
-     *
-     * @return string
      */
     public function getDatabase(): string
     {
@@ -93,8 +89,6 @@ class Bookmark
 
     /**
      * Returns the user whom the bookmark belongs to
-     *
-     * @return string
      */
     public function getUser(): string
     {
@@ -103,8 +97,6 @@ class Bookmark
 
     /**
      * Returns the label of the bookmark
-     *
-     * @return string
      */
     public function getLabel(): string
     {
@@ -113,8 +105,6 @@ class Bookmark
 
     /**
      * Returns the query
-     *
-     * @return string
      */
     public function getQuery(): string
     {
@@ -214,7 +204,7 @@ class Bookmark
      * @param string $user Current user
      *
      * @return array|bool the bookmark parameters for the current user
-     * @access  public
+     * @access public
      */
     public static function getParams(string $user)
     {
@@ -344,8 +334,7 @@ class Bookmark
      *
      * @return Bookmark the bookmark
      *
-     * @access  public
-     *
+     * @access public
      */
     public static function get(
         DatabaseInterface $dbi,

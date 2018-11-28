@@ -22,8 +22,6 @@ class IndexTest extends PmaTestCase
 
     /**
      * Configures parameters.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -56,8 +54,6 @@ class IndexTest extends PmaTestCase
 
     /**
      * Test for Constructor
-     *
-     * @return void
      */
     public function testConstructor()
     {
@@ -98,8 +94,6 @@ class IndexTest extends PmaTestCase
 
     /**
      * Test for getIndexChoices
-     *
-     * @return void
      */
     public function testGetIndexChoices()
     {
@@ -113,8 +107,6 @@ class IndexTest extends PmaTestCase
 
     /**
      * Test for isUnique
-     *
-     * @return void
      */
     public function testIsUniquer()
     {
@@ -131,8 +123,6 @@ class IndexTest extends PmaTestCase
 
     /**
      * Test for add Columns
-     *
-     * @return void
      */
     public function testAddColumns()
     {
@@ -149,8 +139,6 @@ class IndexTest extends PmaTestCase
 
     /**
      * Test for get Name & set Name
-     *
-     * @return void
      */
     public function testName()
     {
@@ -164,8 +152,6 @@ class IndexTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Index Column
-     *
-     * @return void
      */
     public function testColumns()
     {

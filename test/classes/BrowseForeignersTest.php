@@ -24,8 +24,6 @@ class BrowseForeignersTest extends TestCase
 
     /**
      * Setup for test cases
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -54,8 +52,6 @@ class BrowseForeignersTest extends TestCase
 
     /**
      * Test for BrowseForeigners::getForeignLimit
-     *
-     * @return void
      */
     public function testGetForeignLimit()
     {
@@ -96,8 +92,6 @@ class BrowseForeignersTest extends TestCase
 
     /**
      * Test for BrowseForeigners::getHtmlForGotoPage
-     *
-     * @return void
      */
     public function testGetHtmlForGotoPage()
     {
@@ -157,8 +151,6 @@ class BrowseForeignersTest extends TestCase
 
     /**
      * Test for BrowseForeigners::getDescriptionAndTitle
-     *
-     * @return void
      */
     public function testGetDescriptionAndTitle()
     {
@@ -186,8 +178,6 @@ class BrowseForeignersTest extends TestCase
 
     /**
      * Test for BrowseForeigners::getHtmlForRelationalFieldSelection
-     *
-     * @return void
      */
     public function testGetHtmlForRelationalFieldSelection()
     {

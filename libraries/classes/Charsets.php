@@ -55,10 +55,7 @@ class Charsets
     /**
      * Loads charset data from the MySQL server.
      *
-     * @param DatabaseInterface $dbi       DatabaseInterface instance
      * @param boolean           $disableIs Disable use of INFORMATION_SCHEMA
-     *
-     * @return void
      */
     private static function loadCharsets(DatabaseInterface $dbi, bool $disableIs): void
     {
@@ -90,10 +87,7 @@ class Charsets
     /**
      * Loads collation data from the MySQL server.
      *
-     * @param DatabaseInterface $dbi       DatabaseInterface instance
      * @param boolean           $disableIs Disable use of INFORMATION_SCHEMA
-     *
-     * @return void
      */
     private static function loadCollations(DatabaseInterface $dbi, bool $disableIs): void
     {
@@ -129,10 +123,7 @@ class Charsets
     /**
      * Get MySQL charsets
      *
-     * @param DatabaseInterface $dbi       DatabaseInterface instance
      * @param boolean           $disableIs Disable use of INFORMATION_SCHEMA
-     *
-     * @return array
      */
     public static function getMySQLCharsets(DatabaseInterface $dbi, bool $disableIs): array
     {
@@ -143,10 +134,7 @@ class Charsets
     /**
      * Get MySQL charsets descriptions
      *
-     * @param DatabaseInterface $dbi       DatabaseInterface instance
      * @param boolean           $disableIs Disable use of INFORMATION_SCHEMA
-     *
-     * @return array
      */
     public static function getMySQLCharsetsDescriptions(DatabaseInterface $dbi, bool $disableIs): array
     {
@@ -157,10 +145,7 @@ class Charsets
     /**
      * Get MySQL collations
      *
-     * @param DatabaseInterface $dbi       DatabaseInterface instance
      * @param boolean           $disableIs Disable use of INFORMATION_SCHEMA
-     *
-     * @return array
      */
     public static function getMySQLCollations(DatabaseInterface $dbi, bool $disableIs): array
     {
@@ -171,10 +156,7 @@ class Charsets
     /**
      * Get MySQL default collations
      *
-     * @param DatabaseInterface $dbi       DatabaseInterface instance
      * @param boolean           $disableIs Disable use of INFORMATION_SCHEMA
-     *
-     * @return array
      */
     public static function getMySQLCollationsDefault(DatabaseInterface $dbi, bool $disableIs): array
     {
@@ -185,15 +167,10 @@ class Charsets
     /**
      * Generate charset dropdown box
      *
-     * @param DatabaseInterface $dbi            DatabaseInterface instance
      * @param boolean           $disableIs      Disable use of INFORMATION_SCHEMA
      * @param string            $name           Element name
      * @param string            $id             Element id
-     * @param null|string       $default        Default value
-     * @param bool              $label          Label
-     * @param bool              $submitOnChange Submit on change
-     *
-     * @return string
+     * @param string|null       $default        Default value
      */
     public static function getCharsetDropdownBox(
         DatabaseInterface $dbi,
@@ -238,15 +215,10 @@ class Charsets
     /**
      * Generate collation dropdown box
      *
-     * @param DatabaseInterface $dbi            DatabaseInterface instance
      * @param boolean           $disableIs      Disable use of INFORMATION_SCHEMA
      * @param string            $name           Element name
      * @param string            $id             Element id
-     * @param null|string       $default        Default value
-     * @param bool              $label          Label
-     * @param bool              $submitOnChange Submit on change
-     *
-     * @return string
+     * @param string|null       $default        Default value
      */
     public static function getCollationDropdownBox(
         DatabaseInterface $dbi,

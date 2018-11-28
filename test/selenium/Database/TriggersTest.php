@@ -23,8 +23,6 @@ class TriggersTest extends TestBase
 {
     /**
      * Setup the browser environment to run the selenium test case
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -55,8 +53,6 @@ class TriggersTest extends TestBase
 
     /**
      * Creates procedure for tests
-     *
-     * @return void
      */
     private function _triggerSQL()
     {
@@ -70,8 +66,6 @@ class TriggersTest extends TestBase
 
     /**
      * Create a Trigger
-     *
-     * @return void
      *
      * @group large
      */
@@ -136,8 +130,6 @@ class TriggersTest extends TestBase
     /**
      * Test for editing Triggers
      *
-     * @return void
-     *
      * @group large
      */
     public function testEditTriggers()
@@ -176,8 +168,6 @@ class TriggersTest extends TestBase
 
     /**
      * Test for dropping Trigger
-     *
-     * @return void
      *
      * @group large
      */

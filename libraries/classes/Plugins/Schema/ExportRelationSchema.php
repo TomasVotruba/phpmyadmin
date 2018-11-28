@@ -58,8 +58,6 @@ class ExportRelationSchema
      * Set Page Number
      *
      * @param integer $value Page Number of the document to be created
-     *
-     * @return void
      */
     public function setPageNumber($value)
     {
@@ -80,8 +78,6 @@ class ExportRelationSchema
      * Sets showColor
      *
      * @param boolean $value whether to show colors
-     *
-     * @return void
      */
     public function setShowColor($value)
     {
@@ -102,8 +98,6 @@ class ExportRelationSchema
      * Set Table Dimension
      *
      * @param boolean $value show table co-ordinates or not
-     *
-     * @return void
      */
     public function setTableDimension($value)
     {
@@ -124,8 +118,6 @@ class ExportRelationSchema
      * Set same width of All Tables
      *
      * @param boolean $value set same width of all tables or not
-     *
-     * @return void
      */
     public function setAllTablesSameWidth($value)
     {
@@ -146,8 +138,6 @@ class ExportRelationSchema
      * Set Show only keys
      *
      * @param boolean $value show only keys or not
-     *
-     * @return void
      *
      * @access public
      */
@@ -171,8 +161,6 @@ class ExportRelationSchema
      *
      * @param string $value Orientation will be portrait or landscape
      *
-     * @return void
-     *
      * @access public
      */
     public function setOrientation($value)
@@ -195,8 +183,6 @@ class ExportRelationSchema
      *
      * @param string $value paper type can be A4 etc
      *
-     * @return void
-     *
      * @access public
      */
     public function setPaper($value)
@@ -218,8 +204,6 @@ class ExportRelationSchema
      * Set whether the document is generated from client side DB
      *
      * @param boolean $value offline or not
-     *
-     * @return void
      *
      * @access public
      */
@@ -261,7 +245,7 @@ class ExportRelationSchema
     /**
      * Returns the file name
      *
-     * @param String $extension file extension
+     * @param string $extension file extension
      *
      * @return string file name
      */
@@ -290,8 +274,6 @@ class ExportRelationSchema
      * @param string  $error_message The error message
      *
      * @access public
-     *
-     * @return void
      */
     public static function dieSchema($pageNumber, $type = '', $error_message = '')
     {

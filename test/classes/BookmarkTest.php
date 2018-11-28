@@ -24,7 +24,6 @@ class BookmarkTest extends TestCase
      * This method is called before a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function setUp()
     {
@@ -36,8 +35,6 @@ class BookmarkTest extends TestCase
 
     /**
      * Tests for Bookmark:getParams()
-     *
-     * @return void
      */
     public function testGetParams()
     {
@@ -49,8 +46,6 @@ class BookmarkTest extends TestCase
 
     /**
      * Tests for Bookmark::getList()
-     *
-     * @return void
      */
     public function testGetList()
     {
@@ -66,8 +61,6 @@ class BookmarkTest extends TestCase
 
     /**
      * Tests for Bookmark::get()
-     *
-     * @return void
      */
     public function testGet()
     {
@@ -83,8 +76,6 @@ class BookmarkTest extends TestCase
 
     /**
      * Tests for Bookmark::save()
-     *
-     * @return void
      */
     public function testSave()
     {

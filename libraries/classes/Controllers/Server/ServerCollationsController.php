@@ -23,8 +23,6 @@ class ServerCollationsController extends Controller
 {
     /**
      * Index action
-     *
-     * @return void
      */
     public function indexAction(): void
     {
@@ -57,8 +55,6 @@ class ServerCollationsController extends Controller
      * @param array $mysqlCollations    Mysql Collations list
      * @param array $mysqlCharsetsDesc  Charsets descriptions
      * @param array $mysqlDftCollations Default Collations list
-     *
-     * @return string
      */
     public function _getHtmlForCharsets(
         array $mysqlCharsets,

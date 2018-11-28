@@ -150,8 +150,6 @@ class Pdf extends PdfLib
 
     /**
      * This method is used to render the page header.
-     *
-     * @return void
      */
     public function Header()
     {
@@ -236,8 +234,6 @@ class Pdf extends PdfLib
      * Generate table
      *
      * @param int $lineheight Height of line
-     *
-     * @return void
      */
     public function morepagestable($lineheight = 8)
     {
@@ -321,8 +317,6 @@ class Pdf extends PdfLib
      * Sets a set of attributes.
      *
      * @param array $attr array containing the attributes
-     *
-     * @return void
      */
     public function setAttributes(array $attr = [])
     {
@@ -336,8 +330,6 @@ class Pdf extends PdfLib
      * The method can be called before creating the first page.
      *
      * @param float $topMargin the margin
-     *
-     * @return void
      */
     public function setTopMargin($topMargin)
     {
@@ -349,8 +341,6 @@ class Pdf extends PdfLib
      *
      * @param string $db    database name
      * @param string $table table name
-     *
-     * @return void
      */
     public function getTriggers($db, $table)
     {
@@ -489,8 +479,6 @@ class Pdf extends PdfLib
      * @param bool   $do_mime     whether to include mime comments
      * @param bool   $view        whether we're handling a view
      * @param array  $aliases     aliases of db/table/columns
-     *
-     * @return void
      */
     public function getTableDef(
         $db,
@@ -719,8 +707,6 @@ class Pdf extends PdfLib
      * MySQL report
      *
      * @param string $query Query to execute
-     *
-     * @return void
      */
     public function mysqlReport($query)
     {
@@ -782,9 +768,9 @@ class Pdf extends PdfLib
                 case 'mediumblob':
                 case 'longblob':
                     /**
-                 * @todo do not deactivate completely the display
-                 * but show the field's name and [BLOB]
-                 */
+                     * @todo do not deactivate completely the display
+                     * but show the field's name and [BLOB]
+                     */
                     if (stristr($this->fields[$i]->flags, 'BINARY')) {
                         $this->display_column[$i] = false;
                         unset($this->colTitles[$i]);

@@ -24,8 +24,6 @@ class VersionInformationTest extends PmaTestCase
     /**
      * Sets up the fixture, for example, opens a network connection.
      * This method is called before a test is executed.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -56,8 +54,6 @@ class VersionInformationTest extends PmaTestCase
     /**
      * Test version checking
      *
-     * @return void
-     *
      * @group large
      * @group network
      */
@@ -78,8 +74,6 @@ class VersionInformationTest extends PmaTestCase
      *
      * @param string $version Version string
      * @param int    $numeric Integer matching version
-     *
-     * @return void
      *
      * @dataProvider dataVersions
      */
@@ -125,8 +119,6 @@ class VersionInformationTest extends PmaTestCase
 
     /**
      * Tests getLatestCompatibleVersion() when there is only one server confgiured
-     *
-     * @return void
      */
     public function testGetLatestCompatibleVersionWithSingleServer()
     {
@@ -160,8 +152,6 @@ class VersionInformationTest extends PmaTestCase
 
     /**
      * Tests getLatestCompatibleVersion() when there are multiple servers configured
-     *
-     * @return void
      */
     public function testGetLaestCompatibleVersionWithMultipleServers()
     {
@@ -191,8 +181,6 @@ class VersionInformationTest extends PmaTestCase
 
     /**
      * Tests getLatestCompatibleVersion() with an old PHP version
-     *
-     * @return void
      */
     public function testGetLaestCompatibleVersionWithOldPHPVersion()
     {
@@ -232,8 +220,6 @@ class VersionInformationTest extends PmaTestCase
 
     /**
      * Tests evaluateVersionCondition() method
-     *
-     * @return void
      */
     public function testEvaluateVersionCondition()
     {

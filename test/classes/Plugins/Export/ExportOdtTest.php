@@ -29,8 +29,6 @@ class ExportOdtTest extends PmaTestCase
 
     /**
      * Configures global environment.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -49,8 +47,6 @@ class ExportOdtTest extends PmaTestCase
 
     /**
      * tearDown for test cases
-     *
-     * @return void
      */
     public function tearDown()
     {
@@ -59,8 +55,6 @@ class ExportOdtTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportOdt::setProperties
-     *
-     * @return void
      */
     public function testSetProperties()
     {
@@ -310,8 +304,6 @@ class ExportOdtTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportOdt::exportHeader
-     *
-     * @return void
      */
     public function testExportHeader()
     {
@@ -331,8 +323,6 @@ class ExportOdtTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportOdt::exportFooter
-     *
-     * @return void
      */
     public function testExportFooter()
     {
@@ -358,8 +348,6 @@ class ExportOdtTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportOdt::exportDBHeader
-     *
-     * @return void
      */
     public function testExportDBHeader()
     {
@@ -382,8 +370,6 @@ class ExportOdtTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportOdt::exportDBFooter
-     *
-     * @return void
      */
     public function testExportDBFooter()
     {
@@ -394,8 +380,6 @@ class ExportOdtTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportOdt::exportDBCreate
-     *
-     * @return void
      */
     public function testExportDBCreate()
     {
@@ -406,8 +390,6 @@ class ExportOdtTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportOdt::exportData
-     *
-     * @return void
      */
     public function testExportData()
     {
@@ -506,8 +488,6 @@ class ExportOdtTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportOdt::exportData
-     *
-     * @return void
      */
     public function testExportDataWithFieldNames()
     {
@@ -639,8 +619,6 @@ class ExportOdtTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportOdt::getTableDefStandIn
-     *
-     * @return void
      */
     public function testGetTableDefStandIn()
     {
@@ -688,8 +666,6 @@ class ExportOdtTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportOdt::getTableDef
-     *
-     * @return void
      */
     public function testGetTableDef()
     {
@@ -882,10 +858,8 @@ class ExportOdtTest extends PmaTestCase
     }
 
     /**
-    * Test for PhpMyAdmin\Plugins\Export\ExportOdt::getTriggers
-    *
-    * @return void
-    */
+     * Test for PhpMyAdmin\Plugins\Export\ExportOdt::getTriggers
+     */
     public function testGetTriggers()
     {
         $dbi = $this->getMockBuilder('PhpMyAdmin\DatabaseInterface')
@@ -944,8 +918,6 @@ class ExportOdtTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportOdt::exportStructure
-     *
-     * @return void
      */
     public function testExportStructure()
     {
@@ -1075,8 +1047,6 @@ class ExportOdtTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportOdt::formatOneColumnDefinition
-     *
-     * @return void
      */
     public function testFormatOneColumnDefinition()
     {

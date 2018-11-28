@@ -22,8 +22,6 @@ class EnvironmentTest extends TestCase
 {
     /**
      * Tests PHP version
-     *
-     * @return void
      */
     public function testPhpVersion()
     {
@@ -35,8 +33,6 @@ class EnvironmentTest extends TestCase
 
     /**
      * Tests MySQL connection
-     *
-     * @return void
      */
     public function testMySQL()
     {

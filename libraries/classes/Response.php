@@ -185,8 +185,6 @@ class Response
      * we are servicing an ajax request
      *
      * @param bool $isAjax Whether we are servicing an ajax request
-     *
-     * @return void
      */
     public function setAjax($isAjax)
     {
@@ -213,8 +211,6 @@ class Response
      * whether it is a success or an error
      *
      * @param bool $state Whether the request was successfully processed
-     *
-     * @return void
      */
     public function setRequestStatus($state)
     {
@@ -247,8 +243,6 @@ class Response
     /**
      * Disables the rendering of the header
      * and the footer in responses
-     *
-     * @return void
      */
     public function disable()
     {
@@ -282,8 +276,6 @@ class Response
      *
      * @param string $content A string to be appended to
      *                        the current output buffer
-     *
-     * @return void
      */
     public function addHTML($content)
     {
@@ -305,8 +297,6 @@ class Response
      *                     array or key-value pairs
      * @param mixed $value Null, if passing an array in $json otherwise
      *                     it's a string value to the key
-     *
-     * @return void
      */
     public function addJSON($json, $value = null)
     {
@@ -342,8 +332,6 @@ class Response
 
     /**
      * Sends an HTML response to the browser
-     *
-     * @return void
      */
     private function _htmlResponse()
     {
@@ -352,8 +340,6 @@ class Response
 
     /**
      * Sends a JSON response to the browser
-     *
-     * @return void
      */
     private function _ajaxResponse()
     {
@@ -492,8 +478,6 @@ class Response
 
     /**
      * Sends an HTML response to the browser
-     *
-     * @return void
      */
     public function response()
     {
@@ -515,8 +499,6 @@ class Response
      * Wrapper around PHP's header() function.
      *
      * @param string $text header string
-     *
-     * @return void
      */
     public function header($text)
     {
@@ -537,8 +519,6 @@ class Response
      * Wrapper around PHP's http_response_code() function.
      *
      * @param int $response_code will set the response code.
-     *
-     * @return void
      */
     public function httpResponseCode($response_code)
     {
@@ -549,8 +529,6 @@ class Response
      * Sets http response code.
      *
      * @param int $responseCode will set the response code.
-     *
-     * @return void
      */
     public function setHttpResponseCode(int $responseCode): void
     {
@@ -567,12 +545,10 @@ class Response
     }
 
     /**
-      * Generate header for 303
-      *
-      * @param string $location will set location to redirect.
-      *
-      * @return void
-      */
+     * Generate header for 303
+     *
+     * @param string $location will set location to redirect.
+     */
     public function generateHeader303($location)
     {
         $this->setHttpResponseCode(303);

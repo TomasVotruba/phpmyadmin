@@ -31,8 +31,6 @@ class ListDatabaseTest extends PmaTestCase
 
     /**
      * SetUp for test cases
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -58,8 +56,6 @@ class ListDatabaseTest extends PmaTestCase
 
     /**
      * Test for ListDatabase::getEmpty
-     *
-     * @return void
      */
     public function testEmpty()
     {
@@ -69,8 +65,6 @@ class ListDatabaseTest extends PmaTestCase
 
     /**
      * Test for ListDatabase::exists
-     *
-     * @return void
      */
     public function testExists()
     {
@@ -80,8 +74,6 @@ class ListDatabaseTest extends PmaTestCase
 
     /**
      * Test for ListDatabase::getHtmlOptions
-     *
-     * @return void
      */
     public function testHtmlOptions()
     {
@@ -94,8 +86,6 @@ class ListDatabaseTest extends PmaTestCase
 
     /**
      * Test for checkHideDatabase
-     *
-     * @return void
      */
     public function testCheckHideDatabase()
     {
@@ -111,8 +101,6 @@ class ListDatabaseTest extends PmaTestCase
 
     /**
      * Test for getDefault
-     *
-     * @return void
      */
     public function testGetDefault()
     {

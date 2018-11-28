@@ -60,10 +60,8 @@ class Dia extends XMLWriter
      * @param float  $rightMargin  right margin of the paper/document in cm
      * @param string $orientation  orientation of the document, portrait or landscape
      *
-     * @return void
-     *
      * @access public
-     * @see    XMLWriter::startElement(),XMLWriter::writeAttribute(),
+     * @see XMLWriter::startElement(),XMLWriter::writeAttribute(),
      *      XMLWriter::writeRaw()
      */
     public function startDiaDoc(
@@ -154,9 +152,8 @@ class Dia extends XMLWriter
     /**
      * Ends Dia Document
      *
-     * @return void
      * @access public
-     * @see    XMLWriter::endElement(),XMLWriter::endDocument()
+     * @see XMLWriter::endElement(),XMLWriter::endDocument()
      */
     public function endDiaDoc()
     {
@@ -169,9 +166,8 @@ class Dia extends XMLWriter
      *
      * @param string $fileName name of the dia document
      *
-     * @return void
      * @access public
-     * @see    XMLWriter::flush()
+     * @see XMLWriter::flush()
      */
     public function showOutput($fileName)
     {

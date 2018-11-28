@@ -288,8 +288,6 @@ class Qbe
 
     /**
      * Sets search parameters
-     *
-     * @return void
      */
     private function _setSearchParams()
     {
@@ -337,8 +335,6 @@ class Qbe
 
     /**
      * Sets criteria tables and columns
-     *
-     * @return void
      */
     private function _setCriteriaTablesAndColumns()
     {
@@ -1681,8 +1677,6 @@ class Qbe
      *
      * @param array  &$relations array of relations
      * @param string $oneTable   the table
-     *
-     * @return void
      */
     private function _loadRelationsForTable(array &$relations, $oneTable)
     {
@@ -1722,8 +1716,6 @@ class Qbe
      * @param array &$finalized   JOIN clauses for each table
      * @param array $relations    Relations among tables
      * @param array $searchTables Tables involved in the search
-     *
-     * @return void
      */
     private function _fillJoinClauses(array &$finalized, array $relations, array $searchTables)
     {

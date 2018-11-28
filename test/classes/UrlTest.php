@@ -24,7 +24,6 @@ class UrlTest extends TestCase
      * This method is called before a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function setUp()
     {
@@ -33,8 +32,6 @@ class UrlTest extends TestCase
 
     /**
      * Test for Url::getCommon for DB only
-     *
-     * @return void
      */
     public function testDbOnly()
     {
@@ -52,8 +49,6 @@ class UrlTest extends TestCase
 
     /**
      * Test for Url::getCommon with new style
-     *
-     * @return void
      */
     public function testNewStyle()
     {
@@ -72,8 +67,6 @@ class UrlTest extends TestCase
 
     /**
      * Test for Url::getCommon with alternate divider
-     *
-     * @return void
      */
     public function testWithAlternateDivider()
     {
@@ -96,8 +89,6 @@ class UrlTest extends TestCase
 
     /**
      * Test for Url::getCommon
-     *
-     * @return void
      */
     public function testDefault()
     {

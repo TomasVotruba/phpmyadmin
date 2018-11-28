@@ -73,8 +73,6 @@ class IndexColumn
      * Sets parameters of the index column
      *
      * @param array $params an array containing the parameters of the index column
-     *
-     * @return void
      */
     public function set(array $params)
     {

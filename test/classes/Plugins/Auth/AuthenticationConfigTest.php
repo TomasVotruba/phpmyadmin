@@ -25,8 +25,6 @@ class AuthenticationConfigTest extends PmaTestCase
 
     /**
      * Configures global environment.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -43,8 +41,6 @@ class AuthenticationConfigTest extends PmaTestCase
 
     /**
      * tearDown for test cases
-     *
-     * @return void
      */
     public function tearDown()
     {
@@ -53,8 +49,6 @@ class AuthenticationConfigTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationConfig::showLoginForm
-     *
-     * @return void
      */
     public function testAuth()
     {
@@ -65,8 +59,6 @@ class AuthenticationConfigTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationConfig::readCredentials
-     *
-     * @return void
      */
     public function testAuthCheck()
     {
@@ -81,8 +73,6 @@ class AuthenticationConfigTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationConfig::storeCredentials
-     *
-     * @return void
      */
     public function testAuthSetUser()
     {
@@ -93,8 +83,6 @@ class AuthenticationConfigTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationConfig::showFailure
-     *
-     * @return void
      */
     public function testAuthFails()
     {

@@ -21,8 +21,6 @@ class SqlQueryTest extends TestBase
 {
     /**
      * Setup the browser environment to run the selenium test case
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -43,8 +41,6 @@ class SqlQueryTest extends TestBase
 
     /**
      * Test typing a SQL query on Server SQL page and submitting it
-     *
-     * @return void
      */
     public function testServerSqlQuery()
     {
@@ -86,8 +82,6 @@ class SqlQueryTest extends TestBase
 
     /**
      * Test typing a SQL query on Database SQL page and submitting it
-     *
-     * @return void
      */
     public function testDatabaseSqlQuery()
     {
@@ -120,8 +114,6 @@ class SqlQueryTest extends TestBase
 
     /**
      * Test typing a SQL query on Table SQL page and submitting it
-     *
-     * @return void
      */
     public function testTableSqlQuery()
     {
@@ -157,9 +149,7 @@ class SqlQueryTest extends TestBase
         $this->_testInlineEdit();
     }
 
-    /**
-     * @return void
-     */
+    
     private function _testInlineEdit()
     {
         $this->waitForElement('cssSelector', 'a.inline_edit_sql')->click();

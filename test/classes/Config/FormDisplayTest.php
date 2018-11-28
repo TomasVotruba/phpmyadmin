@@ -31,8 +31,6 @@ class FormDisplayTest extends PmaTestCase
 
     /**
      * Configures global environment.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -44,8 +42,6 @@ class FormDisplayTest extends PmaTestCase
 
     /**
      * tearDown for test cases
-     *
-     * @return void
      */
     protected function tearDown()
     {
@@ -55,7 +51,6 @@ class FormDisplayTest extends PmaTestCase
     /**
      * Test for FormDisplay::__constructor
      *
-     * @return void
      * @group medium
      */
     public function testFormDisplayContructor()
@@ -69,7 +64,6 @@ class FormDisplayTest extends PmaTestCase
     /**
      * Test for FormDisplay::registerForm
      *
-     * @return void
      * @group medium
      */
     public function testRegisterForm()
@@ -115,7 +109,6 @@ class FormDisplayTest extends PmaTestCase
     /**
      * Test for FormDisplay::process
      *
-     * @return void
      * @group medium
      */
     public function testProcess()
@@ -151,8 +144,6 @@ class FormDisplayTest extends PmaTestCase
 
     /**
      * Test for FormDisplay::displayErrors
-     *
-     * @return void
      */
     public function testDisplayErrors()
     {
@@ -196,8 +187,6 @@ class FormDisplayTest extends PmaTestCase
 
     /**
      * Test for FormDisplay::fixErrors
-     *
-     * @return void
      */
     public function testFixErrors()
     {
@@ -245,8 +234,6 @@ class FormDisplayTest extends PmaTestCase
 
     /**
      * Test for FormDisplay::_validateSelect
-     *
-     * @return void
      */
     public function testValidateSelect()
     {
@@ -299,8 +286,6 @@ class FormDisplayTest extends PmaTestCase
 
     /**
      * Test for FormDisplay::hasErrors
-     *
-     * @return void
      */
     public function testHasErrors()
     {
@@ -323,8 +308,6 @@ class FormDisplayTest extends PmaTestCase
 
     /**
      * Test for FormDisplay::getDocLink
-     *
-     * @return void
      */
     public function testGetDocLink()
     {
@@ -347,8 +330,6 @@ class FormDisplayTest extends PmaTestCase
 
     /**
      * Test for FormDisplay::_getOptName
-     *
-     * @return void
      */
     public function testGetOptName()
     {
@@ -368,8 +349,6 @@ class FormDisplayTest extends PmaTestCase
 
     /**
      * Test for FormDisplay::_loadUserprefsInfo
-     *
-     * @return void
      */
     public function testLoadUserprefsInfo()
     {
@@ -391,8 +370,6 @@ class FormDisplayTest extends PmaTestCase
 
     /**
      * Test for FormDisplay::_setComments
-     *
-     * @return void
      */
     public function testSetComments()
     {

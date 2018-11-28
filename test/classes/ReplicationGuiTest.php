@@ -36,8 +36,6 @@ class ReplicationGuiTest extends TestCase
 
     /**
      * Prepares environment for the test.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -106,7 +104,6 @@ class ReplicationGuiTest extends TestCase
     /**
      * Test for getHtmlForMasterReplication
      *
-     * @return void
      * @group medium
      */
     public function testGetHtmlForMasterReplication()
@@ -207,8 +204,6 @@ class ReplicationGuiTest extends TestCase
 
     /**
      * Test for getHtmlForNotServerReplication
-     *
-     * @return void
      */
     public function testGetHtmlForNotServerReplication()
     {
@@ -227,8 +222,6 @@ class ReplicationGuiTest extends TestCase
 
     /**
      * Test for getHtmlForSlaveConfiguration
-     *
-     * @return void
      */
     public function testGetHtmlForSlaveConfiguration()
     {
@@ -280,8 +273,6 @@ class ReplicationGuiTest extends TestCase
 
     /**
      * Test for getHtmlForReplicationChangeMaster
-     *
-     * @return void
      */
     public function testGetHtmlForReplicationChangeMaster()
     {

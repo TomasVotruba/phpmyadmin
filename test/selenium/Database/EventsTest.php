@@ -23,8 +23,6 @@ class EventsTest extends TestBase
 {
     /**
      * Setup the browser environment to run the selenium test case
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -53,8 +51,6 @@ class EventsTest extends TestBase
 
     /**
      * Tear Down function for test cases
-     *
-     * @return void
      */
     public function tearDown()
     {
@@ -66,8 +62,6 @@ class EventsTest extends TestBase
 
     /**
      * Creates procedure for tests
-     *
-     * @return void
      */
     private function _eventSQL()
     {
@@ -84,8 +78,6 @@ class EventsTest extends TestBase
 
     /**
      * Create an event
-     *
-     * @return void
      *
      * @group large
      */
@@ -155,8 +147,6 @@ class EventsTest extends TestBase
     /**
      * Test for editing events
      *
-     * @return void
-     *
      * @group large
      */
     public function testEditEvents()
@@ -194,8 +184,6 @@ class EventsTest extends TestBase
 
     /**
      * Test for dropping event
-     *
-     * @return void
      *
      * @group large
      */

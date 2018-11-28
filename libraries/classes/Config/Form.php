@@ -144,8 +144,6 @@ class Form
      * @param mixed $value  Value
      * @param mixed $key    Key
      * @param mixed $prefix Prefix
-     *
-     * @return void
      */
     private function _readFormPathsCallback($value, $key, $prefix)
     {
@@ -170,10 +168,6 @@ class Form
 
     /**
      * Reads form paths to {@link $fields}
-     *
-     * @param array $form Form
-     *
-     * @return void
      */
     protected function readFormPaths(array $form)
     {
@@ -197,8 +191,6 @@ class Form
 
     /**
      * Reads fields' types to $this->_fieldsTypes
-     *
-     * @return void
      */
     protected function readTypes()
     {
@@ -223,9 +215,6 @@ class Form
      * config file
      *
      * @param string $formName Form name
-     * @param array  $form     Form
-     *
-     * @return void
      */
     public function loadForm($formName, array $form)
     {

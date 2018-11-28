@@ -30,8 +30,6 @@ class ExportCodegenTest extends PmaTestCase
 
     /**
      * Configures global environment.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -41,8 +39,6 @@ class ExportCodegenTest extends PmaTestCase
 
     /**
      * tearDown for test cases
-     *
-     * @return void
      */
     public function tearDown()
     {
@@ -51,8 +47,6 @@ class ExportCodegenTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportCodegen::initSpecificVariables
-     *
-     * @return void
      */
     public function testInitSpecificVariables()
     {
@@ -85,8 +79,6 @@ class ExportCodegenTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportCodegen::setProperties
-     *
-     * @return void
      */
     public function testSetProperties()
     {
@@ -190,8 +182,6 @@ class ExportCodegenTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportCodegen::exportHeader
-     *
-     * @return void
      */
     public function testExportHeader()
     {
@@ -202,8 +192,6 @@ class ExportCodegenTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportCodegen::exportFooter
-     *
-     * @return void
      */
     public function testExportFooter()
     {
@@ -214,8 +202,6 @@ class ExportCodegenTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportCodegen::exportDBHeader
-     *
-     * @return void
      */
     public function testExportDBHeader()
     {
@@ -226,8 +212,6 @@ class ExportCodegenTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportCodegen::exportDBFooter
-     *
-     * @return void
      */
     public function testExportDBFooter()
     {
@@ -238,8 +222,6 @@ class ExportCodegenTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportCodegen::exportData
-     *
-     * @return void
      */
     public function testExportData()
     {
@@ -302,8 +284,6 @@ class ExportCodegenTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportCodegen::cgMakeIdentifier
-     *
-     * @return void
      */
     public function testCgMakeIdentifier()
     {
@@ -325,8 +305,6 @@ class ExportCodegenTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportCodegen::_handleNHibernateCSBody
-     *
-     * @return void
      */
     public function testHandleNHibernateCSBody()
     {
@@ -390,8 +368,6 @@ class ExportCodegenTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportCodegen::_handleNHibernateXMLBody
-     *
-     * @return void
      */
     public function testHandleNHibernateXMLBody()
     {
@@ -447,8 +423,6 @@ class ExportCodegenTest extends PmaTestCase
      * Test for
      *     - PhpMyAdmin\Plugins\Export\ExportCodegen::_getCgFormats
      *     - PhpMyAdmin\Plugins\Export\ExportCodegen::_setCgFormats
-     *
-     * @return void
      */
     public function testSetGetCgFormats()
     {
@@ -472,8 +446,6 @@ class ExportCodegenTest extends PmaTestCase
      * Test for
      *     - PhpMyAdmin\Plugins\Export\ExportCodegen::_getCgHandlers
      *     - PhpMyAdmin\Plugins\Export\ExportCodegen::_setCgHandlers
-     *
-     * @return void
      */
     public function testSetGetCgHandlers()
     {

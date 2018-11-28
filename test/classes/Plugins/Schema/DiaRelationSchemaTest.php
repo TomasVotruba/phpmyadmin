@@ -29,7 +29,6 @@ class DiaRelationSchemaTest extends PmaTestCase
      * This method is called before a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function setUp()
     {
@@ -131,7 +130,6 @@ class DiaRelationSchemaTest extends PmaTestCase
      * This method is called after a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function tearDown()
     {
@@ -140,8 +138,6 @@ class DiaRelationSchemaTest extends PmaTestCase
 
     /**
      * Test for construct, the Property is set correctly
-     *
-     * @return void
      *
      * @group medium
      */

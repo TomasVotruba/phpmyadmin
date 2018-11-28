@@ -27,8 +27,6 @@ class ExportPhparrayTest extends PmaTestCase
 
     /**
      * Configures global environment.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -43,8 +41,6 @@ class ExportPhparrayTest extends PmaTestCase
 
     /**
      * tearDown for test cases
-     *
-     * @return void
      */
     public function tearDown()
     {
@@ -53,8 +49,6 @@ class ExportPhparrayTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportPhparray::setProperties
-     *
-     * @return void
      */
     public function testSetProperties()
     {
@@ -128,8 +122,6 @@ class ExportPhparrayTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportPhparray::exportHeader
-     *
-     * @return void
      */
     public function testExportHeader()
     {
@@ -149,8 +141,6 @@ class ExportPhparrayTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportPhparray::exportFooter
-     *
-     * @return void
      */
     public function testExportFooter()
     {
@@ -161,8 +151,6 @@ class ExportPhparrayTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportPhparray::exportDBHeader
-     *
-     * @return void
      */
     public function testExportDBHeader()
     {
@@ -182,8 +170,6 @@ class ExportPhparrayTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportPhparray::exportDBFooter
-     *
-     * @return void
      */
     public function testExportDBFooter()
     {
@@ -194,8 +180,6 @@ class ExportPhparrayTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportPhparray::exportDBCreate
-     *
-     * @return void
      */
     public function testExportDBCreate()
     {
@@ -206,8 +190,6 @@ class ExportPhparrayTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportPhparray::exportData
-     *
-     * @return void
      */
     public function testExportData()
     {

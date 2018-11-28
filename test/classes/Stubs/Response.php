@@ -85,8 +85,6 @@ class Response
      *
      * @param string $content A string to be appended to
      *                        the current output buffer
-     *
-     * @return void
      */
     public function addHTML($content)
     {
@@ -108,8 +106,6 @@ class Response
      *                     array or key-value pairs
      * @param mixed $value Null, if passing an array in $json otherwise
      *                     it's a string value to the key
-     *
-     * @return void
      */
     public function addJSON($json, $value = null)
     {
@@ -162,8 +158,6 @@ class Response
      * whether it is a success or an error
      *
      * @param bool $state Whether the request was successfully processed
-     *
-     * @return void
      */
     public function setRequestStatus($state)
     {
@@ -183,8 +177,6 @@ class Response
     /**
      * This function is used to clear all data to this
      * stub after any operations.
-     *
-     * @return void
      */
     public function clear()
     {
@@ -198,8 +190,6 @@ class Response
      * we are servicing an ajax request
      *
      * @param bool $isAjax Whether we are servicing an ajax request
-     *
-     * @return void
      */
     public function setAjax($isAjax)
     {

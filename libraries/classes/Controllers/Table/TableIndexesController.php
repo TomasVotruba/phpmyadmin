@@ -50,8 +50,6 @@ class TableIndexesController extends TableController
 
     /**
      * Index
-     *
-     * @return void
      */
     public function indexAction()
     {
@@ -65,8 +63,6 @@ class TableIndexesController extends TableController
 
     /**
      * Display the form to edit/create an index
-     *
-     * @return void
      */
     public function displayFormAction()
     {
@@ -130,8 +126,6 @@ class TableIndexesController extends TableController
      * Process the data from the edit/create index form,
      * run the query to build the new index
      * and moves back to "tbl_sql.php"
-     *
-     * @return void
      */
     public function doSaveDataAction()
     {

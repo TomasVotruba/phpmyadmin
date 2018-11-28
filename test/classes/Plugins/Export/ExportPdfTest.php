@@ -27,8 +27,6 @@ class ExportPdfTest extends PmaTestCase
 
     /**
      * Configures global environment.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -43,8 +41,6 @@ class ExportPdfTest extends PmaTestCase
 
     /**
      * tearDown for test cases
-     *
-     * @return void
      */
     public function tearDown()
     {
@@ -53,8 +49,6 @@ class ExportPdfTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportPdf::setProperties
-     *
-     * @return void
      */
     public function testSetProperties()
     {
@@ -178,8 +172,6 @@ class ExportPdfTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportPdf::exportHeader
-     *
-     * @return void
      */
     public function testExportHeader()
     {
@@ -207,8 +199,6 @@ class ExportPdfTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportPdf::exportFooter
-     *
-     * @return void
      */
     public function testExportFooter()
     {
@@ -230,8 +220,6 @@ class ExportPdfTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportPdf::exportDBHeader
-     *
-     * @return void
      */
     public function testExportDBHeader()
     {
@@ -242,8 +230,6 @@ class ExportPdfTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportPdf::exportDBFooter
-     *
-     * @return void
      */
     public function testExportDBFooter()
     {
@@ -254,8 +240,6 @@ class ExportPdfTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportPdf::exportDBCreate
-     *
-     * @return void
      */
     public function testExportDBCreate()
     {
@@ -266,8 +250,6 @@ class ExportPdfTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportPdf::exportData
-     *
-     * @return void
      */
     public function testExportData()
     {
@@ -309,8 +291,6 @@ class ExportPdfTest extends PmaTestCase
      * Test for
      *     - PhpMyAdmin\Plugins\Export\ExportPdf::_setPdf
      *     - PhpMyAdmin\Plugins\Export\ExportPdf::_getPdf
-     *
-     * @return void
      */
     public function testSetGetPdf()
     {
@@ -330,8 +310,6 @@ class ExportPdfTest extends PmaTestCase
      * Test for
      *     - PhpMyAdmin\Plugins\Export\ExportPdf::_setPdfReportTitle
      *     - PhpMyAdmin\Plugins\Export\ExportPdf::_getPdfReportTitle
-     *
-     * @return void
      */
     public function testSetGetPdfTitle()
     {

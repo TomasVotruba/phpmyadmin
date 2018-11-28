@@ -36,8 +36,6 @@ class SchemaPdf extends SchemaPlugin
 
     /**
      * Sets the schema export PDF properties
-     *
-     * @return void
      */
     protected function setProperties()
     {

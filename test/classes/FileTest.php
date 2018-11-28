@@ -20,8 +20,6 @@ class FileTest extends PmaTestCase
 {
     /**
      * Setup function for test cases
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -34,7 +32,6 @@ class FileTest extends PmaTestCase
      * @param string $file file string
      * @param string $mime expected mime
      *
-     * @return void
      * @dataProvider compressedFiles
      */
     public function testMIME($file, $mime)
@@ -48,7 +45,6 @@ class FileTest extends PmaTestCase
      *
      * @param string $file file string
      *
-     * @return void
      * @dataProvider compressedFiles
      */
     public function testBinaryContent($file)
@@ -63,7 +59,6 @@ class FileTest extends PmaTestCase
      *
      * @param string $file file string
      *
-     * @return void
      * @dataProvider compressedFiles
      */
     public function testReadCompressed($file)

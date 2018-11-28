@@ -150,10 +150,8 @@ class ConfigGenerator
     /**
      * Generate server part of config file
      *
-     * @param ConfigFile $cf      Config file
      * @param string     $crlf    Carriage return char
      * @param array      $servers Servers list
-     *
      * @return string|null
      */
     protected static function getServerPart(ConfigFile $cf, $crlf, array $servers)

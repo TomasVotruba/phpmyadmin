@@ -99,8 +99,6 @@ abstract class TableStats
 
     /**
      * Validate whether the table exists.
-     *
-     * @return void
      */
     protected function validateTableAndLoadFields()
     {
@@ -134,15 +132,12 @@ abstract class TableStats
     /**
      * Displays an error when the table cannot be found.
      *
-     * @return void
      * @abstract
      */
     abstract protected function showMissingTableError();
 
     /**
      * Loads coordinates of a table
-     *
-     * @return void
      */
     protected function loadCoordinates()
     {
@@ -157,8 +152,6 @@ abstract class TableStats
 
     /**
      * Loads the table's display field
-     *
-     * @return void
      */
     protected function loadDisplayField()
     {
@@ -167,8 +160,6 @@ abstract class TableStats
 
     /**
      * Loads the PRIMARY key.
-     *
-     * @return void
      */
     protected function loadPrimaryKey()
     {

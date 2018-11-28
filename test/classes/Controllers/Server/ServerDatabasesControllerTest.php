@@ -25,8 +25,6 @@ class ServerDatabasesControllerTest extends PmaTestCase
 {
     /**
      * Prepares environment for the test.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -60,7 +58,6 @@ class ServerDatabasesControllerTest extends PmaTestCase
     /**
      * Tests for _getHtmlForDatabases
      *
-     * @return void
      * @group medium
      */
     public function testGetHtmlForDatabase()
@@ -162,8 +159,6 @@ class ServerDatabasesControllerTest extends PmaTestCase
 
     /**
      * Tests for _setSortDetails()
-     *
-     * @return void
      */
     public function testSetSortDetails()
     {
@@ -241,8 +236,6 @@ class ServerDatabasesControllerTest extends PmaTestCase
 
     /**
      * Tests for _getColumnOrder()
-     *
-     * @return void
      */
     public function testGetColumnOrder()
     {

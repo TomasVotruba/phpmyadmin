@@ -345,8 +345,6 @@ class Operations
      * the db name
      *
      * @param string $db database name
-     *
-     * @return void
      */
     public function runProcedureAndFunctionDefinitions($db)
     {
@@ -389,8 +387,6 @@ class Operations
 
     /**
      * Create database before copy
-     *
-     * @return void
      */
     public function createDbBeforeCopy()
     {
@@ -547,8 +543,6 @@ class Operations
      * the db name
      *
      * @param string $db database name
-     *
-     * @return void
      */
     public function runEventDefinitionsForDb($db)
     {
@@ -574,8 +568,6 @@ class Operations
      * @param array   $views views as an array
      * @param boolean $move  whether database name is empty or not
      * @param string  $db    database name
-     *
-     * @return void
      */
     public function handleTheViews(array $views, $move, $db)
     {
@@ -615,8 +607,6 @@ class Operations
      *
      * @param string $oldDb   Database name before renaming
      * @param string $newname New Database name requested
-     *
-     * @return void
      */
     public function adjustPrivilegesMoveDb($oldDb, $newname)
     {
@@ -663,8 +653,6 @@ class Operations
      *
      * @param string $oldDb   Database name before copying
      * @param string $newname New Database name requested
-     *
-     * @return void
      */
     public function adjustPrivilegesCopyDb($oldDb, $newname)
     {
@@ -769,8 +757,6 @@ class Operations
      * Create all accumulated constraints
      *
      * @param array $sqlConstratints array of sql constraints for the database
-     *
-     * @return void
      */
     public function createAllAccumulatedConstraints(array $sqlConstratints)
     {
@@ -787,8 +773,6 @@ class Operations
      *
      * @param boolean $_error whether table rename/copy or not
      * @param string  $db     database name
-     *
-     * @return void
      */
     public function duplicateBookmarks($_error, $db)
     {
@@ -808,8 +792,6 @@ class Operations
 
     /**
      * Get the HTML snippet for order the table
-     *
-     * @param array $columns columns array
      *
      * @return string
      */
@@ -1976,8 +1958,6 @@ class Operations
      * @param string $oldTable Table name before table renaming/moving table
      * @param string $newDb    Database name after table renaming/ moving table
      * @param string $newTable Table name after table renaming/moving table
-     *
-     * @return void
      */
     public function adjustPrivilegesRenameOrMoveTable($oldDb, $oldTable, $newDb, $newTable)
     {
@@ -2013,8 +1993,6 @@ class Operations
      * @param string $oldTable Table name before table copying
      * @param string $newDb    Database name after table copying
      * @param string $newTable Table name after table copying
-     *
-     * @return void
      */
     public function adjustPrivilegesCopyTable($oldDb, $oldTable, $newDb, $newTable)
     {
@@ -2075,8 +2053,6 @@ class Operations
      * @param string $db            Database name
      * @param string $table         Table name
      * @param string $tbl_collation Collation Name
-     *
-     * @return void
      */
     public function changeAllColumnsCollation($db, $table, $tbl_collation)
     {
@@ -2099,8 +2075,6 @@ class Operations
      *
      * @param string $db    current database name
      * @param string $table current table name
-     *
-     * @return void
      */
     public function moveOrCopyTable($db, $table)
     {

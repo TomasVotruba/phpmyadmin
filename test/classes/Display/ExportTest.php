@@ -30,8 +30,6 @@ class ExportTest extends TestCase
 
     /**
      * Test for setUp
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -77,8 +75,6 @@ class ExportTest extends TestCase
 
     /**
      * Test for Export::getHtmlForHiddenInputs
-     *
-     * @return void
      */
     public function testGetHtmlForHiddenInputs()
     {
@@ -116,8 +112,6 @@ class ExportTest extends TestCase
 
     /**
      * Test for Export::getHtmlForOptions
-     *
-     * @return void
      */
     public function testGetHtmlForOptions()
     {
@@ -263,8 +257,6 @@ class ExportTest extends TestCase
 
     /**
      * Test for Export::getHtmlForAliasModalDialog
-     *
-     * @return void
      */
     public function testGetHtmlForAliasModalDialog()
     {

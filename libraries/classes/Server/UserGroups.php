@@ -69,7 +69,7 @@ class UserGroups
     /**
      * Returns HTML for the 'user groups' table
      *
-     * @return string HTML for the 'user groups' table
+     * @return string HTML for the 'user groups'table
      */
     public static function getHtmlForUserGroupsTable()
     {
@@ -188,8 +188,6 @@ class UserGroups
      * Deletes a user group
      *
      * @param string $userGroup user group name
-     *
-     * @return void
      */
     public static function delete($userGroup)
     {
@@ -344,8 +342,6 @@ class UserGroups
      *
      * @param string  $userGroup user group name
      * @param boolean $new       whether this is a new user group
-     *
-     * @return void
      */
     public static function edit($userGroup, $new = false)
     {

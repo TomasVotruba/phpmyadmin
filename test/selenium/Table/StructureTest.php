@@ -23,8 +23,6 @@ class StructureTest extends TestBase
 {
     /**
      * Setup the browser environment to run the selenium test case
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -52,8 +50,6 @@ class StructureTest extends TestBase
 
     /**
      * Test for adding a new column
-     *
-     * @return void
      *
      * @group large
      */
@@ -95,8 +91,6 @@ class StructureTest extends TestBase
     /**
      * Test for changing a column
      *
-     * @return void
-     *
      * @group large
      */
     public function testChangeColumn()
@@ -132,8 +126,6 @@ class StructureTest extends TestBase
 
     /**
      * Test for dropping columns
-     *
-     * @return void
      *
      * @group large
      */

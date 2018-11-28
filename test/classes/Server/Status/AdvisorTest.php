@@ -26,15 +26,11 @@ class AdvisorTest extends TestCase
 {
     /**
      * Prepares environment for the test.
-     *
-     * @return void
      */
     public $serverStatusData;
 
     /**
      * Test for setUp
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -124,7 +120,6 @@ class AdvisorTest extends TestCase
     /**
      * Test for Advisor::getHtml
      *
-     * @return void
      * @group medium
      */
     public function testGetHtml()

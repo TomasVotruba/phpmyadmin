@@ -24,8 +24,6 @@ class InsertTest extends TestBase
     /**
      * Setup the browser environment to run the selenium t
      * est case
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -45,8 +43,6 @@ class InsertTest extends TestBase
 
     /**
      * Insert data into table
-     *
-     * @return void
      *
      * @group large
      */
@@ -114,8 +110,6 @@ class InsertTest extends TestBase
 
     /**
      * Assert various data present in results table
-     *
-     * @return void
      */
     private function _assertDataPresent()
     {

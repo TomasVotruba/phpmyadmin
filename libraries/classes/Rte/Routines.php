@@ -74,8 +74,6 @@ class Routines
 
     /**
      * Sets required globals
-     *
-     * @return void
      */
     public function setGlobals()
     {
@@ -105,8 +103,6 @@ class Routines
      * @param string $type 'FUNCTION' for functions,
      *                     'PROCEDURE' for procedures,
      *                     null for both
-     *
-     * @return void
      */
     public function main($type)
     {
@@ -150,8 +146,6 @@ class Routines
 
     /**
      * Handles editor requests for adding or editing an item
-     *
-     * @return void
      */
     public function handleEditor()
     {
@@ -242,9 +236,7 @@ class Routines
     /**
      * Handle request to create or edit a routine
      *
-     * @param array  $errors Errors
      * @param string $db     DB name
-     *
      * @return array
      */
     public function handleRequestCreateOrEdit(array $errors, $db)
@@ -414,7 +406,6 @@ class Routines
      *
      * @param string $routine_query    Query to create routine
      * @param string $create_routine   Query to restore routine
-     * @param array  $privilegesBackup Privileges backup
      *
      * @return array
      */
@@ -673,7 +664,7 @@ class Routines
         $parser = new Parser($definition);
 
         /**
-         * @var CreateStatement $stmt
+         * @var CreateStatement
          */
         $stmt = $parser->statements[0];
 
@@ -1359,8 +1350,6 @@ class Routines
 
     /**
      * Handles requests for executing a routine
-     *
-     * @return void
      */
     public function handleExecute()
     {

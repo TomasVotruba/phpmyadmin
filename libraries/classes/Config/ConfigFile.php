@@ -112,8 +112,6 @@ class ConfigFile
      * they are set to their default values (use only full paths)
      *
      * @param array $keys the names of the config options
-     *
-     * @return void
      */
     public function setPersistKeys(array $keys)
     {
@@ -137,8 +135,6 @@ class ConfigFile
      * this method to set up a filter on {@link set()} method
      *
      * @param array|null $keys array of allowed keys or null to remove filter
-     *
-     * @return void
      */
     public function setAllowedKeys($keys)
     {
@@ -156,10 +152,8 @@ class ConfigFile
      * {@link updateWithGlobalConfig()} or reading
      * by {@link getConfig()} or {@link getConfigArray()}
      *
-     * @param array $mapping Contains the mapping of "Server/config options"
+     * @param array $mapping Contains the mapping of "Server/configoptions"
      *                       to "Server/1/config options"
-     *
-     * @return void
      */
     public function setCfgUpdateReadMapping(array $mapping)
     {
@@ -168,8 +162,6 @@ class ConfigFile
 
     /**
      * Resets configuration data
-     *
-     * @return void
      */
     public function resetConfigData()
     {
@@ -180,8 +172,6 @@ class ConfigFile
      * Sets configuration data (overrides old data)
      *
      * @param array $cfg Configuration options
-     *
-     * @return void
      */
     public function setConfigData(array $cfg)
     {
@@ -194,8 +184,6 @@ class ConfigFile
      * @param string $path          Path
      * @param mixed  $value         Value
      * @param string $canonicalPath Canonical path
-     *
-     * @return void
      */
     public function set($path, $value, $canonicalPath = null)
     {
@@ -249,8 +237,6 @@ class ConfigFile
      * @param mixed $value  Value
      * @param mixed $key    Key
      * @param mixed $prefix Prefix
-     *
-     * @return void
      */
     private function _flattenArray($value, $key, $prefix)
     {
@@ -282,8 +268,6 @@ class ConfigFile
      * (config will contain differences to defaults from config.defaults.php).
      *
      * @param array $cfg Configuration
-     *
-     * @return void
      */
     public function updateWithGlobalConfig(array $cfg)
     {
@@ -458,8 +442,6 @@ class ConfigFile
      * Removes server
      *
      * @param int $server server index
-     *
-     * @return void
      */
     public function removeServer($server)
     {

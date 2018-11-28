@@ -102,8 +102,6 @@ interface DbiExtension
      * Frees memory associated with the result
      *
      * @param object $result database result
-     *
-     * @return void
      */
     public function freeResult($result);
 

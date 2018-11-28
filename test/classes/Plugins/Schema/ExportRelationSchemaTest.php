@@ -28,7 +28,6 @@ class ExportRelationSchemaTest extends PmaTestCase
      * This method is called before a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function setUp()
     {
@@ -41,7 +40,6 @@ class ExportRelationSchemaTest extends PmaTestCase
      * This method is called after a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function tearDown()
     {
@@ -50,8 +48,6 @@ class ExportRelationSchemaTest extends PmaTestCase
 
     /**
      * Test for setPageNumber
-     *
-     * @return void
      *
      * @group medium
      */
@@ -66,8 +62,6 @@ class ExportRelationSchemaTest extends PmaTestCase
 
     /**
      * Test for setShowColor
-     *
-     * @return void
      *
      * @group medium
      */
@@ -88,8 +82,6 @@ class ExportRelationSchemaTest extends PmaTestCase
     /**
      * Test for setOrientation
      *
-     * @return void
-     *
      * @group medium
      */
     public function testSetOrientation()
@@ -108,8 +100,6 @@ class ExportRelationSchemaTest extends PmaTestCase
 
     /**
      * Test for setTableDimension
-     *
-     * @return void
      *
      * @group medium
      */
@@ -130,8 +120,6 @@ class ExportRelationSchemaTest extends PmaTestCase
     /**
      * Test for setPaper
      *
-     * @return void
-     *
      * @group medium
      */
     public function testSetPaper()
@@ -151,8 +139,6 @@ class ExportRelationSchemaTest extends PmaTestCase
     /**
      * Test for setAllTablesSameWidth
      *
-     * @return void
-     *
      * @group medium
      */
     public function testSetAllTablesSameWidth()
@@ -171,8 +157,6 @@ class ExportRelationSchemaTest extends PmaTestCase
 
     /**
      * Test for setShowKeys
-     *
-     * @return void
      *
      * @group medium
      */

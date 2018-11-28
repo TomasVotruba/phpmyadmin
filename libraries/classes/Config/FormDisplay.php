@@ -125,8 +125,6 @@ class FormDisplay
      * @param string $formName Form name
      * @param array  $form     Form data
      * @param int    $serverId 0 if new server, validation; >= 1 if editing a server
-     *
-     * @return void
      */
     public function registerForm($formName, array $form, $serverId = null)
     {
@@ -170,8 +168,6 @@ class FormDisplay
 
     /**
      * Runs validation for all registered forms
-     *
-     * @return void
      */
     private function _validate()
     {
@@ -219,7 +215,7 @@ class FormDisplay
     /**
      * Outputs HTML for the forms under the menu tab
      *
-     * @param bool  $showRestoreDefault whether to show "restore default"
+     * @param bool  $showRestoreDefault whether to show "restoredefault"
      *                                  button besides the input field
      * @param array &$jsDefault         stores JavaScript code
      *                                  to be displayed
@@ -281,7 +277,7 @@ class FormDisplay
      * Outputs HTML for forms
      *
      * @param bool       $tabbedForm         if true, use a form with tabs
-     * @param bool       $showRestoreDefault whether show "restore default" button
+     * @param bool       $showRestoreDefault whether show "restore default"button
      *                                       besides the input field
      * @param bool       $showButtons        whether show submit and reset button
      * @param string     $formAction         action attribute for the form
@@ -370,7 +366,7 @@ class FormDisplay
      * @param string    $workPath           work path, eg. Servers/4/verbose
      * @param string    $translatedPath     work path changed so that it can be
      *                                      used as XHTML id
-     * @param bool      $showRestoreDefault whether show "restore default" button
+     * @param bool      $showRestoreDefault whether show "restore default"button
      *                                      besides the input field
      * @param bool|null $userPrefsAllow     whether user preferences are enabled
      *                                      for this field (null - no support,
@@ -538,8 +534,6 @@ class FormDisplay
 
     /**
      * Reverts erroneous fields to their default values
-     *
-     * @return void
      */
     public function fixErrors()
     {
@@ -802,8 +796,6 @@ class FormDisplay
 
     /**
      * Fills out {@link userprefs_keys} and {@link userprefs_disallow}
-     *
-     * @return void
      */
     private function _loadUserprefsInfo()
     {
@@ -824,8 +816,6 @@ class FormDisplay
      *
      * @param string $systemPath Path to settings
      * @param array  &$opts      Chosen options
-     *
-     * @return void
      */
     private function _setComments($systemPath, array &$opts)
     {
@@ -898,8 +888,6 @@ class FormDisplay
      *
      * @param array  $postValues List of parameters
      * @param string $key        Array key
-     *
-     * @return void
      */
     private function _fillPostArrayParameters(array $postValues, $key)
     {

@@ -24,13 +24,10 @@ use PHPUnit\Framework\TestCase;
 class ErrorReportTest extends TestCase
 {
     /**
-     * @var ErrorReport $errorReport
+     * @var ErrorReport
      */
     private $errorReport;
-
-    /**
-     * @return void
-     */
+    
     protected function setUp(): void
     {
         $GLOBALS['server'] = 1;
@@ -55,10 +52,7 @@ class ErrorReportTest extends TestCase
         $this->errorReport = new ErrorReport(new HttpRequest());
         $this->errorReport->setSubmissionUrl('http://localhost');
     }
-
-    /**
-     * @return void
-     */
+    
     public function testGetData(): void
     {
         $actual = $this->errorReport->getData('unknown');
@@ -111,10 +105,7 @@ class ErrorReportTest extends TestCase
         $actual = $this->errorReport->getData('php');
         $this->assertEquals($report, $actual);
     }
-
-    /**
-     * @return void
-     */
+    
     public function testSend(): void
     {
         $submissionUrl = 'http://localhost';
@@ -140,10 +131,7 @@ class ErrorReportTest extends TestCase
 
         $this->assertEquals($return, $this->errorReport->send($report));
     }
-
-    /**
-     * @return void
-     */
+    
     public function testGetForm(): void
     {
         $_REQUEST['exception'] = [];

@@ -27,8 +27,6 @@ class ChangePasswordTest extends TestCase
 {
     /**
      * Test for setUp
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -54,8 +52,6 @@ class ChangePasswordTest extends TestCase
 
     /**
      * Test for ChangePassword::getHtml
-     *
-     * @return void
      */
     public function testGetHtml()
     {

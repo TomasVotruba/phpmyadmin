@@ -22,8 +22,6 @@ class PluginPropertyItemTest extends TestCase
 
     /**
      * Configures global environment.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -32,8 +30,6 @@ class PluginPropertyItemTest extends TestCase
 
     /**
      * tearDown for test cases
-     *
-     * @return void
      */
     public function tearDown()
     {
@@ -42,8 +38,6 @@ class PluginPropertyItemTest extends TestCase
 
     /**
      * Test for PhpMyAdmin\Properties\Plugins\PluginPropertyItem::getPropertyType
-     *
-     * @return void
      */
     public function testGetPropertyType()
     {

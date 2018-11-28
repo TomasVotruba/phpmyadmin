@@ -87,8 +87,6 @@ class Template
      * Loads a template.
      *
      * @param string $templateName Template path name
-     *
-     * @return \Twig_TemplateWrapper
      */
     public function load(string $templateName): \Twig_TemplateWrapper
     {
@@ -118,8 +116,6 @@ class Template
     /**
      * @param string $template Template path name
      * @param array  $data     Associative array of template variables
-     *
-     * @return string
      */
     public function render(string $template, array $data = []): string
     {

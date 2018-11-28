@@ -42,8 +42,6 @@ class UserPreferences
      * Common initialization for user preferences modification pages
      *
      * @param ConfigFile $cf Config file instance
-     *
-     * @return void
      */
     public function pageInit(ConfigFile $cf)
     {
@@ -231,8 +229,6 @@ class UserPreferences
      * @param string     $file_name Filename
      * @param array|null $params    URL parameters
      * @param string     $hash      Hash value
-     *
-     * @return void
      */
     public function redirect(
         $file_name,

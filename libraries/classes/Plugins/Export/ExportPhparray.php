@@ -38,8 +38,6 @@ class ExportPhparray extends ExportPlugin
 
     /**
      * Sets the export PHP Array properties
-     *
-     * @return void
      */
     protected function setProperties()
     {

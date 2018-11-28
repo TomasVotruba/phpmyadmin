@@ -29,8 +29,6 @@ class ExportTest extends TestCase
 
     /**
      * Sets up the fixture
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -39,8 +37,6 @@ class ExportTest extends TestCase
 
     /**
      * Test for mergeAliases
-     *
-     * @return void
      */
     public function testMergeAliases()
     {

@@ -21,8 +21,6 @@ class ServerSettingsTest extends TestBase
 {
     /**
      * setUp function
-     *
-     * @return void
      */
     public function setUp()
     {
@@ -41,8 +39,6 @@ class ServerSettingsTest extends TestBase
 
     /**
      * Saves config and asserts correct message.
-     *
-     * @return void
      */
     private function _saveConfig()
     {
@@ -64,8 +60,6 @@ class ServerSettingsTest extends TestBase
 
     /**
      * Tests whether hiding a database works or not
-     *
-     * @return void
      *
      * @group large
      */
@@ -95,8 +89,6 @@ class ServerSettingsTest extends TestBase
     /**
      * Tests whether the various settings tabs are displayed when clicked
      *
-     * @return void
-     *
      * @group large
      */
     public function testSettingsTabsAreDisplayed()
@@ -125,8 +117,6 @@ class ServerSettingsTest extends TestBase
 
     /**
      * Tests if hiding the logo works or not
-     *
-     * @return void
      *
      * @group large
      */

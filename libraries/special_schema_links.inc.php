@@ -44,7 +44,6 @@ if (! defined('PHPMYADMIN')) {
  *         )
  *     )
  * );
- *
  */
 $GLOBALS['special_schema_links'] = [
     'mysql' => [

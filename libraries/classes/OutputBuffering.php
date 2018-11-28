@@ -76,8 +76,6 @@ class OutputBuffering
      * This function will need to run at the top of all pages if output
      * output buffering is turned on.  It also needs to be passed $mode from
      * the PMA_outBufferModeGet() function or it will be useless.
-     *
-     * @return void
      */
     public function start()
     {
@@ -100,8 +98,6 @@ class OutputBuffering
      * This function will need to run at the bottom of all pages if output
      * buffering is turned on.  It also needs to be passed $mode from the
      * PMA_outBufferModeGet() function or it will be useless.
-     *
-     * @return void
      */
     public static function stop()
     {
@@ -125,8 +121,6 @@ class OutputBuffering
 
     /**
      * Flushes output buffer
-     *
-     * @return void
      */
     public function flush()
     {

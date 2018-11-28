@@ -19,9 +19,6 @@ namespace PhpMyAdmin\Tests\Selenium;
  */
 class LoginTest extends TestBase
 {
-    /**
-     * @return void
-     */
     public function setUp()
     {
         parent::setUp();
@@ -29,8 +26,6 @@ class LoginTest extends TestBase
     }
     /**
      * Test for successful login
-     *
-     * @return void
      *
      * @group large
      */
@@ -44,8 +39,6 @@ class LoginTest extends TestBase
 
     /**
      * Test for unsuccessful login
-     *
-     * @return void
      *
      * @group large
      */

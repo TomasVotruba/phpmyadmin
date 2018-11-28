@@ -23,8 +23,6 @@ class OptionsPropertyMainGroupTest extends TestCase
 
     /**
      * Configures global environment.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -33,8 +31,6 @@ class OptionsPropertyMainGroupTest extends TestCase
 
     /**
      * tearDown for test cases
-     *
-     * @return void
      */
     protected function tearDown()
     {
@@ -43,8 +39,6 @@ class OptionsPropertyMainGroupTest extends TestCase
 
     /**
      * Test for PhpMyAdmin\Properties\Options\Groups\OptionsPropertyMainGroup::getItemType
-     *
-     * @return void
      */
     public function testGetItemType()
     {

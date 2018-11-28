@@ -30,7 +30,7 @@ class Url
      *
      * @return string   string with input fields
      *
-     * @access  public
+     * @access public
      */
     public static function getHiddenInputs(
         $db = '',
@@ -164,7 +164,7 @@ class Url
      * @param string $divider optional character to use instead of '?'
      *
      * @return string   string with URL parameters
-     * @access  public
+     * @access public
      */
     public static function getCommon($params = [], $divider = '?')
     {
@@ -200,7 +200,7 @@ class Url
      * @param string $divider optional character to use instead of '?'
      *
      * @return string   string with URL parameters
-     * @access  public
+     * @access public
      */
     public static function getCommonRaw($params = [], $divider = '?')
     {
@@ -238,7 +238,7 @@ class Url
      *                       currently 'none' or 'html'
      *
      * @return string  character used for separating url parts usually ; or &
-     * @access  public
+     * @access public
      */
     public static function getArgSeparator($encode = 'none')
     {

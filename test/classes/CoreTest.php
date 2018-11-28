@@ -42,8 +42,6 @@ class CoreTest extends PmaTestCase
 
     /**
      * Setup for test cases
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -55,8 +53,6 @@ class CoreTest extends PmaTestCase
 
     /**
      * Test for Core::arrayRead
-     *
-     * @return void
      */
     public function testArrayRead()
     {
@@ -143,8 +139,6 @@ class CoreTest extends PmaTestCase
 
     /**
      * Test for Core::arrayWrite
-     *
-     * @return void
      */
     public function testArrayWrite()
     {
@@ -197,8 +191,6 @@ class CoreTest extends PmaTestCase
 
     /**
      * Test for Core::arrayRemove
-     *
-     * @return void
      */
     public function testArrayRemove()
     {
@@ -265,8 +257,6 @@ class CoreTest extends PmaTestCase
      * @param boolean    $include   whether the page is going to be included
      * @param int        $expected  Expected value
      *
-     * @return void
-     *
      * @dataProvider providerTestGotoNowhere
      */
     public function testGotoNowhere($page, $whiteList, $include, $expected)
@@ -304,8 +294,6 @@ class CoreTest extends PmaTestCase
      * @param string $request   The REQUEST_URI value
      * @param string $path_info The PATH_INFO value
      * @param string $expected  Expected result
-     *
-     * @return void
      *
      * @dataProvider providerTestPathInfo
      */
@@ -382,8 +370,6 @@ class CoreTest extends PmaTestCase
 
     /**
      * Test for Core::fatalError
-     *
-     * @return void
      */
     public function testFatalErrorMessage()
     {
@@ -393,8 +379,6 @@ class CoreTest extends PmaTestCase
 
     /**
      * Test for Core::fatalError
-     *
-     * @return void
      */
     public function testFatalErrorMessageWithArgs()
     {
@@ -416,8 +400,6 @@ class CoreTest extends PmaTestCase
      *
      * @param string $size     Size
      * @param int    $expected Expected value
-     *
-     * @return void
      *
      * @dataProvider providerTestGetRealSize
      */
@@ -445,8 +427,6 @@ class CoreTest extends PmaTestCase
 
     /**
      * Test for Core::getPHPDocLink
-     *
-     * @return void
      */
     public function testGetPHPDocLink()
     {
@@ -463,8 +443,6 @@ class CoreTest extends PmaTestCase
      *
      * @param string $link URL where to go
      * @param string $url  Expected value
-     *
-     * @return void
      *
      * @dataProvider providerTestLinkURL
      */
@@ -492,8 +470,6 @@ class CoreTest extends PmaTestCase
 
     /**
      * Test for Core::sendHeaderLocation
-     *
-     * @return void
      */
     public function testSendHeaderLocationWithoutSidWithIis()
     {
@@ -515,8 +491,6 @@ class CoreTest extends PmaTestCase
 
     /**
      * Test for Core::sendHeaderLocation
-     *
-     * @return void
      */
     public function testSendHeaderLocationWithoutSidWithoutIis()
     {
@@ -533,8 +507,6 @@ class CoreTest extends PmaTestCase
 
     /**
      * Test for Core::sendHeaderLocation
-     *
-     * @return void
      */
     public function testSendHeaderLocationIisLongUri()
     {
@@ -580,8 +552,6 @@ class CoreTest extends PmaTestCase
 
     /**
      * Test for Core::ifSetOr
-     *
-     * @return void
      */
     public function testVarSet()
     {
@@ -593,8 +563,6 @@ class CoreTest extends PmaTestCase
 
     /**
      * Test for Core::ifSetOr
-     *
-     * @return void
      */
     public function testVarSetWrongType()
     {
@@ -606,8 +574,6 @@ class CoreTest extends PmaTestCase
 
     /**
      * Test for Core::ifSetOr
-     *
-     * @return void
      */
     public function testVarNotSet()
     {
@@ -619,8 +585,6 @@ class CoreTest extends PmaTestCase
 
     /**
      * Test for Core::ifSetOr
-     *
-     * @return void
      */
     public function testVarNotSetNoDefault()
     {
@@ -634,8 +598,6 @@ class CoreTest extends PmaTestCase
      *
      * @param string $url      URL to test
      * @param mixed  $expected Expected result
-     *
-     * @return void
      *
      * @dataProvider provideTestIsAllowedDomain
      */
@@ -674,8 +636,6 @@ class CoreTest extends PmaTestCase
      * @param mixed $type    Type
      * @param mixed $compare Compared value
      *
-     * @return void
-     *
      * @dataProvider providerTestNoVarType
      */
     public function testNoVarType($var, $type, $compare)
@@ -707,8 +667,6 @@ class CoreTest extends PmaTestCase
 
     /**
      * Test for Core::isValid
-     *
-     * @return void
      */
     public function testVarNotSetAfterTest()
     {
@@ -718,8 +676,6 @@ class CoreTest extends PmaTestCase
 
     /**
      * Test for Core::isValid
-     *
-     * @return void
      */
     public function testNotSet()
     {
@@ -728,8 +684,6 @@ class CoreTest extends PmaTestCase
 
     /**
      * Test for Core::isValid
-     *
-     * @return void
      */
     public function testEmptyString()
     {
@@ -739,8 +693,6 @@ class CoreTest extends PmaTestCase
 
     /**
      * Test for Core::isValid
-     *
-     * @return void
      */
     public function testNotEmptyString()
     {
@@ -750,8 +702,6 @@ class CoreTest extends PmaTestCase
 
     /**
      * Test for Core::isValid
-     *
-     * @return void
      */
     public function testZero()
     {
@@ -762,8 +712,6 @@ class CoreTest extends PmaTestCase
 
     /**
      * Test for Core::isValid
-     *
-     * @return void
      */
     public function testNullFail()
     {
@@ -776,8 +724,6 @@ class CoreTest extends PmaTestCase
 
     /**
      * Test for Core::isValid
-     *
-     * @return void
      */
     public function testNotSetArray()
     {
@@ -787,8 +733,6 @@ class CoreTest extends PmaTestCase
 
     /**
      * Test for Core::isValid
-     *
-     * @return void
      */
     public function testScalarString()
     {
@@ -800,8 +744,6 @@ class CoreTest extends PmaTestCase
 
     /**
      * Test for Core::isValid
-     *
-     * @return void
      */
     public function testScalarInt()
     {
@@ -812,8 +754,6 @@ class CoreTest extends PmaTestCase
 
     /**
      * Test for Core::isValid
-     *
-     * @return void
      */
     public function testScalarFloat()
     {
@@ -825,8 +765,6 @@ class CoreTest extends PmaTestCase
 
     /**
      * Test for Core::isValid
-     *
-     * @return void
      */
     public function testScalarBool()
     {
@@ -838,8 +776,6 @@ class CoreTest extends PmaTestCase
 
     /**
      * Test for Core::isValid
-     *
-     * @return void
      */
     public function testNotScalarArray()
     {
@@ -849,8 +785,6 @@ class CoreTest extends PmaTestCase
 
     /**
      * Test for Core::isValid
-     *
-     * @return void
      */
     public function testNotScalarNull()
     {
@@ -860,8 +794,6 @@ class CoreTest extends PmaTestCase
 
     /**
      * Test for Core::isValid
-     *
-     * @return void
      */
     public function testNumericInt()
     {
@@ -871,8 +803,6 @@ class CoreTest extends PmaTestCase
 
     /**
      * Test for Core::isValid
-     *
-     * @return void
      */
     public function testNumericFloat()
     {
@@ -882,8 +812,6 @@ class CoreTest extends PmaTestCase
 
     /**
      * Test for Core::isValid
-     *
-     * @return void
      */
     public function testNumericZero()
     {
@@ -893,8 +821,6 @@ class CoreTest extends PmaTestCase
 
     /**
      * Test for Core::isValid
-     *
-     * @return void
      */
     public function testNumericString()
     {
@@ -904,8 +830,6 @@ class CoreTest extends PmaTestCase
 
     /**
      * Test for Core::isValid
-     *
-     * @return void
      */
     public function testValueInArray()
     {
@@ -915,8 +839,6 @@ class CoreTest extends PmaTestCase
 
     /**
      * Test for Core::isValid
-     *
-     * @return void
      */
     public function testValueNotInArray()
     {
@@ -926,8 +848,6 @@ class CoreTest extends PmaTestCase
 
     /**
      * Test for Core::isValid
-     *
-     * @return void
      */
     public function testNumericIdentical()
     {
@@ -950,8 +870,6 @@ class CoreTest extends PmaTestCase
      *
      * @param mixed $var     Variable
      * @param mixed $compare Compare
-     *
-     * @return void
      *
      * @dataProvider provideTestSimilarType
      */
@@ -982,8 +900,6 @@ class CoreTest extends PmaTestCase
 
     /**
      * Test for Core::isValid
-     *
-     * @return void
      */
     public function testOtherTypes()
     {
@@ -996,8 +912,6 @@ class CoreTest extends PmaTestCase
      *
      * @param string $data     Serialized data
      * @param mixed  $expected Expected result
-     *
-     * @return void
      *
      * @dataProvider provideTestSafeUnserialize
      */
@@ -1036,8 +950,6 @@ class CoreTest extends PmaTestCase
      * @param string $host     Test host name
      * @param string $expected Expected result
      *
-     * @return void
-     *
      * @dataProvider provideTestSanitizeMySQLHost
      */
     public function testSanitizeMySQLHost($host, $expected)
@@ -1065,8 +977,6 @@ class CoreTest extends PmaTestCase
 
     /**
      * Test for replacing dots.
-     *
-     * @return void
      */
     public function testReplaceDots()
     {
@@ -1086,8 +996,6 @@ class CoreTest extends PmaTestCase
 
     /**
      * Test for Core::warnMissingExtension
-     *
-     * @return void
      */
     public function testMissingExtensionFatal()
     {
@@ -1103,8 +1011,6 @@ class CoreTest extends PmaTestCase
 
     /**
      * Test for Core::warnMissingExtension
-     *
-     * @return void
      */
     public function testMissingExtensionFatalWithExtra()
     {

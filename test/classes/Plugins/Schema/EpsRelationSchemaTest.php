@@ -29,7 +29,6 @@ class EpsRelationSchemaTest extends PmaTestCase
      * This method is called before a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function setUp()
     {
@@ -132,7 +131,6 @@ class EpsRelationSchemaTest extends PmaTestCase
      * This method is called after a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function tearDown()
     {
@@ -141,8 +139,6 @@ class EpsRelationSchemaTest extends PmaTestCase
 
     /**
      * Test for construct
-     *
-     * @return void
      *
      * @group medium
      */
@@ -176,8 +172,6 @@ class EpsRelationSchemaTest extends PmaTestCase
 
     /**
      * Test for setPageNumber
-     *
-     * @return void
      *
      * @group medium
      */

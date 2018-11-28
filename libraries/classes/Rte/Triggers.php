@@ -69,8 +69,6 @@ class Triggers
 
     /**
      * Sets required globals
-     *
-     * @return void
      */
     public function setGlobals()
     {
@@ -90,8 +88,6 @@ class Triggers
 
     /**
      * Main function for the triggers functionality
-     *
-     * @return void
      */
     public function main()
     {
@@ -117,8 +113,6 @@ class Triggers
 
     /**
      * Handles editor requests for adding or editing an item
-     *
-     * @return void
      */
     public function handleEditor()
     {

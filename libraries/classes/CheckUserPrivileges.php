@@ -35,8 +35,6 @@ class CheckUserPrivileges
      * Extracts details from a result row of a SHOW GRANT query
      *
      * @param string $row grant row
-     *
-     * @return array
      */
     public function getItemsFromShowGrantsRow(string $row): array
     {
@@ -90,8 +88,6 @@ class CheckUserPrivileges
      * @param string $show_grants_str     string containing grants for user
      * @param string $show_grants_dbname  name of db extracted from grant string
      * @param string $show_grants_tblname name of table extracted from grant string
-     *
-     * @return void
      */
     public function checkRequiredPrivilegesForAdjust(
         string $show_grants_str,
@@ -166,8 +162,6 @@ class CheckUserPrivileges
      * account. Other privileges might be available to the account, but they are not
      * displayed. For example, if an anonymous account exists, the named account
      * might be able to use its privileges, but SHOW GRANTS will not display them.
-     *
-     * @return void
      */
     public function analyseShowGrant(): void
     {

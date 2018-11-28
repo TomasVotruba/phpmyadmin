@@ -161,7 +161,7 @@ class Util
      *
      * @return string the message
      *
-     * @access  public
+     * @access public
      */
     public static function getFormattedMaximumUploadSize($max_upload_size)
     {
@@ -179,7 +179,7 @@ class Util
      *
      * @return string the INPUT field
      *
-     * @access  public
+     * @access public
      */
     public static function generateHiddenMaxFileSize($max_size)
     {
@@ -196,7 +196,7 @@ class Util
      *
      * @return string the escaped string
      *
-     * @access  public
+     * @access public
      */
     public static function escapeMysqlWildcards($name)
     {
@@ -211,7 +211,7 @@ class Util
      *
      * @return string   the escaped string
      *
-     * @access  public
+     * @access public
      */
     public static function unescapeMysqlWildcards($name)
     {
@@ -268,8 +268,8 @@ class Util
      *
      * @global array  $cfg the configuration array
      *
-     * @access  public
-     * @todo    move into PMA_Sql
+     * @access public
+     * @todo move into PMA_Sql
      */
     public static function formatSql($sqlQuery, $truncate = false)
     {
@@ -296,7 +296,7 @@ class Util
      *
      * @return string  the html link
      *
-     * @access  public
+     * @access public
      */
     public static function showCopyToClipboard($text)
     {
@@ -334,7 +334,7 @@ class Util
      *
      * @return string  the URL link
      *
-     * @access  public
+     * @access public
      */
     public static function getMySQLDocuURL($link, $anchor = '')
     {
@@ -408,7 +408,7 @@ class Util
      *
      * @return string  the html link
      *
-     * @access  public
+     * @access public
      */
     public static function showMySQLDocu(
         $link,
@@ -476,7 +476,7 @@ class Util
      *
      * @return string  the html link
      *
-     * @access  public
+     * @access public
      */
     public static function showDocu($page, $anchor = '', $bbcode = false)
     {
@@ -490,7 +490,7 @@ class Util
      *
      * @return string  the html link
      *
-     * @access  public
+     * @access public
      */
     public static function showPHPDocu($target)
     {
@@ -506,7 +506,7 @@ class Util
      *
      * @return string
      *
-     * @access  public
+     * @access public
      */
     public static function showHint($message)
     {
@@ -551,7 +551,7 @@ class Util
 
         /**
          * Error message to be built.
-         * @var string $error_msg
+         * @var string
          */
         $error_msg = '';
 
@@ -568,19 +568,19 @@ class Util
 
         /**
          * The lexer used for analysis.
-         * @var Lexer $lexer
+         * @var Lexer
          */
         $lexer = new Lexer($sql_query);
 
         /**
          * The parser used for analysis.
-         * @var Parser $parser
+         * @var Parser
          */
         $parser = new Parser($lexer->list);
 
         /**
          * The errors found by the lexer and the parser.
-         * @var array $errors
+         * @var array
          */
         $errors = ParserError::get([$lexer, $parser]);
 
@@ -729,7 +729,6 @@ class Util
      * @param array  $table the table infos
      *
      * @return int the possibly modified row count
-     *
      */
     private static function _checkRowCount($db, array $table)
     {
@@ -875,7 +874,7 @@ class Util
      *
      * @return mixed    the "backquoted" database, table or field name
      *
-     * @access  public
+     * @access public
      */
     public static function backquote($a_name, $do_it = true)
     {
@@ -920,7 +919,7 @@ class Util
      *
      * @return mixed the "backquoted" database, table or field name
      *
-     * @access  public
+     * @access public
      */
     public static function backquoteCompat(
         $a_name,
@@ -968,7 +967,7 @@ class Util
      *
      * @return string
      *
-     * @access  public
+     * @access public
      */
     public static function getMessage(
         $message,
@@ -1266,7 +1265,7 @@ class Util
     /**
      * Verifies if current MySQL server supports profiling
      *
-     * @access  public
+     * @access public
      *
      * @return boolean whether profiling is supported
      */
@@ -1296,7 +1295,7 @@ class Util
      *
      * @return array    the formatted value and its unit
      *
-     * @access  public
+     * @access public
      */
     public static function formatByteDown($value, $limes = 6, $comma = 0)
     {
@@ -1373,7 +1372,7 @@ class Util
      *
      * @return string   the formatted value and its unit
      *
-     * @access  public
+     * @access public
      */
     public static function formatNumber(
         $value,
@@ -1519,7 +1518,7 @@ class Util
      *
      * @return string   the formatted date
      *
-     * @access  public
+     * @access public
      */
     public static function localisedDate($timestamp = -1, $format = '')
     {
@@ -1612,7 +1611,7 @@ class Util
      *
      * @return string  html code for one tab, a link if valid otherwise a span
      *
-     * @access  public
+     * @access public
      */
     public static function getHtmlTab(array $tab, array $url_params = [])
     {
@@ -1907,8 +1906,6 @@ class Util
      *                          script
      * @param boolean  $request Check parameters in request
      *
-     * @return void
-     *
      * @access public
      */
     public static function checkParameters($params, $request = false)
@@ -2122,7 +2119,7 @@ class Util
      * Generate the charset query part
      *
      * @param string  $collation Collation
-     * @param boolean $override  (optional) force 'CHARACTER SET' keyword
+     * @param boolean $override  (optional) force 'CHARACTER SET'keyword
      *
      * @return string
      */
@@ -2149,7 +2146,7 @@ class Util
      *
      * @return string              html content
      *
-     * @access  public
+     * @access public
      */
     public static function getButtonOrImage(
         $button_name,
@@ -2193,7 +2190,7 @@ class Util
      *
      * @return string
      *
-     * @access  public
+     * @access public
      */
     public static function pageselector(
         $name,
@@ -2331,9 +2328,9 @@ class Util
      *
      * @return string the  html content
      *
-     * @access  public
+     * @access public
      *
-     * @todo    use $pos from $_url_params
+     * @todo use $pos from $_url_params
      */
     public static function getListNavigator(
         $count,
@@ -2504,7 +2501,7 @@ class Util
      * @param string $minimum_version of this component
      * @param string $bugref          bug reference for this component
      *
-     * @return String
+     * @return string
      */
     public static function getExternalBug(
         $functionality,
@@ -2592,7 +2589,7 @@ class Util
      *
      * @return string               html content
      *
-     * @todo    support titles
+     * @todo support titles
      */
     public static function getDropdown(
         $select_name,
@@ -2637,7 +2634,6 @@ class Util
      * @param string|null $overrideDefault override InitialSlidersState config
      *
      * @return string         html div element
-     *
      */
     public static function getDivForSliderEffect($id = '', $message = '', $overrideDefault = null)
     {
@@ -2691,8 +2687,6 @@ class Util
 
     /**
      * Clears cache content which needs to be refreshed on user change.
-     *
-     * @return void
      */
     public static function clearUserCache()
     {
@@ -2766,8 +2760,6 @@ class Util
      * Removes cached information from the session
      *
      * @param string $var variable name
-     *
-     * @return void
      */
     public static function cacheUnset($var)
     {
@@ -2781,7 +2773,6 @@ class Util
      * on 32-bit servers
      *
      * @param int $value  coming from a BIT field
-     * @param int $length length
      *
      * @return string the printable value
      */
@@ -2996,10 +2987,10 @@ class Util
     }
 
     /**
-    * Get HTML for Foreign key check checkbox
-    *
-    * @return string HTML for checkbox
-    */
+     * Get HTML for Foreign key check checkbox
+     *
+     * @return string HTML for checkbox
+     */
     public static function getFKCheckbox()
     {
         $template = new Template();
@@ -3033,8 +3024,6 @@ class Util
      * Cleanup changes done for foreign key check
      *
      * @param bool $default_fk_check_value original value for 'FOREIGN_KEY_CHECKS'
-     *
-     * @return void
      */
     public static function handleDisableFKCheckCleanup($default_fk_check_value)
     {
@@ -3305,7 +3294,7 @@ class Util
      *
      * @param string $max_upload_size maximum upload size
      *
-     * @return String
+     * @return string
      */
     public static function getBrowseUploadFileBlock($max_upload_size)
     {
@@ -3335,7 +3324,7 @@ class Util
      * @param ImportPlugin[] $import_list array of import plugins
      * @param string         $uploaddir   upload directory
      *
-     * @return String
+     * @return string
      */
     public static function getSelectUploadFileBlock($import_list, $uploaddir)
     {
@@ -3433,7 +3422,6 @@ class Util
      * @param string $selected The value to mark as selected in HTML mode
      *
      * @return mixed   An HTML snippet or an array of datatypes.
-     *
      */
     public static function getSupportedDatatypes($html = false, $selected = '')
     {
@@ -3677,8 +3665,8 @@ class Util
      *                           to generate the dropdown
      * @param bool  $insert_mode Whether the operation is 'insert'
      *
-     * @global   array    $cfg            PMA configuration
-     * @global   mixed    $data           data of currently edited row
+     * @global array    $cfg            PMA configuration
+     * @global mixed    $data           data of currently edited row
      *                                    (used to detect whether to choose defaults)
      *
      * @return string   An HTML snippet of a dropdown list with function
@@ -3738,7 +3726,6 @@ class Util
      * @param array $field       Data about the column for which
      *                           to generate the dropdown
      * @param bool  $insert_mode Whether the operation is 'insert'
-     * @param array $foreignData Foreign data
      *
      * @return string   An HTML snippet of a dropdown list with function
      *                    names appropriate for the requested column.
@@ -3933,7 +3920,7 @@ class Util
     /**
      * Prepare HTML code for display button.
      *
-     * @return String
+     * @return string
      */
     public static function getButton()
     {
@@ -4007,9 +3994,9 @@ class Util
      * Get regular expression which occur first inside the given sql query.
      *
      * @param array  $regex_array Comparing regular expressions.
-     * @param String $query       SQL query to be checked.
+     * @param string $query       SQL query to be checked.
      *
-     * @return String Matching regular expression.
+     * @return string Matching regular expression.
      */
     public static function getFirstOccurringRegularExpression(array $regex_array, $query)
     {
@@ -4350,7 +4337,6 @@ class Util
      * @param string|null $sub_part part of script name
      *
      * @return array
-     *
      */
     public static function getDbInfo($db, ?string $sub_part)
     {
@@ -4475,7 +4461,6 @@ class Util
                     // db_export.php, because I think it's too risky to display only
                     // a subset of the table names when exporting a db)
                     /**
-                     *
                      * @todo Page selector for table names?
                      */
                 } else {
@@ -4534,7 +4519,6 @@ class Util
      * @param object $db_info_result result set
      *
      * @return array list of tables
-     *
      */
     public static function getTablesWhenOpen($db, $db_info_result)
     {
@@ -4695,8 +4679,6 @@ class Util
 
     /**
      * Wrapper around php's set_time_limit
-     *
-     * @return void
      */
     public static function setTimeLimit()
     {

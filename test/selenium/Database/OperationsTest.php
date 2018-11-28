@@ -23,8 +23,6 @@ class OperationsTest extends TestBase
 {
     /**
      * setUp function
-     *
-     * @return void
      */
     public function setUp()
     {
@@ -32,9 +30,7 @@ class OperationsTest extends TestBase
         $this->login();
     }
 
-    /**
-     * @return void
-     */
+    
     private function _getToDBOperations()
     {
         $this->gotoHomepage();
@@ -51,8 +47,6 @@ class OperationsTest extends TestBase
 
     /**
      * Test for adding database comment
-     *
-     * @return void
      *
      * @group large
      */
@@ -76,8 +70,6 @@ class OperationsTest extends TestBase
 
     /**
      * Test for renaming database
-     *
-     * @return void
      *
      * @group large
      */
@@ -118,8 +110,6 @@ class OperationsTest extends TestBase
 
     /**
      * Test for copying database
-     *
-     * @return void
      *
      * @group large
      */

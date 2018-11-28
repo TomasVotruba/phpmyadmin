@@ -21,8 +21,6 @@ class NodeTableContainerTest extends PmaTestCase
 {
     /**
      * SetUp for test cases
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -36,8 +34,6 @@ class NodeTableContainerTest extends PmaTestCase
 
     /**
      * Test for __construct
-     *
-     * @return void
      */
     public function testConstructor()
     {

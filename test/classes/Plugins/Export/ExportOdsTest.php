@@ -28,8 +28,6 @@ class ExportOdsTest extends PmaTestCase
 
     /**
      * Configures global environment.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -44,8 +42,6 @@ class ExportOdsTest extends PmaTestCase
 
     /**
      * tearDown for test cases
-     *
-     * @return void
      */
     public function tearDown()
     {
@@ -54,8 +50,6 @@ class ExportOdsTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportOds::setProperties
-     *
-     * @return void
      */
     public function testSetProperties()
     {
@@ -172,8 +166,6 @@ class ExportOdsTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportOds::exportHeader
-     *
-     * @return void
      */
     public function testExportHeader()
     {
@@ -189,8 +181,6 @@ class ExportOdsTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportOds::exportFooter
-     *
-     * @return void
      */
     public function testExportFooter()
     {
@@ -226,8 +216,6 @@ class ExportOdsTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportOds::exportDBHeader
-     *
-     * @return void
      */
     public function testExportDBHeader()
     {
@@ -238,8 +226,6 @@ class ExportOdsTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportOds::exportDBFooter
-     *
-     * @return void
      */
     public function testExportDBFooter()
     {
@@ -250,8 +236,6 @@ class ExportOdsTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportOds::exportDBCreate
-     *
-     * @return void
      */
     public function testExportDBCreate()
     {
@@ -262,8 +246,6 @@ class ExportOdsTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportOds::exportData
-     *
-     * @return void
      */
     public function testExportData()
     {
@@ -391,8 +373,6 @@ class ExportOdsTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportOds::exportData
-     *
-     * @return void
      */
     public function testExportDataWithFieldNames()
     {

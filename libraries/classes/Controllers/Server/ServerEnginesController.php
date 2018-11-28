@@ -23,8 +23,6 @@ class ServerEnginesController extends Controller
 {
     /**
      * Index action
-     *
-     * @return void
      */
     public function indexAction()
     {
@@ -62,8 +60,6 @@ class ServerEnginesController extends Controller
      * Returns HTML code for engine inspect
      *
      * @param  StorageEngine $engine engine beeing inspected
-     *
-     * @return string
      */
     private function _getHtmlForShowEngine(StorageEngine $engine): string
     {

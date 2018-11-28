@@ -16,37 +16,25 @@ use PHPUnit\Framework\TestCase;
 class FileListingTest extends TestCase
 {
     /**
-     * @var FileListing $fileListing
+     * @var FileListing
      */
     private $fileListing;
-
-    /**
-     * @return void
-     */
+    
     protected function setUp(): void
     {
         $this->fileListing = new FileListing();
     }
-
-    /**
-     * @return void
-     */
+    
     public function testGetDirContent(): void
     {
         $this->assertFalse($this->fileListing->getDirContent('nonexistent directory'));
     }
-
-    /**
-     * @return void
-     */
+    
     public function testGetFileSelectOptions(): void
     {
         $this->assertFalse($this->fileListing->getFileSelectOptions('nonexistent directory'));
     }
-
-    /**
-     * @return void
-     */
+    
     public function testSupportedDecompressions(): void
     {
         $GLOBALS['cfg']['ZipDump'] = false;

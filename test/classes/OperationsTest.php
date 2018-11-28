@@ -28,8 +28,6 @@ class OperationsTest extends TestCase
 
     /**
      * Set up global environment.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -58,8 +56,6 @@ class OperationsTest extends TestCase
 
     /**
      * Test for getHtmlForDatabaseComment
-     *
-     * @return void
      */
     public function testGetHtmlForDatabaseComment()
     {
@@ -71,8 +67,6 @@ class OperationsTest extends TestCase
 
     /**
      * Test for getHtmlForRenameDatabase
-     *
-     * @return void
      */
     public function testGetHtmlForRenameDatabase()
     {
@@ -87,8 +81,6 @@ class OperationsTest extends TestCase
 
     /**
      * Test for getHtmlForDropDatabaseLink
-     *
-     * @return void
      */
     public function testGetHtmlForDropDatabaseLink()
     {
@@ -100,8 +92,6 @@ class OperationsTest extends TestCase
 
     /**
      * Test for getHtmlForCopyDatabase
-     *
-     * @return void
      */
     public function testGetHtmlForCopyDatabase()
     {
@@ -114,8 +104,6 @@ class OperationsTest extends TestCase
 
     /**
      * Test for getHtmlForChangeDatabaseCharset
-     *
-     * @return void
      */
     public function testGetHtmlForChangeDatabaseCharset()
     {
@@ -133,8 +121,6 @@ class OperationsTest extends TestCase
 
     /**
      * Test for getHtmlForOrderTheTable
-     *
-     * @return void
      */
     public function testGetHtmlForOrderTheTable()
     {
@@ -148,8 +134,6 @@ class OperationsTest extends TestCase
 
     /**
      * Test for getHtmlForTableRow
-     *
-     * @return void
      */
     public function testGetHtmlForTableRow()
     {
@@ -165,8 +149,6 @@ class OperationsTest extends TestCase
 
     /**
      * Test for getMaintainActionlink
-     *
-     * @return void
      */
     public function testGetMaintainActionlink()
     {
@@ -187,8 +169,6 @@ class OperationsTest extends TestCase
 
     /**
      * Test for getHtmlForDeleteDataOrTable
-     *
-     * @return void
      */
     public function testGetHtmlForDeleteDataOrTable()
     {
@@ -203,8 +183,6 @@ class OperationsTest extends TestCase
 
     /**
      * Test for getDeleteDataOrTablelink
-     *
-     * @return void
      */
     public function testGetDeleteDataOrTablelink()
     {
@@ -221,8 +199,6 @@ class OperationsTest extends TestCase
 
     /**
      * Test for getHtmlForPartitionMaintenance
-     *
-     * @return void
      */
     public function testGetHtmlForPartitionMaintenance()
     {
@@ -237,8 +213,6 @@ class OperationsTest extends TestCase
 
     /**
      * Test for getHtmlForReferentialIntegrityCheck
-     *
-     * @return void
      */
     public function testGetHtmlForReferentialIntegrityCheck()
     {

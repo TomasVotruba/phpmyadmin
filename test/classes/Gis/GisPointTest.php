@@ -30,7 +30,6 @@ class GisPointTest extends GisGeomTestCase
      * This method is called before a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function setUp()
     {
@@ -42,7 +41,6 @@ class GisPointTest extends GisGeomTestCase
      * This method is called after a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function tearDown()
     {
@@ -97,7 +95,6 @@ class GisPointTest extends GisGeomTestCase
      * @param string $shape    expected shape in WKT
      *
      * @dataProvider providerForTestGetShape
-     * @return void
      */
     public function testGetShape($row_data, $shape)
     {
@@ -179,7 +176,6 @@ class GisPointTest extends GisGeomTestCase
      * @param array    $scale_data  array containing data related to scaling
      * @param resource $image       image object
      *
-     * @return void
      * @dataProvider providerForPrepareRowAsPng
      */
     public function testPrepareRowAsPng(
@@ -234,7 +230,6 @@ class GisPointTest extends GisGeomTestCase
      * @param array  $scale_data  array containing data related to scaling
      * @param TCPDF  $pdf         TCPDF instance
      *
-     * @return void
      * @dataProvider providerForPrepareRowAsPdf
      */
     public function testPrepareRowAsPdf(
@@ -286,7 +281,6 @@ class GisPointTest extends GisGeomTestCase
      * @param array  $scale_data  array containing data related to scaling
      * @param string $output      expected output
      *
-     * @return void
      * @dataProvider providerForPrepareRowAsSvg
      */
     public function testPrepareRowAsSvg(
@@ -340,7 +334,6 @@ class GisPointTest extends GisGeomTestCase
      * @param array  $scale_data  array containing data related to scaling
      * @param string $output      expected output
      *
-     * @return void
      * @dataProvider providerForPrepareRowAsOl
      */
     public function testPrepareRowAsOl(

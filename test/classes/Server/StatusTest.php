@@ -26,15 +26,11 @@ class StatusTest extends TestCase
 {
     /**
      * Prepares environment for the test.
-     *
-     * @return void
      */
     public $serverStatusData;
 
     /**
      * Test for setUp
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -139,7 +135,6 @@ class StatusTest extends TestCase
     /**
      * Test for Status::getHtml
      *
-     * @return void
      * @group medium
      */
     public function testPMAGetHtmlForServerStatus()

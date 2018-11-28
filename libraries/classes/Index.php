@@ -256,8 +256,6 @@ class Index
      * Add column to index
      *
      * @param array $params column params
-     *
-     * @return void
      */
     public function addColumn(array $params)
     {
@@ -272,8 +270,6 @@ class Index
      * Adds a list of columns to the index
      *
      * @param array $columns array containing details about the columns
-     *
-     * @return void
      */
     public function addColumns(array $columns)
     {
@@ -320,8 +316,6 @@ class Index
      * Sets index details
      *
      * @param array $params index details
-     *
-     * @return void
      */
     public function set(array $params)
     {
@@ -617,8 +611,6 @@ class Index
      * Sets the name of the index
      *
      * @param string $name index name
-     *
-     * @return void
      */
     public function setName($name)
     {
@@ -678,7 +670,7 @@ class Index
      *
      * @return string HTML for showing index
      *
-     * @access  public
+     * @access public
      */
     public static function getHtmlForIndexes($table, $schema, $print_mode = false)
     {
@@ -857,7 +849,7 @@ class Index
      * @param string $schema schema name
      *
      * @return string  Output HTML
-     * @access  public
+     * @access public
      */
     public static function findDuplicates($table, $schema)
     {

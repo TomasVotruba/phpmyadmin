@@ -35,7 +35,6 @@ class ImportOdsTest extends PmaTestCase
      * This method is called before a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function setUp()
     {
@@ -52,7 +51,7 @@ class ImportOdsTest extends PmaTestCase
 
         /**
          * Load interface for zip extension.
-        */
+         */
         $GLOBALS['read_multiply'] = 10;
         $GLOBALS['import_type'] = 'ods';
         $GLOBALS['import_handle'] = new File($GLOBALS['import_file']);
@@ -70,7 +69,6 @@ class ImportOdsTest extends PmaTestCase
      * This method is called after a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function tearDown()
     {
@@ -79,8 +77,6 @@ class ImportOdsTest extends PmaTestCase
 
     /**
      * Test for getProperties
-     *
-     * @return void
      *
      * @group medium
      */
@@ -103,8 +99,6 @@ class ImportOdsTest extends PmaTestCase
 
     /**
      * Test for doImport
-     *
-     * @return void
      *
      * @group medium
      */

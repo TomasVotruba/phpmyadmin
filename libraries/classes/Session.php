@@ -20,8 +20,6 @@ class Session
 {
     /**
      * Generates PMA_token session variable.
-     *
-     * @return void
      */
     private static function generateToken()
     {
@@ -42,8 +40,6 @@ class Session
      * tries to secure session from hijacking and fixation
      * should be called before login and after successful login
      * (only required if sensitive information stored in session)
-     *
-     * @return void
      */
     public static function secure()
     {
@@ -60,8 +56,6 @@ class Session
      * Session failed function
      *
      * @param array $errors PhpMyAdmin\ErrorHandler array
-     *
-     * @return void
      */
     private static function sessionFailed(array $errors)
     {
@@ -104,8 +98,6 @@ class Session
      * Set up session
      *
      * @param Config       $config       Configuration handler
-     * @param ErrorHandler $errorHandler Error handler
-     * @return void
      */
     public static function setUp(Config $config, ErrorHandler $errorHandler)
     {

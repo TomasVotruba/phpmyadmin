@@ -34,8 +34,6 @@ class RelationCleanupTest extends TestCase
 
     /**
      * Prepares environment for the test.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -94,8 +92,6 @@ class RelationCleanupTest extends TestCase
 
     /**
      * Test for column method
-     *
-     * @return void
      */
     public function testColumnWithoutRelations(): void
     {
@@ -107,8 +103,6 @@ class RelationCleanupTest extends TestCase
 
     /**
      * Test for column method
-     *
-     * @return void
      */
     public function testColumnWithRelations(): void
     {
@@ -135,8 +129,6 @@ class RelationCleanupTest extends TestCase
 
     /**
      * Test for table method
-     *
-     * @return void
      */
     public function testTableWithoutRelations(): void
     {
@@ -148,8 +140,6 @@ class RelationCleanupTest extends TestCase
 
     /**
      * Test for table method
-     *
-     * @return void
      */
     public function testTableWithRelations(): void
     {
@@ -182,8 +172,6 @@ class RelationCleanupTest extends TestCase
 
     /**
      * Test for database method
-     *
-     * @return void
      */
     public function testDatabaseWithoutRelations(): void
     {
@@ -195,8 +183,6 @@ class RelationCleanupTest extends TestCase
 
     /**
      * Test for database method
-     *
-     * @return void
      */
     public function testDatabaseWithRelations(): void
     {
@@ -236,8 +222,6 @@ class RelationCleanupTest extends TestCase
 
     /**
      * Test for user method
-     *
-     * @return void
      */
     public function testUserWithoutRelations(): void
     {
@@ -249,8 +233,6 @@ class RelationCleanupTest extends TestCase
 
     /**
      * Test for user method
-     *
-     * @return void
      */
     public function testUserWithRelations(): void
     {

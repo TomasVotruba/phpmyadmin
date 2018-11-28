@@ -99,8 +99,8 @@ if (isset($_REQUEST['submitcollation'])
     $message          = Message::success();
 
     /**
-    * Changes tables charset if requested by the user
-    */
+     * Changes tables charset if requested by the user
+     */
     if (isset($_REQUEST['change_all_tables_collations']) &&
         $_REQUEST['change_all_tables_collations'] == 'on'
     ) {
@@ -115,8 +115,8 @@ if (isset($_REQUEST['submitcollation'])
             $GLOBALS['dbi']->query($sql_query);
 
             /**
-            * Changes columns charset if requested by the user
-            */
+             * Changes columns charset if requested by the user
+             */
             if (isset($_REQUEST['change_all_tables_columns_collations']) &&
                 $_REQUEST['change_all_tables_columns_collations'] == 'on'
             ) {

@@ -26,7 +26,6 @@ class AliasItem implements Item
     /**
      * Constructor
      *
-     * @param Container $container Container
      * @param string    $target    Target
      */
     public function __construct(Container $container, $target)

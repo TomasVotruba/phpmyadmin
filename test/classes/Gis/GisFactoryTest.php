@@ -27,7 +27,6 @@ class GisFactoryTest extends TestCase
      * @param string $geom geometry object
      *
      * @dataProvider providerForTestFactory
-     * @return void
      */
     public function testFactory(string $type, string $geom): void
     {

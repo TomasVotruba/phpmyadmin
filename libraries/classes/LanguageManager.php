@@ -904,8 +904,6 @@ class LanguageManager
     /**
      * Displays warnings about invalid languages. This needs to be postponed
      * to show messages at time when language is initialized.
-     *
-     * @return void
      */
     public function showWarnings()
     {
@@ -930,7 +928,7 @@ class LanguageManager
      *
      * @return string
      *
-     * @access  public
+     * @access public
      */
     public function getSelectorDisplay($use_fieldset = false, $show_doc = true)
     {

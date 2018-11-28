@@ -43,8 +43,6 @@ class ImportLdi extends AbstractImportCsv
     /**
      * Sets the import plugin properties.
      * Called in the constructor.
-     *
-     * @return void
      */
     protected function setProperties()
     {
@@ -91,8 +89,6 @@ class ImportLdi extends AbstractImportCsv
      * Handles the whole import logic
      *
      * @param array &$sql_data 2-element array with sql data
-     *
-     * @return void
      */
     public function doImport(array &$sql_data = [])
     {

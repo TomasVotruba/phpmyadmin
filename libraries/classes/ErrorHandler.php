@@ -35,7 +35,6 @@ class ErrorHandler
 
     /**
      * Constructor - set PHP error handler
-     *
      */
     public function __construct()
     {
@@ -55,7 +54,6 @@ class ErrorHandler
      * Destructor
      *
      * stores errors in session
-     *
      */
     public function __destruct()
     {
@@ -92,8 +90,6 @@ class ErrorHandler
      * Toggles location hiding
      *
      * @param boolean $hide Whether to hide
-     *
-     * @return void
      */
     public function setHideLocation(bool $hide): void
     {
@@ -116,11 +112,11 @@ class ErrorHandler
     }
 
     /**
-    * returns the errors occurred in the current run only.
-    * Does not include the errors saved in the SESSION
-    *
-    * @return Error[]
-    */
+     * returns the errors occurred in the current run only.
+     * Does not include the errors saved in the SESSION
+     *
+     * @return Error[]
+     */
     public function getCurrentErrors(): array
     {
         return $this->errors;
@@ -150,8 +146,6 @@ class ErrorHandler
      * @param string  $errstr  error string
      * @param string  $errfile error file
      * @param integer $errline error line
-     *
-     * @return void
      */
     public function handleError(
         int $errno,
@@ -188,8 +182,6 @@ class ErrorHandler
      * @param string  $errfile error file
      * @param integer $errline error line
      * @param boolean $escape  whether to escape the error string
-     *
-     * @return void
      */
     public function addError(
         string $errstr,
@@ -246,8 +238,6 @@ class ErrorHandler
      *
      * @param string  $errorInfo   error message
      * @param integer $errorNumber error number
-     *
-     * @return void
      */
     public function triggerError(string $errorInfo, ?int $errorNumber = null): void
     {
@@ -258,10 +248,6 @@ class ErrorHandler
 
     /**
      * display fatal error and exit
-     *
-     * @param Error $error the error
-     *
-     * @return void
      */
     protected function dispFatalError(Error $error): void
     {
@@ -275,8 +261,6 @@ class ErrorHandler
 
     /**
      * Displays user errors not displayed
-     *
-     * @return void
      */
     public function dispUserErrors(): void
     {
@@ -285,8 +269,6 @@ class ErrorHandler
 
     /**
      * Renders user errors not displayed
-     *
-     * @return string
      */
     public function getDispUserErrors(): string
     {
@@ -301,10 +283,6 @@ class ErrorHandler
 
     /**
      * display HTML header
-     *
-     * @param Error $error the error
-     *
-     * @return void
      */
     protected function dispPageStart(?Error $error = null): void
     {
@@ -320,8 +298,6 @@ class ErrorHandler
 
     /**
      * display HTML footer
-     *
-     * @return void
      */
     protected function dispPageEnd(): void
     {
@@ -330,8 +306,6 @@ class ErrorHandler
 
     /**
      * renders errors not displayed
-     *
-     * @return string
      */
     public function getDispErrors(): string
     {
@@ -388,8 +362,6 @@ class ErrorHandler
 
     /**
      * displays errors not displayed
-     *
-     * @return void
      */
     public function dispErrors(): void
     {
@@ -398,8 +370,6 @@ class ErrorHandler
 
     /**
      * look in session for saved errors
-     *
-     * @return void
      */
     protected function checkSavedErrors(): void
     {
@@ -450,8 +420,6 @@ class ErrorHandler
 
     /**
      * whether use errors occurred or not
-     *
-     * @return boolean
      */
     public function hasUserErrors(): bool
     {
@@ -460,8 +428,6 @@ class ErrorHandler
 
     /**
      * whether errors occurred or not
-     *
-     * @return boolean
      */
     public function hasErrors(): bool
     {
@@ -484,8 +450,6 @@ class ErrorHandler
 
     /**
      * whether there are errors to display or not
-     *
-     * @return boolean
      */
     public function hasDisplayErrors(): bool
     {
@@ -493,12 +457,10 @@ class ErrorHandler
     }
 
     /**
-    * Deletes previously stored errors in SESSION.
-    * Saves current errors in session as previous errors.
-    * Required to save current errors in case  'ask'
-    *
-    * @return void
-    */
+     * Deletes previously stored errors in SESSION.
+     * Saves current errors in session as previous errors.
+     * Required to save current errors in case  'ask'
+     */
     public function savePreviousErrors(): void
     {
         unset($_SESSION['prev_errors']);
@@ -526,8 +488,6 @@ class ErrorHandler
      * Function to report all the collected php errors.
      * Must be called at the end of each script
      *      by the $GLOBALS['error_handler'] only.
-     *
-     * @return void
      */
     public function reportErrors(): void
     {

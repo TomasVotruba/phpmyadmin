@@ -55,8 +55,6 @@ class OptionsPropertySubgroup extends OptionsPropertyGroup
      * Sets the subgroup header
      *
      * @param \PhpMyAdmin\Properties\PropertyItem $subgroupHeader subgroup header
-     *
-     * @return void
      */
     public function setSubgroupHeader($subgroupHeader)
     {

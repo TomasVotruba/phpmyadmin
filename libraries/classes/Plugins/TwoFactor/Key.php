@@ -31,8 +31,6 @@ class Key extends TwoFactorPlugin
 
     /**
      * Creates object
-     *
-     * @param TwoFactor $twofactor TwoFactor instance
      */
     public function __construct(TwoFactor $twofactor)
     {
@@ -95,8 +93,6 @@ class Key extends TwoFactorPlugin
 
     /**
      * Loads needed javascripts into the page
-     *
-     * @return void
      */
     public function loadScripts()
     {

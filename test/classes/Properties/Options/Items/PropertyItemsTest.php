@@ -27,8 +27,6 @@ class PropertyItemsTest extends TestCase
 {
     /**
      * Test for PhpMyAdmin\Properties\Options\Items\BoolPropertyItem::getText
-     *
-     * @return void
      */
     public function testBoolText()
     {
@@ -49,8 +47,6 @@ class PropertyItemsTest extends TestCase
 
     /**
      * Test for PhpMyAdmin\Properties\Options\Items\BoolPropertyItem::getName
-     *
-     * @return void
      */
     public function testBoolName()
     {
@@ -71,8 +67,6 @@ class PropertyItemsTest extends TestCase
 
     /**
      * Test for PhpMyAdmin\Properties\Options\Items\BoolPropertyItem::getItemType
-     *
-     * @return void
      */
     public function testBoolGetItemType()
     {
@@ -86,8 +80,6 @@ class PropertyItemsTest extends TestCase
 
     /**
      * Test for PhpMyAdmin\Properties\Options\Items\DocPropertyItem::getItemType
-     *
-     * @return void
      */
     public function testGetItemTypeDoc()
     {
@@ -101,8 +93,6 @@ class PropertyItemsTest extends TestCase
 
     /**
      * Test for PhpMyAdmin\Properties\Options\Items\HiddenPropertyItem::getItemType
-     *
-     * @return void
      */
     public function testGetItemTypeHidden()
     {
@@ -116,8 +106,6 @@ class PropertyItemsTest extends TestCase
 
     /**
      * Test for PhpMyAdmin\Properties\Options\Items\MessageOnlyPropertyItem::getItemType
-     *
-     * @return void
      */
     public function testGetItemTypeMessageOnly()
     {
@@ -131,8 +119,6 @@ class PropertyItemsTest extends TestCase
 
     /**
      * Test for PhpMyAdmin\Properties\Options\Items\RadioPropertyItem::getItemType
-     *
-     * @return void
      */
     public function testGetItemTypeRadio()
     {
@@ -146,8 +132,6 @@ class PropertyItemsTest extends TestCase
 
     /**
      * Test for PhpMyAdmin\Properties\Options\Items\SelectPropertyItem::getItemType
-     *
-     * @return void
      */
     public function testGetItemTypeSelect()
     {
@@ -161,8 +145,6 @@ class PropertyItemsTest extends TestCase
 
     /**
      * Test for PhpMyAdmin\Properties\Options\Items\TextPropertyItem::getItemType
-     *
-     * @return void
      */
     public function testGetItemTypeText()
     {

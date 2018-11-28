@@ -57,8 +57,6 @@ class Console
      * we are servicing an ajax request
      *
      * @param bool $isAjax Whether we are servicing an ajax request
-     *
-     * @return void
      */
     public function setAjax(bool $isAjax): void
     {
@@ -67,8 +65,6 @@ class Console
 
     /**
      * Disables the rendering of the footer
-     *
-     * @return void
      */
     public function disable(): void
     {
@@ -79,7 +75,6 @@ class Console
      * Renders the bookmark content
      *
      * @access public
-     * @return string
      */
     public static function getBookmarkContent(): string
     {
@@ -126,7 +121,6 @@ class Console
      * Renders the console
      *
      * @access public
-     * @return string
      */
     public function getDisplay(): string
     {

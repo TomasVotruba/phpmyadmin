@@ -25,8 +25,6 @@ class ProcessesTest extends TestCase
 {
     /**
      * Test for setUp
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -51,7 +49,6 @@ class ProcessesTest extends TestCase
     /**
      * Test for Processes::getHtmlForProcessListAutoRefresh
      *
-     * @return void
      * @group medium
      */
     public function testPMAGetHtmlForProcessListAutoRefresh()
@@ -94,7 +91,6 @@ class ProcessesTest extends TestCase
     /**
      * Test for Processes::getHtmlForServerProcesslist
      *
-     * @return void
      * @group medium
      */
     public function testPMAGetHtmlForServerProcessList()
@@ -170,8 +166,6 @@ class ProcessesTest extends TestCase
 
     /**
      * Test for Processes::getHtmlForServerProcessItem
-     *
-     * @return void
      */
     public function testPMAGetHtmlForServerProcessItem()
     {

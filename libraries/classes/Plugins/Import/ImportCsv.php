@@ -45,8 +45,6 @@ class ImportCsv extends AbstractImportCsv
     /**
      * Sets the import plugin properties.
      * Called in the constructor.
-     *
-     * @return void
      */
     protected function setProperties()
     {
@@ -131,8 +129,6 @@ class ImportCsv extends AbstractImportCsv
      * Handles the whole import logic
      *
      * @param array &$sql_data 2-element array with sql data
-     *
-     * @return void
      */
     public function doImport(array &$sql_data = [])
     {
@@ -752,11 +748,11 @@ class ImportCsv extends AbstractImportCsv
      *
      * @param string $buffer             The original string buffer read from
      *                                   csv file
-     * @param string $ch                 Partially read "column Separated with"
+     * @param string $ch                 Partially read "columnSeparatedwith"
      *                                   string, also used to return after
      *                                   reading length equal $csv_terminated_len
      * @param int    $i                  Current read counter of buffer string
-     * @param int    $csv_terminated_len The length of "column separated with"
+     * @param int    $csv_terminated_len The length of "columnseparatedwith"
      *                                   String
      *
      * @return string
@@ -786,8 +782,6 @@ class ImportCsv extends AbstractImportCsv
      * Sets to true if the table should be analyzed, false otherwise
      *
      * @param bool $analyze status
-     *
-     * @return void
      */
     private function _setAnalyze($analyze)
     {

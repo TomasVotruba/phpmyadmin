@@ -31,8 +31,6 @@ class ChangePasswordTest extends TestBase
     /**
      * Tests the changing of the password
      *
-     * @return void
-     *
      * @group large
      */
     public function testChangePassword()

@@ -42,8 +42,6 @@ abstract class ImportPlugin
 
     /**
      * Handles the whole import logic
-     *
-     * @return void
      */
     abstract public function doImport();
 
@@ -63,8 +61,6 @@ abstract class ImportPlugin
     /**
      * Sets the export plugins properties and is implemented by each import
      * plugin
-     *
-     * @return void
      */
     abstract protected function setProperties();
 

@@ -23,8 +23,6 @@ class OptionsPropertyRootGroupTest extends TestCase
 
     /**
      * Configures global environment.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -33,8 +31,6 @@ class OptionsPropertyRootGroupTest extends TestCase
 
     /**
      * tearDown for test cases
-     *
-     * @return void
      */
     protected function tearDown()
     {
@@ -43,8 +39,6 @@ class OptionsPropertyRootGroupTest extends TestCase
 
     /**
      * Test for PhpMyAdmin\Properties\Options\Groups\OptionsPropertyRootGroup::getItemType
-     *
-     * @return void
      */
     public function testGetItemType()
     {
@@ -56,8 +50,6 @@ class OptionsPropertyRootGroupTest extends TestCase
 
     /**
      * Test for contable interface
-     *
-     * @return void
      */
     public function testCountable()
     {

@@ -41,8 +41,6 @@ class ExportHtmlword extends ExportPlugin
 
     /**
      * Sets the export HTML-Word properties
-     *
-     * @return void
      */
     protected function setProperties()
     {

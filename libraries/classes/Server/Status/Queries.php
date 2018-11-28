@@ -23,8 +23,6 @@ class Queries
     /**
      * Returns the html content for the query statistics
      *
-     * @param Data $serverStatusData Server status data
-     *
      * @return string
      */
     public static function getHtmlForQueryStatistics(Data $serverStatusData)
@@ -77,8 +75,6 @@ class Queries
 
     /**
      * Returns the html content for the query details
-     *
-     * @param Data $serverStatusData Server status data
      *
      * @return string
      */

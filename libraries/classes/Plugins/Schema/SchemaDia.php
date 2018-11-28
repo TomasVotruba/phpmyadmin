@@ -35,8 +35,6 @@ class SchemaDia extends SchemaPlugin
 
     /**
      * Sets the schema export Dia properties
-     *
-     * @return void
      */
     protected function setProperties()
     {

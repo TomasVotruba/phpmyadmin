@@ -72,8 +72,6 @@ abstract class OptionsPropertyItem extends PropertyItem
      * Sets the name
      *
      * @param string $name name
-     *
-     * @return void
      */
     public function setName($name)
     {
@@ -94,8 +92,6 @@ abstract class OptionsPropertyItem extends PropertyItem
      * Sets the text
      *
      * @param string $text text
-     *
-     * @return void
      */
     public function setText($text)
     {
@@ -116,8 +112,6 @@ abstract class OptionsPropertyItem extends PropertyItem
      * Sets the force parameter
      *
      * @param string $force force parameter
-     *
-     * @return void
      */
     public function setForce($force)
     {

@@ -82,7 +82,6 @@ class Import
      * @param string $full      query to display, this might be commented
      * @param array  &$sql_data SQL parse data storage
      *
-     * @return void
      * @access public
      */
     public function executeQuery(string $sql, string $full, array &$sql_data): void
@@ -170,7 +169,6 @@ class Import
      * @param string $full      query to display, this might be commented
      * @param array  &$sql_data SQL parse data storage
      *
-     * @return void
      * @access public
      */
     public function runQuery(
@@ -324,7 +322,6 @@ class Import
      *
      * @param string $buffer buffer to examine
      * @param string $db     current db
-     * @param bool   $reload reload
      *
      * @return array (current or new db, whether to reload)
      * @access public
@@ -446,7 +443,7 @@ class Import
      * @param int $num the column number
      *
      * @return string The column's "Excel" name
-     * @access  public
+     * @access public
      */
     public function getColumnAlphaName(int $num): string
     {
@@ -493,7 +490,7 @@ class Import
      * @param string $name column name(i.e. "A", or "BC", etc.)
      *
      * @return int The column number
-     * @access  public
+     * @access public
      */
     public function getColumnNumberFromName(string $name): int
     {
@@ -528,7 +525,7 @@ class Import
      * @param string $last_cumulative_size Size of type decimal
      *
      * @return int Precision of the given decimal size notation
-     * @access  public
+     * @access public
      */
     public function getDecimalPrecision(string $last_cumulative_size): int
     {
@@ -546,7 +543,7 @@ class Import
      * @param string $last_cumulative_size Size of type decimal
      *
      * @return int Scale of the given decimal size notation
-     * @access  public
+     * @access public
      */
     public function getDecimalScale(string $last_cumulative_size): int
     {
@@ -564,7 +561,7 @@ class Import
      *
      * @return array Contains the precision, scale, and full size
      *                representation of the given decimal cell
-     * @access  public
+     * @access public
      */
     public function getDecimalSize(string $cell): array
     {
@@ -589,9 +586,9 @@ class Import
      * @param string     $cell                 The current cell
      *
      * @return string|int Size of the given cell in the type-appropriate format
-     * @access  public
+     * @access public
      *
-     * @todo    Handle the error cases more elegantly
+     * @todo Handle the error cases more elegantly
      */
     public function detectSize(
         $last_cumulative_size,
@@ -793,7 +790,7 @@ class Import
      *
      * @return int  The MySQL type representation
      *               (VARCHAR or INT or BIGINT or DECIMAL or NONE)
-     * @access  public
+     * @access public
      */
     public function detectType(?int $last_cumulative_type, ?string $cell): int
     {
@@ -834,11 +831,11 @@ class Import
      * @param array &$table array(string $table_name, array $col_names, array $rows)
      *
      * @return array|bool array(array $types, array $sizes)
-     * @access  public
+     * @access public
      *
      * @link https://wiki.phpmyadmin.net/pma/Import
      *
-     * @todo    Handle the error case more elegantly
+     * @todo Handle the error case more elegantly
      */
     public function analyzeTable(array &$table)
     {
@@ -937,9 +934,7 @@ class Import
      * @param array|null $options         Associative array of options
      * @param array      &$sql_data       2-element array with sql data
      *
-     * @return void
-     * @access  public
-     *
+     * @access public
      * @link https://wiki.phpmyadmin.net/pma/Import
      */
     public function buildSql(
@@ -1322,9 +1317,7 @@ class Import
      *
      * @param Message $error_message The error message
      *
-     * @return void
-     * @access  public
-     *
+     * @access public
      */
     public function stop(Message $error_message): void
     {
@@ -1351,8 +1344,6 @@ class Import
 
     /**
      * Handles request for Simulation of UPDATE/DELETE queries.
-     *
-     * @return void
      */
     public function handleSimulateDmlRequest(): void
     {
@@ -1418,8 +1409,6 @@ class Import
      * Find the matching rows for UPDATE/DELETE query.
      *
      * @param array $analyzed_sql_results Analyzed SQL results from parser.
-     *
-     * @return array
      */
     public function getMatchedRows(array $analyzed_sql_results = []): array
     {
@@ -1576,8 +1565,6 @@ class Import
      * Handles request for ROLLBACK.
      *
      * @param string $sql_query SQL query(s)
-     *
-     * @return void
      */
     public function handleRollbackRequest(string $sql_query): void
     {
@@ -1621,8 +1608,6 @@ class Import
      * Checks if ROLLBACK is possible for a SQL query or not.
      *
      * @param string $sql_query SQL query
-     *
-     * @return bool
      */
     public function checkIfRollbackPossible(string $sql_query): bool
     {
@@ -1660,8 +1645,6 @@ class Import
      * Checks if a table is 'InnoDB' or not.
      *
      * @param string $table Table details
-     *
-     * @return bool
      */
     public function isTableTransactional(string $table): bool
     {

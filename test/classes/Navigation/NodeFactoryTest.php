@@ -23,8 +23,6 @@ class NodeFactoryTest extends PmaTestCase
 {
     /**
      * SetUp for test cases
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -33,8 +31,6 @@ class NodeFactoryTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Navigation\NodeFactory::getInstance
-     *
-     * @return void
      */
     public function testDefaultNode()
     {
@@ -46,8 +42,6 @@ class NodeFactoryTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Navigation\NodeFactory::getInstance
-     *
-     * @return void
      */
     public function testDefaultContainer()
     {
@@ -63,8 +57,6 @@ class NodeFactoryTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Navigation\NodeFactory::getInstance
-     *
-     * @return void
      */
     public function testGroupContainer()
     {
@@ -81,8 +73,6 @@ class NodeFactoryTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Navigation\NodeFactory::getInstance
-     *
-     * @return void
      */
     public function testFileError()
     {
@@ -92,8 +82,6 @@ class NodeFactoryTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Navigation\NodeFactory::getInstance
-     *
-     * @return void
      */
     public function testClassNameError()
     {

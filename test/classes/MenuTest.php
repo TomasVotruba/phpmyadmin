@@ -21,8 +21,6 @@ class MenuTest extends PmaTestCase
 {
     /**
      * Configures global environment.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -41,8 +39,6 @@ class MenuTest extends PmaTestCase
 
     /**
      * Server menu test
-     *
-     * @return void
      */
     public function testServer()
     {
@@ -55,8 +51,6 @@ class MenuTest extends PmaTestCase
 
     /**
      * Database menu test
-     *
-     * @return void
      */
     public function testDatabase()
     {
@@ -69,8 +63,6 @@ class MenuTest extends PmaTestCase
 
     /**
      * Table menu test
-     *
-     * @return void
      */
     public function testTable()
     {
@@ -83,8 +75,6 @@ class MenuTest extends PmaTestCase
 
     /**
      * Table menu display test
-     *
-     * @return void
      */
     public function testTableDisplay()
     {
@@ -98,8 +88,6 @@ class MenuTest extends PmaTestCase
 
     /**
      * Table menu setTable test
-     *
-     * @return void
      */
     public function testSetTable()
     {

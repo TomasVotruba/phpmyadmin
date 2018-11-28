@@ -19,17 +19,12 @@ use PHPUnit\Framework\TestCase;
  */
 class EncodingTest extends TestCase
 {
-    /**
-     * @return void
-     */
     protected function setUp()
     {
         Encoding::initEngine();
     }
 
-    /**
-     * @return void
-     */
+    
     public function tearDown()
     {
         Encoding::initEngine();
@@ -38,7 +33,6 @@ class EncodingTest extends TestCase
     /**
      * Test for Encoding::convertString
      *
-     * @return void
      * @test
      *
      * @group medium
@@ -51,9 +45,7 @@ class EncodingTest extends TestCase
         );
     }
 
-    /**
-     * @return void
-     */
+    
     public function testInvalidConversion()
     {
         // Invalid value to use default case
@@ -64,9 +56,7 @@ class EncodingTest extends TestCase
         );
     }
 
-    /**
-     * @return void
-     */
+    
     public function testRecode()
     {
         if (! function_exists('recode_string')) {
@@ -84,9 +74,7 @@ class EncodingTest extends TestCase
         );
     }
 
-    /**
-     * @return void
-     */
+    
     public function testIconv()
     {
         if (! function_exists('iconv')) {
@@ -105,9 +93,7 @@ class EncodingTest extends TestCase
         );
     }
 
-    /**
-     * @return void
-     */
+    
     public function testMbstring()
     {
         Encoding::setEngine(Encoding::ENGINE_MB);
@@ -124,7 +110,6 @@ class EncodingTest extends TestCase
     /**
      * Test for kanjiChangeOrder
      *
-     * @return void
      * @test
      */
     public function testChangeOrder()
@@ -139,7 +124,6 @@ class EncodingTest extends TestCase
     /**
      * Test for Encoding::kanjiStrConv
      *
-     * @return void
      * @test
      */
     public function testKanjiStrConv()
@@ -171,7 +155,6 @@ class EncodingTest extends TestCase
     /**
      * Test for Encoding::kanjiFileConv
      *
-     * @return void
      * @test
      */
     public function testFileConv()
@@ -197,7 +180,6 @@ class EncodingTest extends TestCase
     /**
      * Test for Encoding::kanjiEncodingForm
      *
-     * @return void
      * @test
      */
     public function testEncodingForm()
@@ -225,9 +207,7 @@ class EncodingTest extends TestCase
         );
     }
 
-    /**
-     * @return void
-     */
+    
     public function testListEncodings()
     {
         $GLOBALS['cfg']['AvailableCharsets'] = ['utf-8'];

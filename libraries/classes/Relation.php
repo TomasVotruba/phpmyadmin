@@ -49,8 +49,7 @@ class Relation
      *
      * @return resource|boolean the result set, or false if no result set
      *
-     * @access  public
-     *
+     * @access public
      */
     public function queryAsControlUser($sql, $show_error = true, $options = 0)
     {
@@ -477,7 +476,7 @@ class Relation
      * just a copy of the functions used for relations ;-)
      * but added some stuff to check what will work
      *
-     * @access  protected
+     * @access protected
      * @return array    the relation parameters for the current user
      */
     public function checkRelationsParam()
@@ -703,7 +702,7 @@ class Relation
      *
      * @return bool false if upgrade failed
      *
-     * @access  public
+     * @access public
      */
     public function tryUpgradeTransformations()
     {
@@ -777,7 +776,7 @@ class Relation
      *
      * @return array    db,table,column
      *
-     * @access  public
+     * @access public
      */
     public function getForeigners($db, $table, $column = '', $source = 'both')
     {
@@ -813,7 +812,7 @@ class Relation
             if ($show_create_table) {
                 $parser = new Parser($show_create_table);
                 /**
-                 * @var \PhpMyAdmin\SqlParser\Statements\CreateStatement $stmt
+                 * @var \PhpMyAdmin\SqlParser\Statements\CreateStatement
                  */
                 $stmt = $parser->statements[0];
                 $foreign['foreign_keys_data'] = TableUtils::getForeignKeys(
@@ -860,7 +859,7 @@ class Relation
      *
      * @return string   field name
      *
-     * @access  public
+     * @access public
      */
     public function getDisplayField($db, $table)
     {
@@ -922,7 +921,7 @@ class Relation
      *
      * @return array    [column_name] = comment
      *
-     * @access  public
+     * @access public
      */
     public function getComments($db, $table = '')
     {
@@ -952,7 +951,7 @@ class Relation
      *
      * @return string   comment
      *
-     * @access  public
+     * @access public
      */
     public function getDbComment($db)
     {
@@ -988,7 +987,7 @@ class Relation
     /**
      * Gets the comment for a db
      *
-     * @access  public
+     * @access public
      *
      * @return string   comment
      */
@@ -1030,7 +1029,7 @@ class Relation
      *
      * @return boolean  true, if comment-query was made.
      *
-     * @access  public
+     * @access public
      */
     public function setDbComment($db, $comment = '')
     {
@@ -1073,9 +1072,7 @@ class Relation
      * @param string $username the username
      * @param string $sqlquery the sql query
      *
-     * @return void
-     *
-     * @access  public
+     * @access public
      */
     public function setHistory($db, $table, $username, $sqlquery)
     {
@@ -1135,7 +1132,7 @@ class Relation
      *
      * @return array    list of history items
      *
-     * @access  public
+     * @access public
      */
     public function getHistory($username)
     {
@@ -1182,9 +1179,7 @@ class Relation
      *
      * @param string $username the username
      *
-     * @return void
-     *
-     * @access  public
+     * @access public
      */
     public function purgeHistory($username)
     {
@@ -1231,7 +1226,7 @@ class Relation
      *
      * @return array   the <option value=""><option>s
      *
-     * @access  protected
+     * @access protected
      */
     public function buildForeignDropdown(array $foreign, $data, $mode)
     {
@@ -1333,7 +1328,7 @@ class Relation
      *
      * @return string   the <option value=""><option>s
      *
-     * @access  public
+     * @access public
      */
     public function foreignDropdown(
         array $disp_row,
@@ -1421,7 +1416,7 @@ class Relation
      *
      * @return array    data about the foreign keys
      *
-     * @access  public
+     * @access public
      */
     public function getForeignData(
         $foreigners,
@@ -1552,8 +1547,6 @@ class Relation
      * @param string $table    table name
      * @param string $field    old field name
      * @param string $new_name new field name
-     *
-     * @return void
      */
     public function renameField($db, $table, $field, $new_name)
     {
@@ -1617,8 +1610,6 @@ class Relation
      * @param string $target_table Target table name
      * @param string $db_field     Name of database field
      * @param string $table_field  Name of table field
-     *
-     * @return void
      */
     public function renameSingleTable(
         $table,
@@ -1655,8 +1646,6 @@ class Relation
      * @param string $target_db    Target database name
      * @param string $source_table Source table name
      * @param string $target_table Target table name
-     *
-     * @return void
      */
     public function renameTable($source_db, $target_db, $source_table, $target_table)
     {
@@ -2003,8 +1992,6 @@ class Relation
      *
      * @param string  $db     database
      * @param boolean $create whether to create tables if they don't exist.
-     *
-     * @return void
      */
     public function fixPmaTables($db, $create = true)
     {

@@ -45,8 +45,6 @@ class Eps
      * Set document title
      *
      * @param string $value sets the title text
-     *
-     * @return void
      */
     public function setTitle($value)
     {
@@ -57,8 +55,6 @@ class Eps
      * Set document author
      *
      * @param string $value sets the author
-     *
-     * @return void
      */
     public function setAuthor($value)
     {
@@ -69,8 +65,6 @@ class Eps
      * Set document creation date
      *
      * @param string $value sets the date
-     *
-     * @return void
      */
     public function setDate($value)
     {
@@ -81,8 +75,6 @@ class Eps
      * Set document orientation
      *
      * @param string $orientation sets the orientation
-     *
-     * @return void
      */
     public function setOrientation($orientation)
     {
@@ -106,8 +98,6 @@ class Eps
      *
      * @param string  $value sets the font name e.g Arial
      * @param integer $size  sets the size of the font e.g 10
-     *
-     * @return void
      */
     public function setFont($value, $size)
     {
@@ -155,8 +145,6 @@ class Eps
      * @param integer $y_to      The y_to attribute defines the end
      *                           right position of the element
      * @param integer $lineWidth Sets the width of the line e.g 2
-     *
-     * @return void
      */
     public function line(
         $x_from = 0,
@@ -186,8 +174,6 @@ class Eps
      * @param integer $y_to      The y_to attribute defines the end
      *                           right position of the element
      * @param integer $lineWidth Sets the width of the line e.g 2
-     *
-     * @return void
      */
     public function rect($x_from, $y_from, $x_to, $y_to, $lineWidth)
     {
@@ -210,8 +196,6 @@ class Eps
      *
      * @param integer $x The x attribute defines the left position of the element
      * @param integer $y The y attribute defines the right position of the element
-     *
-     * @return void
      */
     public function moveTo($x, $y)
     {
@@ -222,8 +206,6 @@ class Eps
      * Output/Display the text
      *
      * @param string $text The string to be displayed
-     *
-     * @return void
      */
     public function show($text)
     {
@@ -236,8 +218,6 @@ class Eps
      * @param string  $text String to be displayed
      * @param integer $x    X attribute defines the left position of the element
      * @param integer $y    Y attribute defines the right position of the element
-     *
-     * @return void
      */
     public function showXY($text, $x, $y)
     {
@@ -247,8 +227,6 @@ class Eps
 
     /**
      * Ends EPS Document
-     *
-     * @return void
      */
     public function endEpsDoc()
     {
@@ -259,8 +237,6 @@ class Eps
      * Output EPS Document for download
      *
      * @param string $fileName name of the eps document
-     *
-     * @return void
      */
     public function showOutput($fileName)
     {

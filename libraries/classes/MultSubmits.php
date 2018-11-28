@@ -392,7 +392,6 @@ class MultSubmits
      * Gets HTML for copy tables form
      *
      * @param string $action    action type
-     * @param array  $urlParams URL params
      *
      * @return string
      */
@@ -438,7 +437,6 @@ class MultSubmits
      * Gets HTML for replace_prefix_tbl or copy_tbl_change_prefix
      *
      * @param string $action    action type
-     * @param array  $urlParams URL params
      *
      * @return string
      */
@@ -472,7 +470,6 @@ class MultSubmits
      * Gets HTML for add_prefix_tbl
      *
      * @param string $action    action type
-     * @param array  $urlParams URL params
      *
      * @return string
      */
@@ -502,9 +499,7 @@ class MultSubmits
      *
      * @param string $what      mult_submit type
      * @param string $action    action type
-     * @param array  $urlParams URL params
      * @param string $fullQuery full sql query string
-     *
      * @return string
      */
     public function getHtmlForOtherActions($what, $action, array $urlParams, $fullQuery)

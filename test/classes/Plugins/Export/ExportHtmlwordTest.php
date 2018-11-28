@@ -28,8 +28,6 @@ class ExportHtmlwordTest extends PmaTestCase
 
     /**
      * Configures global environment.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -44,8 +42,6 @@ class ExportHtmlwordTest extends PmaTestCase
 
     /**
      * tearDown for test cases
-     *
-     * @return void
      */
     public function tearDown()
     {
@@ -54,8 +50,6 @@ class ExportHtmlwordTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportHtmlword::setProperties
-     *
-     * @return void
      */
     public function testSetProperties()
     {
@@ -210,8 +204,6 @@ class ExportHtmlwordTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportHtmlword::exportHeader
-     *
-     * @return void
      */
     public function testExportHeader()
     {
@@ -267,8 +259,6 @@ class ExportHtmlwordTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportHtmlword::exportFooter
-     *
-     * @return void
      */
     public function testExportFooter()
     {
@@ -286,8 +276,6 @@ class ExportHtmlwordTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportHtmlword::exportDBHeader
-     *
-     * @return void
      */
     public function testExportDBHeader()
     {
@@ -305,8 +293,6 @@ class ExportHtmlwordTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportHtmlword::exportDBFooter
-     *
-     * @return void
      */
     public function testExportDBFooter()
     {
@@ -317,8 +303,6 @@ class ExportHtmlwordTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportHtmlword::exportDBCreate
-     *
-     * @return void
      */
     public function testExportDBCreate()
     {
@@ -329,8 +313,6 @@ class ExportHtmlwordTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportHtmlword::exportData
-     *
-     * @return void
      */
     public function testExportData()
     {
@@ -403,8 +385,6 @@ class ExportHtmlwordTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportHtmlword::getTableDefStandIn
-     *
-     * @return void
      */
     public function testGetTableDefStandIn()
     {
@@ -459,8 +439,6 @@ class ExportHtmlwordTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportHtmlword::getTableDef
-     *
-     * @return void
      */
     public function testGetTableDef()
     {
@@ -733,8 +711,6 @@ class ExportHtmlwordTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportHtmlword::getTriggers
-     *
-     * @return void
      */
     public function testGetTriggers()
     {
@@ -773,8 +749,6 @@ class ExportHtmlwordTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportHtmlword::exportStructure
-     *
-     * @return void
      */
     public function testExportStructure()
     {
@@ -888,8 +862,6 @@ class ExportHtmlwordTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportHtmlword::formatOneColumnDefinition
-     *
-     * @return void
      */
     public function testFormatOneColumnDefinition()
     {

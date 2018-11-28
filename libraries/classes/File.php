@@ -100,8 +100,8 @@ class File
     /**
      * destructor
      *
-     * @see     File::cleanUp()
-     * @access  public
+     * @see File::cleanUp()
+     * @access public
      */
     public function __destruct()
     {
@@ -111,7 +111,7 @@ class File
     /**
      * deletes file if it is temporary, usually from a moved upload file
      *
-     * @access  public
+     * @access public
      * @return boolean success
      */
     public function cleanUp(): bool
@@ -126,7 +126,7 @@ class File
     /**
      * deletes the file
      *
-     * @access  public
+     * @access public
      * @return boolean success
      */
     public function delete(): bool
@@ -141,7 +141,7 @@ class File
      * @param boolean $is_temp sets the temp flag
      *
      * @return boolean File::$_is_temp
-     * @access  public
+     * @access public
      */
     public function isTemp(?bool $is_temp = null): bool
     {
@@ -157,8 +157,7 @@ class File
      *
      * @param string|null $name file name
      *
-     * @return void
-     * @access  public
+     * @access public
      */
     public function setName(?string $name): void
     {
@@ -171,7 +170,7 @@ class File
      * @return string|false the binary file content,
      *                      or false if no content
      *
-     * @access  public
+     * @access public
      */
     public function getRawContent()
     {
@@ -202,7 +201,7 @@ class File
      * @return string|false the binary file content as a string,
      *                      or false if no content
      *
-     * @access  public
+     * @access public
      */
     public function getContent()
     {
@@ -216,9 +215,7 @@ class File
     /**
      * Whether file is uploaded.
      *
-     * @access  public
-     *
-     * @return bool
+     * @access public
      */
     public function isUploaded(): bool
     {
@@ -242,7 +239,7 @@ class File
      * @param string $name name of file uploaded
      *
      * @return boolean success
-     * @access  public
+     * @access public
      */
     public function setUploadedFile(string $name): bool
     {
@@ -264,7 +261,7 @@ class File
      * @param string $rownumber number of row to process
      *
      * @return boolean success
-     * @access  public
+     * @access public
      */
     public function setUploadedFromTblChangeRequest(
         string $key,
@@ -342,12 +339,10 @@ class File
      * $file['error'] = [value]
      * </code>
      *
-     * @param array  $file      the array
      * @param string $rownumber number of row to process
      * @param string $key       key to process
      *
-     * @return array
-     * @access  public
+     * @access public
      * @static
      */
     public function fetchUploadedFromTblChangeRequestMultiple(
@@ -373,7 +368,7 @@ class File
      * @param string $rownumber number of row to process
      *
      * @return boolean success
-     * @access  public
+     * @access public
      */
     public function setSelectedFromTblChangeRequest(
         string $key,
@@ -394,7 +389,7 @@ class File
     /**
      * Returns possible error message.
      *
-     * @access  public
+     * @access public
      * @return Message|null error message
      */
     public function getError(): ?Message
@@ -405,7 +400,7 @@ class File
     /**
      * Checks whether there was any error.
      *
-     * @access  public
+     * @access public
      * @return boolean whether an error occurred or not
      */
     public function isError(): bool
@@ -421,7 +416,7 @@ class File
      * @param string $rownumber number of row to process
      *
      * @return boolean success
-     * @access  public
+     * @access public
      */
     public function checkTblChangeForm(string $key, string $rownumber): bool
     {
@@ -445,7 +440,7 @@ class File
      * @param string $name file name
      *
      * @return boolean success
-     * @access  public
+     * @access public
      */
     public function setLocalSelectedFile(string $name): bool
     {
@@ -473,7 +468,7 @@ class File
     /**
      * Checks whether file can be read.
      *
-     * @access  public
+     * @access public
      * @return boolean whether the file is readable or not
      */
     public function isReadable(): bool
@@ -489,7 +484,7 @@ class File
      * directory - if needed
      *
      * @todo move check of $cfg['TempDir'] into Config?
-     * @access  public
+     * @access public
      * @return boolean whether uploaded file is fine or not
      */
     public function checkUploadedFile(): bool
@@ -539,9 +534,9 @@ class File
     /**
      * Detects what compression the file uses
      *
-     * @todo    move file read part into readChunk() or getChunk()
-     * @todo    add support for compression plugins
-     * @access  protected
+     * @todo move file read part into readChunk() or getChunk()
+     * @todo add support for compression plugins
+     * @access protected
      * @return  string|false false on error, otherwise string MIME type of
      *                       compression, none for none
      */
@@ -566,8 +561,6 @@ class File
      * Sets whether the content should be decompressed before returned
      *
      * @param boolean $decompress whether to decompress
-     *
-     * @return void
      */
     public function setDecompressContent(bool $decompress): void
     {
@@ -591,8 +584,6 @@ class File
      * Sets the file handle
      *
      * @param resource $handle file handle
-     *
-     * @return void
      */
     public function setHandle($handle): void
     {
@@ -602,8 +593,6 @@ class File
 
     /**
      * Sets error message for unsupported compression.
-     *
-     * @return void
      */
     public function errorUnsupported(): void
     {
@@ -619,8 +608,6 @@ class File
 
     /**
      * Attempts to open the file.
-     *
-     * @return bool
      */
     public function open(): bool
     {
@@ -669,8 +656,6 @@ class File
      * Opens file from zip
      *
      * @param string|null $specific_entry Entry to open
-     *
-     * @return bool
      */
     public function openZip(?string $specific_entry = null): bool
     {
@@ -686,8 +671,6 @@ class File
 
     /**
      * Checks whether we've reached end of file
-     *
-     * @return bool
      */
     public function eof(): bool
     {
@@ -699,8 +682,6 @@ class File
 
     /**
      * Closes the file
-     *
-     * @return void
      */
     public function close(): void
     {
@@ -718,8 +699,6 @@ class File
      * Reads data from file
      *
      * @param int $size Number of bytes to read
-     *
-     * @return string
      */
     public function read(int $size): string
     {
@@ -752,8 +731,6 @@ class File
      * Sets the character set of the file
      *
      * @param string $charset character set of the file
-     *
-     * @return void
      */
     public function setCharset(string $charset): void
     {
@@ -764,7 +741,7 @@ class File
      * Returns compression used by file.
      *
      * @return string MIME type of compression, none for none
-     * @access  public
+     * @access public
      */
     public function getCompression(): string
     {
@@ -799,8 +776,6 @@ class File
      * Sets the chunk size
      *
      * @param integer $chunk_size the chunk size
-     *
-     * @return void
      */
     public function setChunkSize(int $chunk_size): void
     {

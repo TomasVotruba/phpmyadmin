@@ -37,8 +37,6 @@ class CreateRemoveUserTest extends TestBase
 
     /**
      * Setup the browser environment to run the selenium test case
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -51,8 +49,6 @@ class CreateRemoveUserTest extends TestBase
 
     /**
      * Creates and removes a user
-     *
-     * @return void
      *
      * @group large
      */

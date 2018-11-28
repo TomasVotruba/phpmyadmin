@@ -29,8 +29,6 @@ class ServerConfigChecksTest extends PmaTestCase
 
     /**
      * @throws \ReflectionException
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -50,9 +48,7 @@ class ServerConfigChecksTest extends PmaTestCase
         unset($_SESSION[$this->sessionID]);
     }
 
-    /**
-     * @return void
-     */
+    
     public function testManyErrors()
     {
         $_SESSION[$this->sessionID]['Servers'] = [
@@ -111,9 +107,7 @@ class ServerConfigChecksTest extends PmaTestCase
         );
     }
 
-    /**
-     * @return void
-     */
+    
     public function testBlowfishCreate()
     {
         $_SESSION[$this->sessionID]['Servers'] = [
@@ -148,9 +142,7 @@ class ServerConfigChecksTest extends PmaTestCase
         );
     }
 
-    /**
-     * @return void
-     */
+    
     public function testBlowfish()
     {
         $_SESSION[$this->sessionID]['blowfish_secret'] = 'sec';

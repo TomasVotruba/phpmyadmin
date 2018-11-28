@@ -45,7 +45,6 @@ class TableStatsSvg extends TableStats
      * @param boolean $tableDimension   Whether to display table position or not
      * @param boolean $offline          Whether the coordinates are sent
      *
-     *
      * @see PMA_SVG, Table_Stats_Svg::Table_Stats_setWidth,
      *       PhpMyAdmin\Plugins\Schema\Svg\TableStatsSvg::Table_Stats_setHeight
      */
@@ -83,8 +82,6 @@ class TableStatsSvg extends TableStats
 
     /**
      * Displays an error when the table cannot be found.
-     *
-     * @return void
      */
     protected function showMissingTableError()
     {
@@ -101,10 +98,9 @@ class TableStatsSvg extends TableStats
      * @param string  $font     The font size
      * @param integer $fontSize The font size
      *
-     * @return void
      * @access private
      *
-     * @see    PMA_SVG
+     * @see PMA_SVG
      */
     private function _setWidthTable($font, $fontSize)
     {
@@ -131,8 +127,6 @@ class TableStatsSvg extends TableStats
      * Sets the height of the table
      *
      * @param integer $fontSize font size
-     *
-     * @return void
      */
     private function _setHeightTable($fontSize)
     {
@@ -146,9 +140,8 @@ class TableStatsSvg extends TableStats
      * @param boolean $showColor Whether to display color
      *
      * @access public
-     * @return void
      *
-     * @see    PMA_SVG,PMA_SVG::printElement
+     * @see PMA_SVG,PMA_SVG::printElement
      */
     public function tableDraw($showColor)
     {

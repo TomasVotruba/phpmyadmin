@@ -48,8 +48,6 @@ class ImportShp extends ImportPlugin
     /**
      * Sets the import plugin properties.
      * Called in the constructor.
-     *
-     * @return void
      */
     protected function setProperties()
     {
@@ -66,8 +64,6 @@ class ImportShp extends ImportPlugin
      * Handles the whole import logic
      *
      * @param array &$sql_data 2-element array with sql data
-     *
-     * @return void
      */
     public function doImport(array &$sql_data = [])
     {

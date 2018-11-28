@@ -23,8 +23,6 @@ class StructureTest extends TestBase
 {
     /**
      * Setup the browser environment to run the selenium test case
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -59,8 +57,6 @@ class StructureTest extends TestBase
     /**
      * Test for truncating a table
      *
-     * @return void
-     *
      * @group large
      */
     public function testTruncateTable()
@@ -87,8 +83,6 @@ class StructureTest extends TestBase
 
     /**
      * Tests for dropping multiple tables
-     *
-     * @return void
      *
      * @group large
      */

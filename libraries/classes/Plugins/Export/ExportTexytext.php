@@ -41,8 +41,6 @@ class ExportTexytext extends ExportPlugin
 
     /**
      * Sets the export Texy! text properties
-     *
-     * @return void
      */
     protected function setProperties()
     {

@@ -32,8 +32,6 @@ class ThemeTest extends PmaTestCase
     /**
      * Sets up the fixture, for example, opens a network connection.
      * This method is called before a test is executed.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -49,8 +47,6 @@ class ThemeTest extends PmaTestCase
     /**
      * Tears down the fixture, for example, closes a network connection.
      * This method is called after a test is executed.
-     *
-     * @return void
      */
     protected function tearDown()
     {
@@ -60,7 +56,6 @@ class ThemeTest extends PmaTestCase
     /**
      * Test for Theme::loadInfo
      *
-     * @return void
      * @group medium
      */
     public function testCheckImgPathNotExisted()
@@ -71,8 +66,6 @@ class ThemeTest extends PmaTestCase
 
     /**
      * Test for Theme::loadInfo
-     *
-     * @return void
      */
     public function testCheckImgPathIncorrect()
     {
@@ -85,8 +78,6 @@ class ThemeTest extends PmaTestCase
 
     /**
      * Test for Theme::getName, getVersion
-     *
-     * @return void
      */
     public function testCheckImgPathFull()
     {
@@ -98,8 +89,6 @@ class ThemeTest extends PmaTestCase
 
     /**
      * Test for Theme::loadInfo
-     *
-     * @return void
      */
     public function testLoadInfo()
     {
@@ -120,8 +109,6 @@ class ThemeTest extends PmaTestCase
 
     /**
      * Test for Theme::load
-     *
-     * @return void
      */
     public function testLoad()
     {
@@ -131,8 +118,6 @@ class ThemeTest extends PmaTestCase
 
     /**
      * Test for Theme::load
-     *
-     * @return void
      */
     public function testLoadNotExisted()
     {
@@ -141,8 +126,6 @@ class ThemeTest extends PmaTestCase
 
     /**
      * Test fir Theme::checkImgPath
-     *
-     * @return void
      */
     public function testCheckImgPathFallback()
     {
@@ -152,8 +135,6 @@ class ThemeTest extends PmaTestCase
 
     /**
      * Test for Theme::checkImgPath
-     *
-     * @return void
      */
     public function testCheckImgPath()
     {
@@ -163,8 +144,6 @@ class ThemeTest extends PmaTestCase
 
     /**
      * Test for Theme::getPath
-     *
-     * @return void
      */
     public function testGetSetPath()
     {
@@ -176,8 +155,6 @@ class ThemeTest extends PmaTestCase
 
     /**
      * Test for Theme::checkVersion
-     *
-     * @return void
      *
      * @depends testLoadInfo
      */
@@ -198,8 +175,6 @@ class ThemeTest extends PmaTestCase
 
     /**
      * Test for Theme::getName
-     *
-     * @return void
      */
     public function testGetSetName()
     {
@@ -211,8 +186,6 @@ class ThemeTest extends PmaTestCase
 
     /**
      * Test for Theme::getId
-     *
-     * @return void
      */
     public function testGetSetId()
     {
@@ -224,8 +197,6 @@ class ThemeTest extends PmaTestCase
 
     /**
      * Test for Theme::getImgPath
-     *
-     * @return void
      */
     public function testGetSetImgPath()
     {
@@ -240,8 +211,6 @@ class ThemeTest extends PmaTestCase
 
     /**
      * Test for getPrintPreview().
-     *
-     * @return void
      */
     public function testGetPrintPreview()
     {
@@ -265,8 +234,6 @@ class ThemeTest extends PmaTestCase
      * @param string $file     file name for image
      * @param string $fallback fallback image
      * @param string $output   expected output
-     *
-     * @return void
      *
      * @dataProvider providerForGetImgPath
      */

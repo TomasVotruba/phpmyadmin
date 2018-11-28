@@ -28,8 +28,6 @@ class ExportTexytextTest extends PmaTestCase
 
     /**
      * Configures global environment.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -47,8 +45,6 @@ class ExportTexytextTest extends PmaTestCase
 
     /**
      * tearDown for test cases
-     *
-     * @return void
      */
     public function tearDown()
     {
@@ -57,8 +53,6 @@ class ExportTexytextTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportTexytext::setProperties
-     *
-     * @return void
      */
     public function testSetProperties()
     {
@@ -171,8 +165,6 @@ class ExportTexytextTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportTexytext::exportHeader
-     *
-     * @return void
      */
     public function testExportHeader()
     {
@@ -183,8 +175,6 @@ class ExportTexytextTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportTexytext::exportFooter
-     *
-     * @return void
      */
     public function testExportFooter()
     {
@@ -195,8 +185,6 @@ class ExportTexytextTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportTexytext::exportDBHeader
-     *
-     * @return void
      */
     public function testExportDBHeader()
     {
@@ -210,8 +198,6 @@ class ExportTexytextTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportTexytext::exportDBFooter
-     *
-     * @return void
      */
     public function testExportDBFooter()
     {
@@ -222,8 +208,6 @@ class ExportTexytextTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportTexytext::exportDBCreate
-     *
-     * @return void
      */
     public function testExportDBCreate()
     {
@@ -234,8 +218,6 @@ class ExportTexytextTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportTexytext::exportData
-     *
-     * @return void
      */
     public function testExportData()
     {
@@ -300,8 +282,6 @@ class ExportTexytextTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportTexytext::getTableDefStandIn
-     *
-     * @return void
      */
     public function testGetTableDefStandIn()
     {
@@ -361,8 +341,6 @@ class ExportTexytextTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportTexytext::getTableDef
-     *
-     * @return void
      */
     public function testGetTableDef()
     {
@@ -464,10 +442,8 @@ class ExportTexytextTest extends PmaTestCase
     }
 
     /**
-    * Test for PhpMyAdmin\Plugins\Export\ExportTexytext::getTriggers
-    *
-    * @return void
-    */
+     * Test for PhpMyAdmin\Plugins\Export\ExportTexytext::getTriggers
+     */
     public function testGetTriggers()
     {
         $dbi = $this->getMockBuilder('PhpMyAdmin\DatabaseInterface')
@@ -505,8 +481,6 @@ class ExportTexytextTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportTexytext::exportStructure
-     *
-     * @return void
      */
     public function testExportStructure()
     {
@@ -635,8 +609,6 @@ class ExportTexytextTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportTexytext::formatOneColumnDefinition
-     *
-     * @return void
      */
     public function testFormatOneColumnDefinition()
     {

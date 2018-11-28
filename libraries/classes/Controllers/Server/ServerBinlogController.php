@@ -48,8 +48,6 @@ class ServerBinlogController extends Controller
 
     /**
      * Index action
-     *
-     * @return void
      */
     public function indexAction()
     {

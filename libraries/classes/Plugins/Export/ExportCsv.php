@@ -39,8 +39,6 @@ class ExportCsv extends ExportPlugin
 
     /**
      * Sets the export CSV properties
-     *
-     * @return void
      */
     protected function setProperties()
     {

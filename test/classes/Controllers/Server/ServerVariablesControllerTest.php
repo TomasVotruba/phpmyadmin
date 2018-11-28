@@ -34,8 +34,6 @@ class ServerVariablesControllerTest extends PmaTestCase
 
     /**
      * Test for setUp
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -103,8 +101,6 @@ class ServerVariablesControllerTest extends PmaTestCase
 
     /**
      * Test for _formatVariable()
-     *
-     * @return void
      */
     public function testFormatVariable()
     {
@@ -162,8 +158,6 @@ class ServerVariablesControllerTest extends PmaTestCase
 
     /**
      * Test for _getHtmlForLinkTemplates()
-     *
-     * @return void
      */
     public function testGetHtmlForLinkTemplates()
     {
@@ -205,8 +199,6 @@ class ServerVariablesControllerTest extends PmaTestCase
 
     /**
      * Test for PMA_getHtmlForServerVariables()
-     *
-     * @return void
      */
     public function testPMAGetHtmlForServerVariables()
     {
@@ -264,8 +256,6 @@ class ServerVariablesControllerTest extends PmaTestCase
 
     /**
      * Test for _getHtmlForServerVariablesItems()
-     *
-     * @return void
      */
     public function testGetHtmlForServerVariablesItems()
     {

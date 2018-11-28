@@ -24,15 +24,11 @@ class VariablesTest extends TestCase
 {
     /**
      * Prepares environment for the test.
-     *
-     * @return void
      */
     public $serverStatusData;
 
     /**
      * Test for setUp
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -144,8 +140,6 @@ class VariablesTest extends TestCase
 
     /**
      * Test for Variables::getHtmlForFilter
-     *
-     * @return void
      */
     public function testPMAGetHtmlForFilter()
     {
@@ -183,8 +177,6 @@ class VariablesTest extends TestCase
 
     /**
      * Test for Variables::getHtmlForLinkSuggestions
-     *
-     * @return void
      */
     public function testPMAGetHtmlForLinkSuggestions()
     {
@@ -214,7 +206,6 @@ class VariablesTest extends TestCase
     /**
      * Test for Variables::getHtmlForVariablesList
      *
-     * @return void
      * @group medium
      */
     public function testPMAGetHtmlForVariablesList()

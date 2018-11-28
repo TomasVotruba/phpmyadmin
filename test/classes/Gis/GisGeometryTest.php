@@ -29,7 +29,6 @@ class GisGeometryTest extends TestCase
      * This method is called before a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function setUp()
     {
@@ -41,7 +40,6 @@ class GisGeometryTest extends TestCase
      * This method is called after a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function tearDown()
     {
@@ -72,7 +70,6 @@ class GisGeometryTest extends TestCase
      * @param array  $output    Expected output array
      *
      * @dataProvider providerForTestSetMinMax
-     * @return void
      */
     public function testSetMinMax($point_set, $min_max, $output)
     {
@@ -128,7 +125,6 @@ class GisGeometryTest extends TestCase
      * @param string $output Expected output
      *
      * @dataProvider providerForTestGenerateParams
-     * @return void
      */
     public function testGenerateParams($value, $output)
     {
@@ -182,7 +178,6 @@ class GisGeometryTest extends TestCase
      * @param array   $output     Expected output
      *
      * @dataProvider providerForTestExtractPoints
-     * @return void
      */
     public function testExtractPoints($point_set, $scale_data, $linear, $output)
     {
@@ -258,7 +253,6 @@ class GisGeometryTest extends TestCase
      * @param array  $scale_data data related to scaling
      * @param string $output     expected output
      *
-     * @return void
      * @dataProvider providerForTestGetBoundsForOl
      */
     public function testGetBoundsForOl($srid, $scale_data, $output)
@@ -307,7 +301,6 @@ class GisGeometryTest extends TestCase
      * @param string $srid     spatial reference id
      * @param string $output   expected output
      *
-     * @return void
      * @dataProvider providerForTestGetPolygonArrayForOpenLayers
      */
     public function testGetPolygonArrayForOpenLayers($polygons, $srid, $output)

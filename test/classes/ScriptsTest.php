@@ -29,7 +29,6 @@ class ScriptsTest extends PmaTestCase
      * This method is called before a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function setUp()
     {
@@ -44,7 +43,6 @@ class ScriptsTest extends PmaTestCase
      * This method is called after a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function tearDown()
     {
@@ -70,8 +68,6 @@ class ScriptsTest extends PmaTestCase
     /**
      * Test for _includeFile
      *
-     * @return void
-     *
      * @group medium
      */
     public function testIncludeFile()
@@ -95,8 +91,6 @@ class ScriptsTest extends PmaTestCase
 
     /**
      * Test for getDisplay
-     *
-     * @return void
      */
     public function testGetDisplay()
     {
@@ -117,8 +111,6 @@ class ScriptsTest extends PmaTestCase
 
     /**
      * test for addCode
-     *
-     * @return void
      */
     public function testAddCode()
     {
@@ -135,10 +127,8 @@ $(function() {});
     }
 
     /**
-    * test for getFiles
-    *
-    * @return void
-    */
+     * test for getFiles
+     */
     public function testGetFiles()
     {
         // codemirror's onload event is blacklisted
@@ -156,8 +146,6 @@ $(function() {});
 
     /**
      * test for addFile
-     *
-     * @return void
      */
     public function testAddFile()
     {
@@ -189,8 +177,6 @@ $(function() {});
 
     /**
      * test for addFiles
-     *
-     * @return void
      */
     public function testAddFiles()
     {

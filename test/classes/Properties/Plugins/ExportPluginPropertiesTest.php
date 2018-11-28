@@ -23,8 +23,6 @@ class ExportPluginPropertiesTest extends ImportPluginPropertiesTest
 
     /**
      * Configures global environment.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -33,8 +31,6 @@ class ExportPluginPropertiesTest extends ImportPluginPropertiesTest
 
     /**
      * tearDown for test cases
-     *
-     * @return void
      */
     public function tearDown()
     {
@@ -43,8 +39,6 @@ class ExportPluginPropertiesTest extends ImportPluginPropertiesTest
 
     /**
      * Test for PhpMyAdmin\Properties\Plugins\ExportPluginProperties::getItemType
-     *
-     * @return void
      */
     public function testGetItemType()
     {
@@ -58,8 +52,6 @@ class ExportPluginPropertiesTest extends ImportPluginPropertiesTest
      * Test for
      *     - PhpMyAdmin\Properties\Plugins\ExportPluginProperties::getForceFile
      *     - PhpMyAdmin\Properties\Plugins\ExportPluginProperties::setForceFile
-     *
-     * @return void
      */
     public function testSetGetForceFile()
     {

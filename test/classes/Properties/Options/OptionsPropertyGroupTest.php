@@ -23,8 +23,6 @@ class OptionsPropertyGroupTest extends TestCase
 
     /**
      * Configures global environment.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -33,8 +31,6 @@ class OptionsPropertyGroupTest extends TestCase
 
     /**
      * tearDown for test cases
-     *
-     * @return void
      */
     public function tearDown()
     {
@@ -43,8 +39,6 @@ class OptionsPropertyGroupTest extends TestCase
 
     /**
      * Test for PhpMyAdmin\Properties\Options\OptionsPropertyGroup::addProperty
-     *
-     * @return void
      */
     public function testAddProperty()
     {
@@ -67,8 +61,6 @@ class OptionsPropertyGroupTest extends TestCase
 
     /**
      * Test for PhpMyAdmin\Properties\Options\OptionsPropertyGroup::removeProperty
-     *
-     * @return void
      */
     public function testRemoveProperty()
     {
@@ -90,8 +82,6 @@ class OptionsPropertyGroupTest extends TestCase
 
     /**
      * Test for PhpMyAdmin\Properties\Options\OptionsPropertyGroup::getGroup
-     *
-     * @return void
      */
     public function testGetGroup()
     {
@@ -103,8 +93,6 @@ class OptionsPropertyGroupTest extends TestCase
 
     /**
      * Test for PhpMyAdmin\Properties\Options\OptionsPropertyGroup::getProperties
-     *
-     * @return void
      */
     public function testGetProperties()
     {
@@ -120,8 +108,6 @@ class OptionsPropertyGroupTest extends TestCase
 
     /**
      * Test for PhpMyAdmin\Properties\Options\OptionsPropertyGroup::getProperties
-     *
-     * @return void
      */
     public function testGetNrOfProperties()
     {

@@ -658,8 +658,6 @@ class NavigationTree
      *                    to group the whole tree. If
      *                    passed as an argument, $node
      *                    must be of type CONTAINER
-     *
-     * @return void
      */
     public function groupTree($node = null)
     {
@@ -676,8 +674,6 @@ class NavigationTree
      * Recursively groups tree nodes given a separator
      *
      * @param Node $node The node to group
-     *
-     * @return void
      */
     public function groupNode($node)
     {
@@ -1321,8 +1317,6 @@ class NavigationTree
 
     /**
      * Makes some nodes visible based on the which node is active
-     *
-     * @return void
      */
     private function _setVisibility()
     {

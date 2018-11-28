@@ -58,8 +58,6 @@ class RelationStatsEps extends RelationStats
      * shows foreign key relations
      *
      * @see PMA_EPS
-     *
-     * @return void
      */
     public function relationDraw()
     {

@@ -99,8 +99,6 @@ class Navigation
      * @param string $itemType  type of the navigation tree item
      * @param string $dbName    database name
      * @param string $tableName table name if applicable
-     *
-     * @return void
      */
     public function hideNavigationItem(
         $itemName,
@@ -151,8 +149,6 @@ class Navigation
      * @param string $itemType  type of the navigation tree item
      * @param string $dbName    database name
      * @param string $tableName table name if applicable
-     *
-     * @return void
      */
     public function unhideNavigationItem(
         $itemName,

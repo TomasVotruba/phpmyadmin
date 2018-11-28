@@ -23,8 +23,6 @@ class NodeTest extends PmaTestCase
 {
     /**
      * SetUp for test cases
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -34,8 +32,6 @@ class NodeTest extends PmaTestCase
 
     /**
      * SetUp for AddNode
-     *
-     * @return void
      */
     public function testAddNode()
     {
@@ -54,8 +50,6 @@ class NodeTest extends PmaTestCase
 
     /**
      * SetUp for getChild
-     *
-     * @return void
      */
     public function testGetChildError()
     {
@@ -72,8 +66,6 @@ class NodeTest extends PmaTestCase
 
     /**
      * SetUp for getChild
-     *
-     * @return void
      */
     public function testRemoveNode()
     {
@@ -93,8 +85,6 @@ class NodeTest extends PmaTestCase
 
     /**
      * SetUp for hasChildren
-     *
-     * @return void
      */
     public function testNodeHasChildren()
     {
@@ -138,8 +128,6 @@ class NodeTest extends PmaTestCase
 
     /**
      * SetUp for numChildren
-     *
-     * @return void
      */
     public function testNumChildren()
     {
@@ -172,8 +160,6 @@ class NodeTest extends PmaTestCase
 
     /**
      * SetUp for parents
-     *
-     * @return void
      */
     public function testParents()
     {
@@ -193,8 +179,6 @@ class NodeTest extends PmaTestCase
 
     /**
      * SetUp for realParent
-     *
-     * @return void
      */
     public function testRealParent()
     {
@@ -210,7 +194,6 @@ class NodeTest extends PmaTestCase
      * Tests whether Node->hasSiblings() method returns false
      * when the node does not have any siblings.
      *
-     * @return void
      * @test
      */
     public function testHasSiblingsWithNoSiblings()
@@ -225,7 +208,6 @@ class NodeTest extends PmaTestCase
      * Tests whether Node->hasSiblings() method returns true
      * when it actually has siblings.
      *
-     * @return void
      * @test
      */
     public function testHasSiblingsWithSiblings()
@@ -260,7 +242,6 @@ class NodeTest extends PmaTestCase
      * It is expected that Node->hasSiblings() method always return true
      * for Nodes that are 3 levels deep (columns and indexes).
      *
-     * @return void
      * @test
      */
     public function testHasSiblingsForNodesAtLevelThree()
@@ -282,7 +263,6 @@ class NodeTest extends PmaTestCase
     /**
      * Tests private method _getWhereClause()
      *
-     * @return void
      * @test
      */
     public function testGetWhereClause()
@@ -340,7 +320,6 @@ class NodeTest extends PmaTestCase
      * Tests getData() method when DisableIS is false and navigation tree
      * grouping enabled.
      *
-     * @return void
      * @test
      */
     public function testGetDataWithEnabledISAndGroupingEnabled()
@@ -390,7 +369,6 @@ class NodeTest extends PmaTestCase
      * Tests getData() method when DisableIS is false and navigation tree
      * grouping disabled.
      *
-     * @return void
      * @test
      */
     public function testGetDataWithEnabledISAndGroupingDisabled()
@@ -428,7 +406,6 @@ class NodeTest extends PmaTestCase
      * Tests getData() method when DisableIS is true and navigation tree
      * grouping enabled.
      *
-     * @return void
      * @test
      */
     public function testGetDataWithDisabledISAndGroupingEnabled()
@@ -480,7 +457,6 @@ class NodeTest extends PmaTestCase
      * Tests the getPresence method when DisableIS is false and navigation tree
      * grouping enabled.
      *
-     * @return void
      * @test
      */
     public function testGetPresenceWithEnabledISAndGroupingEnabled()
@@ -515,7 +491,6 @@ class NodeTest extends PmaTestCase
      * Tests the getPresence method when DisableIS is false and navigation tree
      * grouping disabled.
      *
-     * @return void
      * @test
      */
     public function testGetPresenceWithEnabledISAndGroupingDisabled()
@@ -541,7 +516,6 @@ class NodeTest extends PmaTestCase
     /**
      * Tests the getPresence method when DisableIS is true
      *
-     * @return void
      * @test
      */
     public function testGetPresenceWithDisabledIS()

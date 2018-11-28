@@ -21,8 +21,6 @@ class TrackingTest extends TestBase
 {
     /**
      * Setup the browser environment to run the selenium test case
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -65,8 +63,6 @@ class TrackingTest extends TestBase
 
     /**
      * Tests basic tracking functionality
-     *
-     * @return void
      *
      * @group large
      */
@@ -152,8 +148,6 @@ class TrackingTest extends TestBase
     /**
      * Tests deactivation of tracking
      *
-     * @return void
-     *
      * @group large
      */
     public function testDeactivateTracking()
@@ -171,8 +165,6 @@ class TrackingTest extends TestBase
 
     /**
      * Tests dropping a tracking
-     *
-     * @return void
      *
      * @group large
      */
@@ -226,8 +218,6 @@ class TrackingTest extends TestBase
     /**
      * Tests structure snapshot of a tracking
      *
-     * @return void
-     *
      * @group large
      */
     public function testStructureSnapshot()
@@ -258,8 +248,6 @@ class TrackingTest extends TestBase
 
     /**
      * Goes to SQL tab, executes queries, returns to tracking page
-     *
-     * @return void
      */
     private function _executeSqlAndReturnToTableTracking()
     {

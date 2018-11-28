@@ -30,7 +30,6 @@ class PbxtTest extends PmaTestCase
      * This method is called before a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function setUp()
     {
@@ -43,7 +42,6 @@ class PbxtTest extends PmaTestCase
      * This method is called after a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function tearDown()
     {
@@ -52,8 +50,6 @@ class PbxtTest extends PmaTestCase
 
     /**
      * Test for getVariables
-     *
-     * @return void
      */
     public function testGetVariables()
     {
@@ -176,8 +172,6 @@ class PbxtTest extends PmaTestCase
      * @param string $output         Expected output
      *
      * @dataProvider providerFortTestResolveTypeSize
-     *
-     * @return void
      */
     public function testResolveTypeSize($formatted_size, $output)
     {
@@ -221,8 +215,6 @@ class PbxtTest extends PmaTestCase
 
     /**
      * Test for getInfoPages
-     *
-     * @return void
      */
     public function testGetInfoPages()
     {
@@ -236,8 +228,6 @@ class PbxtTest extends PmaTestCase
 
     /**
      * Test for getPage
-     *
-     * @return void
      */
     public function testGetPage()
     {

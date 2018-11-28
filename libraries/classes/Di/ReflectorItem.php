@@ -29,7 +29,6 @@ abstract class ReflectorItem implements Item
     /**
      * Constructor
      *
-     * @param Container $container  Container
      * @param mixed     $definition Definition
      */
     public function __construct(Container $container, $definition)

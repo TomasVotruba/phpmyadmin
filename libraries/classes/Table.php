@@ -459,7 +459,7 @@ class Table
      * @param string      $length             length ('2', '5,2', '', ...)
      * @param string      $attribute          attribute
      * @param string      $collation          collation
-     * @param bool|string $null               with 'NULL' or 'NOT NULL'
+     * @param bool|string $null               with 'NULL' or 'NOTNULL'
      * @param string      $default_type       whether default is CURRENT_TIMESTAMP,
      *                                        NULL, NONE, USER_DEFINED
      * @param string      $default_value      default value for USER_DEFINED
@@ -471,7 +471,7 @@ class Table
      * @param string      $move_to            new position for column
      * @param array       $columns_with_index Fields having PRIMARY or UNIQUE KEY indexes
      *
-     * @todo    move into class PMA_Column
+     * @todo move into class PMA_Column
      * @todo on the interface, some js to clear the default value when the
      * default current_timestamp is checked
      *
@@ -573,7 +573,7 @@ class Table
                         . $dbi->escapeString((string) $default_value) . '\'';
                     }
                     break;
-            /** @noinspection PhpMissingBreakStatementInspection */
+                /** @noinspection PhpMissingBreakStatementInspection */
                 case 'NULL':
                     // If user uncheck null checkbox and not change default value null,
                     // default value will be ignored.
@@ -761,7 +761,7 @@ class Table
      * @param string      $length             length ('2', '5,2', '', ...)
      * @param string      $attribute          attribute
      * @param string      $collation          collation
-     * @param bool|string $null               with 'NULL' or 'NOT NULL'
+     * @param bool|string $null               with 'NULL' or 'NOTNULL'
      * @param string      $default_type       whether default is CURRENT_TIMESTAMP,
      *                                        NULL, NONE, USER_DEFINED
      * @param string      $default_value      default value for USER_DEFINED default
@@ -972,7 +972,7 @@ class Table
 
         /**
          * The full name of source table, quoted.
-         * @var string $source
+         * @var string
          */
         $source = Util::backquote($source_db)
             . '.' . Util::backquote($source_table);
@@ -989,7 +989,7 @@ class Table
 
         /**
          * The full name of target table, quoted.
-         * @var string $target
+         * @var string
          */
         $target = Util::backquote($target_db)
             . '.' . Util::backquote($target_table);
@@ -999,7 +999,7 @@ class Table
             /**
              * Instance used for exporting the current structure of the table.
              *
-             * @var ExportSql $export_sql_plugin
+             * @var ExportSql
              */
             $export_sql_plugin = Plugins::getPlugin(
                 "export",
@@ -1020,7 +1020,7 @@ class Table
 
             /**
              * The old structure of the table..
-             * @var string $sql_structure
+             * @var string
              */
             $sql_structure = $export_sql_plugin->getTableDef(
                 $source_db,
@@ -1063,7 +1063,7 @@ class Table
 
                 /**
                  * Drop statement used for building the query.
-                 * @var DropStatement $statement
+                 * @var DropStatement
                  */
                 $statement = new DropStatement();
 
@@ -1095,7 +1095,7 @@ class Table
 
             /**
              * The parser responsible for parsing the old queries.
-             * @var Parser $parser
+             * @var Parser
              */
             $parser = new Parser($sql_structure);
 
@@ -1103,7 +1103,7 @@ class Table
 
                 /**
                  * The CREATE statement of this structure.
-                 * @var \PhpMyAdmin\SqlParser\Statements\CreateStatement $statement
+                 * @var \PhpMyAdmin\SqlParser\Statements\CreateStatement
                  */
                 $statement = $parser->statements[0];
 
@@ -1129,7 +1129,7 @@ class Table
 
                 /**
                  * The ALTER statement that generates the constraints.
-                 * @var \PhpMyAdmin\SqlParser\Statements\AlterStatement $statement
+                 * @var \PhpMyAdmin\SqlParser\Statements\AlterStatement
                  */
                 $statement = $parser->statements[0];
 
@@ -1167,7 +1167,7 @@ class Table
                 $GLOBALS['sql_indexes'] = '';
                 /**
                  * The ALTER statement that generates the indexes.
-                 * @var \PhpMyAdmin\SqlParser\Statements\AlterStatement $statement
+                 * @var \PhpMyAdmin\SqlParser\Statements\AlterStatement
                  */
                 foreach ($parser->statements as $statement) {
                     // Changing the altered table to the destination.
@@ -1207,7 +1207,7 @@ class Table
 
                     /**
                      * The ALTER statement that alters the AUTO_INCREMENT value.
-                     * @var \PhpMyAdmin\SqlParser\Statements\AlterStatement $statement
+                     * @var \PhpMyAdmin\SqlParser\Statements\AlterStatement
                      */
                     $statement = $parser->statements[0];
 
@@ -1458,7 +1458,7 @@ class Table
      * @param boolean $is_backquoted whether this name is used inside backquotes or not
      *
      * @todo add check for valid chars in filename on current system/os
-     * @see  https://dev.mysql.com/doc/refman/5.0/en/legal-names.html
+     * @see https://dev.mysql.com/doc/refman/5.0/en/legal-names.html
      *
      * @return boolean whether the string is valid or not
      */
@@ -1869,8 +1869,6 @@ class Table
      * Loads the UI preferences for this table.
      * If pmadb and table_uiprefs is set, it will load the UI preferences from
      * phpMyAdmin database.
-     *
-     * @return void
      */
     protected function loadUiPrefs()
     {
@@ -2643,8 +2641,8 @@ class Table
 
         $parser = new Parser($createTable);
         /**
-         * @var \PhpMyAdmin\SqlParser\Statements\CreateStatement $stmt
-        */
+         * @var \PhpMyAdmin\SqlParser\Statements\CreateStatement
+         */
         $stmt = $parser->statements[0];
         $fields = TableUtils::getFields($stmt);
         if ($column != null) {

@@ -23,8 +23,6 @@ class UsersTest extends TestCase
 {
     /**
      * Test for Users::getHtmlForSubMenusOnUsersPage
-     *
-     * @return void
      */
     public function testGetHtmlForSubMenusOnUsersPage()
     {

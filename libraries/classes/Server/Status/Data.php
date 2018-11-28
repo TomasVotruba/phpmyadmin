@@ -42,8 +42,6 @@ class Data
      *
      * @param string $a key
      * @param mixed  $b value
-     *
-     * @return void
      */
     public function __set($a, $b)
     {

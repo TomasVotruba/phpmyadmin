@@ -44,8 +44,6 @@ class Tracker
      * underlaying code is initialized.
      *
      * @static
-     *
-     * @return void
      */
     public static function enable()
     {
@@ -198,7 +196,7 @@ class Tracker
 
         /**
          * get Export SQL instance
-         * @var ExportSql $export_sql_plugin
+         * @var ExportSql
          */
         $export_sql_plugin = Plugins::getPlugin(
             "export",
@@ -659,7 +657,6 @@ class Tracker
      * @todo: support multi-table/view drops
      *
      * @return mixed Array containing identifier, type and tablename.
-     *
      */
     public static function parseQuery($query)
     {
@@ -799,8 +796,6 @@ class Tracker
      * @param string $query a SQL query
      *
      * @static
-     *
-     * @return void
      */
     public static function handleQuery($query)
     {

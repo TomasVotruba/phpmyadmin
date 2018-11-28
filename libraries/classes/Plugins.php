@@ -462,7 +462,7 @@ class Plugins
                 break;
             case 'PhpMyAdmin\Properties\Options\Items\RadioPropertyItem':
                 /**
-                 * @var \PhpMyAdmin\Properties\Options\Items\RadioPropertyItem $pitem
+                 * @var \PhpMyAdmin\Properties\Options\Items\RadioPropertyItem
                  */
                 $pitem = $propertyItem;
 
@@ -486,7 +486,7 @@ class Plugins
                 break;
             case 'PhpMyAdmin\Properties\Options\Items\SelectPropertyItem':
                 /**
-                 * @var \PhpMyAdmin\Properties\Options\Items\SelectPropertyItem $pitem
+                 * @var \PhpMyAdmin\Properties\Options\Items\SelectPropertyItem
                  */
                 $pitem = $propertyItem;
                 $ret .= '<li>' . "\n";
@@ -513,7 +513,7 @@ class Plugins
                 break;
             case 'PhpMyAdmin\Properties\Options\Items\TextPropertyItem':
                 /**
-                 * @var \PhpMyAdmin\Properties\Options\Items\TextPropertyItem $pitem
+                 * @var \PhpMyAdmin\Properties\Options\Items\TextPropertyItem
                  */
                 $pitem = $propertyItem;
                 $ret .= '<li>' . "\n";

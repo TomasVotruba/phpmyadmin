@@ -3,9 +3,9 @@
 
 /**
  * Holds the PhpMyAdmin\Controllers\Server\ServerPluginsController
-*
-* @package PhpMyAdmin\Controllers
-*/
+ *
+ * @package PhpMyAdmin\Controllers
+ */
 declare(strict_types=1);
 
 namespace PhpMyAdmin\Controllers\Server;
@@ -38,8 +38,6 @@ class ServerPluginsController extends Controller
 
     /**
      * Index action
-     *
-     * @return void
      */
     public function indexAction()
     {
@@ -52,7 +50,7 @@ class ServerPluginsController extends Controller
 
         /**
          * Displays the page
-        */
+         */
         $this->response->addHTML(
             $this->template->render('server/sub_page_header', [
                 'type' => 'plugins',
@@ -63,8 +61,6 @@ class ServerPluginsController extends Controller
 
     /**
      * Sets details about server plugins
-     *
-     * @return void
      */
     private function _setServerPlugins()
     {

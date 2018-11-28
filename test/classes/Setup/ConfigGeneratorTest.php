@@ -24,7 +24,6 @@ class ConfigGeneratorTest extends PmaTestCase
     /**
      * Test for ConfigGenerator::getConfigFile
      *
-     * @return void
      * @group medium
      */
     public function testGetConfigFile()
@@ -73,8 +72,6 @@ class ConfigGeneratorTest extends PmaTestCase
 
     /**
      * Test for ConfigGenerator::_getVarExport
-     *
-     * @return void
      */
     public function testGetVarExport()
     {
@@ -120,8 +117,6 @@ class ConfigGeneratorTest extends PmaTestCase
 
     /**
      * Test for ConfigGenerator::_isZeroBasedArray
-     *
-     * @return void
      */
     public function testIsZeroBasedArray()
     {
@@ -167,8 +162,6 @@ class ConfigGeneratorTest extends PmaTestCase
 
     /**
      * Test for ConfigGenerator::_exportZeroBasedArray
-     *
-     * @return void
      */
     public function testExportZeroBasedArray()
     {

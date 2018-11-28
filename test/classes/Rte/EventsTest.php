@@ -27,8 +27,6 @@ class EventsTest extends TestCase
 
     /**
      * Set up
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -54,8 +52,6 @@ class EventsTest extends TestCase
 
     /**
      * Tear down
-     *
-     * @return void
      */
     public function tearDown()
     {
@@ -70,8 +66,6 @@ class EventsTest extends TestCase
      *
      * @param array $in  Input
      * @param array $out Expected output
-     *
-     * @return void
      *
      * @dataProvider providerGetDataFromRequest
      */
@@ -171,8 +165,6 @@ class EventsTest extends TestCase
      * @param array $data    Data for routine
      * @param array $matcher Matcher
      *
-     * @return void
-     *
      * @dataProvider providerGetEditorFormAdd
      */
     public function testGetEditorFormAdd($data, $matcher)
@@ -257,8 +249,6 @@ class EventsTest extends TestCase
      *
      * @param array $data    Data for routine
      * @param array $matcher Matcher
-     *
-     * @return void
      *
      * @dataProvider providerGetEditorFormEdit
      */
@@ -345,8 +335,6 @@ class EventsTest extends TestCase
      * @param array $data    Data for routine
      * @param array $matcher Matcher
      *
-     * @return void
-     *
      * @dataProvider providerGetEditorFormAjax
      */
     public function testGetEditorFormAjax($data, $matcher)
@@ -406,8 +394,6 @@ class EventsTest extends TestCase
      * @param array  $request Request
      * @param string $query   Query
      * @param array  $num_err Error number
-     *
-     * @return void
      *
      * @dataProvider providerGetQueryFromRequest
      */

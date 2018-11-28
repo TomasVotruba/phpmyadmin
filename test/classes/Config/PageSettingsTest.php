@@ -22,8 +22,6 @@ class PageSettingsTest extends PmaTestCase
 {
     /**
      * Setup tests
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -36,8 +34,6 @@ class PageSettingsTest extends PmaTestCase
 
     /**
      * Test showGroup when group passed does not exist
-     *
-     * @return void
      */
     public function testShowGroupNonExistent()
     {
@@ -48,8 +44,6 @@ class PageSettingsTest extends PmaTestCase
 
     /**
      * Test showGroup with a known group name
-     *
-     * @return void
      */
     public function testShowGroupBrowse()
     {
@@ -82,8 +76,6 @@ class PageSettingsTest extends PmaTestCase
 
     /**
      * Test getNaviSettings
-     *
-     * @return void
      */
     public function testGetNaviSettings()
     {

@@ -26,8 +26,6 @@ class ExportJsonTest extends PmaTestCase
 
     /**
      * Configures global environment.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -42,8 +40,6 @@ class ExportJsonTest extends PmaTestCase
 
     /**
      * tearDown for test cases
-     *
-     * @return void
      */
     public function tearDown()
     {
@@ -52,8 +48,6 @@ class ExportJsonTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportJson::setProperties
-     *
-     * @return void
      */
     public function testSetProperties()
     {
@@ -132,8 +126,6 @@ class ExportJsonTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportJson::exportHeader
-     *
-     * @return void
      */
     public function testExportHeader()
     {
@@ -153,8 +145,6 @@ class ExportJsonTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportJson::exportFooter
-     *
-     * @return void
      */
     public function testExportFooter()
     {
@@ -169,8 +159,6 @@ class ExportJsonTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportJson::exportDBHeader
-     *
-     * @return void
      */
     public function testExportDBHeader()
     {
@@ -187,8 +175,6 @@ class ExportJsonTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportJson::exportDBFooter
-     *
-     * @return void
      */
     public function testExportDBFooter()
     {
@@ -199,8 +185,6 @@ class ExportJsonTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportJson::exportDBCreate
-     *
-     * @return void
      */
     public function testExportDBCreate()
     {
@@ -211,8 +195,6 @@ class ExportJsonTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportJson::exportData
-     *
-     * @return void
      */
     public function testExportData()
     {

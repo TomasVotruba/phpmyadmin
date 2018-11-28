@@ -30,7 +30,6 @@ class QbeTest extends PmaTestCase
      * This method is called before a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function setUp()
     {
@@ -67,7 +66,6 @@ class QbeTest extends PmaTestCase
      * This method is called after a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function tearDown()
     {
@@ -93,8 +91,6 @@ class QbeTest extends PmaTestCase
 
     /**
      * Test for _getSortSelectCell
-     *
-     * @return void
      */
     public function testGetSortSelectCell()
     {
@@ -123,8 +119,6 @@ class QbeTest extends PmaTestCase
 
     /**
      * Test for _getSortRow
-     *
-     * @return void
      */
     public function testGetSortRow()
     {
@@ -160,8 +154,6 @@ class QbeTest extends PmaTestCase
 
     /**
      * Test for _getShowRow
-     *
-     * @return void
      */
     public function testGetShowRow()
     {
@@ -180,8 +172,6 @@ class QbeTest extends PmaTestCase
 
     /**
      * Test for _getCriteriaInputboxRow
-     *
-     * @return void
      */
     public function testGetCriteriaInputboxRow()
     {
@@ -205,8 +195,6 @@ class QbeTest extends PmaTestCase
 
     /**
      * Test for _getFootersOptions
-     *
-     * @return void
      */
     public function testGetFootersOptions()
     {
@@ -235,8 +223,6 @@ class QbeTest extends PmaTestCase
 
     /**
      * Test for _getTableFooters
-     *
-     * @return void
      */
     public function testGetTableFooters()
     {
@@ -265,8 +251,6 @@ class QbeTest extends PmaTestCase
 
     /**
      * Test for _getAndOrColCell
-     *
-     * @return void
      */
     public function testGetAndOrColCell()
     {
@@ -286,8 +270,6 @@ class QbeTest extends PmaTestCase
 
     /**
      * Test for _getModifyColumnsRow
-     *
-     * @return void
      */
     public function testGetModifyColumnsRow()
     {
@@ -316,8 +298,6 @@ class QbeTest extends PmaTestCase
 
     /**
      * Test for _getInsDelAndOrCell
-     *
-     * @return void
      */
     public function testGetInsDelAndOrCell()
     {
@@ -340,8 +320,6 @@ class QbeTest extends PmaTestCase
 
     /**
      * Test for _getInputboxRow
-     *
-     * @return void
      */
     public function testGetInputboxRow()
     {
@@ -361,8 +339,6 @@ class QbeTest extends PmaTestCase
 
     /**
      * Test for _getInsDelAndOrCriteriaRows
-     *
-     * @return void
      */
     public function testGetInsDelAndOrCriteriaRows()
     {
@@ -391,8 +367,6 @@ class QbeTest extends PmaTestCase
 
     /**
      * Test for _getSelectClause
-     *
-     * @return void
      */
     public function testGetSelectClause()
     {
@@ -407,8 +381,6 @@ class QbeTest extends PmaTestCase
 
     /**
      * Test for _getWhereClause
-     *
-     * @return void
      */
     public function testGetWhereClause()
     {
@@ -423,8 +395,6 @@ class QbeTest extends PmaTestCase
 
     /**
      * Test for _getOrderByClause
-     *
-     * @return void
      */
     public function testGetOrderByClause()
     {
@@ -439,8 +409,6 @@ class QbeTest extends PmaTestCase
 
     /**
      * Test for _getIndexes
-     *
-     * @return void
      */
     public function testGetIndexes()
     {
@@ -462,8 +430,6 @@ class QbeTest extends PmaTestCase
 
     /**
      * Test for _getLeftJoinColumnCandidates
-     *
-     * @return void
      */
     public function testGetLeftJoinColumnCandidates()
     {
@@ -484,8 +450,6 @@ class QbeTest extends PmaTestCase
 
     /**
      * Test for _getMasterTable
-     *
-     * @return void
      */
     public function testGetMasterTable()
     {
@@ -505,8 +469,6 @@ class QbeTest extends PmaTestCase
 
     /**
      * Test for _getWhereClauseTablesAndColumns
-     *
-     * @return void
      */
     public function testGetWhereClauseTablesAndColumns()
     {
@@ -530,8 +492,6 @@ class QbeTest extends PmaTestCase
 
     /**
      * Test for _getFromClause
-     *
-     * @return void
      */
     public function testGetFromClause()
     {
@@ -552,8 +512,6 @@ class QbeTest extends PmaTestCase
 
     /**
      * Test for _getSQLQuery
-     *
-     * @return void
      */
     public function testGetSQLQuery()
     {

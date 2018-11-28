@@ -62,8 +62,6 @@ class ExportSql extends ExportPlugin
 
     /**
      * Sets the export SQL properties
-     *
-     * @return void
      */
     protected function setProperties()
     {
@@ -2700,7 +2698,7 @@ class ExportSql extends ExportPlugin
         /**
          * The parser of this query.
          *
-         * @var Parser $parser
+         * @var Parser
          */
         $parser = new Parser($sql_query);
 
@@ -2711,14 +2709,14 @@ class ExportSql extends ExportPlugin
         /**
          * The statement that represents the query.
          *
-         * @var CreateStatement $statement
+         * @var CreateStatement
          */
         $statement = $parser->statements[0];
 
         /**
          * Old database name.
          *
-         * @var string $old_database
+         * @var string
          */
         $old_database = $db;
 
@@ -2733,7 +2731,7 @@ class ExportSql extends ExportPlugin
             /**
              * Old table name.
              *
-             * @var string $old_table
+             * @var string
              */
             $old_table = $statement->name->table;
 
@@ -2815,7 +2813,7 @@ class ExportSql extends ExportPlugin
             /**
              * Old table name.
              *
-             * @var string $old_table
+             * @var string
              */
             $old_table = $statement->table->table;
 
@@ -2838,7 +2836,7 @@ class ExportSql extends ExportPlugin
                 /**
                  * Token parsed at this moment.
                  *
-                 * @var Token $token
+                 * @var Token
                  */
                 $token = $statement->body[$i];
 

@@ -34,8 +34,6 @@ class MonitorTest extends TestCase
 
     /**
      * Test for setUp
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -123,7 +121,6 @@ class MonitorTest extends TestCase
     /**
      * Test for getHtmlForMonitor
      *
-     * @return void
      * @group medium
      */
     public function testPMAGetHtmlForMonitor()
@@ -195,8 +192,6 @@ class MonitorTest extends TestCase
 
     /**
      * Test for getHtmlForClientSideDataAndLinks
-     *
-     * @return void
      */
     public function testPMAGetHtmlForClientSideDataAndLinks()
     {
@@ -227,8 +222,6 @@ class MonitorTest extends TestCase
 
     /**
      * Test for getJsonForLogDataTypeSlow
-     *
-     * @return void
      */
     public function testPMAGetJsonForLogDataTypeSlow()
     {
@@ -282,8 +275,6 @@ class MonitorTest extends TestCase
 
     /**
      * Test for getJsonForLogDataTypeGeneral
-     *
-     * @return void
      */
     public function testPMAGetJsonForLogDataTypeGeneral()
     {
@@ -342,8 +333,6 @@ class MonitorTest extends TestCase
 
     /**
      * Test for getJsonForLoggingVars
-     *
-     * @return void
      */
     public function testPMAGetJsonForLoggingVars()
     {
@@ -377,8 +366,6 @@ class MonitorTest extends TestCase
 
     /**
      * Test for getJsonForQueryAnalyzer
-     *
-     * @return void
      */
     public function testPMAGetJsonForQueryAnalyzer()
     {

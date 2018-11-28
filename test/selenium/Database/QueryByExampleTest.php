@@ -23,8 +23,6 @@ class QueryByExampleTest extends TestBase
 {
     /**
      * Setup the browser environment to run the selenium test case
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -47,8 +45,6 @@ class QueryByExampleTest extends TestBase
 
     /**
      * Test typing a SQL query on Server SQL page and submitting it
-     *
-     * @return void
      */
     public function testQueryByExample()
     {

@@ -36,7 +36,6 @@ class ImportShpTest extends PmaTestCase
      * This method is called before a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function setUp()
     {
@@ -65,8 +64,6 @@ class ImportShpTest extends PmaTestCase
      * Executes import of given file
      *
      * @param string $filename Name of test file
-     *
-     * @return void
      */
     protected function runImport($filename)
     {
@@ -87,7 +84,6 @@ class ImportShpTest extends PmaTestCase
      * This method is called after a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function tearDown()
     {
@@ -96,8 +92,6 @@ class ImportShpTest extends PmaTestCase
 
     /**
      * Test for getProperties
-     *
-     * @return void
      *
      * @group medium
      */
@@ -125,8 +119,6 @@ class ImportShpTest extends PmaTestCase
     /**
      * Test for doImport with complex data
      *
-     * @return void
-     *
      * @group medium
      */
     public function testImportOsm()
@@ -153,8 +145,6 @@ class ImportShpTest extends PmaTestCase
 
     /**
      * Test for doImport
-     *
-     * @return void
      *
      * @group medium
      */
@@ -197,8 +187,6 @@ class ImportShpTest extends PmaTestCase
      * Validates import messages
      *
      * @param string $import_notice Messages to check
-     *
-     * @return void
      */
     protected function assertMessages($import_notice)
     {

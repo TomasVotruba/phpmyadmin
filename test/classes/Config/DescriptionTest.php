@@ -22,8 +22,6 @@ class DescriptionTest extends PmaTestCase
 {
     /**
      * Setup tests
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -34,8 +32,6 @@ class DescriptionTest extends PmaTestCase
      * @param string $item     item
      * @param string $type     type
      * @param string $expected expected result
-     *
-     * @return void
      *
      * @dataProvider getValues
      */
@@ -72,8 +68,6 @@ class DescriptionTest extends PmaTestCase
      * Assertion for getting description key
      *
      * @param string $key key
-     *
-     * @return void
      */
     public function assertGet($key)
     {
@@ -84,8 +78,6 @@ class DescriptionTest extends PmaTestCase
 
     /**
      * Test getting all names for configurations
-     *
-     * @return void
      */
     public function testAll()
     {

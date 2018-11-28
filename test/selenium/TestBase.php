@@ -63,8 +63,6 @@ abstract class TestBase extends TestCase
     /**
      * Configures the selenium and database link.
      *
-     * @return void
-     *
      * @throws \Exception
      */
     protected function setUp()
@@ -128,8 +126,6 @@ abstract class TestBase extends TestCase
 
     /**
      * Has CI config ( CI_MODE == selenium )
-     *
-     * @return bool
      */
     public function hasCIConfig(): bool
     {
@@ -144,8 +140,6 @@ abstract class TestBase extends TestCase
 
     /**
      * Has ENV variables set for Browserstack
-     *
-     * @return bool
      */
     public function hasBrowserstackConfig(): bool
     {
@@ -160,8 +154,6 @@ abstract class TestBase extends TestCase
 
     /**
      * Has ENV variables set for local Selenium server
-     *
-     * @return bool
      */
     public function hasSeleniumConfig(): bool
     {
@@ -176,8 +168,6 @@ abstract class TestBase extends TestCase
 
     /**
      * Get hub url
-     *
-     * @return string|null
      */
     public function getHubUrl(): ?string
     {
@@ -197,8 +187,6 @@ abstract class TestBase extends TestCase
 
     /**
      * Has TESTSUITE_SERVER, TESTSUITE_USER and TESTSUITE_DATABASE variables set
-     *
-     * @return boolean
      */
     public function hasTestSuiteDatabaseServer(): bool
     {
@@ -216,9 +204,6 @@ abstract class TestBase extends TestCase
 
     /**
      * Navigate to URL
-     *
-     * @param string $url The URL
-     * @return void
      */
     private function navigateTo(string $url): void
     {
@@ -235,7 +220,6 @@ abstract class TestBase extends TestCase
      * Add specific capabilities
      *
      * @param DesiredCapabilities $capabilities The capabilities object
-     * @return void
      */
     public function addCapabilities(DesiredCapabilities $capabilities): void
     {
@@ -294,8 +278,6 @@ abstract class TestBase extends TestCase
 
     /**
      * Get basic capabilities
-     *
-     * @return DesiredCapabilities
      */
     public function getCapabilities(): DesiredCapabilities
     {
@@ -367,9 +349,6 @@ abstract class TestBase extends TestCase
 
     /**
      * Maximizes the browser window.
-     *
-     * @return void
-     *
      */
     public function maximize(): void
     {
@@ -393,8 +372,6 @@ abstract class TestBase extends TestCase
 
     /**
      * Skips test if test user is not a superuser.
-     *
-     * @return void
      */
     protected function skipIfNotSuperUser()
     {
@@ -405,8 +382,6 @@ abstract class TestBase extends TestCase
 
     /**
      * Skips test if pmadb is not configured.
-     *
-     * @return void
      */
     protected function skipIfNotPMADB()
     {
@@ -427,8 +402,6 @@ abstract class TestBase extends TestCase
      *
      * @param string $username Username
      * @param string $password Password
-     *
-     * @return void
      */
     public function login($username = '', $password = '')
     {
@@ -461,7 +434,6 @@ abstract class TestBase extends TestCase
      * Get element by Id
      *
      * @param string $id The element ID
-     * @return WebDriverElement
      */
     public function byId(string $id): WebDriverElement
     {
@@ -472,7 +444,6 @@ abstract class TestBase extends TestCase
      * Get element by css selector
      *
      * @param string $selector The element css selector
-     * @return WebDriverElement
      */
     public function byCssSelector(string $selector): WebDriverElement
     {
@@ -481,9 +452,6 @@ abstract class TestBase extends TestCase
 
     /**
      * Get element by xpath
-     *
-     * @param string $xpath The xpath
-     * @return WebDriverElement
      */
     public function byXPath(string $xpath): WebDriverElement
     {
@@ -492,9 +460,6 @@ abstract class TestBase extends TestCase
 
     /**
      * Get element by linkText
-     *
-     * @param string $linkText The link text
-     * @return WebDriverElement
      */
     public function byLinkText(string $linkText): WebDriverElement
     {
@@ -503,8 +468,6 @@ abstract class TestBase extends TestCase
 
     /**
      * Double click
-     *
-     * @return void
      */
     public function doubleclick(): void
     {
@@ -513,8 +476,6 @@ abstract class TestBase extends TestCase
 
     /**
      * Simple click
-     *
-     * @return void
      */
     public function click(): void
     {
@@ -523,9 +484,6 @@ abstract class TestBase extends TestCase
 
     /**
      * Get element by byPartialLinkText
-     *
-     * @param string $partialLinkText The partial link text
-     * @return WebDriverElement
      */
     public function byPartialLinkText(string $partialLinkText): WebDriverElement
     {
@@ -534,8 +492,6 @@ abstract class TestBase extends TestCase
 
     /**
      * Returns true if the browser is safari
-     *
-     * @return boolean
      */
     public function isSafari(): bool
     {
@@ -544,9 +500,6 @@ abstract class TestBase extends TestCase
 
     /**
      * Get element by name
-     *
-     * @param string $name The name
-     * @return WebDriverElement
      */
     public function byName(string $name): WebDriverElement
     {
@@ -564,20 +517,18 @@ abstract class TestBase extends TestCase
     }
 
     /**
-    * Checks whether the login is unsuccessful
-    *
-    * @return boolean
-    */
+     * Checks whether the login is unsuccessful
+     *
+     * @return boolean
+     */
     public function isUnsuccessLogin()
     {
         return $this->isElementPresent('cssSelector', "div.error");
     }
 
     /**
-    * Used to go to the homepage
-    *
-    * @return void
-    */
+     * Used to go to the homepage
+     */
     public function gotoHomepage()
     {
         $e = $this->byPartialLinkText("Server: ");
@@ -614,8 +565,6 @@ abstract class TestBase extends TestCase
 
     /**
      * Perform a logout, if logged in
-     *
-     * @return void
      */
     public function logOutIfLoggedIn()
     {
@@ -645,7 +594,6 @@ abstract class TestBase extends TestCase
      * @param string  $func    Locate using - cssSelector, xpath, tagName, partialLinkText, linkText, name, id, className
      * @param string  $arg     Selector
      * @param integer $timeout Timeout in seconds
-     * @return WebDriverElement
      */
     public function waitUntilElementIsPresent(string $func, $arg, int $timeout): WebDriverElement
     {
@@ -660,7 +608,6 @@ abstract class TestBase extends TestCase
      * @param string  $func    Locate using - cssSelector, xpath, tagName, partialLinkText, linkText, name, id, className
      * @param string  $arg     Selector
      * @param integer $timeout Timeout in seconds
-     * @return WebDriverElement
      */
     public function waitUntilElementIsVisible(string $func, $arg, int $timeout): WebDriverElement
     {
@@ -760,8 +707,6 @@ abstract class TestBase extends TestCase
      * browsers.
      *
      * @param string $text Keys to send
-     *
-     * @return void
      */
     public function keys(string $text): void
     {
@@ -779,10 +724,6 @@ abstract class TestBase extends TestCase
     /**
      * Wrapper around moveto method to not use it on not supported
      * browsers.
-     *
-     * @param RemoteWebElement $element element
-     *
-     * @return void
      */
     public function moveto(RemoteWebElement $element): void
     {
@@ -821,8 +762,6 @@ abstract class TestBase extends TestCase
      *
      * @param string $text  Text to type
      * @param int    $index Index of CodeMirror instance to write to
-     *
-     * @return void
      */
     public function typeInTextArea($text, $index = 0)
     {
@@ -834,8 +773,6 @@ abstract class TestBase extends TestCase
 
     /**
      * Accept alert
-     *
-     * @return void
      */
     public function acceptAlert(): void
     {
@@ -844,8 +781,6 @@ abstract class TestBase extends TestCase
 
     /**
      * Kills the More link in the menu
-     *
-     * @return void
      */
     public function expandMore()
     {
@@ -871,8 +806,6 @@ abstract class TestBase extends TestCase
      * Navigates browser to a table page.
      *
      * @param string $table Name of table
-     *
-     * @return void
      */
     public function navigateTable($table)
     {
@@ -896,8 +829,6 @@ abstract class TestBase extends TestCase
      *
      * @param string $database             Name of database
      * @param bool   $gotoHomepageRequired Go to homepage required
-     *
-     * @return void
      */
     public function navigateDatabase($database, $gotoHomepageRequired = false)
     {
@@ -926,9 +857,7 @@ abstract class TestBase extends TestCase
     /**
      * Select an option that matches a value
      *
-     * @param WebDriverElement $element The element
      * @param string           $value   The value of the option
-     * @return void
      */
     public function selectByValue(WebDriverElement $element, string $value): void
     {
@@ -938,10 +867,6 @@ abstract class TestBase extends TestCase
 
     /**
      * Select an option that matches a text
-     *
-     * @param WebDriverElement $element The element
-     * @param string           $text    The text
-     * @return void
      */
     public function selectByLabel(WebDriverElement $element, string $text): void
     {
@@ -954,8 +879,6 @@ abstract class TestBase extends TestCase
      *
      * @param string $element_id Id of the element
      * @param int    $y_offset   Offset from Y-coordinate of element
-     *
-     * @return void
      */
     public function scrollIntoView($element_id, $y_offset = 70)
     {
@@ -969,8 +892,6 @@ abstract class TestBase extends TestCase
 
     /**
      * Scroll to the bottom of page
-     *
-     * @return void
      */
     public function scrollToBottom()
     {
@@ -981,8 +902,6 @@ abstract class TestBase extends TestCase
 
     /**
      * Wait for AJAX completion
-     *
-     * @return void
      */
     public function waitAjax()
     {
@@ -996,8 +915,6 @@ abstract class TestBase extends TestCase
 
     /**
      * Wait for AJAX message disappear
-     *
-     * @return void
      */
     public function waitAjaxMessage()
     {
@@ -1014,8 +931,6 @@ abstract class TestBase extends TestCase
 
     /**
      * Tear Down function for test cases
-     *
-     * @return void
      */
     public function tearDown()
     {
@@ -1030,10 +945,6 @@ abstract class TestBase extends TestCase
 
     /**
      * Mark unsuccessful tests as 'Failures' on Browerstack
-     *
-     * @param \Throwable $e Throwable
-     *
-     * @return void
      */
     public function onNotSuccessfulTest(\Throwable $e)
     {

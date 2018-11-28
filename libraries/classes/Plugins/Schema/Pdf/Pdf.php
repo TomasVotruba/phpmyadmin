@@ -93,8 +93,6 @@ class Pdf extends PdfLib
      * Sets the value for margins
      *
      * @param float $c_margin margin
-     *
-     * @return void
      */
     public function setCMargin($c_margin)
     {
@@ -109,8 +107,6 @@ class Pdf extends PdfLib
      * @param float|int $yMin       The minimum Y coordinate
      * @param float|int $leftMargin The left margin
      * @param float|int $topMargin  The top margin
-     *
-     * @return void
      */
     public function setScale(
         $scale = 1,
@@ -142,8 +138,6 @@ class Pdf extends PdfLib
      * @param integer   $fill   Whether to fill the cell with a color or not
      * @param string    $link   Link
      *
-     * @return void
-     *
      * @see TCPDF::Cell()
      */
     public function cellScale(
@@ -169,8 +163,6 @@ class Pdf extends PdfLib
      * @param float $x2 The horizontal position of the ending point
      * @param float $y2 The vertical position of the ending point
      *
-     * @return void
-     *
      * @see TCPDF::Line()
      */
     public function lineScale($x1, $y1, $x2, $y2)
@@ -188,8 +180,6 @@ class Pdf extends PdfLib
      * @param float $x The x position
      * @param float $y The y position
      *
-     * @return void
-     *
      * @see TCPDF::SetXY()
      */
     public function setXyScale($x, $y)
@@ -204,8 +194,6 @@ class Pdf extends PdfLib
      *
      * @param float $x The x position
      *
-     * @return void
-     *
      * @see TCPDF::SetX()
      */
     public function setXScale($x)
@@ -218,8 +206,6 @@ class Pdf extends PdfLib
      * Sets the scaled font size
      *
      * @param float $size The font size (in points)
-     *
-     * @return void
      *
      * @see TCPDF::SetFontSize()
      */
@@ -235,8 +221,6 @@ class Pdf extends PdfLib
      *
      * @param float $width The line width
      *
-     * @return void
-     *
      * @see TCPDF::SetLineWidth()
      */
     public function setLineWidthScale($width)
@@ -247,8 +231,6 @@ class Pdf extends PdfLib
 
     /**
      * This method is used to render the page header.
-     *
-     * @return void
      *
      * @see TCPDF::Header()
      */
@@ -281,8 +263,6 @@ class Pdf extends PdfLib
     /**
      * This function must be named "Footer" to work with the TCPDF library
      *
-     * @return void
-     *
      * @see PDF::Footer()
      */
     public function Footer()
@@ -296,8 +276,6 @@ class Pdf extends PdfLib
      * Sets widths
      *
      * @param array $w array of widths
-     *
-     * @return void
      */
     public function setWidths(array $w)
     {
@@ -310,8 +288,6 @@ class Pdf extends PdfLib
      *
      * @param array $data  Data for table
      * @param array $links Links for table cells
-     *
-     * @return void
      */
     public function row(array $data, array $links)
     {
@@ -408,8 +384,6 @@ class Pdf extends PdfLib
      * Set whether the document is generated from client side DB
      *
      * @param string $value whether offline
-     *
-     * @return void
      *
      * @access private
      */

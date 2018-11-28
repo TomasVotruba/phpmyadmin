@@ -25,8 +25,6 @@ class CreateTableTest extends TestCase
 {
     /**
      * Test for setUp
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -51,8 +49,6 @@ class CreateTableTest extends TestCase
 
     /**
      * Test for CreateTable::getHtml
-     *
-     * @return void
      */
     public function testPMAGetHtmlForCreateTable()
     {

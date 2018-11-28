@@ -27,8 +27,6 @@ class ExportMediawikiTest extends PmaTestCase
 
     /**
      * Configures global environment.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -43,8 +41,6 @@ class ExportMediawikiTest extends PmaTestCase
 
     /**
      * tearDown for test cases
-     *
-     * @return void
      */
     public function tearDown()
     {
@@ -53,8 +49,6 @@ class ExportMediawikiTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportMediawiki::setProperties
-     *
-     * @return void
      */
     public function testSetProperties()
     {
@@ -198,8 +192,6 @@ class ExportMediawikiTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportMediawiki::exportHeader
-     *
-     * @return void
      */
     public function testExportHeader()
     {
@@ -210,8 +202,6 @@ class ExportMediawikiTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportMediawiki::exportFooter
-     *
-     * @return void
      */
     public function testExportFooter()
     {
@@ -222,8 +212,6 @@ class ExportMediawikiTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportMediawiki::exportDBHeader
-     *
-     * @return void
      */
     public function testExportDBHeader()
     {
@@ -234,8 +222,6 @@ class ExportMediawikiTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportMediawiki::exportDBFooter
-     *
-     * @return void
      */
     public function testExportDBFooter()
     {
@@ -246,8 +232,6 @@ class ExportMediawikiTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportMediawiki::exportDBCreate
-     *
-     * @return void
      */
     public function testExportDBCreate()
     {
@@ -258,8 +242,6 @@ class ExportMediawikiTest extends PmaTestCase
 
     /**
      * Test for ExportMediaWiki::exportStructure
-     *
-     * @return void
      */
     public function testExportStructure()
     {
@@ -341,8 +323,6 @@ class ExportMediawikiTest extends PmaTestCase
     }
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportMediawiki::exportData
-     *
-     * @return void
      */
     public function testExportData()
     {

@@ -99,8 +99,6 @@ class PageSettings
      * @param FormDisplay  &$formDisplay Form
      * @param ConfigFile   &$cf          Configuration file
      * @param Message|null &$error       Error message
-     *
-     * @return void
      */
     private function _processPageSettings(&$formDisplay, &$cf, &$error)
     {
@@ -125,8 +123,6 @@ class PageSettings
      *
      * @param FormDisplay  &$formDisplay Form
      * @param Message|null &$error       Error message
-     *
-     * @return void
      */
     private function _storeError(&$formDisplay, &$error)
     {

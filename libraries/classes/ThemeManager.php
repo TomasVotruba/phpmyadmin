@@ -152,7 +152,6 @@ class ThemeManager
      * @param boolean $per_server Whether to enable per server flag
      *
      * @access public
-     * @return void
      */
     public function setThemePerServer($per_server)
     {
@@ -382,7 +381,6 @@ class ThemeManager
     /**
      * Theme initialization
      *
-     * @return void
      * @access public
      */
     public static function initializeTheme()

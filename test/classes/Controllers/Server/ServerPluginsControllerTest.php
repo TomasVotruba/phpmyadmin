@@ -24,8 +24,6 @@ class ServerPluginsControllerTest extends PmaTestCase
 {
     /**
      * Prepares environment for the test.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -42,8 +40,6 @@ class ServerPluginsControllerTest extends PmaTestCase
 
     /**
      * Test for _getPluginsHtml() method
-     *
-     * @return void
      */
     public function testPMAGetPluginAndModuleInfo()
     {

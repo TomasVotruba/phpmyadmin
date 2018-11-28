@@ -98,7 +98,7 @@ class Theme
      * Loads theme information
      *
      * @return boolean whether loading them info was successful or not
-     * @access  public
+     * @access public
      */
     public function loadInfo()
     {
@@ -218,7 +218,6 @@ class Theme
      *
      * @param string $path path to theme
      *
-     * @return void
      * @access public
      */
     public function setPath($path)
@@ -231,7 +230,6 @@ class Theme
      *
      * @param string $version version to set
      *
-     * @return void
      * @access public
      */
     public function setVersion($version)
@@ -269,7 +267,6 @@ class Theme
      *
      * @param string $name name to set
      *
-     * @return void
      * @access public
      */
     public function setName($name)
@@ -280,7 +277,7 @@ class Theme
     /**
      * returns name
      *
-     * @access  public
+     * @access public
      * @return string name
      */
     public function getName()
@@ -293,7 +290,6 @@ class Theme
      *
      * @param string $id new id
      *
-     * @return void
      * @access public
      */
     public function setId($id)
@@ -317,7 +313,6 @@ class Theme
      *
      * @param string $path path to images for this theme
      *
-     * @return void
      * @access public
      */
     public function setImgPath($path)

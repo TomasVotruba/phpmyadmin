@@ -4,7 +4,6 @@
  * holds the PhpMyAdmin\Database\DatabaseList class
  *
  * @package PhpMyAdmin
- *
  */
 declare(strict_types=1);
 

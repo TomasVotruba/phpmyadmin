@@ -27,8 +27,6 @@ class UserPreferencesTest extends PmaTestCase
 
     /**
      * Setup various pre conditions
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -42,8 +40,6 @@ class UserPreferencesTest extends PmaTestCase
 
     /**
      * Test for pageInit
-     *
-     * @return void
      */
     public function testPageInit()
     {
@@ -70,8 +66,6 @@ class UserPreferencesTest extends PmaTestCase
 
     /**
      * Test for load
-     *
-     * @return void
      */
     public function testLoad()
     {
@@ -148,8 +142,6 @@ class UserPreferencesTest extends PmaTestCase
 
     /**
      * Test for save
-     *
-     *  @return void
      */
     public function testSave()
     {
@@ -269,8 +261,6 @@ class UserPreferencesTest extends PmaTestCase
 
     /**
      * Test for apply
-     *
-     * @return void
      */
     public function testApply()
     {
@@ -301,8 +291,6 @@ class UserPreferencesTest extends PmaTestCase
 
     /**
      * Test for apply
-     *
-     * @return void
      */
     public function testApplyDevel()
     {
@@ -323,8 +311,6 @@ class UserPreferencesTest extends PmaTestCase
 
     /**
      * Test for persistOption
-     *
-     * @return void
      */
     public function testPersistOption()
     {
@@ -355,8 +341,6 @@ class UserPreferencesTest extends PmaTestCase
 
     /**
      * Test for redirect
-     *
-     * @return void
      */
     public function testRedirect()
     {
@@ -378,8 +362,6 @@ class UserPreferencesTest extends PmaTestCase
 
     /**
      * Test for autoloadGetHeader
-     *
-     * @return void
      */
     public function testAutoloadGetHeader()
     {

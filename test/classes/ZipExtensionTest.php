@@ -23,9 +23,7 @@ class ZipExtensionTest extends PmaTestCase
      */
     private $zipExtension;
 
-    /**
-     * @return void
-     */
+    
     protected function setUp()
     {
         $this->zipExtension = new ZipExtension();
@@ -39,7 +37,6 @@ class ZipExtensionTest extends PmaTestCase
      * @param mixed  $output         expected output
      *
      * @dataProvider provideTestGetContents
-     * @return void
      */
     public function testGetContents($file, $specific_entry, $output)
     {
@@ -84,7 +81,6 @@ class ZipExtensionTest extends PmaTestCase
      * @param mixed  $output      expected output
      *
      * @dataProvider provideTestFindFile
-     * @return void
      */
     public function testFindFile($file, $file_regexp, $output)
     {
@@ -112,8 +108,6 @@ class ZipExtensionTest extends PmaTestCase
 
     /**
      * Test for getNumberOfFiles
-     *
-     * @return void
      */
     public function testGetNumberOfFiles()
     {
@@ -125,8 +119,6 @@ class ZipExtensionTest extends PmaTestCase
 
     /**
      * Test for extract
-     *
-     * @return void
      */
     public function testExtract()
     {
@@ -148,8 +140,6 @@ class ZipExtensionTest extends PmaTestCase
 
     /**
      * Test for createFile
-     *
-     * @return void
      */
     public function testCreateSingleFile()
     {
@@ -174,8 +164,6 @@ class ZipExtensionTest extends PmaTestCase
 
     /**
      * Test for createFile
-     *
-     * @return void
      */
     public function testCreateFailure()
     {
@@ -190,8 +178,6 @@ class ZipExtensionTest extends PmaTestCase
 
     /**
      * Test for createFile
-     *
-     * @return void
      */
     public function testCreateMultiFile()
     {

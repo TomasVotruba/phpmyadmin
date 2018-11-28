@@ -36,8 +36,6 @@ class SchemaEps extends SchemaPlugin
 
     /**
      * Sets the schema export EPS properties
-     *
-     * @return void
      */
     protected function setProperties()
     {

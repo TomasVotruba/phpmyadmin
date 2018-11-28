@@ -24,8 +24,6 @@ class AuthenticationSignonTest extends PmaTestCase
 
     /**
      * Configures global environment.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -40,8 +38,6 @@ class AuthenticationSignonTest extends PmaTestCase
 
     /**
      * tearDown for test cases
-     *
-     * @return void
      */
     public function tearDown()
     {
@@ -51,8 +47,6 @@ class AuthenticationSignonTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationSignon::showLoginForm
-     *
-     * @return void
      */
     public function testAuth()
     {
@@ -70,8 +64,6 @@ class AuthenticationSignonTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationSignon::showLoginForm
-     *
-     * @return void
      */
     public function testAuthLogoutURL()
     {
@@ -85,8 +77,6 @@ class AuthenticationSignonTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationSignon::showLoginForm
-     *
-     * @return void
      */
     public function testAuthLogout()
     {
@@ -101,8 +91,6 @@ class AuthenticationSignonTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationSignon::readCredentials
-     *
-     * @return void
      */
     public function testAuthCheckEmpty()
     {
@@ -116,8 +104,6 @@ class AuthenticationSignonTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationSignon::readCredentials
-     *
-     * @return void
      */
     public function testAuthCheckSession()
     {
@@ -152,8 +138,6 @@ class AuthenticationSignonTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationSignon::readCredentials
-     *
-     * @return void
      */
     public function testAuthCheckToken()
     {
@@ -209,8 +193,6 @@ class AuthenticationSignonTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationSignon::readCredentials
-     *
-     * @return void
      */
     public function testAuthCheckKeep()
     {
@@ -247,8 +229,6 @@ class AuthenticationSignonTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationSignon::storeCredentials
-     *
-     * @return void
      */
     public function testAuthSetUser()
     {
@@ -272,8 +252,6 @@ class AuthenticationSignonTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationSignon::showFailure
-     *
-     * @return void
      */
     public function testAuthFailsForbidden()
     {
@@ -299,8 +277,6 @@ class AuthenticationSignonTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationSignon::showFailure
-     *
-     * @return void
      */
     public function testAuthFailsDeny()
     {
@@ -325,8 +301,6 @@ class AuthenticationSignonTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationSignon::showFailure
-     *
-     * @return void
      */
     public function testAuthFailsTimeout()
     {
@@ -353,8 +327,6 @@ class AuthenticationSignonTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationSignon::showFailure
-     *
-     * @return void
      */
     public function testAuthFailsMySQLError()
     {
@@ -389,8 +361,6 @@ class AuthenticationSignonTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationSignon::showFailure
-     *
-     * @return void
      */
     public function testAuthFailsConnect()
     {

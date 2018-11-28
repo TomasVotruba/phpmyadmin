@@ -141,8 +141,6 @@ class TableStructureController extends TableController
 
     /**
      * Index action
-     *
-     * @return void
      */
     public function indexAction()
     {
@@ -387,8 +385,6 @@ class TableStructureController extends TableController
 
     /**
      * Moves columns in the table's structure based on $_REQUEST
-     *
-     * @return void
      */
     protected function moveColumns()
     {
@@ -512,7 +508,6 @@ class TableStructureController extends TableController
      * @param string $action   target script to call
      *
      * @return boolean true if error occurred
-     *
      */
     protected function displayHtmlForColumnChange($selected, $action)
     {
@@ -596,7 +591,7 @@ class TableStructureController extends TableController
 
         $parser = new Parser($createTable);
         /**
-         * @var CreateStatement $stmt
+         * @var CreateStatement
          */
         $stmt = $parser->statements[0];
 
@@ -744,8 +739,6 @@ class TableStructureController extends TableController
 
     /**
      * Update the table's partitioning based on $_REQUEST
-     *
-     * @return void
      */
     protected function updatePartitioning()
     {
@@ -812,8 +805,6 @@ class TableStructureController extends TableController
      *
      * @param string $goto          goto page url
      * @param string $pmaThemeImage URI of the pma theme image
-     *
-     * @return void
      */
     protected function displayTableBrowseForSelectedColumns($goto, $pmaThemeImage)
     {
@@ -867,7 +858,6 @@ class TableStructureController extends TableController
      * Update the table's structure based on $_REQUEST
      *
      * @return boolean              true if error occurred
-     *
      */
     protected function updateColumns()
     {
@@ -939,7 +929,6 @@ class TableStructureController extends TableController
              * @todo if someone selects A_I when altering a column we need to check:
              *  - no other column with A_I
              *  - the column has an index, if not create one
-             *
              */
 
             // To allow replication, we first select the db to use
@@ -1157,7 +1146,6 @@ class TableStructureController extends TableController
      * @param integer $i column index in the request
      *
      * @return boolean true if we need to generate ALTER TABLE
-     *
      */
     protected function columnNeedsAlterTable($i)
     {
@@ -1197,9 +1185,7 @@ class TableStructureController extends TableController
      *                                               array with url params
      * @param Index|false $primary_index             primary index or false if
      *                                               no one exists
-     * @param array       $fields                    Fields
      * @param array       $columns_with_index        Columns with index
-     *
      * @return string
      */
     protected function displayStructure(

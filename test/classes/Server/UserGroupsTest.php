@@ -22,8 +22,6 @@ class UserGroupsTest extends TestCase
 {
     /**
      * Prepares environment for the test.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -42,7 +40,6 @@ class UserGroupsTest extends TestCase
     /**
      * Tests UserGroups::getHtmlForUserGroupsTable() function when there are no user groups
      *
-     * @return void
      * @group medium
      */
     public function testGetHtmlForUserGroupsTableWithNoUserGroups()
@@ -80,8 +77,6 @@ class UserGroupsTest extends TestCase
 
     /**
      * Tests UserGroups::getHtmlForUserGroupsTable() function when there are user groups
-     *
-     * @return void
      */
     public function testGetHtmlForUserGroupsTableWithUserGroups()
     {
@@ -160,8 +155,6 @@ class UserGroupsTest extends TestCase
 
     /**
      * Tests UserGroups::delete() function
-     *
-     * @return void
      */
     public function testDeleteUserGroup()
     {
@@ -190,8 +183,6 @@ class UserGroupsTest extends TestCase
 
     /**
      * Tests UserGroups::getHtmlToEditUserGroup() function
-     *
-     * @return void
      */
     public function testGetHtmlToEditUserGroup()
     {

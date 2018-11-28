@@ -30,7 +30,6 @@ class NodeDatabaseChildTest extends PmaTestCase
      * Sets up the fixture.
      *
      * @access protected
-     * @return void
      */
     protected function setUp()
     {
@@ -51,7 +50,6 @@ class NodeDatabaseChildTest extends PmaTestCase
      * Tears down the fixture.
      *
      * @access protected
-     * @return void
      */
     protected function tearDown()
     {
@@ -61,7 +59,6 @@ class NodeDatabaseChildTest extends PmaTestCase
     /**
      * Tests getHtmlForControlButtons() method
      *
-     * @return void
      * @test
      */
     public function testGetHtmlForControlButtons()

@@ -29,7 +29,6 @@ class NotFoundExceptionTest extends PmaTestCase
      * This method is called before a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function setUp()
     {
@@ -41,7 +40,6 @@ class NotFoundExceptionTest extends PmaTestCase
      * This method is called after a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function tearDown()
     {
@@ -50,8 +48,6 @@ class NotFoundExceptionTest extends PmaTestCase
 
     /**
      * Test for NotFoundException
-     *
-     * @return void
      */
     public function testNotFoundExceptionImplementsInteface()
     {
@@ -63,8 +59,6 @@ class NotFoundExceptionTest extends PmaTestCase
 
     /**
      * Test for NotFoundException
-     *
-     * @return void
      */
     public function testNotFoundExceptionExtendsContainerExceptionInteface()
     {
@@ -76,8 +70,6 @@ class NotFoundExceptionTest extends PmaTestCase
 
     /**
      * Test for NotFoundException
-     *
-     * @return void
      */
     public function testContainerExceptionExtendsException()
     {

@@ -28,7 +28,6 @@ class InnodbTest extends PmaTestCase
      * This method is called before a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function setUp()
     {
@@ -41,7 +40,6 @@ class InnodbTest extends PmaTestCase
      * This method is called after a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function tearDown()
     {
@@ -50,8 +48,6 @@ class InnodbTest extends PmaTestCase
 
     /**
      * Test for getVariables
-     *
-     * @return void
      */
     public function testGetVariables()
     {
@@ -155,8 +151,6 @@ class InnodbTest extends PmaTestCase
 
     /**
      * Test for getVariablesLikePattern
-     *
-     * @return void
      */
     public function testGetVariablesLikePattern()
     {
@@ -168,8 +162,6 @@ class InnodbTest extends PmaTestCase
 
     /**
      * Test for getInfoPages
-     *
-     * @return void
      */
     public function testGetInfoPages()
     {
@@ -189,8 +181,6 @@ class InnodbTest extends PmaTestCase
 
     /**
      * Test for getPageBufferpool
-     *
-     * @return void
      */
     public function testGetPageBufferpool()
     {
@@ -277,8 +267,6 @@ class InnodbTest extends PmaTestCase
 
     /**
      * Test for getPageStatus
-     *
-     * @return void
      */
     public function testGetPageStatus()
     {
@@ -290,8 +278,6 @@ class InnodbTest extends PmaTestCase
 
     /**
      * Test for getPage
-     *
-     * @return void
      */
     public function testGetPage()
     {
@@ -308,8 +294,6 @@ class InnodbTest extends PmaTestCase
 
     /**
      * Test for getMysqlHelpPage
-     *
-     * @return void
      */
     public function testGetMysqlHelpPage()
     {
@@ -321,8 +305,6 @@ class InnodbTest extends PmaTestCase
 
     /**
      * Test for getInnodbPluginVersion
-     *
-     * @return void
      */
     public function testGetInnodbPluginVersion()
     {
@@ -334,8 +316,6 @@ class InnodbTest extends PmaTestCase
 
     /**
      * Test for supportsFilePerTable
-     *
-     * @return void
      */
     public function testSupportsFilePerTable()
     {
@@ -346,8 +326,6 @@ class InnodbTest extends PmaTestCase
 
     /**
      * Test for getInnodbFileFormat
-     *
-     * @return void
      */
     public function testGetInnodbFileFormat()
     {

@@ -29,7 +29,6 @@ class NavigationTest extends PmaTestCase
      * Sets up the fixture.
      *
      * @access protected
-     * @return void
      */
     protected function setUp()
     {
@@ -45,7 +44,6 @@ class NavigationTest extends PmaTestCase
      * Tears down the fixture.
      *
      * @access protected
-     * @return void
      */
     protected function tearDown()
     {
@@ -55,7 +53,6 @@ class NavigationTest extends PmaTestCase
     /**
      * Tests hideNavigationItem() method.
      *
-     * @return void
      * @test
      */
     public function testHideNavigationItem()
@@ -80,7 +77,6 @@ class NavigationTest extends PmaTestCase
     /**
      * Tests unhideNavigationItem() method.
      *
-     * @return void
      * @test
      */
     public function testUnhideNavigationItem()
@@ -105,7 +101,6 @@ class NavigationTest extends PmaTestCase
     /**
      * Tests getItemUnhideDialog() method.
      *
-     * @return void
      * @test
      */
     public function testGetItemUnhideDialog()

@@ -35,8 +35,6 @@ class SqlQueryFormTest extends TestCase
 
     /**
      * Test for setUp
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -106,8 +104,6 @@ class SqlQueryFormTest extends TestCase
 
     /**
      * Test for getHtmlForInsert
-     *
-     * @return void
      */
     public function testPMAGetHtmlForSqlQueryFormInsert()
     {
@@ -169,8 +165,6 @@ class SqlQueryFormTest extends TestCase
 
     /**
      * Test for getHtml
-     *
-     * @return void
      */
     public function testPMAGetHtmlForSqlQueryForm()
     {

@@ -21,10 +21,8 @@ use PhpMyAdmin\Util;
 class GitRevision
 {
     /**
-    * Prints details about the current Git commit revision
-    *
-    * @return void
-    */
+     * Prints details about the current Git commit revision
+     */
     public static function display()
     {
         if (! $GLOBALS['PMA_Config']->get('PMA_VERSION_GIT')) {

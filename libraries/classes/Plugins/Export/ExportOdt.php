@@ -42,8 +42,6 @@ class ExportOdt extends ExportPlugin
 
     /**
      * Sets the export ODT properties
-     *
-     * @return void
      */
     protected function setProperties()
     {

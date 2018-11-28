@@ -27,7 +27,6 @@ abstract class GisGeomTestCase extends TestCase
      * @param array  $params expected output array
      *
      * @dataProvider providerForTestGenerateParams
-     * @return void
      */
     public function testGenerateParams($wkt, $index, $params)
     {
@@ -51,7 +50,6 @@ abstract class GisGeomTestCase extends TestCase
      * @param array  $min_max expected results
      *
      * @dataProvider providerForTestScaleRow
-     * @return void
      */
     public function testScaleRow($spatial, $min_max)
     {
@@ -65,8 +63,6 @@ abstract class GisGeomTestCase extends TestCase
      * Tests whether content is a valid image.
      *
      * @param resource $object Image
-     *
-     * @return void
      */
     public function assertImage($object)
     {

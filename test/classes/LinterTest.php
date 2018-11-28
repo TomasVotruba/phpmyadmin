@@ -20,8 +20,6 @@ class LinterTest extends PmaTestCase
 {
     /**
      * Test for Linter::getLines
-     *
-     * @return void
      */
     public function testGetLines()
     {
@@ -32,8 +30,6 @@ class LinterTest extends PmaTestCase
 
     /**
      * Test for Linter::findLineNumberAndColumn
-     *
-     * @return void
      */
     public function testFindLineNumberAndColumn()
     {
@@ -73,8 +69,6 @@ class LinterTest extends PmaTestCase
      *
      * @param array  $expected The expected result.
      * @param string $query    The query to be analyzed.
-     *
-     * @return void
      */
     public function testLint($expected, $query)
     {

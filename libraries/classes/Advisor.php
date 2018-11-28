@@ -127,8 +127,6 @@ class Advisor
     /**
      * Set variables
      *
-     * @param array $variables Variables
-     *
      * @return Advisor
      */
     public function setVariables(array $variables): self
@@ -166,8 +164,6 @@ class Advisor
     /**
      * Set parseResult
      *
-     * @param array $parseResult Parse result
-     *
      * @return Advisor
      */
     public function setParseResult(array $parseResult): self
@@ -189,8 +185,6 @@ class Advisor
 
     /**
      * Set runResult
-     *
-     * @param array $runResult Run result
      *
      * @return Advisor
      */
@@ -241,8 +235,6 @@ class Advisor
      *
      * @param string     $description description of an error.
      * @param \Throwable $exception   exception raised
-     *
-     * @return void
      */
     public function storeError(string $description, \Throwable $exception): void
     {
@@ -256,8 +248,6 @@ class Advisor
 
     /**
      * Executes advisor rules
-     *
-     * @return boolean
      */
     public function runRules(): bool
     {
@@ -332,8 +322,6 @@ class Advisor
      * Escapes percent string to be used in format string.
      *
      * @param string $str string to escape
-     *
-     * @return string
      */
     public static function escapePercent(string $str): string
     {
@@ -343,10 +331,7 @@ class Advisor
     /**
      * Wrapper function for translating.
      *
-     * @param string $str   the string
      * @param string $param the parameters
-     *
-     * @return string
      */
     public function translate(string $str, ?string $param = null): string
     {
@@ -361,8 +346,6 @@ class Advisor
 
     /**
      * Splits justification to text and formula.
-     *
-     * @param array $rule the rule
      *
      * @return string[]
      */
@@ -380,8 +363,6 @@ class Advisor
      *
      * @param string $type type of rule
      * @param array  $rule rule itself
-     *
-     * @return void
      */
     public function addRule(string $type, array $rule): void
     {

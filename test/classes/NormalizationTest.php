@@ -28,8 +28,6 @@ class NormalizationTest extends TestCase
 
     /**
      * prepares environment for tests
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -99,8 +97,6 @@ class NormalizationTest extends TestCase
 
     /**
      * Test for getHtmlForColumnsList
-     *
-     * @return void
      */
     public function testGetHtmlForColumnsList()
     {
@@ -118,8 +114,6 @@ class NormalizationTest extends TestCase
 
     /**
      * Test for getHtmlForCreateNewColumn
-     *
-     * @return void
      */
     public function testGetHtmlForCreateNewColumn()
     {
@@ -138,8 +132,6 @@ class NormalizationTest extends TestCase
 
     /**
      * Test for getHtmlFor1NFStep1
-     *
-     * @return void
      */
     public function testGetHtmlFor1NFStep1()
     {
@@ -185,8 +177,6 @@ class NormalizationTest extends TestCase
 
     /**
      * Test for getHtmlContentsFor1NFStep2
-     *
-     * @return void
      */
     public function testGetHtmlContentsFor1NFStep2()
     {
@@ -215,8 +205,6 @@ class NormalizationTest extends TestCase
 
     /**
      * Test for getHtmlContentsFor1NFStep4
-     *
-     * @return void
      */
     public function testGetHtmlContentsFor1NFStep4()
     {
@@ -241,8 +229,6 @@ class NormalizationTest extends TestCase
 
     /**
      * Test for getHtmlContentsFor1NFStep3
-     *
-     * @return void
      */
     public function testGetHtmlContentsFor1NFStep3()
     {
@@ -269,8 +255,6 @@ class NormalizationTest extends TestCase
 
     /**
      * Test for getHtmlFor2NFstep1
-     *
-     * @return void
      */
     public function testGetHtmlFor2NFstep1()
     {
@@ -299,8 +283,6 @@ class NormalizationTest extends TestCase
 
     /**
      * Test for getHtmlForNewTables2NF
-     *
-     * @return void
      */
     public function testGetHtmlForNewTables2NF()
     {
@@ -315,8 +297,6 @@ class NormalizationTest extends TestCase
 
     /**
      * Test for createNewTablesFor2NF
-     *
-     * @return void
      */
     public function testCreateNewTablesFor2NF()
     {
@@ -350,8 +330,6 @@ class NormalizationTest extends TestCase
 
     /**
      * Test for getHtmlForNewTables3NF
-     *
-     * @return void
      */
     public function testGetHtmlForNewTables3NF()
     {
@@ -395,8 +373,6 @@ class NormalizationTest extends TestCase
 
     /**
      * Test for createNewTablesFor3NF
-     *
-     * @return void
      */
     public function testCreateNewTablesFor3NF()
     {
@@ -428,8 +404,6 @@ class NormalizationTest extends TestCase
 
     /**
      * Test for moveRepeatingGroup
-     *
-     * @return void
      */
     public function testMoveRepeatingGroup()
     {
@@ -458,8 +432,6 @@ class NormalizationTest extends TestCase
 
     /**
      * Test for getHtmlFor3NFstep1
-     *
-     * @return void
      */
     public function testGetHtmlFor3NFstep1()
     {
@@ -489,8 +461,6 @@ class NormalizationTest extends TestCase
 
     /**
      * Test for getHtmlForNormalizeTable
-     *
-     * @return void
      */
     public function testgetHtmlForNormalizeTable()
     {
@@ -520,8 +490,6 @@ class NormalizationTest extends TestCase
 
     /**
      * Test for findPartialDependencies
-     *
-     * @return void
      */
     public function testFindPartialDependencies()
     {
@@ -537,8 +505,6 @@ class NormalizationTest extends TestCase
 
     /**
      * Test for getAllCombinationPartialKeys
-     *
-     * @return void
      */
     public function testGetAllCombinationPartialKeys()
     {

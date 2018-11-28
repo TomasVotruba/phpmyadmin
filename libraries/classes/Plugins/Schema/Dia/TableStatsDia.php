@@ -59,14 +59,12 @@ class TableStatsDia extends TableStats
         /**
          * Every object in Dia document needs an ID to identify
          * so, we used a static variable to keep the things unique
-        */
+         */
         $this->tableId = ++DiaRelationSchema::$objectId;
     }
 
     /**
      * Displays an error when the table cannot be found.
-     *
-     * @return void
      */
     protected function showMissingTableError()
     {
@@ -91,10 +89,8 @@ class TableStatsDia extends TableStats
      *                           will be used to choose the random colors for tables
      *                           text we can change/add more colors to this array
      *
-     * @return void
-     *
      * @access public
-     * @see    Dia
+     * @see Dia
      */
     public function tableDraw($showColor)
     {

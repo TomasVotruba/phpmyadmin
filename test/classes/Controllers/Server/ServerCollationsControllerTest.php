@@ -24,8 +24,6 @@ class ServerCollationsControllerTest extends PmaTestCase
 {
     /**
      * Prepares environment for the test.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -42,8 +40,6 @@ class ServerCollationsControllerTest extends PmaTestCase
 
     /**
      * Test for PMA_getHtmlForCharsets
-     *
-     * @return void
      */
     public function testPMAGetHtmlForCharsets()
     {

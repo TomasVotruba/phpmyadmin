@@ -26,7 +26,6 @@ class TrackerTest extends PmaTestCase
      * Setup function for test cases
      *
      * @access protected
-     * @return void
      */
     protected function setUp()
     {
@@ -58,7 +57,6 @@ class TrackerTest extends PmaTestCase
     /**
      * Test for Tracker::enable
      *
-     * @return void
      * @test
      */
     public function testEnabled()
@@ -72,7 +70,6 @@ class TrackerTest extends PmaTestCase
     /**
      * Test for Tracker::isActive()
      *
-     * @return void
      * @test
      */
     public function testIsActive()
@@ -114,7 +111,6 @@ class TrackerTest extends PmaTestCase
      * @param string $string   String to test against
      * @param string $expected Expected Table Name
      *
-     * @return void
      * @test
      * @dataProvider getTableNameData
      */
@@ -134,7 +130,6 @@ class TrackerTest extends PmaTestCase
      * Data Provider for testGetTableName
      *
      * @return array Test data
-     *
      */
     public function getTableNameData()
     {
@@ -148,7 +143,6 @@ class TrackerTest extends PmaTestCase
     /**
      * Test for Tracker::isTracked()
      *
-     * @return void
      * @test
      */
     public function testIsTracked()
@@ -184,7 +178,6 @@ class TrackerTest extends PmaTestCase
     /**
      * Test for Tracker::getLogComment()
      *
-     * @return void
      * @test
      */
     public function testGetLogComment()
@@ -201,7 +194,6 @@ class TrackerTest extends PmaTestCase
     /**
      * Test for Tracker::createVersion()
      *
-     * @return void
      * @test
      */
     public function testCreateVersion()
@@ -321,7 +313,6 @@ class TrackerTest extends PmaTestCase
     /**
      * Test for Tracker::deleteTracking()
      *
-     * @return void
      * @test
      */
     public function testDeleteTracking()
@@ -352,7 +343,6 @@ class TrackerTest extends PmaTestCase
     /**
      * Test for Tracker::createDatabaseVersion()
      *
-     * @return void
      * @test
      */
     public function testCreateDatabaseVersion()
@@ -407,10 +397,7 @@ class TrackerTest extends PmaTestCase
      * @param string $new_state State to change to
      * @param string $type      Type of test
      *
-     * @return void
-     *
      * @test
-     *
      */
     public function testChangeTracking(
         $dbname = 'pma_db',
@@ -466,7 +453,6 @@ class TrackerTest extends PmaTestCase
     /**
      * Test for Tracker::testChangeTrackingData()
      *
-     * @return void
      * @test
      */
     public function testChangeTrackingData()
@@ -546,7 +532,6 @@ class TrackerTest extends PmaTestCase
     /**
      * Test for Tracker::activateTracking()
      *
-     * @return void
      * @test
      */
     public function testActivateTracking()
@@ -557,7 +542,6 @@ class TrackerTest extends PmaTestCase
     /**
      * Test for Tracker::deactivateTracking()
      *
-     * @return void
      * @test
      */
     public function testDeactivateTracking()
@@ -571,7 +555,6 @@ class TrackerTest extends PmaTestCase
      * @param array $fetchArrayReturn Value to be returned by mocked fetchArray
      * @param array $expectedArray    Expected array
      *
-     * @return void
      * @test
      * @dataProvider getTrackedDataProvider
      */
@@ -705,8 +688,6 @@ class TrackerTest extends PmaTestCase
      * @param string $db                     Expected dbname
      * @param string $tablename_after_rename Expected name after rename
      *
-     * @return void
-     *
      * @test
      * @dataProvider parseQueryData
      */
@@ -761,12 +742,8 @@ class TrackerTest extends PmaTestCase
         /** TODO: Should test fail when USE is in conjunction with * identifiers?
         $query[] = array(
             " - USE db1;\n- CREATE VIEW db1.v AS SELECT * FROM t;",
-            "DDL",
-            "CREATE VIEW",
-            "v",
-            "db1"
         );
-        */
+         */
         $query[] = [
             "CREATE VIEW v AS SELECT * FROM t;",
             "DDL",

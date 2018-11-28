@@ -23,8 +23,6 @@ class OptionsPropertySubgroupTest extends TestCase
 
     /**
      * Configures global environment.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -33,8 +31,6 @@ class OptionsPropertySubgroupTest extends TestCase
 
     /**
      * tearDown for test cases
-     *
-     * @return void
      */
     protected function tearDown()
     {
@@ -43,8 +39,6 @@ class OptionsPropertySubgroupTest extends TestCase
 
     /**
      * Test for PhpMyAdmin\Properties\Options\Groups\OptionsPropertySubgroup::getItemType
-     *
-     * @return void
      */
     public function testGetItemType()
     {
@@ -58,8 +52,6 @@ class OptionsPropertySubgroupTest extends TestCase
      * Test for
      *     - PhpMyAdmin\Properties\Options\Groups\OptionsPropertySubgroup::getSubgroupHeader
      *     - PhpMyAdmin\Properties\Options\Groups\OptionsPropertySubgroup::setSubgroupHeader
-     *
-     * @return void
      */
     public function testGetSetSubgroupHeader()
     {

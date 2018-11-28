@@ -34,7 +34,6 @@ class TableSearchControllerTest extends PmaTestCase
      * Setup function for test cases
      *
      * @access protected
-     * @return void
      */
     protected function setUp()
     {
@@ -106,7 +105,6 @@ class TableSearchControllerTest extends PmaTestCase
      * tearDown function for test cases
      *
      * @access protected
-     * @return void
      */
     protected function tearDown()
     {
@@ -114,8 +112,6 @@ class TableSearchControllerTest extends PmaTestCase
 
     /**
      * Test for replace
-     *
-     * @return void
      */
     public function testReplace()
     {
@@ -154,8 +150,6 @@ class TableSearchControllerTest extends PmaTestCase
 
     /**
      * Test for buildSqlQuery
-     *
-     * @return void
      */
     public function testBuildSqlQuery()
     {
@@ -257,7 +251,6 @@ class TableSearchControllerTest extends PmaTestCase
     /**
      * Tests for getColumnMinMax()
      *
-     * @return void
      * @test
      */
     public function testGetColumnMinMax()
@@ -287,7 +280,6 @@ class TableSearchControllerTest extends PmaTestCase
     /**
      * Tests for _generateWhereClause()
      *
-     * @return void
      * @test
      */
     public function testGenerateWhereClause()
@@ -345,7 +337,6 @@ class TableSearchControllerTest extends PmaTestCase
     /**
      * Tests for getDataRowAction()
      *
-     * @return void
      * @test
      */
     public function testGetDataRowAction()

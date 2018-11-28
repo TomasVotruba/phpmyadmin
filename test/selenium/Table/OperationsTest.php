@@ -23,8 +23,6 @@ class OperationsTest extends TestBase
 {
     /**
      * Setup the browser environment to run the selenium test case
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -62,8 +60,6 @@ class OperationsTest extends TestBase
     /**
      * Test for changing a table order
      *
-     * @return void
-     *
      * @group large
      */
     public function testChangeTableOrder()
@@ -100,8 +96,6 @@ class OperationsTest extends TestBase
     /**
      * Test for moving a table
      *
-     * @return void
-     *
      * @group large
      */
     public function testMoveTable()
@@ -130,8 +124,6 @@ class OperationsTest extends TestBase
 
     /**
      * Test for renaming a table
-     *
-     * @return void
      *
      * @group large
      */
@@ -164,8 +156,6 @@ class OperationsTest extends TestBase
     /**
      * Test for copying a table
      *
-     * @return void
-     *
      * @group large
      */
     public function testCopyTable()
@@ -196,8 +186,6 @@ class OperationsTest extends TestBase
     /**
      * Test for truncating a table
      *
-     * @return void
-     *
      * @group large
      */
     public function testTruncateTable()
@@ -224,8 +212,6 @@ class OperationsTest extends TestBase
 
     /**
      * Test for dropping a table
-     *
-     * @return void
      *
      * @group large
      */

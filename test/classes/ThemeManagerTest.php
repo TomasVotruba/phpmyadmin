@@ -21,8 +21,6 @@ class ThemeManagerTest extends PmaTestCase
 {
     /**
      * SetUp for test cases
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -43,8 +41,6 @@ class ThemeManagerTest extends PmaTestCase
 
     /**
      * Test for ThemeManager::getThemeCookieName
-     *
-     * @return void
      */
     public function testCookieName()
     {
@@ -54,8 +50,6 @@ class ThemeManagerTest extends PmaTestCase
 
     /**
      * Test for ThemeManager::getThemeCookieName
-     *
-     * @return void
      */
     public function testPerServerCookieName()
     {
@@ -66,8 +60,6 @@ class ThemeManagerTest extends PmaTestCase
 
     /**
      * Test for ThemeManager::getHtmlSelectBox
-     *
-     * @return void
      */
     public function testHtmlSelectBox()
     {
@@ -80,8 +72,6 @@ class ThemeManagerTest extends PmaTestCase
 
     /**
      * Test for setThemeCookie
-     *
-     * @return void
      */
     public function testSetThemeCookie()
     {
@@ -93,8 +83,6 @@ class ThemeManagerTest extends PmaTestCase
 
     /**
      * Test for getPrintPreviews
-     *
-     * @return void
      */
     public function testGetPrintPreviews()
     {

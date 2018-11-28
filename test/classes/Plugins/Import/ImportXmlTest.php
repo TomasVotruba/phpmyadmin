@@ -35,7 +35,6 @@ class ImportXmlTest extends PmaTestCase
      * This method is called before a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function setUp()
     {
@@ -62,7 +61,6 @@ class ImportXmlTest extends PmaTestCase
      * This method is called after a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function tearDown()
     {
@@ -71,8 +69,6 @@ class ImportXmlTest extends PmaTestCase
 
     /**
      * Test for getProperties
-     *
-     * @return void
      *
      * @group medium
      */
@@ -103,8 +99,6 @@ class ImportXmlTest extends PmaTestCase
 
     /**
      * Test for doImport
-     *
-     * @return void
      *
      * @group medium
      */

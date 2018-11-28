@@ -23,8 +23,8 @@ use PhpMyAdmin\Engines\Pbxt;
 use PhpMyAdmin\Engines\PerformanceSchema;
 
 /**
-* defines
-*/
+ * defines
+ */
 define('PMA_ENGINE_SUPPORT_NO', 0);
 define('PMA_ENGINE_SUPPORT_DISABLED', 1);
 define('PMA_ENGINE_SUPPORT_YES', 2);

@@ -69,8 +69,6 @@ class Events
 
     /**
      * Sets required globals
-     *
-     * @return void
      */
     public function setGlobals()
     {
@@ -113,8 +111,6 @@ class Events
 
     /**
      * Main function for the events functionality
-     *
-     * @return void
      */
     public function main()
     {
@@ -141,8 +137,6 @@ class Events
 
     /**
      * Handles editor requests for adding or editing an item
-     *
-     * @return void
      */
     public function handleEditor()
     {

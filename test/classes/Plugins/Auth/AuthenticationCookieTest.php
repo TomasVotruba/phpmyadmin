@@ -33,8 +33,6 @@ class AuthenticationCookieTest extends PmaTestCase
 
     /**
      * Configures global environment.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -51,8 +49,6 @@ class AuthenticationCookieTest extends PmaTestCase
 
     /**
      * tearDown for test cases
-     *
-     * @return void
      */
     public function tearDown()
     {
@@ -63,7 +59,6 @@ class AuthenticationCookieTest extends PmaTestCase
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationConfig::showLoginForm
      *
-     * @return void
      * @group medium
      */
     public function testAuthErrorAJAX()
@@ -92,9 +87,7 @@ class AuthenticationCookieTest extends PmaTestCase
         );
     }
 
-    /**
-     * @return void
-     */
+    
     private function getAuthErrorMockResponse()
     {
         $mockResponse = $this->mockResponse();
@@ -181,7 +174,6 @@ class AuthenticationCookieTest extends PmaTestCase
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationConfig::showLoginForm
      *
-     * @return void
      * @group medium
      */
     public function testAuthError()
@@ -269,7 +261,6 @@ class AuthenticationCookieTest extends PmaTestCase
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationConfig::showLoginForm
      *
-     * @return void
      * @group medium
      */
     public function testAuthCaptcha()
@@ -348,8 +339,6 @@ class AuthenticationCookieTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationConfig::showLoginForm with headers
-     *
-     * @return void
      */
     public function testAuthHeader()
     {
@@ -366,8 +355,6 @@ class AuthenticationCookieTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationConfig::showLoginForm with headers
-     *
-     * @return void
      */
     public function testAuthHeaderPartial()
     {
@@ -385,8 +372,6 @@ class AuthenticationCookieTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationConfig::readCredentials
-     *
-     * @return void
      */
     public function testAuthCheckCaptcha()
     {
@@ -407,8 +392,6 @@ class AuthenticationCookieTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationConfig::readCredentials
-     *
-     * @return void
      */
     public function testLogoutDelete()
     {
@@ -432,8 +415,6 @@ class AuthenticationCookieTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationConfig::readCredentials
-     *
-     * @return void
      */
     public function testLogout()
     {
@@ -459,8 +440,6 @@ class AuthenticationCookieTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationConfig::readCredentials
-     *
-     * @return void
      */
     public function testAuthCheckArbitrary()
     {
@@ -499,8 +478,6 @@ class AuthenticationCookieTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationConfig::readCredentials
-     *
-     * @return void
      */
     public function testAuthCheckInvalidCookie()
     {
@@ -519,8 +496,6 @@ class AuthenticationCookieTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationConfig::readCredentials
-     *
-     * @return void
      */
     public function testAuthCheckExpires()
     {
@@ -540,8 +515,6 @@ class AuthenticationCookieTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationConfig::readCredentials (mock blowfish functions reqd)
-     *
-     * @return void
      */
     public function testAuthCheckDecryptUser()
     {
@@ -578,8 +551,6 @@ class AuthenticationCookieTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationConfig::readCredentials (mocking blowfish functions)
-     *
-     * @return void
      */
     public function testAuthCheckDecryptPassword()
     {
@@ -622,8 +593,6 @@ class AuthenticationCookieTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationConfig::readCredentials (mocking the object itself)
-     *
-     * @return void
      */
     public function testAuthCheckAuthFails()
     {
@@ -659,8 +628,6 @@ class AuthenticationCookieTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationConfig::storeCredentials
-     *
-     * @return void
      */
     public function testAuthSetUser()
     {
@@ -708,8 +675,6 @@ class AuthenticationCookieTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationConfig::storeCredentials (check for headers redirect)
-     *
-     * @return void
      */
     public function testAuthSetUserWithHeaders()
     {
@@ -743,8 +708,6 @@ class AuthenticationCookieTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationConfig::showFailure
-     *
-     * @return void
      */
     public function testAuthFailsNoPass()
     {
@@ -769,9 +732,7 @@ class AuthenticationCookieTest extends PmaTestCase
         );
     }
 
-    /**
-     * @return void
-     */
+    
     public function testAuthFailsDeny()
     {
         $this->object = $this->getMockBuilder('PhpMyAdmin\Plugins\Auth\AuthenticationCookie')
@@ -794,9 +755,7 @@ class AuthenticationCookieTest extends PmaTestCase
         );
     }
 
-    /**
-     * @return void
-     */
+    
     public function testAuthFailsActivity()
     {
         $this->object = $this->getMockBuilder('PhpMyAdmin\Plugins\Auth\AuthenticationCookie')
@@ -822,9 +781,7 @@ class AuthenticationCookieTest extends PmaTestCase
         );
     }
 
-    /**
-     * @return void
-     */
+    
     public function testAuthFailsDBI()
     {
         $this->object = $this->getMockBuilder('PhpMyAdmin\Plugins\Auth\AuthenticationCookie')
@@ -858,9 +815,7 @@ class AuthenticationCookieTest extends PmaTestCase
         );
     }
 
-    /**
-     * @return void
-     */
+    
     public function testAuthFailsErrno()
     {
         $this->object = $this->getMockBuilder('PhpMyAdmin\Plugins\Auth\AuthenticationCookie')
@@ -896,8 +851,6 @@ class AuthenticationCookieTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationConfig::_getEncryptionSecret
-     *
-     * @return void
      */
     public function testGetEncryptionSecretEmpty()
     {
@@ -925,8 +878,6 @@ class AuthenticationCookieTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationConfig::_getEncryptionSecret
-     *
-     * @return void
      */
     public function testGetEncryptionSecretConfigured()
     {
@@ -948,8 +899,6 @@ class AuthenticationCookieTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationConfig::cookieEncrypt
-     *
-     * @return void
      */
     public function testCookieEncrypt()
     {
@@ -963,8 +912,6 @@ class AuthenticationCookieTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationConfig::cookieEncrypt
-     *
-     * @return void
      */
     public function testCookieEncryptPHPSecLib()
     {
@@ -974,8 +921,6 @@ class AuthenticationCookieTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationConfig::cookieEncrypt
-     *
-     * @return void
      */
     public function testCookieEncryptOpenSSL()
     {
@@ -988,8 +933,6 @@ class AuthenticationCookieTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationConfig::cookieDecrypt
-     *
-     * @return void
      */
     public function testCookieDecrypt()
     {
@@ -1005,8 +948,6 @@ class AuthenticationCookieTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationConfig::cookieDecrypt
-     *
-     * @return void
      */
     public function testCookieDecryptPHPSecLib()
     {
@@ -1016,8 +957,6 @@ class AuthenticationCookieTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationConfig::cookieDecrypt
-     *
-     * @return void
      */
     public function testCookieDecryptOpenSSL()
     {
@@ -1030,8 +969,6 @@ class AuthenticationCookieTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationConfig::cookieDecrypt
-     *
-     * @return void
      */
     public function testCookieDecryptInvalid()
     {
@@ -1052,8 +989,6 @@ class AuthenticationCookieTest extends PmaTestCase
      * @param string $mac    mac
      * @param string $aes    aes
      *
-     * @return void
-     *
      * @dataProvider secretsProvider
      */
     public function testMACSecretSplit($secret, $mac, $aes)
@@ -1071,8 +1006,6 @@ class AuthenticationCookieTest extends PmaTestCase
      * @param string $mac    mac
      * @param string $aes    aes
      *
-     * @return void
-     *
      * @dataProvider secretsProvider
      */
     public function testAESSecretSplit($secret, $mac, $aes)
@@ -1085,8 +1018,6 @@ class AuthenticationCookieTest extends PmaTestCase
 
     /**
      * @throws \ReflectionException
-     *
-     * @return void
      */
     public function testPasswordChange()
     {
@@ -1160,8 +1091,6 @@ class AuthenticationCookieTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationCookie::authenticate
-     *
-     * @return void
      */
     public function testAuthenticate()
     {
@@ -1199,8 +1128,6 @@ class AuthenticationCookieTest extends PmaTestCase
      * @param bool   $nopass   nopass
      * @param array  $rules    rules
      * @param string $expected expected result
-     *
-     * @return void
      *
      * @dataProvider checkRulesProvider
      */

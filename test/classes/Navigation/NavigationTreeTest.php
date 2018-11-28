@@ -38,7 +38,6 @@ class NavigationTreeTest extends PmaTestCase
      * Sets up the fixture.
      *
      * @access protected
-     * @return void
      */
     protected function setUp()
     {
@@ -62,7 +61,6 @@ class NavigationTreeTest extends PmaTestCase
      * Tears down the fixture.
      *
      * @access protected
-     * @return void
      */
     protected function tearDown()
     {
@@ -71,8 +69,6 @@ class NavigationTreeTest extends PmaTestCase
 
     /**
      * Very basic rendering test.
-     *
-     * @return void
      */
     public function testRenderState()
     {
@@ -82,8 +78,6 @@ class NavigationTreeTest extends PmaTestCase
 
     /**
      * Very basic path rendering test.
-     *
-     * @return void
      */
     public function testRenderPath()
     {
@@ -93,8 +87,6 @@ class NavigationTreeTest extends PmaTestCase
 
     /**
      * Very basic select rendering test.
-     *
-     * @return void
      */
     public function testRenderDbSelect()
     {

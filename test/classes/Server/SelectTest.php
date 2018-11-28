@@ -24,8 +24,6 @@ class SelectTest extends TestCase
 {
     /**
      * Prepares environment for the test.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -51,8 +49,6 @@ class SelectTest extends TestCase
 
     /**
      * Test for Select::render
-     *
-     * @return void
      */
     public function testRender()
     {

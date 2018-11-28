@@ -86,8 +86,8 @@ class Transformations
     /**
      * Gets all available MIME-types
      *
-     * @access  public
-     * @staticvar   array   mimetypes
+     * @access public
+     * @staticvar array   mimetypes
      * @return array    array[mimetype], array[transformation]
      */
     public function getAvailableMimeTypes()
@@ -179,7 +179,7 @@ class Transformations
      *
      * @param string $file transformation file
      *
-     * @return String the description of the transformation
+     * @return string the description of the transformation
      */
     public function getDescription($file)
     {
@@ -196,7 +196,7 @@ class Transformations
      *
      * @param string $file transformation file
      *
-     * @return String the name of the transformation
+     * @return string the name of the transformation
      */
     public function getName($file)
     {
@@ -324,7 +324,7 @@ class Transformations
      * @param boolean $forcedelete        force delete, will erase any existing
      *                                    comments for this column
      *
-     * @access  public
+     * @access public
      *
      * @return boolean  true, if comment-query was made.
      */

@@ -25,8 +25,6 @@ class Status
     /**
      * Prints server status information: processes, connections and traffic
      *
-     * @param Data $serverStatusData Server status data
-     *
      * @return string
      */
     public static function getHtml(Data $serverStatusData)
@@ -52,8 +50,6 @@ class Status
 
     /**
      * Prints server state General information
-     *
-     * @param Data $serverStatusData Server status data
      *
      * @return string
      */
@@ -139,8 +135,6 @@ class Status
 
     /**
      * Prints server state traffic information
-     *
-     * @param Data $serverStatusData Server status data
      *
      * @return string
      */
@@ -244,8 +238,6 @@ class Status
 
     /**
      * Prints server state connections information
-     *
-     * @param Data $serverStatusData Server status data
      *
      * @return string
      */

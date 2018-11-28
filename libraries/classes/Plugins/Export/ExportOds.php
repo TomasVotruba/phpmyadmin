@@ -41,8 +41,6 @@ class ExportOds extends ExportPlugin
 
     /**
      * Sets the export ODS properties
-     *
-     * @return void
      */
     protected function setProperties()
     {

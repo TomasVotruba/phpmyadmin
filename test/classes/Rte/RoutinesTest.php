@@ -29,8 +29,6 @@ class RoutinesTest extends TestCase
 
     /**
      * Set up
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -64,8 +62,6 @@ class RoutinesTest extends TestCase
      *
      * @param array $in  Input
      * @param array $out Expected output
-     *
-     * @return void
      *
      * @dataProvider providerGetDataFromRequest
      */
@@ -249,8 +245,6 @@ class RoutinesTest extends TestCase
 
     /**
      * Test for getParameterRow
-     *
-     * @return void
      */
     public function testGetParameterRowEmpty()
     {
@@ -264,8 +258,6 @@ class RoutinesTest extends TestCase
      * @param array $data    Data for routine
      * @param mixed $index   Index
      * @param array $matcher Matcher
-     *
-     * @return void
      *
      * @depends testGetParameterRowEmpty
      * @dataProvider providerGetParameterRow
@@ -347,8 +339,6 @@ class RoutinesTest extends TestCase
      * @param array $data    Data for routine
      * @param array $matcher Matcher
      *
-     * @return void
-     *
      * @depends testGetParameterRow
      * @dataProvider providerGetParameterRowAjax
      */
@@ -425,8 +415,6 @@ class RoutinesTest extends TestCase
      *
      * @param array $data    Data for routine
      * @param array $matcher Matcher
-     *
-     * @return void
      *
      * @depends testGetParameterRowAjax
      * @dataProvider providerGetEditorForm1
@@ -547,8 +535,6 @@ class RoutinesTest extends TestCase
      * @param array $data    Data for routine
      * @param array $matcher Matcher
      *
-     * @return void
-     *
      * @depends testGetParameterRowAjax
      * @dataProvider providerGetEditorForm2
      */
@@ -667,8 +653,6 @@ class RoutinesTest extends TestCase
      *
      * @param array $data    Data for routine
      * @param array $matcher Matcher
-     *
-     * @return void
      *
      * @depends testGetParameterRowAjax
      * @dataProvider providerGetEditorForm3
@@ -791,8 +775,6 @@ class RoutinesTest extends TestCase
      * @param array $data    Data for routine
      * @param array $matcher Matcher
      *
-     * @return void
-     *
      * @depends testGetParameterRowAjax
      * @dataProvider providerGetEditorForm4
      */
@@ -851,8 +833,6 @@ class RoutinesTest extends TestCase
      *
      * @param array $data    Data for routine
      * @param array $matcher Matcher
-     *
-     * @return void
      *
      * @dataProvider providerGetExecuteForm1
      */
@@ -989,8 +969,6 @@ class RoutinesTest extends TestCase
      * @param array $data    Data for routine
      * @param array $matcher Matcher
      *
-     * @return void
-     *
      * @dataProvider providerGetExecuteForm2
      */
     public function testGetExecuteForm2($data, $matcher)
@@ -1102,8 +1080,6 @@ class RoutinesTest extends TestCase
      * @param array  $request Request
      * @param string $query   Query
      * @param int    $num_err Error number
-     *
-     * @return void
      *
      * @dataProvider providerGetQueryFromRequest
      */

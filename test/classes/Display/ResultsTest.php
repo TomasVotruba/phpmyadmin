@@ -36,7 +36,6 @@ class ResultsTest extends PmaTestCase
      * This method is called before a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function setUp()
     {
@@ -64,7 +63,6 @@ class ResultsTest extends PmaTestCase
      * This method is called after a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function tearDown()
     {
@@ -89,8 +87,6 @@ class ResultsTest extends PmaTestCase
 
     /**
      * Test for _isSelect function
-     *
-     * @return void
      */
     public function testisSelect()
     {
@@ -115,8 +111,6 @@ class ResultsTest extends PmaTestCase
      * @param string  $title          text for button
      * @param integer $pos            position for next query
      * @param string  $html_sql_query query ready for display
-     *
-     * @return void
      *
      * @dataProvider providerForTestGetTableNavigationButton
      */
@@ -215,8 +209,6 @@ class ResultsTest extends PmaTestCase
      * @param string $field_type_class the class related to type of the field
      * @param string $output           output of__getResettedClassForInlineEdit
      *
-     * @return void
-     *
      * @dataProvider dataProviderForTestGetClassesForColumn
      */
     public function testGetClassesForColumn(
@@ -244,8 +236,6 @@ class ResultsTest extends PmaTestCase
 
     /**
      * Test for _getClassForDateTimeRelatedFields - case 1
-     *
-     * @return void
      */
     public function testGetClassForDateTimeRelatedFieldsCase1()
     {
@@ -260,8 +250,6 @@ class ResultsTest extends PmaTestCase
 
     /**
      * Test for _getClassForDateTimeRelatedFields - case 2
-     *
-     * @return void
      */
     public function testGetClassForDateTimeRelatedFieldsCase2()
     {
@@ -276,8 +264,6 @@ class ResultsTest extends PmaTestCase
 
     /**
      * Test for _getClassForDateTimeRelatedFields - case 3
-     *
-     * @return void
      */
     public function testGetClassForDateTimeRelatedFieldsCase3()
     {
@@ -292,8 +278,6 @@ class ResultsTest extends PmaTestCase
 
     /**
      * Test for _getOffsets - case 1
-     *
-     * @return void
      */
     public function testGetOffsetsCase1()
     {
@@ -306,8 +290,6 @@ class ResultsTest extends PmaTestCase
 
     /**
      * Test for _getOffsets - case 2
-     *
-     * @return void
      */
     public function testGetOffsetsCase2()
     {
@@ -370,8 +352,6 @@ class ResultsTest extends PmaTestCase
      * @param string $id_suffix         suffix for the id
      * @param string $class             css classes for the td element
      * @param string $output            output of _getCheckboxForMultiRowSubmissions
-     *
-     * @return void
      *
      * @dataProvider dataProviderForGetCheckboxForMultiRowSubmissions
      */
@@ -439,8 +419,6 @@ class ResultsTest extends PmaTestCase
      * @param string $where_clause_html url encoded where clause
      * @param string $output            output of _getEditLink
      *
-     * @return void
-     *
      * @dataProvider dataProviderForGetEditLink
      */
     public function testGetEditLink(
@@ -506,8 +484,6 @@ class ResultsTest extends PmaTestCase
      * @param string $where_clause_html url encoded where clause
      * @param string $class             css classes for the td element
      * @param string $output            output of _getCopyLink
-     *
-     * @return void
      *
      * @dataProvider dataProviderForGetCopyLink
      */
@@ -576,8 +552,6 @@ class ResultsTest extends PmaTestCase
      * @param string $js_conf text for the JS confirmation
      * @param string $class   css classes for the td element
      * @param string $output  output of _getDeleteLink
-     *
-     * @return void
      *
      * @dataProvider dataProviderForGetDeleteLink
      */
@@ -818,8 +792,6 @@ class ResultsTest extends PmaTestCase
      * @param string $js_conf           text for the JS confirmation
      * @param string $output            output of _getCheckboxAndLinks
      *
-     * @return void
-     *
      * @dataProvider dataProviderForGetCheckboxAndLinks
      */
     public function testGetCheckboxAndLinks(
@@ -926,8 +898,6 @@ class ResultsTest extends PmaTestCase
      * @param string  $js_conf           text for the JS confirmation
      * @param string  $output            output of _getPlacedLinks
      *
-     * @return void
-     *
      * @dataProvider dataProviderForGetPlacedLinks
      */
     public function testGetPlacedLinks(
@@ -1022,8 +992,6 @@ class ResultsTest extends PmaTestCase
      * @param array   $row_info     information about row
      * @param string  $field_name   column name
      * @param boolean $output       output of _getSpecialLinkUrl
-     *
-     * @return void
      *
      * @dataProvider dataProviderForTestGetSpecialLinkUrl
      */
@@ -1140,8 +1108,6 @@ class ResultsTest extends PmaTestCase
      * @param array   $col_order    the column order
      * @param boolean $output       output of _getRowInfoForSpecialLinks
      *
-     * @return void
-     *
      * @dataProvider dataProviderForTestGetRowInfoForSpecialLinks
      */
     public function testGetRowInfoForSpecialLinks(
@@ -1206,8 +1172,6 @@ class ResultsTest extends PmaTestCase
      * @param int    $unique_id      the unique id for the results set
      * @param string $html_sql_query the sql encoded by html special characters
      * @param string $output         output of _getRowInfoForSpecialLinks
-     *
-     * @return void
      *
      * @dataProvider dataProviderForTestGetShowAllCheckboxForTableNavigation
      */
@@ -1281,8 +1245,6 @@ class ResultsTest extends PmaTestCase
      * @param array $analyzed_sql the analyzed query
      * @param array $output       setting value of _setHighlightedColumnGlobalField
      *
-     * @return void
-     *
      * @dataProvider dataProviderForTestSetHighlightedColumnGlobalField
      */
     public function testSetHighlightedColumnGlobalField($analyzed_sql, $output)
@@ -1322,8 +1284,6 @@ class ResultsTest extends PmaTestCase
      * @param integer $limitChars Partial or Full text
      * @param string  $str        the string to be tested
      * @param boolean $output     return value of _getPartialText
-     *
-     * @return void
      *
      * @dataProvider dataProviderForTestGetPartialText
      */
@@ -1447,8 +1407,6 @@ class ResultsTest extends PmaTestCase
      *                                       download link
      * @param boolean $is_truncated          the result is truncated or not
      * @param string  $output                the output of this function
-     *
-     * @return void
      *
      * @dataProvider dataProviderForTestHandleNonPrintableContents
      */
@@ -1618,8 +1576,6 @@ class ResultsTest extends PmaTestCase
      * @param integer $col_index             the column index
      * @param string  $output                the output of this function
      *
-     * @return void
-     *
      * @dataProvider dataProviderForTestGetDataCellForNonNumericColumns
      */
     public function testGetDataCellForNonNumericColumns(
@@ -1662,8 +1618,6 @@ class ResultsTest extends PmaTestCase
      *
      * It mocks data needed to display two transformations and asserts
      * they are rendered.
-     *
-     * @return void
      */
     public function testOutputTransformations()
     {

@@ -30,7 +30,6 @@ class ContainerTest extends PmaTestCase
      * This method is called before a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function setUp()
     {
@@ -42,7 +41,6 @@ class ContainerTest extends PmaTestCase
      * This method is called after a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function tearDown()
     {
@@ -51,8 +49,6 @@ class ContainerTest extends PmaTestCase
 
     /**
      * Test for get
-     *
-     * @return void
      */
     public function testGetWithValidEntry()
     {
@@ -62,8 +58,6 @@ class ContainerTest extends PmaTestCase
 
     /**
      * Test for get
-     *
-     * @return void
      */
     public function testGetThrowsNotFoundException()
     {
@@ -73,8 +67,6 @@ class ContainerTest extends PmaTestCase
 
     /**
      * Test for has
-     *
-     * @return void
      */
     public function testHasReturnsTrueForValidEntry()
     {
@@ -84,8 +76,6 @@ class ContainerTest extends PmaTestCase
 
     /**
      * Test for has
-     *
-     * @return void
      */
     public function testHasReturnsFalseForInvalidEntry()
     {

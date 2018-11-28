@@ -21,8 +21,6 @@ class NormalizationTest extends TestBase
 {
     /**
      * Setup the browser environment to run the selenium test case
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -55,8 +53,6 @@ class NormalizationTest extends TestBase
     /**
      * Test for normalization to 1NF
      *
-     * @return void
-     *
      * @group large
      */
     public function testNormalizationTo1NF()
@@ -81,8 +77,6 @@ class NormalizationTest extends TestBase
 
     /**
      * assertions in 1NF steps 1.1, 1.2, 1.3
-     *
-     * @return void
      */
     private function _test1NFSteps()
     {

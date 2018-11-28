@@ -25,8 +25,6 @@ class Monitor
     /**
      * Prints html with monitor
      *
-     * @param Data $serverStatusData Server status data
-     *
      * @return string
      */
     public function getHtmlForMonitor(Data $serverStatusData)
@@ -341,8 +339,6 @@ class Monitor
 
     /**
      * Define some data and links needed on the client side
-     *
-     * @param Data $serverStatusData Server status data
      *
      * @return string
      */
@@ -689,7 +685,7 @@ class Monitor
             $return['sum'][$type] += $row['#'];
 
             switch ($type) {
-            /** @noinspection PhpMissingBreakStatementInspection */
+                /** @noinspection PhpMissingBreakStatementInspection */
                 case 'insert':
                     // Group inserts if selected
                     if ($removeVars
@@ -760,7 +756,7 @@ class Monitor
      *
      * @param string $lastChar Last char
      *
-     * @return null|string Return suspension points if needed
+     * @return string|null Return suspension points if needed
      */
     public function getSuspensionPoints($lastChar)
     {

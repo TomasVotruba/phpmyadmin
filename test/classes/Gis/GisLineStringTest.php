@@ -30,7 +30,6 @@ class GisLineStringTest extends GisGeomTestCase
      * This method is called before a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function setUp()
     {
@@ -42,7 +41,6 @@ class GisLineStringTest extends GisGeomTestCase
      * This method is called after a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function tearDown()
     {
@@ -174,7 +172,6 @@ class GisLineStringTest extends GisGeomTestCase
      * @param resource $image      image object
      *
      * @dataProvider providerForPrepareRowAsPng
-     * @return void
      */
     public function testPrepareRowAsPng(
         $spatial,
@@ -230,7 +227,6 @@ class GisLineStringTest extends GisGeomTestCase
      * @param TCPDF  $pdf        TCPDF instance
      *
      * @dataProvider providerForPrepareRowAsPdf
-     * @return void
      */
     public function testPrepareRowAsPdf(
         $spatial,
@@ -282,7 +278,6 @@ class GisLineStringTest extends GisGeomTestCase
      * @param string $output     expected output
      *
      * @dataProvider providerForPrepareRowAsSvg
-     * @return void
      */
     public function testPrepareRowAsSvg(
         $spatial,
@@ -336,7 +331,6 @@ class GisLineStringTest extends GisGeomTestCase
      * @param string $output     expected output
      *
      * @dataProvider providerForPrepareRowAsOl
-     * @return void
      */
     public function testPrepareRowAsOl(
         $spatial,

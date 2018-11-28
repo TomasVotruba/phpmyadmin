@@ -61,7 +61,6 @@ class MultiTableQuery
     /**
      * Constructor
      *
-     * @param DatabaseInterface $dbi                DatabaseInterface instance
      * @param string            $dbName             Database name
      * @param integer           $defaultNoOfColumns Default number of columns
      */
@@ -106,8 +105,6 @@ class MultiTableQuery
      * @param string $sqlQuery      The query to parse
      * @param string $db            The current database
      * @param string $pmaThemeImage Uri of the PMA theme image
-     *
-     * @return void
      */
     public static function displayResults($sqlQuery, $db, $pmaThemeImage)
     {

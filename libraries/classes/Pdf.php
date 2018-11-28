@@ -68,8 +68,6 @@ class Pdf extends TCPDF
 
     /**
      * This function must be named "Footer" to work with the TCPDF library
-     *
-     * @return void
      */
     public function Footer()
     {
@@ -99,8 +97,6 @@ class Pdf extends TCPDF
      *
      * @param string $name  name of the alias
      * @param string $value value of the alias
-     *
-     * @return void
      */
     public function setAlias($name, $value)
     {
@@ -120,8 +116,6 @@ class Pdf extends TCPDF
 
     /**
      * Improved with alias expanding.
-     *
-     * @return void
      */
     public function _putpages()
     {
@@ -138,8 +132,6 @@ class Pdf extends TCPDF
      * Displays an error message
      *
      * @param string $error_message the error message
-     *
-     * @return void
      */
     public function Error($error_message = '')
     {
@@ -153,8 +145,6 @@ class Pdf extends TCPDF
      * Sends file as a download to user.
      *
      * @param string $filename file name
-     *
-     * @return void
      */
     public function download($filename)
     {

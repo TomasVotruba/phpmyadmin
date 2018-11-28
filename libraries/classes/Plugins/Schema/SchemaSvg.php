@@ -35,8 +35,6 @@ class SchemaSvg extends SchemaPlugin
 
     /**
      * Sets the schema export SVG properties
-     *
-     * @return void
      */
     protected function setProperties()
     {

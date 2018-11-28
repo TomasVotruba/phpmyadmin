@@ -27,8 +27,6 @@ class DesignerTest extends TestCase
 
     /**
      * Setup for test cases
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -56,8 +54,6 @@ class DesignerTest extends TestCase
      * Mocks database interaction for tests.
      *
      * @param string $db database name
-     *
-     * @return void
      */
     private function _mockDatabaseInteraction($db)
     {
@@ -93,8 +89,6 @@ class DesignerTest extends TestCase
 
     /**
      * Test for getPageIdsAndNames()
-     *
-     * @return void
      */
     public function testGetPageIdsAndNames()
     {
@@ -118,8 +112,6 @@ class DesignerTest extends TestCase
 
     /**
      * Test for getHtmlForEditOrDeletePages()
-     *
-     * @return void
      */
     public function testGetHtmlForEditOrDeletePages()
     {
@@ -147,8 +139,6 @@ class DesignerTest extends TestCase
 
     /**
      * Test for getHtmlForPageSaveAs()
-     *
-     * @return void
      */
     public function testGetHtmlForPageSaveAs()
     {
@@ -189,8 +179,6 @@ class DesignerTest extends TestCase
 
     /**
      * Test for getHtmlForSchemaExport()
-     *
-     * @return void
      */
     public function testGetHtmlForSchemaExport()
     {

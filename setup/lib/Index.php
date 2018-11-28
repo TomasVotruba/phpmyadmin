@@ -23,8 +23,6 @@ class Index
 {
     /**
      * Initializes message list
-     *
-     * @return void
      */
     public static function messagesBegin()
     {
@@ -48,8 +46,6 @@ class Index
      * @param string $msgId   unique message identifier
      * @param string $title   language string id (in $str array)
      * @param string $message message text
-     *
-     * @return void
      */
     public static function messagesSet($type, $msgId, $title, $message)
     {
@@ -63,8 +59,6 @@ class Index
 
     /**
      * Cleans up message list
-     *
-     * @return void
      */
     public static function messagesEnd()
     {
@@ -83,8 +77,6 @@ class Index
 
     /**
      * Prints message list, must be called after self::messagesEnd()
-     *
-     * @return void
      */
     public static function messagesShowHtml()
     {
@@ -104,8 +96,6 @@ class Index
 
     /**
      * Checks for newest phpMyAdmin version and sets result as a new notice
-     *
-     * @return void
      */
     public static function versionCheck()
     {

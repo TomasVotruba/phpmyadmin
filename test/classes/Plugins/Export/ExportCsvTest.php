@@ -27,8 +27,6 @@ class ExportCsvTest extends PmaTestCase
 
     /**
      * Configures global environment.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -38,8 +36,6 @@ class ExportCsvTest extends PmaTestCase
 
     /**
      * tearDown for test cases
-     *
-     * @return void
      */
     public function tearDown()
     {
@@ -48,8 +44,6 @@ class ExportCsvTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportCsv::setProperties
-     *
-     * @return void
      */
     public function testSetProperties()
     {
@@ -247,8 +241,6 @@ class ExportCsvTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportCsv::exportHeader
-     *
-     * @return void
      */
     public function testExportHeader()
     {
@@ -424,8 +416,6 @@ class ExportCsvTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportCsv::exportFooter
-     *
-     * @return void
      */
     public function testExportFooter()
     {
@@ -436,8 +426,6 @@ class ExportCsvTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportCsv::exportDBHeader
-     *
-     * @return void
      */
     public function testExportDBHeader()
     {
@@ -448,8 +436,6 @@ class ExportCsvTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportCsv::exportDBFooter
-     *
-     * @return void
      */
     public function testExportDBFooter()
     {
@@ -460,8 +446,6 @@ class ExportCsvTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportCsv::exportDBCreate
-     *
-     * @return void
      */
     public function testExportDBCreate()
     {
@@ -472,8 +456,6 @@ class ExportCsvTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportCsv::exportData
-     *
-     * @return void
      */
     public function testExportData()
     {

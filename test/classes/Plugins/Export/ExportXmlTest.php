@@ -28,8 +28,6 @@ class ExportXmlTest extends PmaTestCase
 
     /**
      * Configures global environment.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -48,8 +46,6 @@ class ExportXmlTest extends PmaTestCase
 
     /**
      * tearDown for test cases
-     *
-     * @return void
      */
     public function tearDown()
     {
@@ -59,7 +55,6 @@ class ExportXmlTest extends PmaTestCase
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportXml::setProperties
      *
-     * @return void
      * @group medium
      */
     public function testSetProperties()
@@ -201,7 +196,6 @@ class ExportXmlTest extends PmaTestCase
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportXml::exportHeader
      *
-     * @return void
      * @group medium
      */
     public function testExportHeader()
@@ -381,8 +375,6 @@ class ExportXmlTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportXml::exportFooter
-     *
-     * @return void
      */
     public function testExportFooter()
     {
@@ -396,8 +388,6 @@ class ExportXmlTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportXml::exportDBHeader
-     *
-     * @return void
      */
     public function testExportDBHeader()
     {
@@ -423,8 +413,6 @@ class ExportXmlTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportXml::exportDBFooter
-     *
-     * @return void
      */
     public function testExportDBFooter()
     {
@@ -450,8 +438,6 @@ class ExportXmlTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportXml::exportDBCreate
-     *
-     * @return void
      */
     public function testExportDBCreate()
     {
@@ -462,8 +448,6 @@ class ExportXmlTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportXml::exportData
-     *
-     * @return void
      */
     public function testExportData()
     {

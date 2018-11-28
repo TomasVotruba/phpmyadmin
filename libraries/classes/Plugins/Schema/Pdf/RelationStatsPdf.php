@@ -60,9 +60,7 @@ class RelationStatsPdf extends RelationStats
      *
      * @access public
      *
-     * @return void
-     *
-     * @see    Pdf
+     * @see Pdf
      */
     public function relationDraw($showColor, $i)
     {

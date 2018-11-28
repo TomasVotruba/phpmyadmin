@@ -25,8 +25,6 @@ class TableTest extends PmaTestCase
 {
     /**
      * Configures environment
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -295,8 +293,6 @@ class TableTest extends PmaTestCase
 
     /**
      * Test object creating
-     *
-     * @return void
      */
     public function testCreate()
     {
@@ -306,8 +302,6 @@ class TableTest extends PmaTestCase
 
     /**
      * Test for constructor
-     *
-     * @return void
      */
     public function testConstruct()
     {
@@ -332,8 +326,6 @@ class TableTest extends PmaTestCase
 
     /**
      * Test getName & getDbName
-     *
-     * @return void
      */
     public function testGetName()
     {
@@ -358,8 +350,6 @@ class TableTest extends PmaTestCase
 
     /**
      * Test getLastError & getLastMessage
-     *
-     * @return void
      */
     public function testGetLastErrorAndMessage()
     {
@@ -388,8 +378,6 @@ class TableTest extends PmaTestCase
      * @param string  $name          name to test
      * @param boolean $result        expected result
      * @param boolean $is_backquoted is backquoted
-     *
-     * @return void
      *
      * @dataProvider dataValidateName
      */
@@ -424,8 +412,6 @@ class TableTest extends PmaTestCase
 
     /**
      * Test for isView
-     *
-     * @return void
      */
     public function testIsView()
     {
@@ -451,8 +437,6 @@ class TableTest extends PmaTestCase
 
     /**
      * Test for generateFieldSpec
-     *
-     * @return void
      */
     public function testGenerateFieldSpec()
     {
@@ -663,8 +647,6 @@ class TableTest extends PmaTestCase
 
     /**
      * Test for duplicateInfo
-     *
-     * @return void
      */
     public function testDuplicateInfo()
     {
@@ -691,8 +673,6 @@ class TableTest extends PmaTestCase
     }
     /**
      * Test for isUpdatableView
-     *
-     * @return void
      */
     public function testIsUpdatableView()
     {
@@ -718,8 +698,6 @@ class TableTest extends PmaTestCase
 
     /**
      * Test for isMerge -- when there's no ENGINE info cached
-     *
-     * @return void
      */
     public function testIsMergeCase1()
     {
@@ -741,8 +719,6 @@ class TableTest extends PmaTestCase
 
     /**
      * Test for isMerge -- when ENGINE info is MERGE
-     *
-     * @return void
      */
     public function testIsMergeCase2()
     {
@@ -763,8 +739,6 @@ class TableTest extends PmaTestCase
 
     /**
      * Test for isMerge -- when ENGINE info is MRG_MYISAM
-     *
-     * @return void
      */
     public function testIsMergeCase3()
     {
@@ -785,8 +759,6 @@ class TableTest extends PmaTestCase
 
     /**
      * Test for isMerge -- when ENGINE info is ISDB
-     *
-     * @return void
      */
     public function testIsMergeCase4()
     {
@@ -807,8 +779,6 @@ class TableTest extends PmaTestCase
 
     /**
      * Test for generateAlter
-     *
-     * @return void
      */
     public function testGenerateAlter()
     {
@@ -857,8 +827,6 @@ class TableTest extends PmaTestCase
 
     /**
      * Test for rename
-     *
-     * @return void
      */
     public function testRename()
     {
@@ -921,8 +889,6 @@ class TableTest extends PmaTestCase
 
     /**
      * Test for getUniqueColumns
-     *
-     * @return void
      */
     public function testGetUniqueColumns()
     {
@@ -944,8 +910,6 @@ class TableTest extends PmaTestCase
 
     /**
      * Test for getIndexedColumns
-     *
-     * @return void
      */
     public function testGetIndexedColumns()
     {
@@ -970,8 +934,6 @@ class TableTest extends PmaTestCase
 
     /**
      * Test for getColumnsMeta
-     *
-     * @return void
      */
     public function testGetColumnsMeta()
     {
@@ -1002,7 +964,6 @@ class TableTest extends PmaTestCase
     /**
      * Tests for _getSQLToCreateForeignKey() method.
      *
-     * @return void
      * @test
      */
     public function testGetSQLToCreateForeignKey()
@@ -1059,7 +1020,6 @@ class TableTest extends PmaTestCase
     /**
      * Tests for getSqlQueryForIndexCreateOrEdit() method.
      *
-     * @return void
      * @test
      */
     public function testGetSqlQueryForIndexCreateOrEdit()
@@ -1082,8 +1042,6 @@ class TableTest extends PmaTestCase
 
     /**
      * Test for getColumns
-     *
-     * @return void
      */
     public function testGetColumns()
     {
@@ -1119,8 +1077,6 @@ class TableTest extends PmaTestCase
 
     /**
      * Test for checkIfMinRecordsExist
-     *
-     * @return void
      */
     public function testCheckIfMinRecordsExist()
     {
@@ -1183,8 +1139,6 @@ class TableTest extends PmaTestCase
 
     /**
      * Test for countRecords
-     *
-     * @return void
      */
     public function testCountRecords()
     {
@@ -1214,8 +1168,6 @@ class TableTest extends PmaTestCase
 
     /**
      * Test for setUiProp
-     *
-     * @return void
      */
     public function testSetUiProp()
     {
@@ -1253,8 +1205,6 @@ class TableTest extends PmaTestCase
 
     /**
      * Test for moveCopy
-     *
-     * @return void
      */
     public function testMoveCopy()
     {
@@ -1332,8 +1282,6 @@ class TableTest extends PmaTestCase
 
     /**
      * Test for getStorageEngine
-     *
-     * @return void
      */
     public function testGetStorageEngine()
     {
@@ -1356,8 +1304,6 @@ class TableTest extends PmaTestCase
 
     /**
      * Test for getComment
-     *
-     * @return void
      */
     public function testGetComment()
     {
@@ -1379,10 +1325,8 @@ class TableTest extends PmaTestCase
     }
 
     /**
-    * Test for getCollation
-    *
-    * @return void
-    */
+     * Test for getCollation
+     */
     public function testGetCollation()
     {
         $target_table = 'table1';
@@ -1404,8 +1348,6 @@ class TableTest extends PmaTestCase
 
     /**
      * Test for getRowFormat
-     *
-     * @return void
      */
     public function testGetRowFormat()
     {
@@ -1428,8 +1370,6 @@ class TableTest extends PmaTestCase
 
     /**
      * Test for getAutoIncrement
-     *
-     * @return void
      */
     public function testGetAutoIncrement()
     {
@@ -1452,8 +1392,6 @@ class TableTest extends PmaTestCase
 
     /**
      * Test for getCreateOptions
-     *
-     * @return void
      */
     public function testGetCreateOptions()
     {

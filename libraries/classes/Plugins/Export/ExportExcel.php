@@ -28,8 +28,6 @@ class ExportExcel extends ExportCsv
 {
     /**
      * Sets the export CSV for Excel properties
-     *
-     * @return void
      */
     protected function setProperties()
     {

@@ -21,8 +21,6 @@ class SanitizeTest extends TestCase
 {
     /**
      * Tests for proper escaping of XSS.
-     *
-     * @return void
      */
     public function testXssInHref()
     {
@@ -34,8 +32,6 @@ class SanitizeTest extends TestCase
 
     /**
      * Tests correct generating of link redirector.
-     *
-     * @return void
      */
     public function testLink()
     {
@@ -56,8 +52,6 @@ class SanitizeTest extends TestCase
      *
      * @param string $link     link
      * @param string $expected expected result
-     *
-     * @return void
      *
      * @dataProvider docLinks
      */
@@ -86,8 +80,6 @@ class SanitizeTest extends TestCase
 
     /**
      * Tests link target validation.
-     *
-     * @return void
      */
     public function testInvalidTarget()
     {
@@ -99,8 +91,6 @@ class SanitizeTest extends TestCase
 
     /**
      * Tests XSS escaping after valid link.
-     *
-     * @return void
      */
     public function testLinkDocXss()
     {
@@ -112,8 +102,6 @@ class SanitizeTest extends TestCase
 
     /**
      * Tests proper handling of multi link code.
-     *
-     * @return void
      */
     public function testLinkAndXssInHref()
     {
@@ -125,8 +113,6 @@ class SanitizeTest extends TestCase
 
     /**
      * Test escaping of HTML tags
-     *
-     * @return void
      */
     public function testHtmlTags()
     {
@@ -138,8 +124,6 @@ class SanitizeTest extends TestCase
 
     /**
      * Tests basic BB code.
-     *
-     * @return void
      */
     public function testBBCode()
     {
@@ -151,8 +135,6 @@ class SanitizeTest extends TestCase
 
     /**
      * Tests output escaping.
-     *
-     * @return void
      */
     public function testEscape()
     {
@@ -164,8 +146,6 @@ class SanitizeTest extends TestCase
 
     /**
      * Test for Sanitize::sanitizeFilename
-     *
-     * @return void
      */
     public function testSanitizeFilename()
     {
@@ -183,8 +163,6 @@ class SanitizeTest extends TestCase
      * @param string $expected Expected output
      *
      * @dataProvider variables
-     *
-     * @return void
      */
     public function testGetJsValue($key, $value, $expected)
     {
@@ -203,8 +181,6 @@ class SanitizeTest extends TestCase
 
     /**
      * Test for Sanitize::jsFormat
-     *
-     * @return void
      */
     public function testJsFormat()
     {
@@ -235,8 +211,6 @@ class SanitizeTest extends TestCase
      * @param string $target expected output
      * @param string $source string to be escaped
      *
-     * @return void
-     *
      * @dataProvider escapeDataProvider
      */
     public function testEscapeJsString($target, $source)
@@ -266,8 +240,6 @@ class SanitizeTest extends TestCase
 
     /**
      * Test for removeRequestVars
-     *
-     * @return void
      */
     public function testRemoveRequestVars()
     {

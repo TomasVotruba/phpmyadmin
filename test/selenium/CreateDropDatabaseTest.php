@@ -21,8 +21,6 @@ class CreateDropDatabaseTest extends TestBase
 {
     /**
      * Setup the browser environment to run the selenium test case
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -35,8 +33,6 @@ class CreateDropDatabaseTest extends TestBase
 
     /**
      * Creates a database and drops it
-     *
-     * @return void
      *
      * @group large
      */
@@ -68,8 +64,6 @@ class CreateDropDatabaseTest extends TestBase
 
     /**
      * Drops a database, called after testCreateDropDatabase
-     *
-     * @return void
      */
     private function _dropDatabase()
     {

@@ -26,8 +26,6 @@ class TemplateTest extends PmaTestCase
 
     /**
      * Sets up the fixture.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -38,8 +36,6 @@ class TemplateTest extends PmaTestCase
      * Test for set function
      *
      * @param string $data Template name
-     *
-     * @return void
      *
      * @dataProvider providerTestSet
      */
@@ -72,8 +68,6 @@ class TemplateTest extends PmaTestCase
      * @param string $key          Template variable array key
      * @param string $value        Template variable array value
      *
-     * @return void
-     *
      * @dataProvider providerTestDynamicRender
      */
     public function testDynamicRender($templateFile, $key, $value)
@@ -98,8 +92,6 @@ class TemplateTest extends PmaTestCase
 
     /**
      * Test for render
-     *
-     * @return void
      */
     public function testRenderTemplateNotFound()
     {
@@ -112,8 +104,6 @@ class TemplateTest extends PmaTestCase
      *
      * @param string $templateFile   Template name
      * @param string $expectedResult Expected result
-     *
-     * @return void
      *
      * @dataProvider providerTestRender
      */
@@ -143,8 +133,6 @@ class TemplateTest extends PmaTestCase
      * @param string $templateFile   Template name
      * @param array  $renderParams   Render params
      * @param string $expectedResult Expected result
-     *
-     * @return void
      *
      * @dataProvider providerTestRenderGettext
      */

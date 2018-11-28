@@ -27,7 +27,6 @@ class StorageEngineTest extends PmaTestCase
      * This method is called before a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function setUp()
     {
@@ -43,7 +42,6 @@ class StorageEngineTest extends PmaTestCase
      * This method is called after a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function tearDown()
     {
@@ -52,8 +50,6 @@ class StorageEngineTest extends PmaTestCase
 
     /**
      * Test for getStorageEngines
-     *
-     * @return void
      */
     public function testGetStorageEngines()
     {
@@ -82,8 +78,6 @@ class StorageEngineTest extends PmaTestCase
     /**
      * Test for getHtmlSelect
      *
-     * @return void
-     *
      * @group medium
      */
     public function testGetHtmlSelect()
@@ -101,8 +95,6 @@ class StorageEngineTest extends PmaTestCase
      *
      * @param string $expectedClass Class that should be selected
      * @param string $engineName    Engine name
-     *
-     * @return void
      *
      * @dataProvider providerGetEngine
      */
@@ -140,8 +132,6 @@ class StorageEngineTest extends PmaTestCase
 
     /**
      * Test for isValid
-     *
-     * @return void
      */
     public function testIsValid()
     {
@@ -161,8 +151,6 @@ class StorageEngineTest extends PmaTestCase
 
     /**
      * Test for getPage
-     *
-     * @return void
      */
     public function testGetPage()
     {
@@ -174,8 +162,6 @@ class StorageEngineTest extends PmaTestCase
 
     /**
      * Test for getInfoPages
-     *
-     * @return void
      */
     public function testGetInfoPages()
     {
@@ -187,8 +173,6 @@ class StorageEngineTest extends PmaTestCase
 
     /**
      * Test for getVariablesLikePattern
-     *
-     * @return void
      */
     public function testGetVariablesLikePattern()
     {
@@ -200,8 +184,6 @@ class StorageEngineTest extends PmaTestCase
 
     /**
      * Test for getMysqlHelpPage
-     *
-     * @return void
      */
     public function testGetMysqlHelpPage()
     {
@@ -213,8 +195,6 @@ class StorageEngineTest extends PmaTestCase
 
     /**
      * Test for getVariables
-     *
-     * @return void
      */
     public function testGetVariables()
     {
@@ -226,8 +206,6 @@ class StorageEngineTest extends PmaTestCase
 
     /**
      * Test for getSupportInformationMessage
-     *
-     * @return void
      */
     public function testGetSupportInformationMessage()
     {
@@ -257,8 +235,6 @@ class StorageEngineTest extends PmaTestCase
 
     /**
      * Test for getComment
-     *
-     * @return void
      */
     public function testGetComment()
     {
@@ -270,8 +246,6 @@ class StorageEngineTest extends PmaTestCase
 
     /**
      * Test for getTitle
-     *
-     * @return void
      */
     public function testGetTitle()
     {
@@ -283,8 +257,6 @@ class StorageEngineTest extends PmaTestCase
 
     /**
      * Test for resolveTypeSize
-     *
-     * @return void
      */
     public function testResolveTypeSize()
     {

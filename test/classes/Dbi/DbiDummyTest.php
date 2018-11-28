@@ -20,8 +20,6 @@ class DbiDummyTest extends TestCase
 {
     /**
      * Configures test parameters.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -34,8 +32,6 @@ class DbiDummyTest extends TestCase
      * Simple test for basic query
      *
      * This relies on dummy driver internals
-     *
-     * @return void
      */
     public function testQuery()
     {
@@ -46,8 +42,6 @@ class DbiDummyTest extends TestCase
      * Simple test for fetching results of query
      *
      * This relies on dummy driver internals
-     *
-     * @return void
      */
     public function testFetch()
     {
@@ -60,8 +54,6 @@ class DbiDummyTest extends TestCase
      *
      * @param string $schema   schema name
      * @param bool   $expected expected result
-     *
-     * @return void
      *
      * @dataProvider schemaData
      */
@@ -89,8 +81,6 @@ class DbiDummyTest extends TestCase
      * @param integer $number   error number
      * @param string  $message  error message
      * @param string  $expected expected result
-     *
-     * @return void
      *
      * @dataProvider errorData
      */

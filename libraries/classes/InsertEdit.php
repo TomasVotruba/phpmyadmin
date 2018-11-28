@@ -47,8 +47,6 @@ class InsertEdit
 
     /**
      * Constructor
-     *
-     * @param DatabaseInterface $dbi DatabaseInterface instance
      */
     public function __construct(DatabaseInterface $dbi)
     {
@@ -2146,8 +2144,6 @@ class InsertEdit
     /**
      * Check wether insert row mode and if so include tbl_changen script and set
      * global variables.
-     *
-     * @return void
      */
     public function isInsertRow()
     {
@@ -2172,8 +2168,6 @@ class InsertEdit
      * set $_SESSION for edit_next
      *
      * @param string $one_where_clause one where clause from where clauses array
-     *
-     * @return void
      */
     public function setSessionForEditNext($one_where_clause)
     {
@@ -2805,8 +2799,6 @@ class InsertEdit
      * @param string $table       Table name
      * @param string $column_name Column name
      * @param array  &$extra_data Extra data for ajax response
-     *
-     * @return void
      */
     public function verifyWhetherValueCanBeTruncatedAndAppendExtraData(
         $db,
@@ -2998,10 +2990,8 @@ class InsertEdit
     /**
      * Function to get html for the function option
      *
-     * @param array  $column               column
      * @param string $column_name_appendix column name appendix
-     *
-     * @return String
+     * @return string
      */
     private function getHtmlForFunctionOption(array $column, $column_name_appendix)
     {
@@ -3016,8 +3006,6 @@ class InsertEdit
 
     /**
      * Function to get html for the column type
-     *
-     * @param array $column column
      *
      * @return string
      */
@@ -3069,13 +3057,11 @@ class InsertEdit
      * @param int    $columns_cnt           columns count
      * @param bool   $is_upload             whether upload
      * @param int    $tabindex_for_function tab index offset for function
-     * @param array  $foreigners            foreigners
      * @param int    $tabindex_for_null     tab index offset for null
      * @param int    $tabindex_for_value    tab index offset for value
      * @param string $table                 table
      * @param string $db                    database
      * @param int    $row_id                row id
-     * @param array  $titles                titles
      * @param int    $biggest_max_file_size biggest max file size
      * @param string $default_char_editing  default char editing mode which is stored
      *                                      in the config.inc.php script
@@ -3374,13 +3360,11 @@ class InsertEdit
      * @param int    $columns_cnt           columns count
      * @param bool   $is_upload             whether upload
      * @param int    $tabindex_for_function tab index offset for function
-     * @param array  $foreigners            foreigners
      * @param int    $tabindex_for_null     tab index offset for null
      * @param int    $tabindex_for_value    tab index offset for value
      * @param string $table                 table
      * @param string $db                    database
      * @param int    $row_id                row id
-     * @param array  $titles                titles
      * @param int    $biggest_max_file_size biggest max file size
      * @param string $text_dir              text direction
      * @param array  $repopulate            the data to be repopulated

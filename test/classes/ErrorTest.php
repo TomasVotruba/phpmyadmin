@@ -29,7 +29,6 @@ class ErrorTest extends PmaTestCase
      * This method is called before a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function setUp()
     {
@@ -41,7 +40,6 @@ class ErrorTest extends PmaTestCase
      * This method is called after a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function tearDown()
     {
@@ -50,8 +48,6 @@ class ErrorTest extends PmaTestCase
 
     /**
      * Test for setBacktrace
-     *
-     * @return void
      */
     public function testSetBacktrace()
     {
@@ -63,8 +59,6 @@ class ErrorTest extends PmaTestCase
 
     /**
      * Test for setLine
-     *
-     * @return void
      */
     public function testSetLine()
     {
@@ -77,8 +71,6 @@ class ErrorTest extends PmaTestCase
      *
      * @param string $file     actual
      * @param string $expected expected
-     *
-     * @return void
      *
      * @dataProvider filePathProvider
      */
@@ -107,8 +99,6 @@ class ErrorTest extends PmaTestCase
 
     /**
      * Test for getHash
-     *
-     * @return void
      */
     public function testGetHash()
     {
@@ -120,8 +110,6 @@ class ErrorTest extends PmaTestCase
 
     /**
      * Test for getBacktraceDisplay
-     *
-     * @return void
      */
     public function testGetBacktraceDisplay()
     {
@@ -133,8 +121,6 @@ class ErrorTest extends PmaTestCase
 
     /**
      * Test for getDisplay
-     *
-     * @return void
      */
     public function testGetDisplay()
     {
@@ -146,8 +132,6 @@ class ErrorTest extends PmaTestCase
 
     /**
      * Test for getHtmlTitle
-     *
-     * @return void
      */
     public function testGetHtmlTitle()
     {
@@ -156,8 +140,6 @@ class ErrorTest extends PmaTestCase
 
     /**
      * Test for getTitle
-     *
-     * @return void
      */
     public function testGetTitle()
     {
@@ -166,8 +148,6 @@ class ErrorTest extends PmaTestCase
 
     /**
      * Test for getBacktrace
-     *
-     * @return void
      */
     public function testGetBacktrace()
     {

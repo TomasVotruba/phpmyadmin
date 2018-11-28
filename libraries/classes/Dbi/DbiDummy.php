@@ -231,8 +231,6 @@ class DbiDummy implements DbiExtension
      * Frees memory associated with the result
      *
      * @param object $result database result
-     *
-     * @return void
      */
     public function freeResult($result)
     {
@@ -438,8 +436,6 @@ class DbiDummy implements DbiExtension
      *
      * @param string $query  SQL
      * @param array  $result Expected result
-     *
-     * @return void
      */
     public function setResult($query, $result)
     {
@@ -464,10 +460,7 @@ class DbiDummy implements DbiExtension
             return $this->_queries[$result];
         }
     }
-
-    /**
-     * @return void
-     */
+    
     private function init(): void
     {
         /**

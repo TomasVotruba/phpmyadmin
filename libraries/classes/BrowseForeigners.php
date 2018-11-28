@@ -33,7 +33,7 @@ class BrowseForeigners
      * @param int     $limitChars  Maximum number of characters to show
      * @param int     $maxRows     Number of rows to display
      * @param int     $repeatCells Repeat the headers every X cells, or 0 to deactivate
-     * @param boolean $showAll     Shows the 'Show all' button or not
+     * @param boolean $showAll     Shows the 'Show all' button ornot
      * @param string  $themeImage  Theme image path
      */
     public function __construct(
@@ -58,10 +58,8 @@ class BrowseForeigners
      * @param string  $header             table header
      * @param array   $keys               all the keys
      * @param integer $indexByKeyname     index by keyname
-     * @param array   $descriptions       descriptions
      * @param integer $indexByDescription index by description
      * @param string  $current_value      current value on the edit form
-     *
      * @return array the generated html
      */
     private function getHtmlForOneKey(
@@ -154,12 +152,9 @@ class BrowseForeigners
      *
      * @param string      $db            current database
      * @param string      $table         current table
-     * @param string      $field         field
      * @param array       $foreignData   foreign column data
      * @param string|null $fieldkey      field key
      * @param string      $current_value current columns's value
-     *
-     * @return string
      */
     public function getHtmlForRelationalFieldSelection(
         string $db,
@@ -302,8 +297,6 @@ class BrowseForeigners
      * Function to get html for the goto page option
      *
      * @param array|null $foreignData foreign data
-     *
-     * @return string
      */
     private function getHtmlForGotoPage(?array $foreignData): string
     {

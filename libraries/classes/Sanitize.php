@@ -231,7 +231,6 @@ class Sanitize
      * @param boolean $replaceDots Whether to also replace dots
      *
      * @return string  the sanitized filename
-     *
      */
     public static function sanitizeFilename($filename, $replaceDots = false)
     {
@@ -257,7 +256,7 @@ class Sanitize
      *
      * @return string   the formatted string
      *
-     * @access  public
+     * @access public
      */
     public static function jsFormat($a_string = '', $add_backquotes = true)
     {
@@ -361,8 +360,6 @@ class Sanitize
      *
      * @param string $key   Name of value to set
      * @param mixed  $value Value to set, can be either string or array of strings
-     *
-     * @return void
      */
     public static function printJsValue($key, $value)
     {
@@ -404,8 +401,6 @@ class Sanitize
      * @param string  $value Value to set
      * @param boolean $addOn Check if $.validator.format is required or not
      * @param boolean $comma Check if comma is required
-     *
-     * @return void
      */
     public static function printJsValueForFormValidation($key, $value, $addOn = false, $comma = true)
     {
@@ -417,7 +412,6 @@ class Sanitize
      *
      * @param string &$whitelist list of variables to allow
      *
-     * @return void
      * @access public
      */
     public static function removeRequestVars(&$whitelist)

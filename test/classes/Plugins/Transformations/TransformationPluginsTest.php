@@ -41,7 +41,6 @@ class TransformationPluginsTest extends PmaTestCase
      * This method is called before a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function setUp()
     {
@@ -63,7 +62,6 @@ class TransformationPluginsTest extends PmaTestCase
      * This method is called after a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function tearDown()
     {
@@ -667,8 +665,6 @@ class TransformationPluginsTest extends PmaTestCase
      * @param mixed  $expected the expected output
      * @param array  $args     the array of arguments
      *
-     * @return void
-     *
      * @dataProvider multiDataProvider
      * @group medium
      */
@@ -984,8 +980,6 @@ class TransformationPluginsTest extends PmaTestCase
      * @param string $transformed the expected output of applyTransformation
      * @param bool   $success     the expected output of isSuccess
      * @param string $error       the expected output of getError
-     *
-     * @return void
      *
      * @dataProvider transformationDataProvider
      * @group medium

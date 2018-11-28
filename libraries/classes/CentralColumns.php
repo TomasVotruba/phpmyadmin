@@ -63,8 +63,6 @@ class CentralColumns
 
     /**
      * Constructor
-     *
-     * @param DatabaseInterface $dbi DatabaseInterface instance
      */
     public function __construct(DatabaseInterface $dbi)
     {
@@ -229,8 +227,6 @@ class CentralColumns
     /**
      * return error message to be displayed if central columns
      * configuration storage is not completely configured
-     *
-     * @return Message
      */
     private function configErrorMessage(): Message
     {
@@ -918,8 +914,6 @@ class CentralColumns
      *
      * @param string $pmaThemeImage pma theme image url
      * @param string $text_dir      url for text directory
-     *
-     * @return string
      */
     public function getTableFooter(string $pmaThemeImage, string $text_dir): string
     {
@@ -964,8 +958,6 @@ class CentralColumns
      * This method separates them.
      *
      * @param array &$columns_list columns list
-     *
-     * @return void
      */
     private function handleColumnExtra(array &$columns_list): void
     {

@@ -31,8 +31,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Setup for test cases
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -93,8 +91,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getFormParametersForInsertForm
-     *
-     * @return void
      */
     public function testGetFormParametersForInsertForm()
     {
@@ -128,8 +124,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getWhereClauseArray
-     *
-     * @return void
      */
     public function testGetWhereClauseArray()
     {
@@ -151,8 +145,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for analyzeWhereClauses
-     *
-     * @return void
      */
     public function testAnalyzeWhereClause()
     {
@@ -207,8 +199,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for showEmptyResultMessageOrSetUniqueCondition
-     *
-     * @return void
      */
     public function testShowEmptyResultMessageOrSetUniqueCondition()
     {
@@ -262,8 +252,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for loadFirstRow
-     *
-     * @return void
      */
     public function testLoadFirstRow()
     {
@@ -295,8 +283,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for urlParamsInEditMode
-     *
-     * @return void
      */
     public function testUrlParamsInEditMode()
     {
@@ -317,8 +303,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for showTypeOrFunction
-     *
-     * @return void
      */
     public function testShowTypeOrFunction()
     {
@@ -368,8 +352,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for analyzeTableColumnsArray
-     *
-     * @return void
      */
     public function testAnalyzeTableColumnsArray()
     {
@@ -441,8 +423,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getColumnTitle
-     *
-     * @return void
      */
     public function testGetColumnTitle()
     {
@@ -477,8 +457,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for isColumn
-     *
-     * @return void
      */
     public function testIsColumn()
     {
@@ -531,8 +509,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getEnumSetAndTimestampColumns
-     *
-     * @return void
      */
     public function testGetEnumAndTimestampColumns()
     {
@@ -592,8 +568,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getFunctionColumn
-     *
-     * @return void
      */
     public function testGetFunctionColumn()
     {
@@ -662,8 +636,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getNullColumn
-     *
-     * @return void
      */
     public function testGetNullColumn()
     {
@@ -735,8 +707,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getNullifyCodeForNullColumn
-     *
-     * @return void
      */
     public function testGetNullifyCodeForNullColumn()
     {
@@ -784,8 +754,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getForeignLink
-     *
-     * @return void
      */
     public function testGetForeignLink()
     {
@@ -819,8 +787,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for dispRowForeignData
-     *
-     * @return void
      */
     public function testDispRowForeignData()
     {
@@ -855,8 +821,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for dispRowForeignData
-     *
-     * @return void
      */
     public function testDispRowForeignDataWithHex()
     {
@@ -891,8 +855,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getTextarea
-     *
-     * @return void
      */
     public function testGetTextarea()
     {
@@ -920,8 +882,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getPmaTypeEnum
-     *
-     * @return void
      */
     public function testGetPmaTypeEnum()
     {
@@ -969,8 +929,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getColumnEnumValues
-     *
-     * @return void
      */
     public function testGetColumnEnumValues()
     {
@@ -995,8 +953,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getDropDownDependingOnLength
-     *
-     * @return void
      */
     public function testGetDropDownDependingOnLength()
     {
@@ -1054,8 +1010,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getRadioButtonDependingOnLength
-     *
-     * @return void
      */
     public function testGetRadioButtonDependingOnLength()
     {
@@ -1120,8 +1074,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getPmaTypeSet
-     *
-     * @return void
      */
     public function testGetPmaTypeSet()
     {
@@ -1160,8 +1112,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getColumnSetValueAndSelectSize
-     *
-     * @return void
      */
     public function testGetColumnSetValueAndSelectSize()
     {
@@ -1199,8 +1149,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getBinaryAndBlobColumn
-     *
-     * @return void
      */
     public function testGetBinaryAndBlobColumn()
     {
@@ -1318,7 +1266,6 @@ class InsertEditTest extends TestCase
          * This condition should be tested, however, it gives an undefined function
          * PhpMyAdmin\FileListing::getFileSelectOptions error:
          * $GLOBALS['cfg']['UploadDir'] = true;
-         *
          */
 
         $result = $this->callProtectedMethod('getBinaryAndBlobColumn', [
@@ -1337,8 +1284,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getHtmlInput
-     *
-     * @return void
      */
     public function testGetHTMLinput()
     {
@@ -1383,8 +1328,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getMaxUploadSize
-     *
-     * @return void
      */
     public function testGetMaxUploadSize()
     {
@@ -1415,8 +1358,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getValueColumnForOtherDatatypes
-     *
-     * @return void
      */
     public function testGetValueColumnForOtherDatatypes()
     {
@@ -1485,8 +1426,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getColumnSize
-     *
-     * @return void
      */
     public function testGetColumnSize()
     {
@@ -1521,8 +1460,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getHtmlForGisDataTypes
-     *
-     * @return void
      */
     public function testGetHTMLforGisDataTypes()
     {
@@ -1538,8 +1475,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getContinueInsertionForm
-     *
-     * @return void
      */
     public function testGetContinueInsertionForm()
     {
@@ -1596,8 +1531,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getActionsPanel
-     *
-     * @return void
      */
     public function testGetActionsPanel()
     {
@@ -1623,8 +1556,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getSubmitTypeDropDown
-     *
-     * @return void
      */
     public function testGetSubmitTypeDropDown()
     {
@@ -1645,8 +1576,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getAfterInsertDropDown
-     *
-     * @return void
      */
     public function testGetAfterInsertDropDown()
     {
@@ -1672,8 +1601,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getSubmitAndResetButtonForActionsPanel
-     *
-     * @return void
      */
     public function testGetSubmitAndResetButtonForActionsPanel()
     {
@@ -1703,8 +1630,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getHeadAndFootOfInsertRowTable
-     *
-     * @return void
      */
     public function testGetHeadAndFootOfInsertRowTable()
     {
@@ -1730,8 +1655,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getSpecialCharsAndBackupFieldForExistingRow
-     *
-     * @return void
      */
     public function testGetSpecialCharsAndBackupFieldForExistingRow()
     {
@@ -1870,8 +1793,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getSpecialCharsAndBackupFieldForInsertingMode
-     *
-     * @return void
      */
     public function testGetSpecialCharsAndBackupFieldForInsertingMode()
     {
@@ -1919,8 +1840,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getParamsForUpdateOrInsert
-     *
-     * @return void
      */
     public function testGetParamsForUpdateOrInsert()
     {
@@ -1957,8 +1876,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for isInsertRow
-     *
-     * @return void
      */
     public function testIsInsertRow()
     {
@@ -2005,8 +1922,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for setSessionForEditNext
-     *
-     * @return void
      */
     public function testSetSessionForEditNext()
     {
@@ -2053,8 +1968,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getGotoInclude
-     *
-     * @return void
      */
     public function testGetGotoInclude()
     {
@@ -2093,8 +2006,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getErrorUrl
-     *
-     * @return void
      */
     public function testGetErrorUrl()
     {
@@ -2113,8 +2024,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for buildSqlQuery
-     *
-     * @return void
      */
     public function testBuildSqlQuery()
     {
@@ -2136,8 +2045,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for executeSqlQuery
-     *
-     * @return void
      */
     public function testExecuteSqlQuery()
     {
@@ -2223,8 +2130,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for executeSqlQuery
-     *
-     * @return void
      */
     public function testExecuteSqlQueryWithTryQuery()
     {
@@ -2310,8 +2215,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getWarningMessages
-     *
-     * @return void
      */
     public function testGetWarningMessages()
     {
@@ -2344,8 +2247,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getDisplayValueForForeignTableColumn
-     *
-     * @return void
      */
     public function testGetDisplayValueForForeignTableColumn()
     {
@@ -2388,8 +2289,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getLinkForRelationalDisplayField
-     *
-     * @return void
      */
     public function testGetLinkForRelationalDisplayField()
     {
@@ -2422,8 +2321,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for transformEditedValues
-     *
-     * @return void
      */
     public function testTransformEditedValues()
     {
@@ -2455,8 +2352,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getQueryValuesForInsertAndUpdateInMultipleEdit
-     *
-     * @return void
      */
     public function testGetQueryValuesForInsertAndUpdateInMultipleEdit()
     {
@@ -2557,8 +2452,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getCurrentValueAsAnArrayForMultipleEdit
-     *
-     * @return void
      */
     public function testGetCurrentValueAsAnArrayForMultipleEdit()
     {
@@ -2649,8 +2542,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getCurrentValueForDifferentTypes
-     *
-     * @return void
      */
     public function testGetCurrentValueForDifferentTypes()
     {
@@ -2909,8 +2800,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for verifyWhetherValueCanBeTruncatedAndAppendExtraData
-     *
-     * @return void
      */
     public function testVerifyWhetherValueCanBeTruncatedAndAppendExtraData()
     {
@@ -3011,8 +2900,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getTableColumns
-     *
-     * @return void
      */
     public function testGetTableColumns()
     {
@@ -3042,8 +2929,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for determineInsertOrEdit
-     *
-     * @return void
      */
     public function testDetermineInsertOrEdit()
     {
@@ -3115,8 +3000,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getCommentsMap
-     *
-     * @return void
      */
     public function testGetCommentsMap()
     {
@@ -3161,8 +3044,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getUrlParameters
-     *
-     * @return void
      */
     public function testGetUrlParameters()
     {
@@ -3181,8 +3062,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getHtmlForIgnoreOption
-     *
-     * @return void
      */
     public function testGetHtmlForIgnoreOption()
     {
@@ -3203,8 +3082,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getHtmlForInsertEditFormColumn
-     *
-     * @return void
      */
     public function testGetHtmlForInsertEditFormColumn()
     {
@@ -3312,8 +3189,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getHtmlForInsertEditRow
-     *
-     * @return void
      */
     public function testGetHtmlForInsertEditRow()
     {
@@ -3388,8 +3263,6 @@ class InsertEditTest extends TestCase
 
     /**
      * Test for getHtmlForInsertEditRow based on the column privilges
-     *
-     * @return void
      */
     public function testGetHtmlForInsertEditRowBasedOnColumnPrivileges()
     {

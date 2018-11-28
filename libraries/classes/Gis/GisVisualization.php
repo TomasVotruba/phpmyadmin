@@ -144,7 +144,6 @@ class GisVisualization
     /**
      * All the variable initialization, options handling has to be done here.
      *
-     * @return void
      * @access protected
      */
     protected function init()
@@ -226,7 +225,6 @@ class GisVisualization
      * A function which handles passed parameters. Useful if desired
      * chart needs to be a little bit different from the default one.
      *
-     * @return void
      * @access private
      */
     private function _handleOptions()
@@ -276,7 +274,6 @@ class GisVisualization
      * @param string $type      mime type
      * @param string $ext       extension of the file
      *
-     * @return void
      * @access private
      */
     private function _toFile($file_name, $type, $ext)
@@ -329,7 +326,6 @@ class GisVisualization
      *
      * @param string $file_name File name
      *
-     * @return void
      * @access public
      */
     public function toFileAsSvg($file_name)
@@ -400,7 +396,6 @@ class GisVisualization
      *
      * @param string $file_name File name
      *
-     * @return void
      * @access public
      */
     public function toFileAsPng($file_name)
@@ -466,7 +461,6 @@ class GisVisualization
      *
      * @param string $file_name File name
      *
-     * @return void
      * @access public
      */
     public function toFileAsPdf($file_name)
@@ -524,8 +518,6 @@ class GisVisualization
      *
      * @param string $filename Filename
      * @param string $format   Output format
-     *
-     * @return void
      */
     public function toFile($filename, $format)
     {
@@ -703,10 +695,6 @@ class GisVisualization
 
     /**
      * Set user specified settings
-     *
-     * @param array $userSpecifiedSettings User specified settings
-     *
-     * @return void
      */
     public function setUserSpecifiedSettings(array $userSpecifiedSettings)
     {

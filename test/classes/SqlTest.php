@@ -28,8 +28,6 @@ class SqlTest extends TestCase
 
     /**
      * Setup for test cases
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -69,8 +67,6 @@ class SqlTest extends TestCase
 
     /**
      * Test for getSqlWithLimitClause
-     *
-     * @return void
      */
     public function testGetSqlWithLimitClause()
     {
@@ -89,8 +85,6 @@ class SqlTest extends TestCase
 
     /**
      * Test for isRememberSortingOrder
-     *
-     * @return void
      */
     public function testIsRememberSortingOrder()
     {
@@ -130,8 +124,6 @@ class SqlTest extends TestCase
 
     /**
      * Test for isAppendLimitClause
-     *
-     * @return void
      */
     public function testIsAppendLimitClause()
     {
@@ -153,8 +145,6 @@ class SqlTest extends TestCase
 
     /**
      * Test for isJustBrowsing
-     *
-     * @return void
      */
     public function testIsJustBrowsing()
     {
@@ -185,8 +175,6 @@ class SqlTest extends TestCase
 
     /**
      * Test for isDeleteTransformationInfo
-     *
-     * @return void
      */
     public function testIsDeleteTransformationInfo()
     {
@@ -211,8 +199,6 @@ class SqlTest extends TestCase
 
     /**
      * Test for hasNoRightsToDropDatabase
-     *
-     * @return void
      */
     public function testHasNoRightsToDropDatabase()
     {
@@ -246,8 +232,6 @@ class SqlTest extends TestCase
 
     /**
      * Should return false if all columns are not from the same table
-     *
-     * @return void
      */
     public function testWithMultipleTables()
     {
@@ -277,8 +261,6 @@ class SqlTest extends TestCase
 
     /**
      * Should return true if all the columns are from the same table
-     *
-     * @return void
      */
     public function testWithSameTable()
     {
@@ -298,8 +280,6 @@ class SqlTest extends TestCase
     /**
      * Should return true even if function columns (table is '') occur when others
      * are from the same table.
-     *
-     * @return void
      */
     public function testWithFunctionColumns()
     {
@@ -330,8 +310,6 @@ class SqlTest extends TestCase
     /**
      * We can not say all the columns are from the same table if all the columns
      * are funtion columns (table is '')
-     *
-     * @return void
      */
     public function testWithOnlyFunctionColumns()
     {

@@ -21,8 +21,6 @@ class NodeColumnTest extends PmaTestCase
 {
     /**
      * SetUp for test cases
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -31,8 +29,6 @@ class NodeColumnTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Navigation\NodeFactory::getInstance
-     *
-     * @return void
      */
     public function testConstructor()
     {

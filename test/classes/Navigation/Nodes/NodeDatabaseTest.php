@@ -21,8 +21,6 @@ class NodeDatabaseTest extends PmaTestCase
 {
     /**
      * SetUp for test cases
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -35,8 +33,6 @@ class NodeDatabaseTest extends PmaTestCase
 
     /**
      * Test for __construct
-     *
-     * @return void
      */
     public function testConstructor()
     {
@@ -54,8 +50,6 @@ class NodeDatabaseTest extends PmaTestCase
 
     /**
      * Test for getPresence
-     *
-     * @return void
      */
     public function testGetPresence()
     {
@@ -84,8 +78,6 @@ class NodeDatabaseTest extends PmaTestCase
 
     /**
      * Test for getData
-     *
-     * @return void
      */
     public function testGetData()
     {
@@ -117,8 +109,6 @@ class NodeDatabaseTest extends PmaTestCase
 
     /**
      * Test for setHiddenCount and getHiddenCount
-     *
-     * @return void
      */
     public function testHiddenCount()
     {

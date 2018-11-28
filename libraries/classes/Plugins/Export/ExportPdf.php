@@ -64,8 +64,6 @@ class ExportPdf extends ExportPlugin
 
     /**
      * Initialize the local variables that are used for export PDF
-     *
-     * @return void
      */
     protected function initSpecificVariables()
     {
@@ -77,8 +75,6 @@ class ExportPdf extends ExportPlugin
 
     /**
      * Sets the export PDF properties
-     *
-     * @return void
      */
     protected function setProperties()
     {
@@ -360,8 +356,6 @@ class ExportPdf extends ExportPlugin
      * Instantiates the PhpMyAdmin\Plugins\Export\Helpers\Pdf class
      *
      * @param Pdf $pdf The instance
-     *
-     * @return void
      */
     private function _setPdf($pdf)
     {
@@ -382,8 +376,6 @@ class ExportPdf extends ExportPlugin
      * Sets the PDF report title
      *
      * @param string $pdfReportTitle PDF report title
-     *
-     * @return void
      */
     private function _setPdfReportTitle($pdfReportTitle)
     {

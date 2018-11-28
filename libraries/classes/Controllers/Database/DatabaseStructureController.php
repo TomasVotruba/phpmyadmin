@@ -86,8 +86,6 @@ class DatabaseStructureController extends DatabaseController
      * Retrieves databse information for further use
      *
      * @param string $sub_part Page part name
-     *
-     * @return void
      */
     private function _getDbInfo($sub_part)
     {
@@ -113,8 +111,6 @@ class DatabaseStructureController extends DatabaseController
 
     /**
      * Index action
-     *
-     * @return void
      */
     public function indexAction()
     {
@@ -246,8 +242,6 @@ class DatabaseStructureController extends DatabaseController
 
     /**
      * Add or remove favorite tables
-     *
-     * @return void
      */
     public function addRemoveFavoriteTablesAction()
     {
@@ -364,8 +358,6 @@ class DatabaseStructureController extends DatabaseController
 
     /**
      * Handles actions related to multiple tables
-     *
-     * @return void
      */
     public function multiSubmitAction()
     {
@@ -388,8 +380,6 @@ class DatabaseStructureController extends DatabaseController
 
     /**
      * Displays the list of tables
-     *
-     * @return void
      */
     protected function displayTableList()
     {
@@ -847,12 +837,9 @@ class DatabaseStructureController extends DatabaseController
     /**
      * Synchronize favorite tables
      *
-     *
      * @param RecentFavoriteTable $fav_instance    Instance of this class
      * @param string              $user            The user hash
      * @param array               $favorite_tables Existing favorites
-     *
-     * @return void
      */
     protected function synchronizeFavoriteTables(
         $fav_instance,

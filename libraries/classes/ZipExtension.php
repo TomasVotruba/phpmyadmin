@@ -43,10 +43,10 @@ class ZipExtension
     public function getContents($file, $specific_entry = null)
     {
         /**
-        * This function is used to "import" a SQL file which has been exported earlier
-        * That means that this function works on the assumption that the zip file contains only a single SQL file
-        * It might also be an ODS file, look below
-        */
+         * This function is used to "import" a SQL file which has been exported earlier
+         * That means that this function works on the assumption that the zip file contains only a single SQL file
+         * It might also be an ODS file, look below
+         */
 
         $error_message = '';
         $file_data = '';

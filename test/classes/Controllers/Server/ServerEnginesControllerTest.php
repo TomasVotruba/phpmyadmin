@@ -32,8 +32,6 @@ class ServerEnginesControllerTest extends PmaTestCase
 
     /**
      * Prepares environment for the test.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -55,8 +53,6 @@ class ServerEnginesControllerTest extends PmaTestCase
 
     /**
      * Tests for indexAction() method
-     *
-     * @return void
      */
     public function testHtmlForAllServerEngines()
     {
@@ -108,8 +104,6 @@ class ServerEnginesControllerTest extends PmaTestCase
 
     /**
      * Tests for _getHtmlForServerEngine() method
-     *
-     * @return void
      */
     public function testHtmlForServerEngine()
     {

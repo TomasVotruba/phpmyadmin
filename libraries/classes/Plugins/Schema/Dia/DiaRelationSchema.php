@@ -142,7 +142,6 @@ class DiaRelationSchema extends ExportRelationSchema
     /**
      * Output Dia Document for download
      *
-     * @return void
      * @access public
      */
     public function showOutput()
@@ -159,10 +158,8 @@ class DiaRelationSchema extends ExportRelationSchema
      * @param string $foreignField The relation field in the foreign table
      * @param bool   $showKeys     Whether to display ONLY keys or not
      *
-     * @return void
-     *
      * @access private
-     * @see    TableStatsDia::__construct(),RelationStatsDia::__construct()
+     * @see TableStatsDia::__construct(),RelationStatsDia::__construct()
      */
     private function _addRelation(
         $masterTable,
@@ -205,10 +202,8 @@ class DiaRelationSchema extends ExportRelationSchema
      * foreign table's foreign field using Dia object
      * type Database - Reference
      *
-     * @return void
-     *
      * @access private
-     * @see    RelationStatsDia::relationDraw()
+     * @see RelationStatsDia::relationDraw()
      */
     private function _drawRelations()
     {
@@ -223,10 +218,8 @@ class DiaRelationSchema extends ExportRelationSchema
      * Tables are generated using Dia object type Database - Table
      * primary fields are underlined and bold in tables
      *
-     * @return void
-     *
      * @access private
-     * @see    TableStatsDia::tableDraw()
+     * @see TableStatsDia::tableDraw()
      */
     private function _drawTables()
     {

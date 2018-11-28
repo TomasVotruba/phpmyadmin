@@ -40,8 +40,6 @@ class ExportMediawiki extends ExportPlugin
 
     /**
      * Sets the export MediaWiki properties
-     *
-     * @return void
      */
     protected function setProperties()
     {

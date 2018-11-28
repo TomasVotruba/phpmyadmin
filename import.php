@@ -538,7 +538,7 @@ $sql_data = ['valid_sql' => [], 'valid_queries' => 0];
 
 if (! $error) {
     /**
-     * @var ImportPlugin $import_plugin
+     * @var ImportPlugin
      */
     $import_plugin = Plugins::getPlugin(
         "import",

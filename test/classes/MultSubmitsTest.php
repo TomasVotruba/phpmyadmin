@@ -26,8 +26,6 @@ class MultSubmitsTest extends TestCase
 
     /**
      * Test for setUp
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -76,8 +74,6 @@ class MultSubmitsTest extends TestCase
 
     /**
      * Test for getHtmlForReplacePrefixTable
-     *
-     * @return void
      */
     public function testGetHtmlForReplacePrefixTable()
     {
@@ -106,8 +102,6 @@ class MultSubmitsTest extends TestCase
 
     /**
      * Test for getHtmlForAddPrefixTable
-     *
-     * @return void
      */
     public function testGetHtmlForAddPrefixTable()
     {
@@ -136,8 +130,6 @@ class MultSubmitsTest extends TestCase
 
     /**
      * Test for getHtmlForOtherActions
-     *
-     * @return void
      */
     public function testGetHtmlForOtherActions()
     {
@@ -187,8 +179,6 @@ class MultSubmitsTest extends TestCase
 
     /**
      * Test for getUrlParams
-     *
-     * @return void
      */
     public function testGetUrlParams()
     {
@@ -239,8 +229,6 @@ class MultSubmitsTest extends TestCase
 
     /**
      * Test for buildOrExecuteQuery
-     *
-     * @return void
      */
     public function testBuildOrExecuteQuery()
     {
@@ -319,8 +307,6 @@ class MultSubmitsTest extends TestCase
 
     /**
      * Test for getQueryFromSelected
-     *
-     * @return void
      */
     public function testGetQueryFromSelected()
     {

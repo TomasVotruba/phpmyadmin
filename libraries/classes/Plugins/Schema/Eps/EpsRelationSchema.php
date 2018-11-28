@@ -154,8 +154,6 @@ class EpsRelationSchema extends ExportRelationSchema
 
     /**
      * Output Eps Document for download
-     *
-     * @return void
      */
     public function showOutput()
     {
@@ -172,8 +170,6 @@ class EpsRelationSchema extends ExportRelationSchema
      * @param string  $foreignTable   The foreign table name
      * @param string  $foreignField   The relation field in the foreign table
      * @param boolean $tableDimension Whether to display table position or not
-     *
-     * @return void
      *
      * @see _setMinMax,Table_Stats_Eps::__construct(),
      * PhpMyAdmin\Plugins\Schema\Eps\RelationStatsEps::__construct()
@@ -226,8 +222,6 @@ class EpsRelationSchema extends ExportRelationSchema
      * Draws relation arrows and lines connects master table's master field to
      * foreign table's foreign field
      *
-     * @return void
-     *
      * @see Relation_Stats_Eps::relationDraw()
      */
     private function _drawRelations()
@@ -239,8 +233,6 @@ class EpsRelationSchema extends ExportRelationSchema
 
     /**
      * Draws tables
-     *
-     * @return void
      *
      * @see Table_Stats_Eps::Table_Stats_tableDraw()
      */

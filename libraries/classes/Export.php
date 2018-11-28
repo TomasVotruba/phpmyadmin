@@ -20,8 +20,6 @@ class Export
 {
     /**
      * Sets a session variable upon a possible fatal error during export
-     *
-     * @return void
      */
     public function shutdown(): void
     {
@@ -34,8 +32,6 @@ class Export
 
     /**
      * Detect ob_gzhandler
-     *
-     * @return bool
      */
     public function isGzHandlerEnabled(): bool
     {
@@ -253,10 +249,8 @@ class Export
      *
      * @param string       $export_type       type of export
      * @param string       $remember_template whether to remember template
-     * @param ExportPlugin $export_plugin     the export plugin
      * @param string       $compression       compression asked
      * @param string       $filename_template the filename template
-     *
      * @return string[] the filename template and mime type
      */
     public function getFilenameAndMimetype(
@@ -414,7 +408,6 @@ class Export
      *
      * @param array|string $dump_buffer the current dump buffer
      * @param string       $compression the compression mode
-     * @param string       $filename    the filename
      *
      * @return array|string|bool
      */
@@ -437,8 +430,6 @@ class Export
      *
      * @param string  $object_name the name of current object to be stored
      * @param boolean $append      optional boolean to append to an existing index or not
-     *
-     * @return void
      */
     public function saveObjectInBuffer(string $object_name, bool $append = false): void
     {
@@ -556,8 +547,6 @@ class Export
      * @param bool         $do_dates        whether to add dates
      * @param array        $aliases         alias information for db/table/column
      * @param string       $separate_files  whether it is a separate-files export
-     *
-     * @return void
      */
     public function exportServer(
         $db_select,
@@ -625,8 +614,6 @@ class Export
      * @param bool         $do_dates        whether to add dates
      * @param array        $aliases         Alias information for db/table/column
      * @param string       $separate_files  whether it is a separate-files export
-     *
-     * @return void
      */
     public function exportDatabase(
         string $db,
@@ -872,13 +859,11 @@ class Export
      * @param bool         $do_comments     whether to add comments
      * @param bool         $do_mime         whether to add MIME info
      * @param bool         $do_dates        whether to add dates
-     * @param string|null  $allrows         whether "dump all rows" was ticked
+     * @param string|null  $allrows         whether "dump all rows"wasticked
      * @param string       $limit_to        upper limit
      * @param string       $limit_from      starting limit
      * @param string       $sql_query       query for which exporting is requested
      * @param array        $aliases         Alias information for db/table/column
-     *
-     * @return void
      */
     public function exportTable(
         string $db,
@@ -1029,8 +1014,6 @@ class Export
      * @param string $db          the database name
      * @param string $table       the table name
      * @param string $export_type Export type
-     *
-     * @return void
      */
     public function showPage(string $db, string $table, string $export_type): void
     {
@@ -1107,7 +1090,7 @@ class Export
      *
      * @param string $db       database name
      * @param array  $tables   list of table names
-     * @param string $lockType lock type; "[LOW_PRIORITY] WRITE" or "READ [LOCAL]"
+     * @param string $lockType lock type; "[LOW_PRIORITY] WRITE" or"READ[LOCAL]"
      *
      * @return mixed result of the query
      */
@@ -1176,8 +1159,6 @@ class Export
      * call and include the appropriate Schema Class depending on $export_type
      *
      * @param string|null $export_type format of the export
-     *
-     * @return void
      */
     public function processExportSchema(?string $export_type): void
     {

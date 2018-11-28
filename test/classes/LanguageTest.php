@@ -25,8 +25,6 @@ class LanguageTest extends PmaTestCase
 
     /**
      * Setup for Language tests.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -37,9 +35,7 @@ class LanguageTest extends PmaTestCase
         $this->manager = new LanguageManager();
     }
 
-    /**
-     * @return void
-     */
+    
     public function tearDown()
     {
         // Ensure we have English locale after tests
@@ -48,8 +44,6 @@ class LanguageTest extends PmaTestCase
 
     /**
      * Test language filtering
-     *
-     * @return void
      */
     public function testAvailable()
     {
@@ -64,8 +58,6 @@ class LanguageTest extends PmaTestCase
 
     /**
      * Test no language filtering
-     *
-     * @return void
      */
     public function testAllAvailable()
     {
@@ -79,8 +71,6 @@ class LanguageTest extends PmaTestCase
 
     /**
      * Test whether listing locales works
-     *
-     * @return void
      */
     public function testList()
     {
@@ -91,8 +81,6 @@ class LanguageTest extends PmaTestCase
 
     /**
      * Test for getting available languages
-     *
-     * @return void
      */
     public function testLanguages()
     {
@@ -107,8 +95,6 @@ class LanguageTest extends PmaTestCase
 
     /**
      * Test for MySQL locales
-     *
-     * @return void
      */
     public function testMySQLLocale()
     {
@@ -123,8 +109,6 @@ class LanguageTest extends PmaTestCase
 
     /**
      * Test for getting available sorted languages
-     *
-     * @return void
      */
     public function testSortedLanguages()
     {
@@ -134,8 +118,6 @@ class LanguageTest extends PmaTestCase
 
     /**
      * Test getting language by code
-     *
-     * @return void
      */
     public function testGet()
     {
@@ -158,8 +140,6 @@ class LanguageTest extends PmaTestCase
      * @param string $agent   Value for HTTP User-Agent header
      * @param string $default Value for default language
      * @param string $expect  Expected language name
-     *
-     * @return void
      *
      * @dataProvider selectDataProvider
      */
@@ -214,8 +194,6 @@ class LanguageTest extends PmaTestCase
      * Test for setting and parsing locales
      *
      * @param string $locale locale name
-     *
-     * @return void
      *
      * @group large
      * @dataProvider listLocales

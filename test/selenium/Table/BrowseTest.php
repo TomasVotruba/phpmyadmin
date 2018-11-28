@@ -24,8 +24,6 @@ class BrowseTest extends TestBase
 {
     /**
      * Setup the browser environment to run the selenium test case
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -53,8 +51,6 @@ class BrowseTest extends TestBase
 
     /**
      * Test sorting of records in browse table
-     *
-     * @return void
      *
      * @group large
      */
@@ -141,8 +137,6 @@ class BrowseTest extends TestBase
     /**
      * Test Edit Record
      *
-     * @return void
-     *
      * @group large
      */
     public function testChangeRecords()
@@ -201,8 +195,6 @@ class BrowseTest extends TestBase
     /**
      * Test edit record by double click
      *
-     * @return void
-     *
      * @group large
      */
     public function testChangeRecordsByDoubleClick()
@@ -242,8 +234,6 @@ class BrowseTest extends TestBase
 
     /**
      * Test copy and insert record
-     *
-     * @return void
      *
      * @group large
      */
@@ -294,8 +284,6 @@ class BrowseTest extends TestBase
     /**
      * Test search table
      *
-     * @return void
-     *
      * @group large
      */
     public function testSearchRecords()
@@ -333,8 +321,6 @@ class BrowseTest extends TestBase
 
     /**
      * Test delete multiple records
-     *
-     * @return void
      *
      * @group large
      */

@@ -30,7 +30,6 @@ class GisMultiPolygonTest extends GisGeomTestCase
      * This method is called before a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function setUp()
     {
@@ -42,7 +41,6 @@ class GisMultiPolygonTest extends GisGeomTestCase
      * This method is called after a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function tearDown()
     {
@@ -186,7 +184,6 @@ class GisMultiPolygonTest extends GisGeomTestCase
      * @param string $shape    expected shape in WKT
      *
      * @dataProvider providerForTestGetShape
-     * @return void
      */
     public function testGetShape($row_data, $shape)
     {
@@ -278,7 +275,6 @@ class GisMultiPolygonTest extends GisGeomTestCase
      * @param array    $scale_data array containing data related to scaling
      * @param resource $image      image object
      *
-     * @return void
      * @dataProvider providerForPrepareRowAsPng
      */
     public function testPrepareRowAsPng(
@@ -335,7 +331,6 @@ class GisMultiPolygonTest extends GisGeomTestCase
      * @param array  $scale_data array containing data related to scaling
      * @param TCPDF  $pdf        TCPDF instance
      *
-     * @return void
      * @dataProvider providerForPrepareRowAsPdf
      */
     public function testPrepareRowAsPdf(
@@ -388,7 +383,6 @@ class GisMultiPolygonTest extends GisGeomTestCase
      * @param array  $scale_data array containing data related to scaling
      * @param string $output     expected output
      *
-     * @return void
      * @dataProvider providerForPrepareRowAsSvg
      */
     public function testPrepareRowAsSvg(
@@ -447,7 +441,6 @@ class GisMultiPolygonTest extends GisGeomTestCase
      * @param array  $scale_data array containing data related to scaling
      * @param string $output     expected output
      *
-     * @return void
      * @dataProvider providerForPrepareRowAsOl
      */
     public function testPrepareRowAsOl(

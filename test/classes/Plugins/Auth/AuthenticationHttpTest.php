@@ -27,8 +27,6 @@ class AuthenticationHttpTest extends PmaTestCase
 
     /**
      * Configures global environment.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -48,8 +46,6 @@ class AuthenticationHttpTest extends PmaTestCase
 
     /**
      * tearDown for test cases
-     *
-     * @return void
      */
     public function tearDown()
     {
@@ -62,8 +58,6 @@ class AuthenticationHttpTest extends PmaTestCase
      * @param mixed   $body_id     body id
      * @param mixed   $set_title   set title
      * @param mixed[] ...$headers  headers
-     *
-     * @return void
      */
     public function doMockResponse($set_minimal, $body_id, $set_title, ...$headers)
     {
@@ -126,8 +120,6 @@ class AuthenticationHttpTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationHttp::showLoginForm
-     *
-     * @return void
      */
     public function testAuthLogoutUrl()
     {
@@ -142,9 +134,7 @@ class AuthenticationHttpTest extends PmaTestCase
         );
     }
 
-    /**
-     * @return void
-     */
+    
     public function testAuthVerbose()
     {
         $_REQUEST['old_usr'] = '';
@@ -160,9 +150,7 @@ class AuthenticationHttpTest extends PmaTestCase
         );
     }
 
-    /**
-     * @return void
-     */
+    
     public function testAuthHost()
     {
         $GLOBALS['cfg']['Server']['verbose'] = '';
@@ -178,9 +166,7 @@ class AuthenticationHttpTest extends PmaTestCase
         );
     }
 
-    /**
-     * @return void
-     */
+    
     public function testAuthRealm()
     {
         $GLOBALS['cfg']['Server']['host'] = '';
@@ -208,7 +194,6 @@ class AuthenticationHttpTest extends PmaTestCase
      * @param string $expectedPass   expected password to be set
      * @param string $old_usr        value for $_REQUEST['old_usr']
      *
-     * @return void
      * @dataProvider readCredentialsProvider
      */
     public function testAuthCheck(
@@ -304,8 +289,6 @@ class AuthenticationHttpTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationHttp::storeCredentials
-     *
-     * @return void
      */
     public function testAuthSetUser()
     {
@@ -408,8 +391,6 @@ class AuthenticationHttpTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Auth\AuthenticationHttp::authSetFails
-     *
-     * @return void
      *
      * @group medium
      */

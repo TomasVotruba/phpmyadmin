@@ -29,7 +29,6 @@ class SearchTest extends PmaTestCase
      * This method is called before a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function setUp()
     {
@@ -62,7 +61,6 @@ class SearchTest extends PmaTestCase
      * This method is called after a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function tearDown()
     {
@@ -90,8 +88,6 @@ class SearchTest extends PmaTestCase
      *
      * @param string $type     type
      * @param string $expected expected result
-     *
-     * @return void
      *
      * @dataProvider searchTypes
      */
@@ -143,8 +139,6 @@ class SearchTest extends PmaTestCase
 
     /**
      * Test for _getSearchSqls
-     *
-     * @return void
      */
     public function testGetSearchSqls()
     {
@@ -164,8 +158,6 @@ class SearchTest extends PmaTestCase
 
     /**
      * Test for getSearchResults
-     *
-     * @return void
      */
     public function testGetSearchResults()
     {
@@ -177,8 +169,6 @@ class SearchTest extends PmaTestCase
 
     /**
      * Test for getSelectionForm
-     *
-     * @return void
      */
     public function testGetMainHtml()
     {

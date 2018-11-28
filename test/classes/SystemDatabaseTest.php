@@ -29,7 +29,6 @@ class SystemDatabaseTest extends PmaTestCase
      * Setup function for test cases
      *
      * @access protected
-     * @return void
      */
     protected function setUp()
     {
@@ -82,7 +81,6 @@ class SystemDatabaseTest extends PmaTestCase
     /**
      * Tests for PMA_getExistingTransformationData() method.
      *
-     * @return void
      * @test
      */
     public function testPMAGetExistingTransformationData()
@@ -100,7 +98,6 @@ class SystemDatabaseTest extends PmaTestCase
     /**
      * Tests for PMA_getNewTransformationDataSql() method.
      *
-     * @return void
      * @test
      */
     public function testPMAGetNewTransformationDataSql()

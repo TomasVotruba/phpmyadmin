@@ -39,7 +39,7 @@ class NavigationHeader
     /**
      * Renders the navigation
      *
-     * @return String HTML
+     * @return string HTML
      */
     public function getDisplay()
     {

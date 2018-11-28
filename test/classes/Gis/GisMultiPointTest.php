@@ -30,7 +30,6 @@ class GisMultiPointTest extends GisGeomTestCase
      * This method is called before a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function setUp()
     {
@@ -42,7 +41,6 @@ class GisMultiPointTest extends GisGeomTestCase
      * This method is called after a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function tearDown()
     {
@@ -93,8 +91,6 @@ class GisMultiPointTest extends GisGeomTestCase
 
     /**
      * test getShape method
-     *
-     * @return void
      */
     public function testGetShape()
     {
@@ -178,7 +174,6 @@ class GisMultiPointTest extends GisGeomTestCase
      * @param array    $scale_data  array containing data related to scaling
      * @param resource $image       image object
      *
-     * @return void
      * @dataProvider providerForPrepareRowAsPng
      */
     public function testPrepareRowAsPng(
@@ -233,7 +228,6 @@ class GisMultiPointTest extends GisGeomTestCase
      * @param array  $scale_data  array containing data related to scaling
      * @param TCPDF  $pdf         TCPDF instance
      *
-     * @return void
      * @dataProvider providerForPrepareRowAsPdf
      */
     public function testPrepareRowAsPdf(
@@ -285,7 +279,6 @@ class GisMultiPointTest extends GisGeomTestCase
      * @param array  $scale_data  array containing data related to scaling
      * @param string $output      expected output
      *
-     * @return void
      * @dataProvider providerForPrepareRowAsSvg
      */
     public function testPrepareRowAsSvg(
@@ -347,7 +340,6 @@ class GisMultiPointTest extends GisGeomTestCase
      * @param array  $scale_data  array containing data related to scaling
      * @param string $output      expected output
      *
-     * @return void
      * @dataProvider providerForPrepareRowAsOl
      */
     public function testPrepareRowAsOl(

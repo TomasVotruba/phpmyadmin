@@ -30,8 +30,6 @@ abstract class OptionsPropertyGroup extends OptionsPropertyItem implements \Coun
      *
      * @param OptionsPropertyItem $property the property instance to be added
      *                                      to the group
-     *
-     * @return void
      */
     public function addProperty($property)
     {
@@ -48,8 +46,6 @@ abstract class OptionsPropertyGroup extends OptionsPropertyItem implements \Coun
      *
      * @param OptionsPropertyItem $property the property instance to be removed
      *                                      from the group
-     *
-     * @return void
      */
     public function removeProperty($property)
     {

@@ -42,8 +42,6 @@ class ImportMediawiki extends ImportPlugin
     /**
      * Sets the import plugin properties.
      * Called in the constructor.
-     *
-     * @return void
      */
     protected function setProperties()
     {
@@ -66,8 +64,6 @@ class ImportMediawiki extends ImportPlugin
      * Handles the whole import logic
      *
      * @param array &$sql_data 2-element array with sql data
-     *
-     * @return void
      */
     public function doImport(array &$sql_data = [])
     {
@@ -297,8 +293,6 @@ class ImportMediawiki extends ImportPlugin
      * @param array &$sql_data 2-element array with sql data
      *
      * @global bool $analyze whether to scan for column types
-     *
-     * @return void
      */
     private function _importDataOneTable(array $table, array &$sql_data)
     {
@@ -329,8 +323,6 @@ class ImportMediawiki extends ImportPlugin
      * Sets the table name
      *
      * @param string &$table_name reference to the name of the table
-     *
-     * @return void
      */
     private function _setTableName(&$table_name)
     {
@@ -347,8 +339,6 @@ class ImportMediawiki extends ImportPlugin
      * @param array &$table_headers reference to the array containing the headers
      *                              of a table
      * @param array $table_row      array containing the first content row
-     *
-     * @return void
      */
     private function _setTableHeaders(array &$table_headers, array $table_row)
     {
@@ -378,8 +368,6 @@ class ImportMediawiki extends ImportPlugin
      * @param array &$sql_data 2-element array with sql data
      *
      * @global string $db      name of the database to import in
-     *
-     * @return void
      */
     private function _executeImportTables(array &$tables, array &$analyses, array &$sql_data)
     {
@@ -532,8 +520,6 @@ class ImportMediawiki extends ImportPlugin
      * Sets to true if the table should be analyzed, false otherwise
      *
      * @param bool $analyze status
-     *
-     * @return void
      */
     private function _setAnalyze($analyze)
     {

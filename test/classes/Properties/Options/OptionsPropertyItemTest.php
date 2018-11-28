@@ -22,8 +22,6 @@ class OptionsPropertyItemTest extends TestCase
 
     /**
      * Configures global environment.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -32,8 +30,6 @@ class OptionsPropertyItemTest extends TestCase
 
     /**
      * tearDown for test cases
-     *
-     * @return void
      */
     public function tearDown()
     {
@@ -44,8 +40,6 @@ class OptionsPropertyItemTest extends TestCase
      * Test for
      *     - PhpMyAdmin\Properties\Options\OptionsPropertyItem::getName
      *     - PhpMyAdmin\Properties\Options\OptionsPropertyItem::setName
-     *
-     * @return void
      */
     public function testGetSetName()
     {
@@ -61,8 +55,6 @@ class OptionsPropertyItemTest extends TestCase
      * Test for
      *     - PhpMyAdmin\Properties\Options\OptionsPropertyItem::getText
      *     - PhpMyAdmin\Properties\Options\OptionsPropertyItem::setText
-     *
-     * @return void
      */
     public function testGetSetText()
     {
@@ -78,8 +70,6 @@ class OptionsPropertyItemTest extends TestCase
      * Test for
      *     - PhpMyAdmin\Properties\Options\OptionsPropertyItem::getForce
      *     - PhpMyAdmin\Properties\Options\OptionsPropertyItem::setForce
-     *
-     * @return void
      */
     public function testGetSetForce()
     {
@@ -93,8 +83,6 @@ class OptionsPropertyItemTest extends TestCase
 
     /**
      * Test for PhpMyAdmin\Properties\Options\OptionsPropertyItem::getPropertyType
-     *
-     * @return void
      */
     public function testGetPropertyType()
     {

@@ -39,8 +39,6 @@ class ServerVariablesController extends Controller
 
     /**
      * Index action
-     *
-     * @return void
      */
     public function indexAction()
     {
@@ -93,12 +91,12 @@ class ServerVariablesController extends Controller
 
             /**
              * Link templates
-            */
+             */
             $this->response->addHtml($this->_getHtmlForLinkTemplates());
 
             /**
              * Displays the page
-            */
+             */
             $this->response->addHtml(
                 $this->_getHtmlForServerVariables($serverVars, $serverVarsSession)
             );
@@ -125,8 +123,6 @@ class ServerVariablesController extends Controller
 
     /**
      * Handle the AJAX request for a single variable value
-     *
-     * @return void
      */
     public function getValueAction()
     {
@@ -163,8 +159,6 @@ class ServerVariablesController extends Controller
 
     /**
      * Handle the AJAX request for setting value for a single variable
-     *
-     * @return void
      */
     public function setValueAction()
     {

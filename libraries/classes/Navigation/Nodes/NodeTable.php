@@ -276,8 +276,6 @@ class NodeTable extends NodeDatabaseChild
      * Add an icon to navigation tree
      *
      * @param string $page Page name to redirect
-     *
-     * @return void
      */
     private function _addIcon($page)
     {

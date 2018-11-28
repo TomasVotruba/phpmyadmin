@@ -36,8 +36,6 @@ class ListDatabase extends ListAbstract
 
     /**
      * checks if the configuration wants to hide some databases
-     *
-     * @return void
      */
     protected function checkHideDatabase()
     {
@@ -105,8 +103,6 @@ class ListDatabase extends ListAbstract
 
     /**
      * builds up the list
-     *
-     * @return void
      */
     public function build()
     {

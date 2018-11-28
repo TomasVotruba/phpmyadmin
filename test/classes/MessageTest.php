@@ -29,7 +29,6 @@ class MessageTest extends PmaTestCase
      * This method is called before a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function setUp()
     {
@@ -41,7 +40,6 @@ class MessageTest extends PmaTestCase
      * This method is called after a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function tearDown()
     {
@@ -49,8 +47,6 @@ class MessageTest extends PmaTestCase
 
     /**
      * to String casting test
-     *
-     * @return void
      */
     public function testToString()
     {
@@ -60,8 +56,6 @@ class MessageTest extends PmaTestCase
 
     /**
      * test success method
-     *
-     * @return void
      */
     public function testSuccess()
     {
@@ -75,8 +69,6 @@ class MessageTest extends PmaTestCase
 
     /**
      * test error method
-     *
-     * @return void
      */
     public function testError()
     {
@@ -87,8 +79,6 @@ class MessageTest extends PmaTestCase
 
     /**
      * test notice method
-     *
-     * @return void
      */
     public function testNotice()
     {
@@ -98,8 +88,6 @@ class MessageTest extends PmaTestCase
 
     /**
      * test rawError method
-     *
-     * @return void
      */
     public function testRawError()
     {
@@ -112,8 +100,6 @@ class MessageTest extends PmaTestCase
 
     /**
      * test rawNotice method
-     *
-     * @return void
      */
     public function testRawNotice()
     {
@@ -126,8 +112,6 @@ class MessageTest extends PmaTestCase
 
     /**
      * test rawSuccess method
-     *
-     * @return void
      */
     public function testRawSuccess()
     {
@@ -140,8 +124,6 @@ class MessageTest extends PmaTestCase
 
     /**
      * testing isSuccess method
-     *
-     * @return void
      */
     public function testIsSuccess()
     {
@@ -151,8 +133,6 @@ class MessageTest extends PmaTestCase
 
     /**
      * testing isNotice method
-     *
-     * @return void
      */
     public function testIsNotice()
     {
@@ -164,8 +144,6 @@ class MessageTest extends PmaTestCase
 
     /**
      * testing isError method
-     *
-     * @return void
      */
     public function testIsError()
     {
@@ -175,8 +153,6 @@ class MessageTest extends PmaTestCase
 
     /**
      * testing setter of message
-     *
-     * @return void
      */
     public function testSetMessage()
     {
@@ -188,8 +164,6 @@ class MessageTest extends PmaTestCase
 
     /**
      * testing setter of string
-     *
-     * @return void
      */
     public function testSetString()
     {
@@ -201,8 +175,6 @@ class MessageTest extends PmaTestCase
 
     /**
      * testing add param method
-     *
-     * @return void
      */
     public function testAddParam()
     {
@@ -225,8 +197,6 @@ class MessageTest extends PmaTestCase
 
     /**
      * Test adding html markup
-     *
-     * @return void
      */
     public function testAddParamHtml()
     {
@@ -242,8 +212,6 @@ class MessageTest extends PmaTestCase
 
     /**
      * testing add string method
-     *
-     * @return void
      */
     public function testAddString()
     {
@@ -265,8 +233,6 @@ class MessageTest extends PmaTestCase
 
     /**
      * testing add message method
-     *
-     * @return void
      */
     public function testAddMessage()
     {
@@ -293,8 +259,6 @@ class MessageTest extends PmaTestCase
 
     /**
      * testing add messages method
-     *
-     * @return void
      */
     public function testAddMessages()
     {
@@ -316,8 +280,6 @@ class MessageTest extends PmaTestCase
 
     /**
      * testing add messages method
-     *
-     * @return void
      */
     public function testAddMessagesString()
     {
@@ -341,8 +303,6 @@ class MessageTest extends PmaTestCase
 
     /**
      * testing setter of params
-     *
-     * @return void
      */
     public function testSetParams()
     {
@@ -354,8 +314,6 @@ class MessageTest extends PmaTestCase
 
     /**
      * testing sanitize method
-     *
-     * @return void
      */
     public function testSanitize()
     {
@@ -418,8 +376,6 @@ class MessageTest extends PmaTestCase
      * @param string $actual   BB code string
      * @param string $expected Expected decoded string
      *
-     * @return void
-     *
      * @dataProvider decodeBBDataProvider
      */
     public function testDecodeBB($actual, $expected)
@@ -430,8 +386,6 @@ class MessageTest extends PmaTestCase
 
     /**
      * testing format method
-     *
-     * @return void
      */
     public function testFormat()
     {
@@ -455,8 +409,6 @@ class MessageTest extends PmaTestCase
 
     /**
      * testing getHash method
-     *
-     * @return void
      */
     public function testGetHash()
     {
@@ -471,8 +423,6 @@ class MessageTest extends PmaTestCase
     /**
      * getMessage test - with empty message and with non-empty string -
      * not key in globals additional params are defined
-     *
-     * @return void
      */
     public function testGetMessageWithoutMessageWithStringWithParams()
     {
@@ -488,8 +438,6 @@ class MessageTest extends PmaTestCase
 
     /**
      * getMessage test - with empty message and with empty string
-     *
-     * @return void
      */
     public function testGetMessageWithoutMessageWithEmptyString()
     {
@@ -501,8 +449,6 @@ class MessageTest extends PmaTestCase
     /**
      * getMessage test - message is defined
      * message with BBCode defined
-     *
-     * @return void
      */
     public function testGetMessageWithMessageWithBBCode()
     {
@@ -517,8 +463,6 @@ class MessageTest extends PmaTestCase
 
     /**
      * getLevel test
-     *
-     * @return void
      */
     public function testGetLevel()
     {
@@ -531,8 +475,6 @@ class MessageTest extends PmaTestCase
 
     /**
      * testing display method (output string and _is_displayed variable)
-     *
-     * @return void
      */
     public function testDisplay()
     {
@@ -550,8 +492,6 @@ class MessageTest extends PmaTestCase
 
     /**
      * getDisplay test
-     *
-     * @return void
      */
     public function testGetDisplay()
     {
@@ -565,8 +505,6 @@ class MessageTest extends PmaTestCase
 
     /**
      * isDisplayed test
-     *
-     * @return void
      */
     public function testIsDisplayed()
     {
@@ -606,8 +544,6 @@ class MessageTest extends PmaTestCase
      *
      * @param int    $rows   Number of rows
      * @param string $output Expected string
-     *
-     * @return void
      *
      * @dataProvider providerAffectedRows
      */
@@ -652,8 +588,6 @@ class MessageTest extends PmaTestCase
      * @param int    $rows   Number of rows
      * @param string $output Expected string
      *
-     * @return void
-     *
      * @dataProvider providerInsertedRows
      */
     public function testInsertedRows($rows, $output)
@@ -696,8 +630,6 @@ class MessageTest extends PmaTestCase
      *
      * @param int    $rows   Number of rows
      * @param string $output Expected string
-     *
-     * @return void
      *
      * @dataProvider providerDeletedRows
      */

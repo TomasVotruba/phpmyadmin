@@ -42,8 +42,6 @@ class ServerConfigChecks
 
     /**
      * Perform config checks
-     *
-     * @return void
      */
     public function performConfigChecks()
     {
@@ -272,8 +270,6 @@ class ServerConfigChecks
 
     /**
      * Perform config checks for zip part.
-     *
-     * @return void
      */
     protected function performConfigChecksZips()
     {
@@ -284,8 +280,6 @@ class ServerConfigChecks
 
     /**
      * Perform config checks for zip part.
-     *
-     * @return void
      */
     protected function performConfigChecksServersZipdump()
     {
@@ -393,8 +387,6 @@ class ServerConfigChecks
 
     /**
      * Check configuration for login cookie
-     *
-     * @return void
      */
     protected function performConfigChecksLoginCookie()
     {
@@ -469,8 +461,6 @@ class ServerConfigChecks
 
     /**
      * Check GZipDump configuration
-     *
-     * @return void
      */
     protected function performConfigChecksServerBZipdump()
     {
@@ -506,8 +496,6 @@ class ServerConfigChecks
 
     /**
      * Check GZipDump configuration
-     *
-     * @return void
      */
     protected function performConfigChecksServerGZipdump()
     {

@@ -42,7 +42,6 @@ class General
      * @param resource|bool $result          Query result
      * @param string        $error           Error to add
      * @param string        $createStatement Query
-     * @param array         $errors          Errors
      *
      * @return array
      */
@@ -74,8 +73,6 @@ class General
      * @param string $title     Title of the editor
      * @param string $db        Database
      * @param string $operation Operation 'change' or ''
-     *
-     * @return void
      */
     public function sendEditor($type, $mode, array $item, $title, $db, $operation = null)
     {

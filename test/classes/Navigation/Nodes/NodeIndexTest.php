@@ -21,8 +21,6 @@ class NodeIndexTest extends PmaTestCase
 {
     /**
      * SetUp for test cases
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -31,8 +29,6 @@ class NodeIndexTest extends PmaTestCase
 
     /**
      * Test for __construct
-     *
-     * @return void
      */
     public function testConstructor()
     {

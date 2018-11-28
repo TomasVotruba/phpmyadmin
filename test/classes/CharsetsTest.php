@@ -19,9 +19,6 @@ use PHPUnit\Framework\TestCase;
  */
 class CharsetsTest extends TestCase
 {
-    /**
-     * @return void
-     */
     protected function setUp()
     {
         $GLOBALS['cfg']['DBG']['sql'] = false;
@@ -34,7 +31,6 @@ class CharsetsTest extends TestCase
      * @param string $collation Collation for which description is reqd
      * @param string $desc      Expected Description
      *
-     * @return void
      * @test
      * @dataProvider collationDescr
      */
@@ -149,7 +145,6 @@ class CharsetsTest extends TestCase
     /**
      * Test for getCollationDropdownBox
      *
-     * @return void
      * @test
      */
     public function testGetCollationDropdownBox()
@@ -174,7 +169,6 @@ class CharsetsTest extends TestCase
     /**
      * Test for getCharsetDropdownBox
      *
-     * @return void
      * @test
      */
     public function testGetCharsetDropdownBox()

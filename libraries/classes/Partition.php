@@ -29,8 +29,6 @@ class Partition extends SubPartition
      * Loads data from the fetched row from information_schema.PARTITIONS
      *
      * @param array $row fetched row
-     *
-     * @return void
      */
     protected function loadData(array $row)
     {
@@ -57,10 +55,6 @@ class Partition extends SubPartition
 
     /**
      * Add a sub partition
-     *
-     * @param SubPartition $partition Sub partition
-     *
-     * @return void
      */
     public function addSubPartition(SubPartition $partition)
     {
@@ -147,7 +141,7 @@ class Partition extends SubPartition
      * @param string $db    database name
      * @param string $table table name
      *
-     * @access  public
+     * @access public
      * @return Partition[]
      */
     public static function getPartitions($db, $table)
@@ -188,7 +182,7 @@ class Partition extends SubPartition
      * @param string $db    database name
      * @param string $table table name
      *
-     * @access  public
+     * @access public
      * @return array   of partition names
      */
     public static function getPartitionNames($db, $table)
@@ -234,7 +228,7 @@ class Partition extends SubPartition
      * @static
      * @staticvar boolean $have_partitioning
      * @staticvar boolean $already_checked
-     * @access  public
+     * @access public
      * @return boolean
      */
     public static function havePartitioning()

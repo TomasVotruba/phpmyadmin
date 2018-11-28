@@ -27,15 +27,11 @@ class QueriesTest extends TestCase
 {
     /**
      * Prepares environment for the test.
-     *
-     * @return void
      */
     public $serverStatusData;
 
     /**
      * Test for setUp
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -117,8 +113,6 @@ class QueriesTest extends TestCase
 
     /**
      * Test for Queries::getHtmlForQueryStatistics
-     *
-     * @return void
      */
     public function testPMAGetHtmlForQueryStatistics()
     {
@@ -171,8 +165,6 @@ class QueriesTest extends TestCase
 
     /**
      * Test for Queries::getHtmlForDetails
-     *
-     * @return void
      */
     public function testPMAGetHtmlForServerStatusQueriesDetails()
     {

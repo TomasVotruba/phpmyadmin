@@ -60,8 +60,6 @@ class Menu
 
     /**
      * Prints the menu and the breadcrumbs
-     *
-     * @return void
      */
     public function display()
     {

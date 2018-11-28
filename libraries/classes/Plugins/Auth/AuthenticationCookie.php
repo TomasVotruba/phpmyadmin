@@ -63,8 +63,6 @@ class AuthenticationCookie extends AuthenticationPlugin
      * Forces (not)using of openSSL
      *
      * @param boolean $use The flag
-     *
-     * @return void
      */
     public function setUseOpenSSL($use)
     {
@@ -591,8 +589,6 @@ class AuthenticationCookie extends AuthenticationPlugin
      * Stores username in a cookie.
      *
      * @param string $username User name
-     *
-     * @return void
      */
     public function storeUsernameCookie($username)
     {
@@ -611,8 +607,6 @@ class AuthenticationCookie extends AuthenticationPlugin
      * Stores password in a cookie.
      *
      * @param string $password Password
-     *
-     * @return void
      */
     public function storePasswordCookie($password)
     {
@@ -642,8 +636,6 @@ class AuthenticationCookie extends AuthenticationPlugin
      * currently done by call to showLoginForm()
      *
      * @param string $failure String describing why authentication has failed
-     *
-     * @return void
      */
     public function showFailure($failure)
     {
@@ -764,8 +756,6 @@ class AuthenticationCookie extends AuthenticationPlugin
      * In neither case the error is useful to user, but we need to clear
      * the error buffer as otherwise the errors would pop up later, for
      * example during MySQL SSL setup.
-     *
-     * @return void
      */
     public function cleanSSLErrors()
     {
@@ -904,8 +894,6 @@ class AuthenticationCookie extends AuthenticationPlugin
      * This is for testing only!
      *
      * @param string $vector The IV
-     *
-     * @return void
      */
     public function setIV($vector)
     {
@@ -916,8 +904,6 @@ class AuthenticationCookie extends AuthenticationPlugin
      * Callback when user changes password.
      *
      * @param string $password New password to set
-     *
-     * @return void
      */
     public function handlePasswordChange($password)
     {
@@ -926,8 +912,6 @@ class AuthenticationCookie extends AuthenticationPlugin
 
     /**
      * Perform logout
-     *
-     * @return void
      */
     public function logOut()
     {

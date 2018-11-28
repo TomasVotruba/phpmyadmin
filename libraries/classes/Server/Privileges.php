@@ -169,8 +169,6 @@ class Privileges
      * Parses privileges into an array, it modifies the array
      *
      * @param array &$row Results row from
-     *
-     * @return void
      */
     public function fillInTablePrivileges(array &$row)
     {
@@ -210,7 +208,7 @@ class Privileges
      * @param boolean    $enableHTML add <dfn> tag with tooltips
      * @param boolean    $tablePrivs whether row contains table privileges
      *
-     * @global  resource $user_link the database connection
+     * @global resource $user_link the database connection
      *
      * @return array
      */
@@ -497,7 +495,6 @@ class Privileges
     /**
      * Displays on which column(s) a table-specific privilege is granted
      *
-     * @param array  $columns          columns array
      * @param array  $row              first row from result or boolean false
      * @param string $name_for_select  privilege types - Select_priv, Insert_priv
      *                                 Update_priv, References_priv
@@ -505,7 +502,6 @@ class Privileges
      * @param string $name             privilege name: insert, select, update, references
      * @param string $name_for_dfn     name for dfn
      * @param string $name_for_current name for current
-     *
      * @return string html snippet
      */
     public function getHtmlForColumnPrivileges(
@@ -609,8 +605,6 @@ class Privileges
      *
      * @param string $username  username
      * @param string $userGroup user group to set
-     *
-     * @return void
      */
     public function setUserGroup($username, $userGroup)
     {
@@ -658,8 +652,8 @@ class Privileges
      * @param string  $table  the table
      * @param boolean $submit whether to display the submit button or not
      *
-     * @global  array     $cfg         the phpMyAdmin configuration
-     * @global  resource  $user_link   the database connection
+     * @global array     $cfg         the phpMyAdmin configuration
+     * @global resource  $user_link   the database connection
      *
      * @return string html snippet
      */
@@ -1031,9 +1025,7 @@ class Privileges
      * @param string $hostname hostname for database connection
      * @param string $db       the database
      * @param string $table    the table
-     * @param array  $columns  columns array
      * @param array  $row      current privileges row
-     *
      * @return string
      */
     public function getHtmlForTableSpecificPrivileges(
@@ -1099,9 +1091,7 @@ class Privileges
     /**
      * Get HTML snippet for privileges that are attached to a specific column
      *
-     * @param array $columns columns array
      * @param array $row     first row from result or boolean false
-     *
      * @return string
      */
     public function getHtmlForAttachedPrivilegesToTableSpecificColumn(array $columns, array $row)
@@ -1575,8 +1565,8 @@ class Privileges
      * @param string $username User name
      * @param string $hostname Host name
      *
-     * @global  array      $cfg     the phpMyAdmin configuration
-     * @global  resource   $user_link the database connection
+     * @global array      $cfg     the phpMyAdmin configuration
+     * @global resource   $user_link the database connection
      *
      * @return string  a HTML snippet
      */
@@ -2626,8 +2616,6 @@ class Privileges
      *
      * @param array  &$privMap the privilege map reference
      * @param object $result   the resultset of query
-     *
-     * @return void
      */
     public function mergePrivMapFromResult(array &$privMap, $result)
     {
@@ -3939,8 +3927,6 @@ class Privileges
     /**
      * Delete user and get message and sql query for delete user in privileges
      *
-     * @param array $queries queries
-     *
      * @return array Message
      */
     public function deleteUser(array $queries)
@@ -4192,10 +4178,7 @@ class Privileges
     /**
      * update Data For Queries from queries_for_display
      *
-     * @param array      $queries             queries array
      * @param array|null $queries_for_display queries array for display
-     *
-     * @return null
      */
     public function getDataForQueries(array $queries, $queries_for_display)
     {
@@ -4380,8 +4363,6 @@ class Privileges
      * the authentication plugin selected
      *
      * @param string $auth_plugin authentication plugin selected
-     *
-     * @return void
      */
     public function setProperPasswordHashing($auth_plugin)
     {
@@ -4818,9 +4799,9 @@ class Privileges
             }
 
             /**
-            * Display the user overview
-            * (if less than 50 users, display them immediately)
-            */
+             * Display the user overview
+             * (if less than 50 users, display them immediately)
+             */
             if (isset($_REQUEST['initial'])
                 || isset($_REQUEST['showall'])
                 || $this->dbi->numRows($res) < 50
@@ -5005,10 +4986,8 @@ class Privileges
      *
      * @param string $user_host_condition user host condition to
      *                                    select relevant table privileges
-     * @param array  $queries             queries array
      * @param string $username            username
      * @param string $hostname            host name
-     *
      * @return array
      */
     public function getTablePrivsQueriesForChangeOrCopyUser(
@@ -5144,7 +5123,7 @@ class Privileges
      * @param string  $hostname       host name
      * @param string  $dbname         database name
      *
-     * @return array, $message
+     * @return array ,$message
      */
     public function addUserAndCreateDatabase(
         $_error,

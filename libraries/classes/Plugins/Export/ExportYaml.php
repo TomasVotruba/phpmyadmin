@@ -37,8 +37,6 @@ class ExportYaml extends ExportPlugin
 
     /**
      * Sets the export YAML properties
-     *
-     * @return void
      */
     protected function setProperties()
     {

@@ -30,7 +30,6 @@ class RelationTest extends TestCase
      * This method is called before a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function setUp()
     {
@@ -51,8 +50,6 @@ class RelationTest extends TestCase
 
     /**
      * Test for queryAsControlUser
-     *
-     * @return void
      */
     public function testPMAQueryAsControlUser()
     {
@@ -84,8 +81,6 @@ class RelationTest extends TestCase
 
     /**
      * Test for getRelationsParam & getRelationsParamDiagnostic
-     *
-     * @return void
      */
     public function testPMAGetRelationsParam()
     {
@@ -175,8 +170,6 @@ class RelationTest extends TestCase
 
     /**
      * Test for getDisplayField
-     *
-     * @return void
      */
     public function testPMAGetDisplayField()
     {
@@ -204,8 +197,6 @@ class RelationTest extends TestCase
 
     /**
      * Test for getComments
-     *
-     * @return void
      */
     public function testPMAGetComments()
     {
@@ -253,8 +244,6 @@ class RelationTest extends TestCase
 
     /**
      * Test for tryUpgradeTransformations
-     *
-     * @return void
      */
     public function testPMATryUpgradeTransformations()
     {
@@ -293,8 +282,6 @@ class RelationTest extends TestCase
 
     /**
      * Test for searchColumnInForeigners
-     *
-     * @return void
      */
     public function testPMASearchColumnInForeigners()
     {

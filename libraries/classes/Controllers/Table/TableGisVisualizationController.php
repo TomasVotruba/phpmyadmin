@@ -53,7 +53,6 @@ class TableGisVisualizationController extends TableController
      * @param array                         $url_params            array of URL parameters
      * @param string                        $goto                  goto script
      * @param string                        $back                  back script
-     * @param array                         $visualizationSettings visualization settings
      */
     public function __construct(
         $response,
@@ -80,8 +79,6 @@ class TableGisVisualizationController extends TableController
 
     /**
      * Save to file
-     *
-     * @return void
      */
     public function saveToFileAction()
     {
@@ -93,8 +90,6 @@ class TableGisVisualizationController extends TableController
 
     /**
      * Index
-     *
-     * @return void
      */
     public function indexAction()
     {

@@ -240,7 +240,6 @@ class Tracking
      * Function to get html for tracking report and tracking report export
      *
      * @param string  $url_query        url query
-     * @param array   $data             data
      * @param array   $url_params       url params
      * @param boolean $selection_schema selection schema
      * @param boolean $selection_data   selection data
@@ -248,7 +247,6 @@ class Tracking
      * @param int     $filter_ts_to     filter time stamp from
      * @param int     $filter_ts_from   filter time stamp tp
      * @param array   $filter_users     filter users
-     *
      * @return string
      */
     public function getHtmlForTrackingReport(
@@ -366,7 +364,6 @@ class Tracking
     /**
      * Generate HTML for export form
      *
-     * @param array   $data               data
      * @param array   $url_params         url params
      * @param boolean $selection_schema   selection schema
      * @param boolean $selection_data     selection data
@@ -375,12 +372,11 @@ class Tracking
      * @param int     $filter_ts_from     filter time stamp tp
      * @param array   $filter_users       filter users
      * @param string  $str1               HTML for logtype select
-     * @param string  $str2               HTML for "from date"
-     * @param string  $str3               HTML for "to date"
+     * @param string  $str2               HTML for "fromdate"
+     * @param string  $str3               HTML for "todate"
      * @param string  $str4               HTML for user
-     * @param string  $str5               HTML for "list report"
+     * @param string  $str5               HTML for "listreport"
      * @param string  $drop_image_or_text HTML for image or text
-     *
      * @return string HTML for form
      */
     public function getHtmlForTrackingReportExportForm1(
@@ -455,10 +451,10 @@ class Tracking
      *
      * @param array  $url_params Parameters
      * @param string $str1       HTML for logtype select
-     * @param string $str2       HTML for "from date"
-     * @param string $str3       HTML for "to date"
+     * @param string $str2       HTML for "fromdate"
+     * @param string $str3       HTML for "todate"
      * @param string $str4       HTML for user
-     * @param string $str5       HTML for "list report"
+     * @param string $str5       HTML for "listreport"
      *
      * @return string HTML for form
      */
@@ -526,14 +522,12 @@ class Tracking
     /**
      * Function to get html for data manipulation statements
      *
-     * @param array  $data               data
      * @param array  $filter_users       filter users
      * @param int    $filter_ts_from     filter time staml from
      * @param int    $filter_ts_to       filter time stamp to
      * @param array  $url_params         url parameters
      * @param int    $ddlog_count        data definition log count
      * @param string $drop_image_or_text drop image or text
-     *
      * @return string
      */
     public function getHtmlForDataManipulationStatements(
@@ -565,13 +559,11 @@ class Tracking
     /**
      * Function to get html for data definition statements in schema snapshot
      *
-     * @param array  $data               data
      * @param array  $filter_users       filter users
      * @param int    $filter_ts_from     filter time stamp from
      * @param int    $filter_ts_to       filter time stamp to
      * @param array  $url_params         url parameters
      * @param string $drop_image_or_text drop image or text
-     *
      * @return array
      */
     public function getHtmlForDataDefinitionStatements(
@@ -601,8 +593,6 @@ class Tracking
     /**
      * Function to get html for data statements in schema snapshot
      *
-     * @param array  $data            data
-     * @param array  $filterUsers     filter users
      * @param int    $filterTsFrom    filter time stamp from
      * @param int    $filterTsTo      filter time stamp to
      * @param array  $urlParams       url parameters
@@ -713,8 +703,6 @@ class Tracking
     /**
      * Function to get html for displaying columns in the schema snapshot
      *
-     * @param array $columns columns
-     *
      * @return string
      */
     public function getHtmlForColumns(array $columns)
@@ -726,8 +714,6 @@ class Tracking
 
     /**
      * Function to get html for the indexes in schema snapshot
-     *
-     * @param array $indexes indexes
      *
      * @return string
      */
@@ -809,8 +795,6 @@ class Tracking
     /**
      * Function to export as sql dump
      *
-     * @param array $entries entries
-     *
      * @return string HTML SQL query form
      */
     public function exportAsSqlDump(array $entries)
@@ -852,8 +836,6 @@ class Tracking
     /**
      * Function to export as sql execution
      *
-     * @param array $entries entries
-     *
      * @return array
      */
     public function exportAsSqlExecution(array $entries)
@@ -868,10 +850,6 @@ class Tracking
 
     /**
      * Function to export as entries
-     *
-     * @param array $entries entries
-     *
-     * @return void
      */
     public function exportAsFileDownload(array $entries)
     {
@@ -1054,8 +1032,6 @@ class Tracking
      * Create tracking version for multiple tables
      *
      * @param array $selected list of selected tables
-     *
-     * @return void
      */
     public function createTrackingForMultipleTables(array $selected)
     {
@@ -1075,11 +1051,9 @@ class Tracking
     /**
      * Function to get the entries
      *
-     * @param array $data           data
      * @param int   $filter_ts_from filter time stamp from
      * @param int   $filter_ts_to   filter time stamp to
      * @param array $filter_users   filter users
-     *
      * @return array
      */
     public function getEntries(array $data, $filter_ts_from, $filter_ts_to, array $filter_users)
@@ -1160,10 +1134,8 @@ class Tracking
      *
      * @param string $db            current database
      * @param string $requestDb     $_REQUEST['db']
-     * @param string $urlQuery      url query string
      * @param string $pmaThemeImage path to theme's image folder
      * @param string $textDir       text direction
-     *
      * @return string HTML
      */
     public function getHtmlForDbTrackingTables(

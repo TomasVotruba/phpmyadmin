@@ -21,9 +21,6 @@ use PhpMyAdmin\Tests\Selenium\TestBase;
  */
 class CreateTest extends TestBase
 {
-    /**
-     * @return void
-     */
     public function setUp()
     {
         parent::setUp();
@@ -39,8 +36,6 @@ class CreateTest extends TestBase
 
     /**
      * Creates a table
-     *
-     * @return void
      *
      * @group large
      */
@@ -112,8 +107,6 @@ class CreateTest extends TestBase
 
     /**
      * Make assertions for table structure
-     *
-     * @return void
      */
     private function _tableStructureAssertions()
     {

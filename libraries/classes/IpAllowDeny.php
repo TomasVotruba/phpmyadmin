@@ -25,7 +25,7 @@ class IpAllowDeny
      *
      * @return boolean    whether the IP mask matches
      *
-     * @access  public
+     * @access public
      */
     public function ipMaskTest($testRange, $ipToTest)
     {
@@ -60,7 +60,7 @@ class IpAllowDeny
      *
      * @return boolean    whether the IP mask matches
      *
-     * @access  public
+     * @access public
      */
     public function ipv4MaskTest($testRange, $ipToTest)
     {
@@ -130,7 +130,7 @@ class IpAllowDeny
      *
      * @return boolean    whether the IP mask matches
      *
-     * @access  public
+     * @access public
      */
     public function ipv6MaskTest($test_range, $ip_to_test)
     {
@@ -223,9 +223,9 @@ class IpAllowDeny
      *
      * @return bool Whether rule has matched
      *
-     * @access  public
+     * @access public
      *
-     * @see     Core::getIp()
+     * @see Core::getIp()
      */
     public function allow()
     {
@@ -237,9 +237,9 @@ class IpAllowDeny
      *
      * @return bool Whether rule has matched
      *
-     * @access  public
+     * @access public
      *
-     * @see     Core::getIp()
+     * @see Core::getIp()
      */
     public function deny()
     {
@@ -253,9 +253,9 @@ class IpAllowDeny
      *
      * @return bool   Whether rule has matched
      *
-     * @access  public
+     * @access public
      *
-     * @see     Core::getIp()
+     * @see Core::getIp()
      */
     private function allowDeny($type)
     {

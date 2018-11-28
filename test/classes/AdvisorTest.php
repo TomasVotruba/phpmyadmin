@@ -23,8 +23,6 @@ class AdvisorTest extends PmaTestCase
     /**
      * Sets up the fixture, for example, opens a network connection.
      * This method is called before a test is executed.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -37,8 +35,6 @@ class AdvisorTest extends PmaTestCase
      *
      * @param string $text     Text to escape
      * @param string $expected Expected output
-     *
-     * @return void
      *
      * @dataProvider escapeStrings
      */
@@ -64,8 +60,6 @@ class AdvisorTest extends PmaTestCase
 
     /**
      * test for parseRulesFile
-     *
-     * @return void
      */
     public function testParse()
     {
@@ -79,8 +73,6 @@ class AdvisorTest extends PmaTestCase
      *
      * @param float  $time     time
      * @param string $expected expected result
-     *
-     * @return void
      *
      * @dataProvider advisorTimes
      */
@@ -106,8 +98,6 @@ class AdvisorTest extends PmaTestCase
 
     /**
      * test for Advisor::timespanFormat
-     *
-     * @return void
      */
     public function testAdvisorTimespanFormat()
     {
@@ -124,8 +114,6 @@ class AdvisorTest extends PmaTestCase
      * @param array  $rule     Rule to test
      * @param array  $expected Expected rendered rule in fired/errors list
      * @param string $error    Expected error string (null if none error expected)
-     *
-     * @return void
      *
      * @depends testParse
      * @dataProvider rulesProvider

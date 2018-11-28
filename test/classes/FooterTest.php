@@ -36,7 +36,6 @@ class FooterTest extends PmaTestCase
      * This method is called before a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function setUp()
     {
@@ -64,7 +63,6 @@ class FooterTest extends PmaTestCase
      * This method is called after a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function tearDown()
     {
@@ -89,8 +87,6 @@ class FooterTest extends PmaTestCase
 
     /**
      * Test for getDebugMessage
-     *
-     * @return void
      *
      * @group medium
      */
@@ -119,8 +115,6 @@ class FooterTest extends PmaTestCase
 
     /**
      * Test for _removeRecursion
-     *
-     * @return void
      */
     public function testRemoveRecursion()
     {
@@ -143,8 +137,6 @@ class FooterTest extends PmaTestCase
 
     /**
      * Test for _getSelfLink
-     *
-     * @return void
      */
     public function testGetSelfLink()
     {
@@ -167,8 +159,6 @@ class FooterTest extends PmaTestCase
 
     /**
      * Test for _getSelfLink
-     *
-     * @return void
      */
     public function testGetSelfLinkWithImage()
     {
@@ -193,8 +183,6 @@ class FooterTest extends PmaTestCase
 
     /**
      * Test for disable
-     *
-     * @return void
      */
     public function testDisable()
     {
@@ -208,8 +196,6 @@ class FooterTest extends PmaTestCase
 
     /**
      * Test for footer when ajax enabled
-     *
-     * @return void
      */
     public function testAjax()
     {
@@ -223,8 +209,6 @@ class FooterTest extends PmaTestCase
 
     /**
      * Test for footer get Scripts
-     *
-     * @return void
      */
     public function testGetScripts()
     {
@@ -238,7 +222,6 @@ class FooterTest extends PmaTestCase
     /**
      * Test for displaying footer
      *
-     * @return void
      * @group medium
      */
     public function testDisplay()
@@ -252,8 +235,6 @@ class FooterTest extends PmaTestCase
 
     /**
      * Test for minimal footer
-     *
-     * @return void
      */
     public function testMinimal()
     {

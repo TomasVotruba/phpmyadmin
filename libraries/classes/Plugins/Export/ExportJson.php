@@ -63,8 +63,6 @@ class ExportJson extends ExportPlugin
 
     /**
      * Sets the export JSON properties
-     *
-     * @return void
      */
     protected function setProperties()
     {

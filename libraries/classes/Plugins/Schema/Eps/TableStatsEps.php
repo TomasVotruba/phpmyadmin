@@ -83,8 +83,6 @@ class TableStatsEps extends TableStats
 
     /**
      * Displays an error when the table cannot be found.
-     *
-     * @return void
      */
     protected function showMissingTableError()
     {
@@ -100,8 +98,6 @@ class TableStatsEps extends TableStats
      *
      * @param string  $font     The font name
      * @param integer $fontSize The font size
-     *
-     * @return void
      *
      * @see PMA_EPS
      */
@@ -136,8 +132,6 @@ class TableStatsEps extends TableStats
      * Sets the height of the table
      *
      * @param integer $fontSize The font size
-     *
-     * @return void
      */
     private function _setHeightTable($fontSize)
     {
@@ -149,8 +143,6 @@ class TableStatsEps extends TableStats
      * Draw the table
      *
      * @param boolean $showColor Whether to display color
-     *
-     * @return void
      *
      * @see PMA_EPS,PMA_EPS::line,PMA_EPS::rect
      */

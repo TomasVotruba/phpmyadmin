@@ -62,8 +62,6 @@ class Svg extends XMLWriter
      * Set document title
      *
      * @param string $value sets the title text
-     *
-     * @return void
      */
     public function setTitle($value)
     {
@@ -74,8 +72,6 @@ class Svg extends XMLWriter
      * Set document author
      *
      * @param string $value sets the author
-     *
-     * @return void
      */
     public function setAuthor($value)
     {
@@ -86,8 +82,6 @@ class Svg extends XMLWriter
      * Set document font
      *
      * @param string $value sets the font e.g Arial, Sans-serif etc
-     *
-     * @return void
      */
     public function setFont($value)
     {
@@ -108,8 +102,6 @@ class Svg extends XMLWriter
      * Set document font size
      *
      * @param integer $value sets the font size in pixels
-     *
-     * @return void
      */
     public function setFontSize($value)
     {
@@ -138,8 +130,6 @@ class Svg extends XMLWriter
      * @param integer $x      min-x of the view box
      * @param integer $y      min-y of the view box
      *
-     * @return void
-     *
      * @see XMLWriter::startElement(),XMLWriter::writeAttribute()
      */
     public function startSvgDoc($width, $height, $x = 0, $y = 0)
@@ -166,7 +156,6 @@ class Svg extends XMLWriter
     /**
      * Ends RelationStatsSvg Document
      *
-     * @return void
      * @see XMLWriter::endElement(),XMLWriter::endDocument()
      */
     public function endSvgDoc()
@@ -184,7 +173,6 @@ class Svg extends XMLWriter
      *
      * @param string $fileName file name
      *
-     * @return void
      * @see XMLWriter::startElement(),XMLWriter::writeAttribute()
      */
     public function showOutput($fileName)
@@ -219,8 +207,6 @@ class Svg extends XMLWriter
      * @param string|null $text   The text attribute defines the text the element
      * @param string      $styles The style attribute defines the style the element
      *                            styles can be defined like CSS styles
-     *
-     * @return void
      *
      * @see XMLWriter::startElement(), XMLWriter::writeAttribute(),
      * XMLWriter::text(), XMLWriter::endElement()
@@ -262,8 +248,6 @@ class Svg extends XMLWriter
      * @param integer $y2     Defines the end of the line on the y-axis
      * @param string  $styles The style attribute defines the style the element
      *                        styles can be defined like CSS styles
-     *
-     * @return void
      *
      * @see XMLWriter::startElement(), XMLWriter::writeAttribute(),
      * XMLWriter::endElement()

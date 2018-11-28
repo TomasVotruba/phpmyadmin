@@ -19,9 +19,6 @@ namespace PhpMyAdmin\Tests\Selenium;
  */
 class XssTest extends TestBase
 {
-    /**
-     * @return void
-     */
     public function setUp()
     {
         parent::setUp();
@@ -31,8 +28,6 @@ class XssTest extends TestBase
 
     /**
      * Tests the SQL query tab with a null query
-     *
-     * @return void
      *
      * @group large
      */

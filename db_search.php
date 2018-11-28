@@ -14,8 +14,8 @@ use PhpMyAdmin\Response;
 use PhpMyAdmin\Util;
 
 /**
-* Gets some core libraries
-*/
+ * Gets some core libraries
+ */
 require_once 'libraries/common.inc.php';
 
 $response = Response::getInstance();

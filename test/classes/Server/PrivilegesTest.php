@@ -28,14 +28,12 @@ use PHPUnit\Framework\TestCase;
 class PrivilegesTest extends TestCase
 {
     /**
-     * @var Privileges $serverPrivileges
+     * @var Privileges
      */
     private $serverPrivileges;
 
     /**
      * Prepares environment for the test.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -154,8 +152,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Test for getDataForDBInfo
-     *
-     * @return void
      */
     public function testGetDataForDBInfo()
     {
@@ -218,8 +214,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Test for wildcardEscapeForGrant
-     *
-     * @return void
      */
     public function testWildcardEscapeForGrant()
     {
@@ -250,8 +244,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Test for rangeOfUsers
-     *
-     * @return void
      */
     public function testRangeOfUsers()
     {
@@ -270,8 +262,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Test for getTableGrantsArray
-     *
-     * @return void
      */
     public function testGetTableGrantsArray()
     {
@@ -305,8 +295,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Test for getGrantsArray
-     *
-     * @return void
      */
     public function testGetGrantsArray()
     {
@@ -331,8 +319,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Test for getHtmlForColumnPrivileges
-     *
-     * @return void
      */
     public function testGetHtmlForColumnPrivileges()
     {
@@ -391,8 +377,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Test for getHtmlForRequires
-     *
-     * @return void
      */
     public function testGetHtmlForRequires()
     {
@@ -523,8 +507,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Test for getHtmlForUserGroupDialog
-     *
-     * @return void
      */
     public function testGetHtmlForUserGroupDialog()
     {
@@ -610,8 +592,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Test for getHtmlToChooseUserGroup
-     *
-     * @return void
      */
     public function testGetHtmlToChooseUserGroup()
     {
@@ -638,8 +618,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Test for getHtmlForResourceLimits
-     *
-     * @return void
      */
     public function testGetHtmlForResourceLimits()
     {
@@ -691,8 +669,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Test for getSqlQueryForDisplayPrivTable
-     *
-     * @return void
      */
     public function testGetSqlQueryForDisplayPrivTable()
     {
@@ -775,8 +751,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Test for getDataForChangeOrCopyUser
-     *
-     * @return void
      */
     public function testGetDataForChangeOrCopyUser()
     {
@@ -810,8 +784,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Test for getListForExportUserDefinition
-     *
-     * @return void
      */
     public function testGetHtmlForExportUserDefinition()
     {
@@ -846,8 +818,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Test for addUser
-     *
-     * @return void
      */
     public function testAddUser()
     {
@@ -895,8 +865,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Test for addUser
-     *
-     * @return void
      */
     public function testAddUserOld()
     {
@@ -945,8 +913,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Test for updatePassword
-     *
-     * @return void
      */
     public function testUpdatePassword()
     {
@@ -971,8 +937,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Test for getMessageAndSqlQueryForPrivilegesRevoke
-     *
-     * @return void
      */
     public function testGetMessageAndSqlQueryForPrivilegesRevoke()
     {
@@ -1010,8 +974,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Test for updatePrivileges
-     *
-     * @return void
      */
     public function testUpdatePrivileges()
     {
@@ -1047,7 +1009,6 @@ class PrivilegesTest extends TestCase
     /**
      * Test for getHtmlToDisplayPrivilegesTable
      *
-     * @return void
      * @group medium
      */
     public function testGetHtmlToDisplayPrivilegesTable()
@@ -1186,8 +1147,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Test for getSqlQueriesForDisplayAndAddUser
-     *
-     * @return void
      */
     public function testGetSqlQueriesForDisplayAndAddUser()
     {
@@ -1258,8 +1217,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Test for getHtmlForTableSpecificPrivileges
-     *
-     * @return void
      */
     public function testGetHtmlForTableSpecificPrivileges()
     {
@@ -1336,8 +1293,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Test for getHtmlForLoginInformationFields
-     *
-     * @return void
      */
     public function testGetHtmlForLoginInformationFields()
     {
@@ -1397,8 +1352,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Test for getWithClauseForAddUserAndUpdatePrivs
-     *
-     * @return void
      */
     public function testGetWithClauseForAddUserAndUpdatePrivs()
     {
@@ -1420,8 +1373,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Test for getListOfPrivilegesAndComparedPrivileges
-     *
-     * @return void
      */
     public function testGetListOfPrivilegesAndComparedPrivileges()
     {
@@ -1447,7 +1398,6 @@ class PrivilegesTest extends TestCase
     /**
      * Test for getHtmlForAddUser
      *
-     * @return void
      * @group medium
      */
     public function testGetHtmlForAddUser()
@@ -1522,8 +1472,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Test for getHtmlForSpecificDbPrivileges
-     *
-     * @return void
      */
     public function testGetHtmlForSpecificDbPrivileges()
     {
@@ -1604,8 +1552,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Test for getHtmlForSpecificTablePrivileges
-     *
-     * @return void
      */
     public function testGetHtmlForSpecificTablePrivileges()
     {
@@ -1695,8 +1641,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Test for getHtmlTableBodyForSpecificDbOrTablePrivs
-     *
-     * @return void
      */
     public function testGetHtmlTableBodyForSpecificDbOrTablePrivss()
     {
@@ -1766,8 +1710,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Test for getUserLink
-     *
-     * @return void
      */
     public function testGetUserLink()
     {
@@ -1853,8 +1795,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Test for getExtraDataForAjaxBehavior
-     *
-     * @return void
      */
     public function testGetExtraDataForAjaxBehavior()
     {
@@ -1925,8 +1865,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Test for getChangeLoginInformationHtmlForm
-     *
-     * @return void
      */
     public function testGetChangeLoginInformationHtmlForm()
     {
@@ -1997,8 +1935,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Test for getUserGroupForUser
-     *
-     * @return void
      */
     public function testGetUserGroupForUser()
     {
@@ -2034,8 +1970,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Test for getLinkToDbAndTable
-     *
-     * @return void
      */
     public function testGetLinkToDbAndTable()
     {
@@ -2110,8 +2044,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Test for getUsersOverview
-     *
-     * @return void
      */
     public function testGetUsersOverview()
     {
@@ -2194,8 +2126,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Test for getFieldsetForAddDeleteUser
-     *
-     * @return void
      */
     public function testGetFieldsetForAddDeleteUser()
     {
@@ -2239,8 +2169,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Test for getDataForDeleteUsers
-     *
-     * @return void
      */
     public function testGetDataForDeleteUsers()
     {
@@ -2277,8 +2205,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Test for getAddUserHtmlFieldset
-     *
-     * @return void
      */
     public function testGetAddUserHtmlFieldset()
     {
@@ -2300,8 +2226,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Test for getHtmlHeaderForUserProperties
-     *
-     * @return void
      */
     public function testGetHtmlHeaderForUserProperties()
     {
@@ -2390,8 +2314,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Tests for getHtmlForViewUsersError
-     *
-     * @return void
      */
     public function testGetHtmlForViewUsersError()
     {
@@ -2403,8 +2325,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Tests for getHtmlForUserProperties
-     *
-     * @return void
      */
     public function testGetHtmlForUserProperties()
     {
@@ -2431,8 +2351,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Tests for getHtmlForUserOverview
-     *
-     * @return void
      */
     public function testGetHtmlForUserOverview()
     {
@@ -2450,8 +2368,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Tests for getHtmlForAllTableSpecificRights
-     *
-     * @return void
      */
     public function testGetHtmlForAllTableSpecificRights()
     {
@@ -2490,8 +2406,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Tests for getHtmlForInitials
-     *
-     * @return void
      */
     public function testGetHtmlForInitials()
     {
@@ -2517,8 +2431,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Tests for getDbRightsForUserOverview
-     *
-     * @return void
      */
     public function testGetDbRightsForUserOverview()
     {
@@ -2564,8 +2476,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Test for getHtmlForAuthPluginsDropdown()
-     *
-     * @return void
      */
     public function testGetHtmlForAuthPluginsDropdown()
     {
@@ -2680,8 +2590,6 @@ class PrivilegesTest extends TestCase
 
     /**
      * Tests for deleteUser
-     *
-     * @return void
      */
     public function testDeleteUser()
     {

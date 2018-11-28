@@ -69,8 +69,6 @@ class TableChartController extends TableController
 
     /**
      * Execute the query and return the result
-     *
-     * @return void
      */
     public function indexAction()
     {
@@ -192,8 +190,6 @@ class TableChartController extends TableController
 
     /**
      * Handle ajax request
-     *
-     * @return void
      */
     public function ajaxAction()
     {
@@ -210,7 +206,7 @@ class TableChartController extends TableController
 
         $parser = new Parser($this->sql_query);
         /**
-         * @var SelectStatement $statement
+         * @var SelectStatement
          */
         $statement = $parser->statements[0];
         if (empty($statement->limit)) {

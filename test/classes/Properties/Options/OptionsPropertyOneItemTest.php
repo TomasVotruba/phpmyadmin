@@ -22,8 +22,6 @@ class OptionsPropertyOneItemTest extends TestCase
 
     /**
      * Configures global environment.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -32,8 +30,6 @@ class OptionsPropertyOneItemTest extends TestCase
 
     /**
      * tearDown for test cases
-     *
-     * @return void
      */
     public function tearDown()
     {
@@ -44,8 +40,6 @@ class OptionsPropertyOneItemTest extends TestCase
      * Test for
      *     - PhpMyAdmin\Properties\Options\OptionsPropertyOneItem::getValues
      *     - PhpMyAdmin\Properties\Options\OptionsPropertyOneItem::setValues
-     *
-     * @return void
      */
     public function testGetSetValues()
     {
@@ -61,8 +55,6 @@ class OptionsPropertyOneItemTest extends TestCase
      * Test for
      *     - PhpMyAdmin\Properties\Options\OptionsPropertyOneItem::getLen
      *     - PhpMyAdmin\Properties\Options\OptionsPropertyOneItem::setLen
-     *
-     * @return void
      */
     public function testGetSetLen()
     {
@@ -78,8 +70,6 @@ class OptionsPropertyOneItemTest extends TestCase
      * Test for
      *     - PhpMyAdmin\Properties\Options\OptionsPropertyOneItem::getForce
      *     - PhpMyAdmin\Properties\Options\OptionsPropertyOneItem::setForce
-     *
-     * @return void
      */
     public function testGetSetForce()
     {
@@ -95,8 +85,6 @@ class OptionsPropertyOneItemTest extends TestCase
      * Test for
      *     - PhpMyAdmin\Properties\Options\OptionsPropertyOneItem::getDoc
      *     - PhpMyAdmin\Properties\Options\OptionsPropertyOneItem::setDoc
-     *
-     * @return void
      */
     public function testGetSetDoc()
     {
@@ -112,8 +100,6 @@ class OptionsPropertyOneItemTest extends TestCase
      * Test for
      *     - PhpMyAdmin\Properties\Options\OptionsPropertyOneItem::getSize
      *     - PhpMyAdmin\Properties\Options\OptionsPropertyOneItem::setSize
-     *
-     * @return void
      */
     public function testGetSetSize()
     {

@@ -24,8 +24,6 @@ class Variables
     /**
      * Returns the html for the list filter
      *
-     * @param Data $serverStatusData Server status data
-     *
      * @return string
      */
     public static function getHtmlForFilter(Data $serverStatusData)
@@ -96,8 +94,6 @@ class Variables
     /**
      * Prints the suggestion links
      *
-     * @param Data $serverStatusData Server status data
-     *
      * @return string
      */
     public static function getHtmlForLinkSuggestions(Data $serverStatusData)
@@ -129,8 +125,6 @@ class Variables
 
     /**
      * Returns a table with variables information
-     *
-     * @param Data $serverStatusData Server status data
      *
      * @return string
      */
@@ -210,10 +204,8 @@ class Variables
     /**
      * Returns HTML for render variables list
      *
-     * @param Data  $serverStatusData Server status data
      * @param array $alerts           Alert Array
      * @param array $strShowStatus    Status Array
-     *
      * @return string
      */
     public static function getHtmlForRenderVariables(Data $serverStatusData, array $alerts, array $strShowStatus)

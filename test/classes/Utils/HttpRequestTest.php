@@ -24,9 +24,7 @@ class HttpRequestTest extends PmaTestCase
      */
     private $httpRequest;
 
-    /**
-     * @return void
-     */
+    
     protected function setUp()
     {
         $this->httpRequest = new HttpRequest();
@@ -56,8 +54,6 @@ class HttpRequestTest extends PmaTestCase
      * Skip test if CURL extension is not installed
      *
      * @param boolean $ssl_flags Whether to check support for SSL flags
-     *
-     * @return void
      */
     public function checkCurl($ssl_flags = false)
     {
@@ -89,8 +85,6 @@ class HttpRequestTest extends PmaTestCase
      *
      * @group medium
      *
-     * @return void
-     *
      * @dataProvider httpRequests
      *
      * @group network
@@ -111,8 +105,6 @@ class HttpRequestTest extends PmaTestCase
      * @param bool   $expected           expected result
      *
      * @group medium
-     *
-     * @return void
      *
      * @dataProvider httpRequests
      *
@@ -142,8 +134,6 @@ class HttpRequestTest extends PmaTestCase
      *
      * @group medium
      *
-     * @return void
-     *
      * @dataProvider httpRequests
      *
      * @group network
@@ -172,8 +162,6 @@ class HttpRequestTest extends PmaTestCase
      *
      * @group medium
      *
-     * @return void
-     *
      * @dataProvider httpRequests
      *
      * @group network
@@ -198,8 +186,6 @@ class HttpRequestTest extends PmaTestCase
      *
      * @group medium
      *
-     * @return void
-     *
      * @dataProvider httpRequests
      *
      * @group network
@@ -218,8 +204,6 @@ class HttpRequestTest extends PmaTestCase
      *
      * @param mixed $result   Result of HTTP request
      * @param mixed $expected Expected match
-     *
-     * @return void
      */
     private function validateHttp($result, $expected)
     {

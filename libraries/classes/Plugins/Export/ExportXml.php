@@ -58,8 +58,6 @@ class ExportXml extends ExportPlugin
 
     /**
      * Initialize the local variables that are used for export XML
-     *
-     * @return void
      */
     protected function initSpecificVariables()
     {
@@ -72,8 +70,6 @@ class ExportXml extends ExportPlugin
 
     /**
      * Sets the export XML properties
-     *
-     * @return void
      */
     protected function setProperties()
     {
@@ -557,8 +553,6 @@ class ExportXml extends ExportPlugin
      * Sets the table name
      *
      * @param string $table table name
-     *
-     * @return void
      */
     private function _setTable($table)
     {
@@ -579,8 +573,6 @@ class ExportXml extends ExportPlugin
      * Sets the table names
      *
      * @param array $tables table names
-     *
-     * @return void
      */
     private function _setTables(array $tables)
     {

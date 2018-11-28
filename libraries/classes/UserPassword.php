@@ -38,8 +38,6 @@ class UserPassword
      *
      * @param array  $change_password_message Message to display
      * @param string $sql_query               SQL query executed
-     *
-     * @return void
      */
     public function getChangePassMessage(array $change_password_message, $sql_query = '')
     {
@@ -96,8 +94,6 @@ class UserPassword
      * @param string $password                New password
      * @param string $message                 Message
      * @param array  $change_password_message Message to show
-     *
-     * @return void
      */
     public function changePassword($password, $message, array $change_password_message)
     {
@@ -190,8 +186,6 @@ class UserPassword
      * @param string $sql_query        SQL query
      * @param string $hashing_function Hashing function
      * @param string $orig_auth_plugin Original Authentication Plugin
-     *
-     * @return void
      */
     private function changePassUrlParamsAndSubmitQuery(
         $username,
@@ -259,8 +253,6 @@ class UserPassword
      *
      * @param string $message   Message
      * @param string $sql_query SQL query
-     *
-     * @return void
      */
     private function changePassDisplayPage($message, $sql_query)
     {

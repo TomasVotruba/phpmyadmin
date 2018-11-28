@@ -30,7 +30,6 @@ class GisGeometryCollectionTest extends TestCase
      * This method is called before a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function setUp()
     {
@@ -42,7 +41,6 @@ class GisGeometryCollectionTest extends TestCase
      * This method is called after a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function tearDown()
     {
@@ -54,8 +52,6 @@ class GisGeometryCollectionTest extends TestCase
      *
      * @param string $spatial string to parse
      * @param array  $output  expected parsed output
-     *
-     * @return void
      *
      * @dataProvider providerForScaleRow
      */
@@ -92,8 +88,6 @@ class GisGeometryCollectionTest extends TestCase
      * @param integer $index    index in $gis_data
      * @param string  $empty    empty parameter
      * @param string  $output   expected output
-     *
-     * @return void
      *
      * @dataProvider providerForGenerateWkt
      */
@@ -138,8 +132,6 @@ class GisGeometryCollectionTest extends TestCase
      *
      * @param string $value  string to parse
      * @param array  $output expected parsed output
-     *
-     * @return void
      *
      * @dataProvider providerForGenerateParams
      */
@@ -188,8 +180,6 @@ class GisGeometryCollectionTest extends TestCase
      * @param string   $line_color line color
      * @param array    $scale_data scaling parameters
      * @param resource $image      initial image
-     *
-     * @return void
      *
      * @dataProvider providerForPrepareRowAsPng
      */
@@ -247,8 +237,6 @@ class GisGeometryCollectionTest extends TestCase
      * @param array  $scale_data scaling parameters
      * @param string $pdf        expected output
      *
-     * @return void
-     *
      * @dataProvider providerForPrepareRowAsPdf
      */
     public function testPrepareRowAsPdf(
@@ -300,8 +288,6 @@ class GisGeometryCollectionTest extends TestCase
      * @param string $line_color line color
      * @param array  $scale_data scaling parameters
      * @param string $output     expected output
-     *
-     * @return void
      *
      * @dataProvider providerForPrepareRowAsSvg
      */
@@ -366,8 +352,6 @@ class GisGeometryCollectionTest extends TestCase
      * @param string  $line_color line color
      * @param array   $scale_data scaling parameters
      * @param string  $output     expected output
-     *
-     * @return void
      *
      * @dataProvider providerForPrepareRowAsOl
      */

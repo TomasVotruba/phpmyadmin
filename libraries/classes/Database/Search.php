@@ -118,8 +118,6 @@ class Search
 
     /**
      * Sets search parameters
-     *
-     * @return void
      */
     private function setSearchParams()
     {
@@ -179,7 +177,7 @@ class Search
      *
      * @return array 3 SQL queries (for count, display and delete results)
      *
-     * @todo    can we make use of fulltextsearch IN BOOLEAN MODE for this?
+     * @todo can we make use of fulltextsearch IN BOOLEAN MODE for this?
      * PMA_backquote
      * DatabaseInterface::freeResult
      * DatabaseInterface::fetchAssoc

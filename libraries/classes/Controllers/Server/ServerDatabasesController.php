@@ -52,8 +52,6 @@ class ServerDatabasesController extends Controller
 
     /**
      * Index action
-     *
-     * @return void
      */
     public function indexAction()
     {
@@ -148,8 +146,6 @@ class ServerDatabasesController extends Controller
 
     /**
      * Handles creating a new database
-     *
-     * @return void
      */
     public function createDatabaseAction()
     {
@@ -209,8 +205,6 @@ class ServerDatabasesController extends Controller
 
     /**
      * Handles dropping multiple databases
-     *
-     * @return void
      */
     public function dropDatabasesAction()
     {
@@ -246,8 +240,6 @@ class ServerDatabasesController extends Controller
 
     /**
      * Extracts parameters $sort_order and $sort_by
-     *
-     * @return void
      */
     private function _setSortDetails()
     {
@@ -402,7 +394,6 @@ class ServerDatabasesController extends Controller
      * Returns the html for Database List
      *
      * @param array $dbColumnOrders   databases column order
-     * @param array $replicationTypes replication types
      *
      * @return string
      */

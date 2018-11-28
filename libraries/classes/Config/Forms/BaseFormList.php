@@ -51,7 +51,7 @@ class BaseFormList
 
     /**
      * @param string $name Name
-     * @return null|string
+     * @return string|null
      */
     public static function get($name)
     {
@@ -109,8 +109,6 @@ class BaseFormList
 
     /**
      * Reverts erroneous fields to their default values
-     *
-     * @return void
      */
     public function fixErrors()
     {

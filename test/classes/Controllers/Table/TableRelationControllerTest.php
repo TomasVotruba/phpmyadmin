@@ -27,8 +27,6 @@ class TableRelationControllerTest extends PmaTestCase
 
     /**
      * Configures environment
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -93,7 +91,6 @@ class TableRelationControllerTest extends PmaTestCase
      * Case one: this case is for the situation when the target
      *           table is a view.
      *
-     * @return void
      * @test
      */
     public function testGetDropdownValueForTableActionIsView()
@@ -139,7 +136,6 @@ class TableRelationControllerTest extends PmaTestCase
      * Case one: this case is for the situation when the target
      *           table is not a view (real tabletable).
      *
-     * @return void
      * @test
      */
     public function testGetDropdownValueForTableActionNotView()
@@ -181,7 +177,6 @@ class TableRelationControllerTest extends PmaTestCase
      *
      * Case one: foreign
      *
-     * @return void
      * @test
      */
     public function testGetDropdownValueForDbActionOne()
@@ -227,7 +222,6 @@ class TableRelationControllerTest extends PmaTestCase
      *
      * Case two: not foreign
      *
-     * @return void
      * @test
      */
     public function testGetDropdownValueForDbActionTwo()

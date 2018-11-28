@@ -28,7 +28,6 @@ class ErrorHandlerTest extends PmaTestCase
      * This method is called before a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function setUp()
     {
@@ -40,7 +39,6 @@ class ErrorHandlerTest extends PmaTestCase
      * This method is called after a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function tearDown()
     {
@@ -102,8 +100,6 @@ class ErrorHandlerTest extends PmaTestCase
      * @param string  $output_hide expected output if showing of errors is
      *                             disabled and 'sendErrorReports' is set to 'never'
      *
-     * @return void
-     *
      * @dataProvider providerForTestHandleError
      */
     public function testGetDispErrorsForDisplayFalse(
@@ -140,8 +136,6 @@ class ErrorHandlerTest extends PmaTestCase
      * @param string  $output_hide expected output if showing of errors is
      *                             disabled
      *
-     * @return void
-     *
      * @dataProvider providerForTestHandleError
      */
     public function testGetDispErrorsForDisplayTrue(
@@ -162,8 +156,6 @@ class ErrorHandlerTest extends PmaTestCase
 
     /**
      * Test for checkSavedErrors
-     *
-     * @return void
      */
     public function testCheckSavedErrors()
     {
@@ -178,8 +170,6 @@ class ErrorHandlerTest extends PmaTestCase
 
     /**
      * Test for countErrors
-     *
-     * @return void
      *
      * @group medium
      */
@@ -199,8 +189,6 @@ class ErrorHandlerTest extends PmaTestCase
 
     /**
      * Test for sliceErrors
-     *
-     * @return void
      *
      * @group medium
      */
@@ -236,8 +224,6 @@ class ErrorHandlerTest extends PmaTestCase
 
     /**
      * Test for countUserErrors
-     *
-     * @return void
      */
     public function testCountUserErrors()
     {
@@ -265,8 +251,6 @@ class ErrorHandlerTest extends PmaTestCase
 
     /**
      * Test for hasUserErrors
-     *
-     * @return void
      */
     public function testHasUserErrors()
     {
@@ -275,8 +259,6 @@ class ErrorHandlerTest extends PmaTestCase
 
     /**
      * Test for hasErrors
-     *
-     * @return void
      */
     public function testHasErrors()
     {
@@ -285,8 +267,6 @@ class ErrorHandlerTest extends PmaTestCase
 
     /**
      * Test for countDisplayErrors
-     *
-     * @return void
      */
     public function testCountDisplayErrorsForDisplayTrue()
     {
@@ -298,8 +278,6 @@ class ErrorHandlerTest extends PmaTestCase
 
     /**
      * Test for countDisplayErrors
-     *
-     * @return void
      */
     public function testCountDisplayErrorsForDisplayFalse()
     {
@@ -311,8 +289,6 @@ class ErrorHandlerTest extends PmaTestCase
 
     /**
      * Test for hasDisplayErrors
-     *
-     * @return void
      */
     public function testHasDisplayErrors()
     {

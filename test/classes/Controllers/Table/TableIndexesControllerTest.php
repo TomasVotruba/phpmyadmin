@@ -30,7 +30,6 @@ class TableIndexesControllerTest extends PmaTestCase
      * Setup function for test cases
      *
      * @access protected
-     * @return void
      */
     protected function setUp()
     {
@@ -80,7 +79,6 @@ class TableIndexesControllerTest extends PmaTestCase
     /**
      * Tests for doSaveDataAction() method
      *
-     * @return void
      * @test
      */
     public function testDoSaveDataAction()
@@ -136,7 +134,6 @@ class TableIndexesControllerTest extends PmaTestCase
     /**
      * Tests for displayFormAction()
      *
-     * @return void
      * @test
      */
     public function testDisplayFormAction()

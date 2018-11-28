@@ -26,8 +26,6 @@ class ExportExcelTest extends PmaTestCase
 
     /**
      * Configures global environment.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -37,8 +35,6 @@ class ExportExcelTest extends PmaTestCase
 
     /**
      * tearDown for test cases
-     *
-     * @return void
      */
     public function tearDown()
     {
@@ -47,8 +43,6 @@ class ExportExcelTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportExcel::setProperties
-     *
-     * @return void
      */
     public function testSetProperties()
     {

@@ -47,8 +47,6 @@ class Export
      * and it completes the handling of the export functionality.
      *
      * @param string $export_data The SQL query to create the requested item
-     *
-     * @return void
      */
     private function handle($export_data)
     {
@@ -91,8 +89,6 @@ class Export
     /**
      * If necessary, prepares event information and passes
      * it to handle() for the actual export.
-     *
-     * @return void
      */
     public function events()
     {
@@ -111,8 +107,6 @@ class Export
     /**
      * If necessary, prepares routine information and passes
      * it to handle() for the actual export.
-     *
-     * @return void
      */
     public function routines()
     {
@@ -145,8 +139,6 @@ class Export
     /**
      * If necessary, prepares trigger information and passes
      * it to handle() for the actual export.
-     *
-     * @return void
      */
     public function triggers()
     {

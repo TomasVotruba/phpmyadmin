@@ -1229,7 +1229,6 @@ $cfg['GridEditing'] = 'double-click';
  * 'D' for display column
  *
  * @global string $cfg['RelationalDisplay']
- *
  */
 $cfg['RelationalDisplay'] = 'K';
 
@@ -1459,253 +1458,181 @@ $cfg['Export']['lock_tables'] = false;
 $cfg['Export']['as_separate_files'] = false;
 
 /**
- *
- *
  * @global boolean $cfg['Export']['asfile']
  */
 $cfg['Export']['asfile'] = true;
 
 /**
- *
- *
  * @global string $cfg['Export']['charset']
  */
 $cfg['Export']['charset'] = '';
 
 /**
- *
- *
  * @global boolean $cfg['Export']['onserver']
  */
 $cfg['Export']['onserver'] = false;
 
 /**
- *
- *
  * @global boolean $cfg['Export']['onserver_overwrite']
  */
 $cfg['Export']['onserver_overwrite'] = false;
 
 /**
- *
- *
  * @global boolean $cfg['Export']['quick_export_onserver']
  */
 $cfg['Export']['quick_export_onserver'] = false;
 
 /**
- *
- *
  * @global boolean $cfg['Export']['quick_export_onserver_overwrite']
  */
 $cfg['Export']['quick_export_onserver_overwrite'] = false;
 
 /**
- *
- *
  * @global boolean $cfg['Export']['remember_file_template']
  */
 $cfg['Export']['remember_file_template'] = true;
 
 /**
- *
- *
  * @global string $cfg['Export']['file_template_table']
  */
 $cfg['Export']['file_template_table'] = '@TABLE@';
 
 /**
- *
- *
  * @global string $cfg['Export']['file_template_database']
  */
 $cfg['Export']['file_template_database'] = '@DATABASE@';
 
 /**
- *
- *
  * @global string $cfg['Export']['file_template_server']
  */
 $cfg['Export']['file_template_server'] = '@SERVER@';
 
 /**
- *
- *
  * @global string $cfg['Export']['codegen_structure_or_data']
  */
 $cfg['Export']['codegen_structure_or_data'] = 'data';
 
 /**
- *
- *
  * @global $cfg['Export']['codegen_format']
  */
 $cfg['Export']['codegen_format'] = 0;
 
 /**
- *
- *
  * @global boolean $cfg['Export']['ods_columns']
  */
 $cfg['Export']['ods_columns'] = false;
 
 /**
- *
- *
  * @global string $cfg['Export']['ods_null']
  */
 $cfg['Export']['ods_null'] = 'NULL';
 
 /**
- *
- *
  * @global string $cfg['Export']['odt_structure_or_data']
  */
 $cfg['Export']['odt_structure_or_data'] = 'structure_and_data';
 
 /**
- *
- *
  * @global boolean $cfg['Export']['odt_columns']
  */
 $cfg['Export']['odt_columns'] = true;
 
 /**
- *
- *
  * @global boolean $cfg['Export']['odt_relation']
  */
 $cfg['Export']['odt_relation'] = true;
 
 /**
- *
- *
  * @global boolean $cfg['Export']['odt_comments']
  */
 $cfg['Export']['odt_comments'] = true;
 
 /**
- *
- *
  * @global boolean $cfg['Export']['odt_mime']
  */
 $cfg['Export']['odt_mime'] = true;
 
 /**
- *
- *
  * @global string $cfg['Export']['odt_null']
  */
 $cfg['Export']['odt_null'] = 'NULL';
 
 /**
- *
- *
  * @global boolean $cfg['Export']['htmlword_structure_or_data']
  */
 $cfg['Export']['htmlword_structure_or_data'] = 'structure_and_data';
 
 /**
- *
- *
  * @global boolean $cfg['Export']['htmlword_columns']
  */
 $cfg['Export']['htmlword_columns'] = false;
 
 /**
- *
- *
  * @global string $cfg['Export']['htmlword_null']
  */
 $cfg['Export']['htmlword_null'] = 'NULL';
 
 /**
- *
- *
  * @global string $cfg['Export']['texytext_structure_or_data']
  */
 $cfg['Export']['texytext_structure_or_data'] = 'structure_and_data';
 
 /**
- *
- *
  * @global boolean $cfg['Export']['texytext_columns']
  */
 $cfg['Export']['texytext_columns'] = false;
 
 /**
- *
- *
  * @global string $cfg['Export']['texytext_null']
  */
 $cfg['Export']['texytext_null'] = 'NULL';
 
 /**
- *
- *
  * @global boolean $cfg['Export']['csv_columns']
  */
 $cfg['Export']['csv_columns'] = false;
 
 /**
- *
- *
  * @global string $cfg['Export']['csv_structure_or_data']
  */
 $cfg['Export']['csv_structure_or_data'] = 'data';
 
 /**
- *
- *
  * @global string $cfg['Export']['csv_null']
  */
 $cfg['Export']['csv_null'] = 'NULL';
 
 /**
- *
- *
  * @global string $cfg['Export']['csv_separator']
  */
 $cfg['Export']['csv_separator'] = ',';
 
 /**
- *
- *
  * @global string $cfg['Export']['csv_enclosed']
  */
 $cfg['Export']['csv_enclosed'] = '"';
 
 /**
- *
- *
  * @global string $cfg['Export']['csv_escaped']
  */
 $cfg['Export']['csv_escaped'] = '"';
 
 /**
- *
- *
  * @global string $cfg['Export']['csv_terminated']
  */
 $cfg['Export']['csv_terminated'] = 'AUTO';
 
 /**
- *
- *
  * @global string $cfg['Export']['csv_removeCRLF']
  */
 $cfg['Export']['csv_removeCRLF'] = false;
 
 /**
- *
- *
  * @global boolean $cfg['Export']['excel_columns']
  */
 $cfg['Export']['excel_columns'] = true;
 
 /**
- *
- *
  * @global string $cfg['Export']['excel_null']
  */
 $cfg['Export']['excel_null'] = 'NULL';
@@ -1718,156 +1645,112 @@ $cfg['Export']['excel_null'] = 'NULL';
 $cfg['Export']['excel_edition'] = 'win';
 
 /**
- *
- *
  * @global string $cfg['Export']['excel_removeCRLF']
  */
 $cfg['Export']['excel_removeCRLF'] = false;
 
 /**
- *
- *
  * @global string $cfg['Export']['excel_structure_or_data']
  */
 $cfg['Export']['excel_structure_or_data'] = 'data';
 
 /**
- *
- *
  * @global string $cfg['Export']['latex_structure_or_data']
  */
 $cfg['Export']['latex_structure_or_data'] = 'structure_and_data';
 
 /**
- *
- *
  * @global boolean $cfg['Export']['latex_columns']
  */
 $cfg['Export']['latex_columns'] = true;
 
 /**
- *
- *
  * @global boolean $cfg['Export']['latex_relation']
  */
 $cfg['Export']['latex_relation'] = true;
 
 /**
- *
- *
  * @global boolean $cfg['Export']['latex_comments']
  */
 $cfg['Export']['latex_comments'] = true;
 
 /**
- *
- *
  * @global boolean $cfg['Export']['latex_mime']
  */
 $cfg['Export']['latex_mime'] = true;
 
 /**
- *
- *
  * @global string $cfg['Export']['latex_null']
  */
 $cfg['Export']['latex_null'] = '\textit{NULL}';
 
 /**
- *
- *
  * @global boolean $cfg['Export']['latex_caption']
  */
 $cfg['Export']['latex_caption'] = true;
 
 /**
- *
- *
  * @global string $cfg['Export']['latex_structure_caption']
  */
 $cfg['Export']['latex_structure_caption'] = 'strLatexStructure';
 
 /**
- *
- *
  * @global string $cfg['Export']['latex_structure_continued_caption']
  */
 $cfg['Export']['latex_structure_continued_caption']
     = 'strLatexStructure strLatexContinued';
 
 /**
- *
- *
  * @global string $cfg['Export']['latex_data_caption']
  */
 $cfg['Export']['latex_data_caption'] = 'strLatexContent';
 
 /**
- *
- *
  * @global string $cfg['Export']['latex_data_continued_caption']
  */
 $cfg['Export']['latex_data_continued_caption'] = 'strLatexContent strLatexContinued';
 
 /**
- *
- *
  * @global string $cfg['Export']['latex_data_label']
  */
 $cfg['Export']['latex_data_label'] = 'tab:@TABLE@-data';
 
 /**
- *
- *
  * @global string $cfg['Export']['latex_structure_label']
  */
 $cfg['Export']['latex_structure_label'] = 'tab:@TABLE@-structure';
 
 /**
- *
- *
  * @global string $cfg['Export']['mediawiki_structure_or_data']
  */
 $cfg['Export']['mediawiki_structure_or_data'] = 'data';
 
 /**
- *
- *
  * @global boolean $cfg['Export']['mediawiki_caption']
  */
 $cfg['Export']['mediawiki_caption'] = true;
 
 /**
- *
- *
  * @global boolean $cfg['Export']['mediawiki_headers']
  */
 $cfg['Export']['mediawiki_headers'] = true;
 
 /**
- *
- *
  * @global string $cfg['Export']['ods_structure_or_data']
  */
 $cfg['Export']['ods_structure_or_data'] = 'data';
 
 /**
- *
- *
  * @global string $cfg['Export']['pdf_structure_or_data']
  */
 $cfg['Export']['pdf_structure_or_data'] = 'data';
 
 /**
- *
- *
  * @global string $cfg['Export']['phparray_structure_or_data']
  */
 $cfg['Export']['phparray_structure_or_data'] = 'data';
 
 /**
- *
- *
  * @global string $cfg['Export']['json_structure_or_data']
  */
 $cfg['Export']['json_structure_or_data'] = 'data';
@@ -1887,15 +1770,11 @@ $cfg['Export']['json_pretty_print'] = false;
 $cfg['Export']['json_unicode'] = true;
 
 /**
- *
- *
  * @global string $cfg['Export']['sql_structure_or_data']
  */
 $cfg['Export']['sql_structure_or_data'] = 'structure_and_data';
 
 /**
- *
- *
  * @global string $cfg['Export']['sql_compatibility']
  */
 $cfg['Export']['sql_compatibility'] = 'NONE';
@@ -1908,57 +1787,41 @@ $cfg['Export']['sql_compatibility'] = 'NONE';
 $cfg['Export']['sql_include_comments'] = true;
 
 /**
- *
- *
  * @global boolean $cfg['Export']['sql_disable_fk']
  */
 $cfg['Export']['sql_disable_fk'] = false;
 
 /**
- *
- *
  * @global boolean $cfg['Export']['sql_views_as_tables']
  */
 $cfg['Export']['sql_views_as_tables'] = false;
 
 /**
- *
- *
  * @global boolean $cfg['Export']['sql_metadata']
  */
 $cfg['Export']['sql_metadata'] = false;
 
 /**
- *
- *
  * @global boolean $cfg['Export']['sql_use_transaction']
  */
 $cfg['Export']['sql_use_transaction'] = true;
 
 /**
- *
- *
  * @global boolean $cfg['Export']['sql_create_database']
  */
 $cfg['Export']['sql_create_database'] = false;
 
 /**
- *
- *
  * @global boolean $cfg['Export']['sql_drop_database']
  */
 $cfg['Export']['sql_drop_database'] = false;
 
 /**
- *
- *
  * @global boolean $cfg['Export']['sql_drop_table']
  */
 $cfg['Export']['sql_drop_table'] = false;
 
 /**
- *
- *
  * true by default for correct behavior when dealing with exporting
  * of VIEWs and the stand-in table
  * @global boolean $cfg['Export']['sql_if_not_exists']
@@ -1976,78 +1839,56 @@ $cfg['Export']['sql_view_current_user'] = false;
 $cfg['Export']['sql_or_replace_view'] = false;
 
 /**
- *
- *
  * @global boolean $cfg['Export']['sql_procedure_function']
  */
 $cfg['Export']['sql_procedure_function'] = true;
 
 /**
- *
- *
  * @global boolean $cfg['Export']['sql_create_table']
  */
 $cfg['Export']['sql_create_table'] = true;
 
 /**
- *
- *
  * @global boolean $cfg['Export']['sql_create_view']
  */
 $cfg['Export']['sql_create_view'] = true;
 
 /**
- *
- *
  * @global boolean $cfg['Export']['sql_create_trigger']
  */
 $cfg['Export']['sql_create_trigger'] = true;
 
 /**
- *
- *
  * @global boolean $cfg['Export']['sql_auto_increment']
  */
 $cfg['Export']['sql_auto_increment'] = true;
 
 /**
- *
- *
  * @global boolean $cfg['Export']['sql_backquotes']
  */
 $cfg['Export']['sql_backquotes'] = true;
 
 /**
- *
- *
  * @global boolean $cfg['Export']['sql_dates']
  */
 $cfg['Export']['sql_dates'] = false;
 
 /**
- *
- *
  * @global boolean $cfg['Export']['sql_relation']
  */
 $cfg['Export']['sql_relation'] = false;
 
 /**
- *
- *
  * @global boolean $cfg['Export']['sql_truncate']
  */
 $cfg['Export']['sql_truncate'] = false;
 
 /**
- *
- *
  * @global boolean $cfg['Export']['sql_delayed']
  */
 $cfg['Export']['sql_delayed'] = false;
 
 /**
- *
- *
  * @global boolean $cfg['Export']['sql_ignore']
  */
 $cfg['Export']['sql_ignore'] = false;
@@ -2060,8 +1901,6 @@ $cfg['Export']['sql_ignore'] = false;
 $cfg['Export']['sql_utc_time'] = true;
 
 /**
- *
- *
  * @global boolean $cfg['Export']['sql_hex_for_binary']
  */
 $cfg['Export']['sql_hex_for_binary'] = true;
@@ -2074,15 +1913,11 @@ $cfg['Export']['sql_hex_for_binary'] = true;
 $cfg['Export']['sql_type'] = 'INSERT';
 
 /**
- *
- *
  * @global integer $cfg['Export']['sql_max_query_size']
  */
 $cfg['Export']['sql_max_query_size'] = 50000;
 
 /**
- *
- *
  * @global boolean $cfg['Export']['sql_mime']
  */
 $cfg['Export']['sql_mime'] = false;
@@ -2102,15 +1937,11 @@ $cfg['Export']['sql_header_comment'] = '';
 $cfg['Export']['sql_insert_syntax'] = 'both';
 
 /**
- *
- *
  * @global string $cfg['Export']['pdf_report_title']
  */
 $cfg['Export']['pdf_report_title'] = '';
 
 /**
- *
- *
  *@global string $cfg['Export']['xml_structure_or_data']
  */
 $cfg['Export']['xml_structure_or_data'] = 'data';
@@ -2172,8 +2003,6 @@ $cfg['Export']['xml_export_views'] = true;
 $cfg['Export']['xml_export_contents'] = true;
 
 /**
- *
- *
  * @global string $cfg['Export']['yaml_structure_or_data']
  */
 $cfg['Export']['yaml_structure_or_data'] = 'data';
@@ -2184,8 +2013,6 @@ $cfg['Export']['yaml_structure_or_data'] = 'data';
 $cfg['Import'] = [];
 
 /**
- *
- *
  * @global string $cfg['Import']['format']
  */
 $cfg['Import']['format'] = 'sql';
@@ -2198,141 +2025,101 @@ $cfg['Import']['format'] = 'sql';
 $cfg['Import']['charset'] = '';
 
 /**
- *
- *
  * @global boolean $cfg['Import']['allow_interrupt']
  */
 $cfg['Import']['allow_interrupt'] = true;
 
 /**
- *
- *
  * @global integer $cfg['Import']['skip_queries']
  */
 $cfg['Import']['skip_queries'] = 0;
 
 /**
- *
- *
  * @global string $cfg['Import']['sql_compatibility']
  */
 $cfg['Import']['sql_compatibility'] = 'NONE';
 
 /**
- *
- *
  * @global string $cfg['Import']['sql_no_auto_value_on_zero']
  */
 $cfg['Import']['sql_no_auto_value_on_zero'] = true;
 
 /**
- *
- *
  * @global string $cfg['Import']['sql_read_as_multibytes']
  */
 $cfg['Import']['sql_read_as_multibytes'] = false;
 
 /**
- *
- *
  * @global boolean $cfg['Import']['csv_replace']
  */
 $cfg['Import']['csv_replace'] = false;
 
 /**
- *
- *
  * @global boolean $cfg['Import']['csv_ignore']
  */
 $cfg['Import']['csv_ignore'] = false;
 
 /**
- *
- *
  * @global string $cfg['Import']['csv_terminated']
  */
 $cfg['Import']['csv_terminated'] = ',';
 
 /**
- *
- *
  * @global string $cfg['Import']['csv_enclosed']
  */
 $cfg['Import']['csv_enclosed'] = '"';
 
 /**
- *
- *
  * @global string $cfg['Import']['csv_escaped']
  */
 $cfg['Import']['csv_escaped'] = '"';
 
 /**
- *
- *
  * @global string $cfg['Import']['csv_new_line']
  */
 $cfg['Import']['csv_new_line'] = 'auto';
 
 /**
- *
- *
  * @global string $cfg['Import']['csv_columns']
  */
 $cfg['Import']['csv_columns'] = '';
 
 /**
- *
- *
  * @global string $cfg['Import']['csv_col_names']
  */
 $cfg['Import']['csv_col_names'] = false;
 
 /**
- *
- *
  * @global boolean $cfg['Import']['ldi_replace']
  */
 $cfg['Import']['ldi_replace'] = false;
 
 /**
- *
- *
  * @global boolean $cfg['Import']['ldi_ignore']
  */
 $cfg['Import']['ldi_ignore'] = false;
 
 /**
- *
- *
  * @global string $cfg['Import']['ldi_terminated']
  */
 $cfg['Import']['ldi_terminated'] = ';';
 
 /**
- *
- *
  * @global string $cfg['Import']['ldi_enclosed']
  */
 $cfg['Import']['ldi_enclosed'] = '"';
 
 /**
- *
- *
  * @global string $cfg['Import']['ldi_escaped']
  */
 $cfg['Import']['ldi_escaped'] = '\\';
 
 /**
- *
- *
  * @global string $cfg['Import']['ldi_new_line']
  */
 $cfg['Import']['ldi_new_line'] = 'auto';
 
 /**
- *
- *
  * @global string $cfg['Import']['ldi_columns']
  */
 $cfg['Import']['ldi_columns'] = '';
@@ -2345,29 +2132,21 @@ $cfg['Import']['ldi_columns'] = '';
 $cfg['Import']['ldi_local_option'] = 'auto';
 
 /**
- *
- *
  * @global string $cfg['Import']['ods_col_names']
  */
 $cfg['Import']['ods_col_names'] = false;
 
 /**
- *
- *
  * @global string $cfg['Import']['ods_empty_rows']
  */
 $cfg['Import']['ods_empty_rows'] = true;
 
 /**
- *
- *
  * @global string $cfg['Import']['ods_recognize_percentages']
  */
 $cfg['Import']['ods_recognize_percentages'] = true;
 
 /**
- *
- *
  * @global string $cfg['Import']['ods_recognize_currency']
  */
 $cfg['Import']['ods_recognize_currency'] = true;
@@ -2381,26 +2160,20 @@ $cfg['Schema'] = [];
  * pdf/eps/dia/svg
  *
  * @global string $cfg['Schema']['format']
-*/
+ */
 $cfg['Schema']['format'] = 'pdf';
 
 /**
- *
- *
  * @global string $cfg['Schema']['pdf_show_color']
  */
 $cfg['Schema']['pdf_show_color'] = true;
 
 /**
- *
- *
  * @global string $cfg['Schema']['pdf_show_keys']
  */
 $cfg['Schema']['pdf_show_keys'] = false;
 
 /**
- *
- *
  * @global string $cfg['Schema']['pdf_all_tables_same_width']
  */
 $cfg['Schema']['pdf_all_tables_same_width'] = false;
@@ -2413,43 +2186,31 @@ $cfg['Schema']['pdf_all_tables_same_width'] = false;
 $cfg['Schema']['pdf_orientation'] = 'L';
 
 /**
- *
- *
  * @global string $cfg['Schema']['pdf_paper']
  */
 $cfg['Schema']['pdf_paper'] = 'A4';
 
 /**
- *
- *
  * @global string $cfg['Schema']['pdf_show_grid']
  */
 $cfg['Schema']['pdf_show_grid'] = false;
 
 /**
- *
- *
  * @global string $cfg['Schema']['pdf_with_doc']
  */
 $cfg['Schema']['pdf_with_doc'] = true;
 
 /**
- *
- *
  * @global string $cfg['Schema']['pdf_table_order']
  */
 $cfg['Schema']['pdf_table_order'] = '';
 
 /**
- *
- *
  * @global string $cfg['Schema']['dia_show_color']
  */
 $cfg['Schema']['dia_show_color'] = true;
 
 /**
- *
- *
  * @global string $cfg['Schema']['dia_show_keys']
  */
 $cfg['Schema']['dia_show_keys'] = false;
@@ -2462,29 +2223,21 @@ $cfg['Schema']['dia_show_keys'] = false;
 $cfg['Schema']['dia_orientation'] = 'L';
 
 /**
- *
- *
  * @global string $cfg['Schema']['dia_paper']
  */
 $cfg['Schema']['dia_paper'] = 'A4';
 
 /**
- *
- *
  * @global string $cfg['Schema']['eps_show_color']
  */
 $cfg['Schema']['eps_show_color'] = true;
 
 /**
- *
- *
  * @global string $cfg['Schema']['eps_show_keys']
  */
 $cfg['Schema']['eps_show_keys'] = false;
 
 /**
- *
- *
  * @global string $cfg['Schema']['eps_all_tables_same_width']
  */
 $cfg['Schema']['eps_all_tables_same_width'] = false;
@@ -2497,22 +2250,16 @@ $cfg['Schema']['eps_all_tables_same_width'] = false;
 $cfg['Schema']['eps_orientation'] = 'L';
 
 /**
- *
- *
  * @global string $cfg['Schema']['svg_show_color']
  */
 $cfg['Schema']['svg_show_color'] = true;
 
 /**
- *
- *
  * @global string $cfg['Schema']['svg_show_keys']
  */
 $cfg['Schema']['svg_show_keys'] = false;
 
 /**
- *
- *
  * @global string $cfg['Schema']['svg_all_tables_same_width']
  */
 $cfg['Schema']['svg_all_tables_same_width'] = false;
@@ -2522,15 +2269,11 @@ $cfg['Schema']['svg_all_tables_same_width'] = false;
  */
 
 /**
- *
- *
  * @global array $cfg['PDFPageSizes']
  */
 $cfg['PDFPageSizes'] = ['A3', 'A4', 'A5', 'letter', 'legal'];
 
 /**
- *
- *
  * @global string $cfg['PDFDefaultPageSize']
  */
 $cfg['PDFDefaultPageSize'] = 'A4';
@@ -3026,9 +2769,9 @@ $cfg['CheckConfigurationPermissions'] = true;
  */
 $cfg['LinkLengthLimit'] = 1000;
 
-/**
- * Additional string to allow in CSP headers.
- */
+ /**
+  * Additional string to allow in CSP headers.
+  */
  $cfg['CSPAllow'] = '';
 
 /**

@@ -85,8 +85,6 @@ class TableStatsPdf extends TableStats
 
     /**
      * Displays an error when the table cannot be found.
-     *
-     * @return void
      */
     protected function showMissingTableError()
     {
@@ -120,9 +118,7 @@ class TableStatsPdf extends TableStats
      *
      * @access private
      *
-     * @return void
-     *
-     * @see    PMA_Schema_PDF
+     * @see PMA_Schema_PDF
      */
     private function _setWidth($fontSize)
     {
@@ -144,8 +140,6 @@ class TableStatsPdf extends TableStats
     /**
      * Sets the height of the table
      *
-     * @return void
-     *
      * @access private
      */
     private function _setHeight()
@@ -162,9 +156,7 @@ class TableStatsPdf extends TableStats
      *
      * @access public
      *
-     * @return void
-     *
-     * @see    PMA_Schema_PDF
+     * @see PMA_Schema_PDF
      */
     public function tableDraw($fontSize, $withDoc, $setColor = 0)
     {

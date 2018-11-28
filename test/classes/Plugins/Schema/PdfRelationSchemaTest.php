@@ -29,7 +29,6 @@ class PdfRelationSchemaTest extends PmaTestCase
      * This method is called before a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function setUp()
     {
@@ -178,7 +177,6 @@ class PdfRelationSchemaTest extends PmaTestCase
      * This method is called after a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function tearDown()
     {
@@ -187,8 +185,6 @@ class PdfRelationSchemaTest extends PmaTestCase
 
     /**
      * Test for construct
-     *
-     * @return void
      *
      * @group large
      */

@@ -29,8 +29,6 @@ class DataTest extends PmaTestCase
 
     /**
      * Configures global environment.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -108,8 +106,6 @@ class DataTest extends PmaTestCase
 
     /**
      * tests getMenuHtml()
-     *
-     * @return void
      */
     public function testGetMenuHtml()
     {

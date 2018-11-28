@@ -25,8 +25,6 @@ class FormProcessing
      * Processes forms registered in $form_display, handles error correction
      *
      * @param FormDisplay $form_display Form to display
-     *
-     * @return void
      */
     public static function process(FormDisplay $form_display)
     {

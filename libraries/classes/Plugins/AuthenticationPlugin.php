@@ -94,8 +94,6 @@ abstract class AuthenticationPlugin
 
     /**
      * Stores user credentials after successful login.
-     *
-     * @return void
      */
     public function rememberCredentials()
     {
@@ -105,8 +103,6 @@ abstract class AuthenticationPlugin
      * User is not allowed to login to MySQL -> authentication failed
      *
      * @param string $failure String describing why authentication has failed
-     *
-     * @return void
      */
     public function showFailure($failure)
     {
@@ -115,8 +111,6 @@ abstract class AuthenticationPlugin
 
     /**
      * Perform logout
-     *
-     * @return void
      */
     public function logOut()
     {
@@ -211,8 +205,6 @@ abstract class AuthenticationPlugin
      * Callback when user changes password.
      *
      * @param string $password New password to set
-     *
-     * @return void
      */
     public function handlePasswordChange($password)
     {
@@ -223,8 +215,6 @@ abstract class AuthenticationPlugin
      *
      * Tries to workaround PHP 5 session garbage collection which
      * looks at the session file's last modified time
-     *
-     * @return void
      */
     public function setSessionAccessTime()
     {
@@ -250,8 +240,6 @@ abstract class AuthenticationPlugin
      * High level authentication interface
      *
      * Gets the credentials or shows login form if necessary
-     *
-     * @return void
      */
     public function authenticate()
     {
@@ -272,8 +260,6 @@ abstract class AuthenticationPlugin
 
     /**
      * Check configuration defined restrictions for authentication
-     *
-     * @return void
      */
     public function checkRules()
     {
@@ -330,8 +316,6 @@ abstract class AuthenticationPlugin
     /**
      * Checks whether two factor authentication is active
      * for given user and performs it.
-     *
-     * @return void
      */
     public function checkTwoFactor()
     {

@@ -39,8 +39,6 @@ class ConfigTest extends PmaTestCase
     /**
      * Sets up the fixture, for example, opens a network connection.
      * This method is called before a test is executed.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -58,8 +56,6 @@ class ConfigTest extends PmaTestCase
     /**
      * Tears down the fixture, for example, closes a network connection.
      * This method is called after a test is executed.
-     *
-     * @return void
      */
     protected function tearDown()
     {
@@ -71,7 +67,6 @@ class ConfigTest extends PmaTestCase
     /**
      * Test for CheckSystem
      *
-     * @return void
      * @group medium
      */
     public function testCheckSystem()
@@ -84,8 +79,6 @@ class ConfigTest extends PmaTestCase
 
     /**
      * Test for checkOutputCompression
-     *
-     * @return void
      */
     public function testCheckOutputCompression()
     {
@@ -110,8 +103,6 @@ class ConfigTest extends PmaTestCase
      * @param string $os      Expected parsed OS (or null if none)
      * @param string $browser Expected parsed browser (or null if none)
      * @param string $version Expected browser version (or null if none)
-     *
-     * @return void
      *
      * @dataProvider userAgentProvider
      */
@@ -244,8 +235,6 @@ class ConfigTest extends PmaTestCase
 
     /**
      * test for CheckGd2
-     *
-     * @return void
      */
     public function testCheckGd2()
     {
@@ -317,8 +306,6 @@ class ConfigTest extends PmaTestCase
      * @param string  $server Server identification
      * @param boolean $iis    Whether server should be detected as IIS
      *
-     * @return void
-     *
      * @dataProvider serverNames
      */
     public function testCheckWebServer($server, $iis)
@@ -352,8 +339,6 @@ class ConfigTest extends PmaTestCase
 
     /**
      * test for CheckWebServerOs
-     *
-     * @return void
      */
     public function testCheckWebServerOs()
     {
@@ -381,8 +366,6 @@ class ConfigTest extends PmaTestCase
 
     /**
      * Tests loading of default values
-     *
-     * @return void
      *
      * @group large
      */
@@ -431,8 +414,6 @@ class ConfigTest extends PmaTestCase
 
     /**
      * test for CheckConfigSource
-     *
-     * @return void
      */
     public function testCheckConfigSource()
     {
@@ -448,8 +429,6 @@ class ConfigTest extends PmaTestCase
 
     /**
      * Test getting and setting config values
-     *
-     * @return void
      */
     public function testGetAndSet()
     {
@@ -462,8 +441,6 @@ class ConfigTest extends PmaTestCase
 
     /**
      * Tests setting configuration source
-     *
-     * @return void
      */
     public function testGetSetSource()
     {
@@ -491,8 +468,6 @@ class ConfigTest extends PmaTestCase
      * @param string $proto    http x forwarded proto
      * @param int    $port     server port
      * @param bool   $expected expected result
-     *
-     * @return void
      *
      * @dataProvider httpsParams
      */
@@ -533,8 +508,6 @@ class ConfigTest extends PmaTestCase
     /**
      * Test for backward compatibility globals
      *
-     * @return void
-     *
      * @depends testCheckSystem
      * @depends testCheckWebServer
      * @depends testLoadDefaults
@@ -567,8 +540,6 @@ class ConfigTest extends PmaTestCase
      * @param string $request  The request URL used for phpMyAdmin
      * @param string $absolute The absolute URL used for phpMyAdmin
      * @param string $expected Expected root path
-     *
-     * @return void
      *
      * @dataProvider rootUris
      */
@@ -676,8 +647,6 @@ class ConfigTest extends PmaTestCase
      * @param string  $source File name of config to load
      * @param boolean $result Expected result of loading
      *
-     * @return void
-     *
      * @dataProvider configPaths
      */
     public function testLoad($source, $result)
@@ -715,7 +684,6 @@ class ConfigTest extends PmaTestCase
     /**
      * Test for loading user preferences
      *
-     * @return void
      * @todo Test actually preferences loading
      * @doesNotPerformAssertions
      */
@@ -726,8 +694,6 @@ class ConfigTest extends PmaTestCase
 
     /**
      * Test for setting user config value
-     *
-     * @return void
      */
     public function testSetUserValue()
     {
@@ -741,8 +707,6 @@ class ConfigTest extends PmaTestCase
 
     /**
      * Test for getting user config value
-     *
-     * @return void
      */
     public function testGetUserValue()
     {
@@ -751,8 +715,6 @@ class ConfigTest extends PmaTestCase
 
     /**
      * Should test getting unique value for theme
-     *
-     * @return void
      */
     public function testGetThemeUniqueValue()
     {
@@ -772,8 +734,6 @@ class ConfigTest extends PmaTestCase
 
     /**
      * Should test checking of config permissions
-     *
-     * @return void
      */
     public function testCheckPermissions()
     {
@@ -794,8 +754,6 @@ class ConfigTest extends PmaTestCase
 
     /**
      * Test for setting cookies
-     *
-     * @return void
      */
     public function testSetCookie()
     {
@@ -836,8 +794,6 @@ class ConfigTest extends PmaTestCase
 
     /**
      * Test for isGitRevision
-     *
-     * @return void
      */
     public function testIsGitRevision()
     {
@@ -850,8 +806,6 @@ class ConfigTest extends PmaTestCase
 
     /**
      * Test for isGitRevision
-     *
-     * @return void
      */
     public function testIsGitRevisionSkipped()
     {
@@ -863,8 +817,6 @@ class ConfigTest extends PmaTestCase
 
     /**
      * Test for isGitRevision
-     *
-     * @return void
      */
     public function testIsGitRevisionLocalGitDir()
     {
@@ -908,8 +860,6 @@ class ConfigTest extends PmaTestCase
 
     /**
      * Test for isGitRevision
-     *
-     * @return void
      */
     public function testIsGitRevisionExternalGitDir()
     {
@@ -954,8 +904,6 @@ class ConfigTest extends PmaTestCase
 
     /**
      * Test for checkGitRevision
-     *
-     * @return void
      */
     public function testCheckGitRevision()
     {
@@ -1013,8 +961,6 @@ class ConfigTest extends PmaTestCase
 
     /**
      * Test for checkGitRevision
-     *
-     * @return void
      */
     public function testCheckGitRevisionSkipped()
     {
@@ -1031,8 +977,6 @@ class ConfigTest extends PmaTestCase
      * @param array $settings settings array
      * @param array $expected expected result
      * @param bool  $error    error
-     *
-     * @return void
      *
      * @dataProvider serverSettingsProvider
      */
@@ -1086,8 +1030,6 @@ class ConfigTest extends PmaTestCase
      * @param array  $settings settings array
      * @param string $request  request
      * @param int    $expected expected result
-     *
-     * @return void
      *
      * @dataProvider selectServerProvider
      * @depends testCheckServers

@@ -33,11 +33,11 @@ class SqlQueryForm
      *
      * @return string
      *
-     * @usedby  server_sql.php
-     * @usedby  db_sql.php
-     * @usedby  tbl_sql.php
-     * @usedby  tbl_structure.php
-     * @usedby  tbl_tracking.php
+     * @usedby server_sql.php
+     * @usedby db_sql.php
+     * @usedby tbl_sql.php
+     * @usedby tbl_structure.php
+     * @usedby tbl_tracking.php
      */
     public function getHtml(
         $query = true,

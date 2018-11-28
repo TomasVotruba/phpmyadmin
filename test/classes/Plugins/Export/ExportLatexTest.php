@@ -27,8 +27,6 @@ class ExportLatexTest extends PmaTestCase
 
     /**
      * Configures global environment.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -49,8 +47,6 @@ class ExportLatexTest extends PmaTestCase
 
     /**
      * tearDown for test cases
-     *
-     * @return void
      */
     public function tearDown()
     {
@@ -59,8 +55,6 @@ class ExportLatexTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportLatex::setProperties
-     *
-     * @return void
      */
     public function testSetProperties()
     {
@@ -470,8 +464,6 @@ class ExportLatexTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportLatex::exportHeader
-     *
-     * @return void
      */
     public function testExportHeader()
     {
@@ -493,8 +485,6 @@ class ExportLatexTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportLatex::exportFooter
-     *
-     * @return void
      */
     public function testExportFooter()
     {
@@ -505,8 +495,6 @@ class ExportLatexTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportLatex::exportDBHeader
-     *
-     * @return void
      */
     public function testExportDBHeader()
     {
@@ -523,8 +511,6 @@ class ExportLatexTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportLatex::exportDBFooter
-     *
-     * @return void
      */
     public function testExportDBFooter()
     {
@@ -535,8 +521,6 @@ class ExportLatexTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportLatex::exportDBCreate
-     *
-     * @return void
      */
     public function testExportDBCreate()
     {
@@ -547,8 +531,6 @@ class ExportLatexTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportLatex::exportData
-     *
-     * @return void
      */
     public function testExportData()
     {
@@ -661,8 +643,6 @@ class ExportLatexTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportLatex::exportStructure
-     *
-     * @return void
      */
     public function testExportStructure()
     {
@@ -981,8 +961,6 @@ class ExportLatexTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportLatex::texEscape
-     *
-     * @return void
      */
     public function testTexEscape()
     {

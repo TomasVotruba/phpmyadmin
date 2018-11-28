@@ -30,8 +30,6 @@ class ExportSqlTest extends PmaTestCase
 
     /**
      * Configures global environment.
-     *
-     * @return void
      */
     protected function setUp()
     {
@@ -50,8 +48,6 @@ class ExportSqlTest extends PmaTestCase
 
     /**
      * tearDown for test cases
-     *
-     * @return void
      */
     public function tearDown()
     {
@@ -61,7 +57,6 @@ class ExportSqlTest extends PmaTestCase
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportSql::setProperties
      *
-     * @return void
      * @group medium
      */
     public function testSetProperties()
@@ -331,8 +326,6 @@ class ExportSqlTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportSql::exportRoutines
-     *
-     * @return void
      */
     public function testExportRoutines()
     {
@@ -381,8 +374,6 @@ class ExportSqlTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportSql::_exportComment
-     *
-     * @return void
      */
     public function testExportComment()
     {
@@ -419,8 +410,6 @@ class ExportSqlTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportSql::_possibleCRLF
-     *
-     * @return void
      */
     public function testPossibleCRLF()
     {
@@ -457,8 +446,6 @@ class ExportSqlTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportSql::exportFooter
-     *
-     * @return void
      */
     public function testExportFooter()
     {
@@ -491,8 +478,6 @@ class ExportSqlTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportSql::exportHeader
-     *
-     * @return void
      */
     public function testExportHeader()
     {
@@ -568,8 +553,6 @@ class ExportSqlTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportSql::exportDBCreate
-     *
-     * @return void
      */
     public function testExportDBCreate()
     {
@@ -658,8 +641,6 @@ class ExportSqlTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportSql::exportDBHeader
-     *
-     * @return void
      */
     public function testExportDBHeader()
     {
@@ -697,8 +678,6 @@ class ExportSqlTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportSql::exportEvents
-     *
-     * @return void
      */
     public function testExportEvents()
     {
@@ -762,8 +741,6 @@ class ExportSqlTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportSql::exportDBFooter
-     *
-     * @return void
      */
     public function testExportDBFooter()
     {
@@ -794,8 +771,6 @@ class ExportSqlTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportSql::getTableDefStandIn
-     *
-     * @return void
      */
     public function testGetTableDefStandIn()
     {
@@ -834,8 +809,6 @@ class ExportSqlTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportSql::_getTableDefForView
-     *
-     * @return void
      */
     public function testGetTableDefForView()
     {
@@ -932,7 +905,6 @@ class ExportSqlTest extends PmaTestCase
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportSql::getTableDef
      *
-     * @return void
      * @group medium
      */
     public function testGetTableDef()
@@ -1111,8 +1083,6 @@ class ExportSqlTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportSql::getTableDef
-     *
-     * @return void
      */
     public function testGetTableDefWithError()
     {
@@ -1207,8 +1177,6 @@ class ExportSqlTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportSql::_getTableComments
-     *
-     * @return void
      */
     public function testGetTableComments()
     {
@@ -1281,7 +1249,6 @@ class ExportSqlTest extends PmaTestCase
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportSql::exportStructure
      *
-     * @return void
      * @group medium
      */
     public function testExportStructure()
@@ -1482,7 +1449,6 @@ class ExportSqlTest extends PmaTestCase
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportSql::exportData
      *
-     * @return void
      * @group medium
      */
     public function testExportData()
@@ -1632,7 +1598,6 @@ class ExportSqlTest extends PmaTestCase
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportSql::exportData
      *
-     * @return void
      * @group medium
      */
     public function testExportDataWithUpdate()
@@ -1742,9 +1707,7 @@ class ExportSqlTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportSql::exportData
-     *
-     * @return void
-    */
+     */
     public function testExportDataWithIsView()
     {
         $dbi = $this->getMockBuilder('PhpMyAdmin\DatabaseInterface')
@@ -1798,9 +1761,7 @@ class ExportSqlTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportSql::exportData
-     *
-     * @return void
-    */
+     */
     public function testExportDataWithError()
     {
         $dbi = $this->getMockBuilder('PhpMyAdmin\DatabaseInterface')
@@ -1847,8 +1808,6 @@ class ExportSqlTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportSql::_makeCreateTableMSSQLCompatible
-     *
-     * @return void
      */
     public function testMakeCreateTableMSSQLCompatible()
     {
@@ -1905,9 +1864,7 @@ class ExportSqlTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportSql::initAlias
-     *
-     * @return void
-    */
+     */
     public function testInitAlias()
     {
         $aliases = [
@@ -1947,9 +1904,7 @@ class ExportSqlTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportSql::getAlias
-     *
-     * @return void
-    */
+     */
     public function testGetAlias()
     {
         $aliases = [
@@ -1996,9 +1951,7 @@ class ExportSqlTest extends PmaTestCase
 
     /**
      * Test for PhpMyAdmin\Plugins\Export\ExportSql::replaceWithAlias
-     *
-     * @return void
-    */
+     */
     public function testReplaceWithAlias()
     {
         $aliases = [

@@ -28,7 +28,6 @@ class MyisamTest extends PmaTestCase
      * This method is called before a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function setUp()
     {
@@ -41,7 +40,6 @@ class MyisamTest extends PmaTestCase
      * This method is called after a test is executed.
      *
      * @access protected
-     * @return void
      */
     protected function tearDown()
     {
@@ -50,8 +48,6 @@ class MyisamTest extends PmaTestCase
 
     /**
      * Test for getVariables
-     *
-     * @return void
      */
     public function testGetVariables()
     {

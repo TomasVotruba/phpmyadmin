@@ -57,8 +57,6 @@ class TwoFactorPlugin
 
     /**
      * Creates object
-     *
-     * @param TwoFactor $twofactor TwoFactor instance
      */
     public function __construct(TwoFactor $twofactor)
     {

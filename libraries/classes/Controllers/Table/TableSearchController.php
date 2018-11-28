@@ -125,8 +125,6 @@ class TableSearchController extends TableController
     /**
      * Gets all the columns of a table along with their types, collations
      * and whether null or not.
-     *
-     * @return void
      */
     private function _loadTableInfo()
     {
@@ -181,8 +179,6 @@ class TableSearchController extends TableController
 
     /**
      * Index action
-     *
-     * @return void
      */
     public function indexAction()
     {
@@ -228,8 +224,8 @@ class TableSearchController extends TableController
                 }
 
                 /**
-             * No selection criteria received -> display the selection form
-             */
+                 * No selection criteria received -> display the selection form
+                 */
                 if (!isset($_POST['columnsToDisplay'])
                 && !isset($_POST['displayAllColumns'])
                 ) {
@@ -258,10 +254,10 @@ class TableSearchController extends TableController
                 );
 
                 /**
-             * Handle AJAX request for data row on point select
-             *
-             * @var boolean Object containing parameters for the POST request
-             */
+                 * Handle AJAX request for data row on point select
+                 *
+                 * @var boolean Object containing parameters for the POST request
+                 */
                 if (isset($_REQUEST['get_data_row'])
                     && $_REQUEST['get_data_row'] == true
                 ) {
@@ -270,11 +266,11 @@ class TableSearchController extends TableController
                     return;
                 }
                 /**
-             * Handle AJAX request for changing field information
-             * (value,collation,operators,field values) in input form
-             *
-             * @var boolean Object containing parameters for the POST request
-             */
+                 * Handle AJAX request for changing field information
+                 * (value,collation,operators,field values) in input form
+                 *
+                 * @var boolean Object containing parameters for the POST request
+                 */
                 if (isset($_REQUEST['change_tbl_info'])
                 && $_REQUEST['change_tbl_info'] == true
                 ) {
@@ -319,8 +315,6 @@ class TableSearchController extends TableController
      *
      * @param string $dataLabel Data label
      * @param string $goto      Goto
-     *
-     * @return void
      */
     public function zoomSubmitAction($dataLabel, $goto)
     {
@@ -402,8 +396,6 @@ class TableSearchController extends TableController
 
     /**
      * Change table info action
-     *
-     * @return void
      */
     public function changeTableInfoAction()
     {
@@ -432,8 +424,6 @@ class TableSearchController extends TableController
 
     /**
      * Get data row action
-     *
-     * @return void
      */
     public function getDataRowAction()
     {
@@ -465,8 +455,6 @@ class TableSearchController extends TableController
 
     /**
      * Do selection action
-     *
-     * @return void
      */
     public function doSelectionAction()
     {
@@ -507,8 +495,6 @@ class TableSearchController extends TableController
      * Display selection form action
      *
      * @param string $dataLabel Data label
-     *
-     * @return void
      */
     public function displaySelectionFormAction($dataLabel = null)
     {
@@ -579,8 +565,6 @@ class TableSearchController extends TableController
 
     /**
      * Range search action
-     *
-     * @return void
      */
     public function rangeSearchAction()
     {
@@ -590,8 +574,6 @@ class TableSearchController extends TableController
 
     /**
      * Find action
-     *
-     * @return void
      */
     public function findAction()
     {
@@ -610,8 +592,6 @@ class TableSearchController extends TableController
 
     /**
      * Replace action
-     *
-     * @return void
      */
     public function replaceAction()
     {
@@ -755,8 +735,6 @@ class TableSearchController extends TableController
      * @param string  $replaceWith string to replace with
      * @param boolean $useRegex    to use Regex replace or not
      * @param string  $charSet     character set of the connection
-     *
-     * @return void
      */
     public function replace(
         $columnIndex,

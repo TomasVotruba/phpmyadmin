@@ -665,7 +665,7 @@ class NodeDatabase extends Node
     /**
      * Returns HTML for control buttons displayed infront of a node
      *
-     * @return String HTML for control buttons
+     * @return string HTML for control buttons
      */
     public function getHtmlForControlButtons()
     {
@@ -696,8 +696,6 @@ class NodeDatabase extends Node
      * Sets the number of hidden items in this database
      *
      * @param int $count hidden item count
-     *
-     * @return void
      */
     public function setHiddenCount($count)
     {

@@ -254,8 +254,6 @@ class CreateAddField
      *                                for table creation
      * @param array   $indexedColumns the columns for one type of index
      * @param string  $indexKeyword   the index keyword to use in the definition
-     *
-     * @return array
      */
     private function mergeIndexStatements(
         array $definitions,
@@ -455,8 +453,6 @@ class CreateAddField
      *
      * @param string $db    database name
      * @param string $table table name
-     *
-     * @return string
      */
     public function getTableCreationQuery(string $db, string $table): string
     {
@@ -495,8 +491,6 @@ class CreateAddField
 
     /**
      * Function to get the number of fields for the table creation form
-     *
-     * @return int
      */
     public function getNumberOfFieldsFromRequest(): int
     {
@@ -524,8 +518,6 @@ class CreateAddField
      * @param string $db       current database
      * @param string $table    current table
      * @param string $errorUrl error page url
-     *
-     * @return array
      */
     public function tryColumnCreationQuery(
         string $db,
