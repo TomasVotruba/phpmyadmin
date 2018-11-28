@@ -2,13 +2,11 @@ imports:
     - { resource: "vendor/symplify/easy-coding-standard/config/psr2.yml" }
     - { resource: "vendor/symplify/easy-coding-standard/config/common/namespaces.yml" }
     - { resource: "vendor/symplify/easy-coding-standard/config/common/array.yml" }
+    - { resource: "vendor/symplify/easy-coding-standard/config/common/comments.yml" }
+    - { resource: "vendor/symplify/easy-coding-standard/config/common/docblock.yml" }
 
 services:
     # imported from: https://github.com/phpmyadmin/coding-standard/blob/master/PMAStandard/ruleset.xml
-    # Short array syntax must be used to define arrays
-    PhpCsFixer\Fixer\ArrayNotation\ArraySyntaxFixer:
-        syntax: "short"
-
     # Files, classes and functions must have a non-empty doc comment
     PHP_CodeSniffer\Standards\PEAR\Sniffs\Commenting\ClassCommentSniff: ~
     PHP_CodeSniffer\Standards\PEAR\Sniffs\Commenting\FileCommentSniff: ~
