@@ -45,5 +45,6 @@ parameters:
         PHP_CodeSniffer\Standards\PEAR\Sniffs\Commenting\FunctionCommentSniff.WrongStyle: ~
 
     exclude_files:
+        - "node_modules/*"
         - "test/sami-config.php"
         - "*tmp/*"
